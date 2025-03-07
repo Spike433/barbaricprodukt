@@ -1,2 +1,3 @@
 # barbaricprodukt
-Website for Barbaric Product doo
+
+Website for Barbaric Product d.O.O
