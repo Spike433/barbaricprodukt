@@ -101,21 +101,9 @@ export default function Home() {
         <section className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gradient">Barbarić Produkt d.o.o</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about our platform, features, and how to get started.
+             za proizvodnju, trgovinu i usluge          
           </p>
-        </section>
-
-        {/* Featured image with metal gradient overlay */}
-        <section className="relative w-full h-64 md:h-96 mb-16 rounded-xl overflow-hidden shadow-lg">
-          <Image
-            src="/placeholder.svg?height=500&width=500"
-            alt="Barbarić Produkt featured image showing our manufacturing facilities"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-industrial-blue/30 to-industrial-red/30 mix-blend-overlay" />
-        </section>
+        </section>        
 
         <div className="flex flex-col lg:flex-row">
           {/* Main content - Server-side rendered for SEO */}
@@ -168,13 +156,7 @@ export default function Home() {
                         blurDataURL={generateBlurPlaceholder(500, 500)}
                       />
                     </div>
-                  )}
-
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
-                  </p>
+                  )}                  
                 </div>
               </section>
             ))}
