@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils"
 
 // Language options
 const languages = [
+  { code: "hr", name: "Hrvatski", flag: "🇭🇷" },
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
-  { code: "hr", name: "Hrvatski", flag: "🇭🇷" },
 ]
 
 export default function Header() {
@@ -54,16 +54,13 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Home
+              Proizvodnja
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Services
+            <Link href="/services" className="text-sm font-medium hover:text-industrial-blue transition-colors">
+              Usluge
             </Link>
             <Link href="/contact" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Contact
+              Kontakt
             </Link>
 
             {/* Language selector - Desktop */}
@@ -72,7 +69,7 @@ export default function Header() {
                 className="flex items-center text-sm font-medium hover:text-industrial-blue transition-colors"
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
               >
-                <Globe className="h-4 w-4 mr-1" />
+                
                 <span className="mr-1">{currentLang.flag}</span>
                 <span className="mr-1">{currentLang.code.toUpperCase()}</span>
                 <ChevronDown className="h-3 w-3" />
