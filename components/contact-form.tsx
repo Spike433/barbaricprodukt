@@ -41,11 +41,10 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Company Information */}
-        <div className="space-y-8">
-          <div className="flex flex-col items-center lg:items-start">
+      <div className="container mx-auto px-4 py-12 flex flex-col items-center">
+        {/* Informacije o tvrtki */}
+        <div className="w-full max-w-xl mb-12">
+          <div className="flex flex-col items-center text-center">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
               alt="Barbarić Produkt Logo"
@@ -57,32 +56,32 @@ export default function ContactForm() {
             <h1 className="text-3xl font-bold text-industrial-blue">BARBARIĆ PRODUKT</h1>
             <p className="text-muted-foreground">d.o.o. za proizvodnju, trgovinu i usluge</p>
           </div>
-
-          <Card className="bg-gradient-to-br from-white via-gray-50 to-gray-100 border-industrial-blue/10">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-industrial-blue">Contact Information</CardTitle>
-              <CardDescription>Feel free to reach out to us using any of the following methods.</CardDescription>
+    
+          <Card className="mt-8 bg-gradient-to-br from-white via-gray-50 to-gray-100 border-industrial-blue/10">
+            <CardHeader className="pb-2 text-center">
+              <CardTitle className="text-industrial-blue">Kontakt informacije</CardTitle>
+              <CardDescription>Slobodno nas kontaktirajte koristeći bilo koju od sljedećih metoda.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
                 <div>
-                  <p className="font-medium">Address:</p>
+                  <p className="font-medium">Adresa:</p>
                   <p className="text-muted-foreground">Žutička ulica 30</p>
                   <p className="text-muted-foreground">Ivanić-Grad 10310</p>
-                  <p className="text-muted-foreground">CROATIA</p>
+                  <p className="text-muted-foreground">HRVATSKA</p>
                 </div>
               </div>
-
+    
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
                 <div>
-                  <p className="font-medium">Phone:</p>
+                  <p className="font-medium">Telefon:</p>
                   <p className="text-muted-foreground">00385 91 282-3375</p>
                   <p className="text-muted-foreground">00385 91 200-8801</p>
                 </div>
               </div>
-
+    
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
                 <div>
@@ -92,11 +91,11 @@ export default function ContactForm() {
                   </a>
                 </div>
               </div>
-
+    
               <div className="flex items-start">
                 <Globe className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
                 <div>
-                  <p className="font-medium">Website:</p>
+                  <p className="font-medium">Web stranica:</p>
                   <a
                     href="http://www.barbaricprodukt.hr/"
                     target="_blank"
@@ -110,80 +109,80 @@ export default function ContactForm() {
             </CardContent>
           </Card>
         </div>
-
-        {/* Contact Form */}
-        <div>
+    
+        {/* Kontakt obrazac */}
+        <div className="w-full max-w-lg">
           <Card className="bg-gradient-to-br from-white via-gray-50 to-gray-100 border-industrial-blue/10">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-industrial-blue">Send us a message</CardTitle>
-              <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+            <CardHeader className="pb-2 text-center">
+              <CardTitle className="text-industrial-blue">Pošaljite nam poruku</CardTitle>
+              <CardDescription>Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.</CardDescription>
             </CardHeader>
             <CardContent>
               {isSubmitted ? (
-                <div className="bg-green-50 border border-green-200 text-green-700 p-4 rounded-md">
-                  Thank you for your message! We'll get back to you soon.
+                <div className="bg-green-50 border border-green-200 text-green-700 p-4 rounded-md text-center">
+                  Hvala vam na poruci! Javit ćemo vam se uskoro.
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Your Name</Label>
+                    <Label htmlFor="name">Vaše ime</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Enter your name"
+                      placeholder="Unesite vaše ime"
                       required
                       className="bg-white"
                     />
                   </div>
-
+    
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
+                    <Label htmlFor="email">Email adresa</Label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="Enter your email"
+                      placeholder="Unesite vaš email"
                       required
                       className="bg-white"
                     />
                   </div>
-
+    
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
+                    <Label htmlFor="subject">Predmet</Label>
                     <Input
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="What is this regarding?"
+                      placeholder="O čemu se radi?"
                       required
                       className="bg-white"
                     />
                   </div>
-
+    
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Poruka</Label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Enter your message"
+                      placeholder="Unesite vašu poruku"
                       className="min-h-[150px] bg-white"
                       required
                     />
                   </div>
-
+    
                   <Button
                     type="submit"
                     className="w-full bg-industrial-blue hover:bg-industrial-blue/90"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Šaljem..." : "Pošalji poruku"}
                   </Button>
                 </form>
               )}
@@ -191,7 +190,6 @@ export default function ContactForm() {
           </Card>
         </div>
       </div>
-    </div>
-  )
+    )
 }
 
