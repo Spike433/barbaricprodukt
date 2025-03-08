@@ -1,23 +1,28 @@
-import { MetadataRoute } from 'next'
-import { allBlogs } from 'contentlayer/generated'
-import siteMetadata from '@/data/siteMetadata'
-
-export const dynamic = 'force-static'
+import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = siteMetadata.siteUrl
+  const baseUrl = "https://www.barbaricprodukt.hr"
 
-  const blogRoutes = allBlogs
-    .filter((post) => !post.draft)
-    .map((post) => ({
-      url: `${siteUrl}/${post.path}`,
-      lastModified: post.lastmod || post.date,
-    }))
-
-  const routes = ['', 'blog', 'projects', 'tags'].map((route) => ({
-    url: `${siteUrl}/${route}`,
-    lastModified: new Date().toISOString().split('T')[0],
-  }))
-
-  return [...routes, ...blogRoutes]
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Add more URLs as you create more pages
+  ]
 }
+
