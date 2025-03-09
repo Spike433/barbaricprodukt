@@ -56,17 +56,11 @@ const sections: Section[] = [
     subheaders: [
       { 
         id: "klupa-a", 
-        title: "Klupe, koševi za otpadke", 
+        title: "Klupe, koševi za otpadke, jarboli za zastave, stalci za bicikle", 
         content: "Klupa dužine 2 m. Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.", 
         images: ["https://i.postimg.cc/L4yjXF9r/0.jpg","https://i.postimg.cc/GhVYFPsK/1.jpg", 
-        "https://i.postimg.cc/fTJmSqkk/2.jpg","https://i.postimg.cc/q7vg3zv0/3.jpg"] 
+        "https://i.postimg.cc/fTJmSqkk/2.jpg","https://i.postimg.cc/MT6j6dh6/7.jpg","https://i.postimg.cc/q7vg3zv0/3.jpg"] 
       },
-      { 
-        id: "stanice-za-stajalista", 
-        title: "Stanice za stajališta, jarboli za zastave, stalci za bicikle", 
-        content: "Stanice za stajališta su izdržljive i kvalitetne, te se koriste u raznim industrijama.", 
-        images: ["https://i.postimg.cc/MT6j6dh6/7.jpg"] 
-      },      
     ],
   },
   {
