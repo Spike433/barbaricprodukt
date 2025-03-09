@@ -86,8 +86,8 @@ export default function ContactForm() {
                 <Mail className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
                 <div>
                   <p className="font-medium">Email:</p>
-                  <a href="mailto:barbaricprodukt@barbaricprodukt.hr" className="text-industrial-blue hover:underline">
-                    barbaricprodukt@barbaricprodukt.hr
+                  <a href="mailto:barbaric.produkt@barbaricprodukt.com" className="text-industrial-blue hover:underline">
+                    barbaric.produkt@barbaricprodukt.com
                   </a>
                 </div>
               </div>
@@ -97,12 +97,12 @@ export default function ContactForm() {
                 <div>
                   <p className="font-medium">Web stranica:</p>
                   <a
-                    href="http://www.barbaricprodukt.hr/"
+                    href="http://barbaricprodukt.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-industrial-blue hover:underline"
                   >
-                    www.barbaricprodukt.hr
+                    barbaricprodukt.com
                   </a>
                 </div>
               </div>
