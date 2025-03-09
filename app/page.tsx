@@ -26,9 +26,9 @@ const sections: Section[] = [
       },
       { 
         id: "panoramsko-dizalo", 
-        title: "Panoramsko dizalo", 
+        title: "Panoramsko dizalo, paviljon", 
         content: "Panoramsko dizalo je izdržljivo i kvalitetno, te se koristi u raznim industrijama.", 
-        images: ["https://i.postimg.cc/vTHbnMDx/4.jpg"] 
+        images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/QMkTZRYY/6.jpg"] 
       },
       {
         id: "krovista",
@@ -46,6 +46,27 @@ const sections: Section[] = [
           "https://i.postimg.cc/8PxgpLd6/18.jpg", 
           "https://i.postimg.cc/FKgMVqMy/20.jpg"]
       }
+    ],
+  },
+  {
+    id: "urbanaOprema",
+    title: "Urbana oprema",
+    content: "Nudimo širok asortiman urbane opreme koja je izdržljiva, kvalitetna i prilagodljiva vašim potrebama.",
+    images: ["https://i.postimg.cc/placeholder.jpg"],
+    subheaders: [
+      { 
+        id: "klupa-a", 
+        title: "Klupe, koševi za otpadke", 
+        content: "Klupa dužine 2 m. Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.", 
+        images: ["https://i.postimg.cc/L4yjXF9r/0.jpg","https://i.postimg.cc/GhVYFPsK/1.jpg", 
+        "https://i.postimg.cc/fTJmSqkk/2.jpg","https://i.postimg.cc/q7vg3zv0/3.jpg"] 
+      },
+      { 
+        id: "stanice-za-stajalista", 
+        title: "Stanice za stajališta, jarboli za zastave, stalci za bicikle", 
+        content: "Stanice za stajališta su izdržljive i kvalitetne, te se koriste u raznim industrijama.", 
+        images: ["https://i.postimg.cc/MT6j6dh6/7.jpg"] 
+      },      
     ],
   },
   {
