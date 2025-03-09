@@ -20,7 +20,7 @@ const sections: Section[] = [
       },
       {
         id: "kuce",
-        title: "Mobilne kuće",
+        title: "Mobilne kuće, stambeni i industrijski objekti",
         content: "Mobilne kuće su izdržljive i kvalitetne, te se koriste u raznim industrijama.",
         images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
       },
