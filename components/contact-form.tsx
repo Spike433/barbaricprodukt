@@ -44,15 +44,7 @@ export default function ContactForm() {
       <div className="container mx-auto px-4 py-12 flex flex-col items-center">
         {/* Informacije o tvrtki */}
         <div className="w-full max-w-xl mb-12">
-          <div className="flex flex-col items-center text-center">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
-              alt="Barbarić Produkt Logo"
-              width={200}
-              height={100}
-              className="mb-6"
-              priority
-            />
+          <div className="flex flex-col items-center text-center">            
             <h1 className="text-3xl font-bold text-industrial-blue">BARBARIĆ PRODUKT</h1>
             <p className="text-muted-foreground">d.o.o. za proizvodnju, trgovinu i usluge</p>
           </div>

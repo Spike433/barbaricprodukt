@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
@@ -30,8 +31,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="ml-2 text-xl font-bold text-industrial-blue">Barbarić</span>
-            </Link>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
+                alt="Barbarić Produkt Logo"
+                width={100}
+                height={50}
+                className="mb-6 mt-6"
+                priority
+              />            </Link>
           </div>
 
           {/* Desktop navigation */}
