@@ -10,8 +10,42 @@ const sections: Section[] = [
     title: "Čelićne konstrukcije",
     content:
       "Proizvodimo čelične konstrukcije za razne namjene. Naši proizvodi su kvalitetni i izdržljivi, te se koriste u raznim industrijama.",
-    images: ["/placeholder.svg?height=500&width=500"],
+    images: ["https://i.postimg.cc/FK5vZ074/10.jpg","https://i.postimg.cc/YS6HyjWm/11.jpg"],
     subheaders: [
+      { 
+        id: "montazne-hale", 
+        title: "Montažne hale, hangari i garaže", 
+        content: "Montazne hale su izdržljive i kvalitetne, te se koriste u raznim industrijama.", 
+        images: ["https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg"] 
+      },
+      {
+        id: "kuce",
+        title: "Mobilne kuće",
+        content: "Mobilne kuće su izdržljive i kvalitetne, te se koriste u raznim industrijama.",
+        images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
+      },
+      { 
+        id: "panoramsko-dizalo", 
+        title: "Panoramsko dizalo", 
+        content: "Panoramsko dizalo je izdržljivo i kvalitetno, te se koristi u raznim industrijama.", 
+        images: ["https://i.postimg.cc/vTHbnMDx/4.jpg"] 
+      },
+      {
+        id: "krovista",
+        title: "Krovišta, krovni prozori, kupole, svjetlarnici",
+        content: "Krovišta su izdržljiva i kvalitetna, te se koriste u raznim industrijama.",
+        images: ["https://i.postimg.cc/qMqpMk99/6.jpg","https://i.postimg.cc/pTv22KHZ/2.jpg",
+        "https://i.postimg.cc/wvk933xd/3.jpg", "https://i.postimg.cc/44LT0Dmw/14.jpg"]
+      },
+      {     
+        id: "ograde",
+        title: "Ograde za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
+        content: "Ograde su izdržljive i kvalitetne, te se koriste u raznim industrijama.",
+        images: [
+          "https://i.postimg.cc/WbdPc5ZV/17.jpg", 
+          "https://i.postimg.cc/8PxgpLd6/18.jpg", 
+          "https://i.postimg.cc/FKgMVqMy/20.jpg"]
+      }
     ],
   },
   {
@@ -47,9 +81,9 @@ const sections: Section[] = [
     title: "Oprema za more",
     content:
       "Proizvodimo opremu za more, kao što su pontoni, staze, kajak, te razne druge proizvode.",
-    images: ["/placeholder.svg?height=500&width=500"],
+    images: ["/placeholder.svg?height=500&width=500", "/placeholder.svg?height=500&width=500", "/placeholder.svg?height=500&width=500","/placeholder.svg?height=500&width=500"],
     subheaders: [
-      { id: "oprema-za-more-pontoni", title: "Pontoni", content: "Pontoni su izdržljivi i kvalitetni, te se koriste u raznim industrijama."  },
+      { id: "oprema-za-more-pontoni", title: "Pontoni", content: "Pontoni su izdržljivi i kvalitetni, te se koriste u raznim industrijama.", images:["/placeholder.svg?height=500&width=500"]  },
       { id: "oprema-za-more-staze", title: "Staze", content: "Staze su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
       { id: "oprema-za-more-kajak", title: "Kajak", content: "Kajak je izdržljiv i kvalitetan, te se koristi u raznim industrijama." },      
     ],
@@ -106,11 +140,11 @@ export const metadata: Metadata = {
 }
 
 // Helper function to generate blur data URL for placeholder
-function generateBlurPlaceholder(width: number, height: number, color = "e4e4e7"): string {
-  // Create a simple SVG with the specified dimensions and color
+function generateBlurPlaceholder(width: number, height: number, color = "e4e4e7", borderRadius = 10): string {
+  // Create a simple SVG with the specified dimensions, color, and rounded corners
   const svg = `
     <svg width="${width}" height="${height}" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <rect width="${width}" height="${height}" fill="#${color}"/>
+      <rect width="${width}" height="${height}" fill="#${color}" rx="${borderRadius}" ry="${borderRadius}"/>
     </svg>
   `
   // Convert SVG to base64
@@ -175,20 +209,6 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
                 <div className="space-y-4">
                   <p>{section.content}</p>                  
-
-                  {section?.subheaders?.map((subheader) => (
-                    <div
-                      key={subheader.id}
-                      id={subheader.id}
-                      className="mt-8 mb-6 scroll-mt-24 p-4 rounded-lg card-gradient"
-                    >
-                      <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
-                      <p>
-                        {subheader.content}
-                      </p>                                            
-                    </div>
-                  ))}
-
                   {section?.images && (
                     <div className="flex flex-wrap">
                       {section.images.map((image, index) => (
@@ -201,12 +221,42 @@ export default function Home() {
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
-                            blurDataURL={generateBlurPlaceholder(200, 200)}
+                            blurDataURL={generateBlurPlaceholder(400, 400)}
                           />
                         </div>
                       ))}
                     </div>
                   )}
+                  {section?.subheaders?.map((subheader) => (
+                    <div
+                      key={subheader.id}
+                      id={subheader.id}
+                      className="mt-8 mb-6 scroll-mt-24 p-9 rounded-lg card-gradient"
+                    >
+                      <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
+                      <p>
+                        {subheader.content}
+                      </p>  
+                      {subheader?.images && (
+                    <div className="flex flex-wrap">
+                      {subheader.images.map((image, index) => (
+                        <div key={index} className="w-1/3 p-2">
+                          <Image
+                            src={image}
+                            width={400}
+                            height={400}
+                            alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
+                            className="object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={generateBlurPlaceholder(400, 400)}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}                      
+                    </div>
+                  ))}                  
                 </div>
               </section>
             ))}
