@@ -86,11 +86,33 @@ const sections: Section[] = [
     title: "Alu i PVC stolarija",
     content:
       "Proizvodimo alu i PVC stolariju za razne namjene. Naša stolarija je kvalitetna i izdržljiva, te se koristi u raznim industrijama.",
-    images: ["/placeholder.svg?height=500&width=500"],
-    subheaders: [      
-      
-    ],
-  },
+    subheaders: [        
+        { 
+          id: "segmentna-podizna-vrata", 
+          title: "Segmentna podizna vrata, jednokrilna, klizna, automatska vrata", 
+          content: "Segmentna podizna vrata koja pružaju sigurnost i funkcionalnost za različite industrijske i komercijalne prostore.", 
+          images: ["https://i.postimg.cc/FzmMYJhV/4.jpg", "https://i.postimg.cc/MTykZYJG/2.jpg"] 
+        },
+        { 
+          id: "podizne-rampe", 
+          title: "Podizne rampe", 
+          content: "Podizne rampe koje omogućavaju lakši pristup i manipulaciju teretom u različitim okruženjima.", 
+          images: ["https://i.postimg.cc/m2ZxRMXb/6.jpg"] 
+        },
+        { 
+          id: "prozori", 
+          title: "Staklene fasade, prozori", 
+          content: "Staklene fasade koje pružaju moderan izgled i energetsku efikasnost za vaše zgrade. Kvalitetni prozori izrađeni od aluminija i PVC-a, dostupni u različitim dimenzijama i dizajnima.", 
+          images: ["https://i.postimg.cc/JnwVW2gg/3.jpg", "https://i.postimg.cc/WpwRQS7W/5.jpg"] 
+        },
+        { 
+          id: "zimski-vrtovi", 
+          title: "Zimski vrtovi", 
+          content: "Zimski vrtovi koji omogućavaju uživanje u prirodi tokom cijele godine, izrađeni od kvalitetnih materijala.", 
+          images: ["https://i.postimg.cc/brTKkNJc/1.jpg"] 
+        }
+      ],
+    },
   {
     id: "opremaZaMore",
     title: "Oprema za more",
