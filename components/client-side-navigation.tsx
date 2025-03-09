@@ -7,13 +7,14 @@ import { cn } from "@/lib/utils"
 type Subheader = {
   id: string
   title: string
+  images?: string[]
 }
 
 type Section = {
   id: string
   title: string
   content: string
-  image?: string
+  images?: string[]
   subheaders: Subheader[]
 }
 

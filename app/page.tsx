@@ -9,7 +9,7 @@ const sections = [
     title: "Čelićne konstrukcije",
     content:
       "Proizvodimo čelične konstrukcije za razne namjene. Naši proizvodi su kvalitetni i izdržljivi, te se koriste u raznim industrijama.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
     ],
   },
@@ -18,7 +18,7 @@ const sections = [
     title: "Strojogradnja",
     content:
       "Naša strojogradnja obuhvaća proizvodnju strojeva za poljoprivredu, mesnu industriju, te razne druge industrije.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
     ],
   },
@@ -27,7 +27,7 @@ const sections = [
     title: "Ograde",
     content:
       "Proizvodimo ograde za razne namjene. Naše ograde su kvalitetne i izdržljive, te se koriste u raznim industrijama.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
     ],
   },
@@ -36,7 +36,7 @@ const sections = [
     title: "Alu i PVC stolarija",
     content:
       "Proizvodimo alu i PVC stolariju za razne namjene. Naša stolarija je kvalitetna i izdržljiva, te se koristi u raznim industrijama.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [      
       
     ],
@@ -46,9 +46,9 @@ const sections = [
     title: "Oprema za more",
     content:
       "Proizvodimo opremu za more, kao što su pontoni, staze, kajak, te razne druge proizvode.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
-      { id: "oprema-za-more-pontoni", title: "Pontoni", content: "Pontoni su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "oprema-za-more-pontoni", title: "Pontoni", content: "Pontoni su izdržljivi i kvalitetni, te se koriste u raznim industrijama."  },
       { id: "oprema-za-more-staze", title: "Staze", content: "Staze su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
       { id: "oprema-za-more-kajak", title: "Kajak", content: "Kajak je izdržljiv i kvalitetan, te se koristi u raznim industrijama." },      
     ],
@@ -58,7 +58,7 @@ const sections = [
     title: "Strojevi za poljoprivredu i voćarstvo",
     content:
       "Proizvodimo strojeve za poljoprivredu i voćarstvo, kao što su prskalice i atomizeri.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
       { id: "strojevi-za-poljoprivredu-i-vocarstvo-prskalice", title: "Prskalice", content: "Prskalice su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
       { id: "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri", title: "Atomizeri", content: "Atomizeri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },      
@@ -69,7 +69,7 @@ const sections = [
     title: "Oprema za mesnu industriju",
     content:
       "Proizvodimo opremu za mesnu industriju, kao što su mesoreznice, mljevenice, te razne druge proizvode.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [],
   },
   {
@@ -77,7 +77,7 @@ const sections = [
     title: "Eko oprema komunalna",
     content:
       "Proizvodimo eko opremu komunalnu, kao što su kontejneri, separatori, tankvane, te razne druge proizvode.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
       { id: "eko-oprema-komunalna-kontejneri", title: "Kontejneri", content: "Kontejneri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
       { id: "eko-oprema-komunalna-separatori", title: "Separatori", content: "Separatori su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
@@ -89,7 +89,7 @@ const sections = [
     title: "Urbana oprema",
     content:
       "Proizvodimo urbnu opremu, kao što su klupe i koševi za parkove, kandelaberi, stajališta autobusa, te razne druge proizvode.",
-    image: "/placeholder.svg?height=500&width=500",
+    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
       { id: "urbana-oprema-klupe-i-kosevi-za-parkove", title: "Klupe i koševi za parkove", content: "Klupe i koševi za parkove su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
       { id: "urbana-oprema-kandelaberi", title: "Kandelaberi", content: "Kandelaberi su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
@@ -185,20 +185,30 @@ export default function Home() {
                       <p>
                         {subheader.content}
                       </p>                      
-                    </div>
-                  ))}
-
-                  {section.image && (
-                    <div className="">
                       <Image
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
-                        width={400}
-                        height={400}
+                        width={200}
+                        height={200}
                         alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 400)}
+                        blurDataURL={generateBlurPlaceholder(200, 200)}
+                      />
+                    </div>
+                  ))}
+
+                  {section?.images && (
+                    <div className="">
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
+                        width={200}
+                        height={200}
+                        alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(200, 200)}
                       />
                     </div>
                   )}                  
