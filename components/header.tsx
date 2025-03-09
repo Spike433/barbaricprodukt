@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Globe, ChevronDown } from "lucide-react"
+import { usePathname } from "next/navigation"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 // Language options
@@ -13,6 +14,7 @@ const languages = [
 ]
 
 export default function Header() {
+  const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false)
   const [currentLang, setCurrentLang] = useState(languages[0])
@@ -28,40 +30,28 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-industrial-blue"
-              >
-                <path
-                  d="M8 4C8 2.89543 8.89543 2 10 2H22C23.1046 2 24 2.89543 24 4V28C24 29.1046 23.1046 30 22 30H10C8.89543 30 8 29.1046 8 28V4Z"
-                  fill="currentColor"
-                  fillOpacity="0.2"
-                />
-                <path
-                  d="M4 10C2.89543 10 2 10.8954 2 12V20C2 21.1046 2.89543 22 4 22H28C29.1046 22 30 21.1046 30 20V12C30 10.8954 29.1046 10 28 10H4Z"
-                  fill="currentColor"
-                />
-                <circle cx="16" cy="16" r="6" fill="white" />
-              </svg>
               <span className="ml-2 text-xl font-bold text-industrial-blue">Barbarić</span>
             </Link>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Proizvodnja
-            </Link>
-            <Link href="/services" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Usluge
-            </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-industrial-blue transition-colors">
-              Kontakt
-            </Link>
+            {[
+              { href: "/", label: "Proizvodnja" },
+              { href: "/services", label: "Usluge" },
+              { href: "/contact", label: "Kontakt" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-industrial-blue",
+                  pathname === link.href ? "text-industrial-blue border-b-2 border-industrial-blue pb-1" : ""
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
 
             {/* Language selector - Desktop */}
             <div className="relative">
@@ -69,7 +59,6 @@ export default function Header() {
                 className="flex items-center text-sm font-medium hover:text-industrial-blue transition-colors"
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
               >
-                
                 <span className="mr-1">{currentLang.flag}</span>
                 <span className="mr-1">{currentLang.code.toUpperCase()}</span>
                 <ChevronDown className="h-3 w-3" />
@@ -83,7 +72,7 @@ export default function Header() {
                         key={lang.code}
                         className={cn(
                           "flex items-center w-full px-4 py-2 text-sm text-left hover:bg-muted",
-                          currentLang.code === lang.code ? "bg-industrial-blue/10 text-industrial-blue" : "",
+                          currentLang.code === lang.code ? "bg-industrial-blue/10 text-industrial-blue" : ""
                         )}
                         onClick={() => handleLanguageChange(lang)}
                       >
@@ -108,38 +97,28 @@ export default function Header() {
       <div
         className={cn(
           "md:hidden absolute w-full bg-background border-b transition-all duration-300 ease-in-out",
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden",
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         )}
       >
         <nav className="flex flex-col space-y-4 p-4">
-          <Link
-            href="/"
-            className="text-sm font-medium hover:text-industrial-blue transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="text-sm font-medium hover:text-industrial-blue transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About Us
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:text-industrial-blue transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm font-medium hover:text-industrial-blue transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </Link>
+          {[
+            { href: "/", label: "Home" },
+            { href: "/about", label: "About Us" },
+            { href: "/services", label: "Services" },
+            { href: "/contact", label: "Contact" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-industrial-blue",
+                pathname === link.href ? "text-industrial-blue border-b-2 border-industrial-blue pb-1" : ""
+              )}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
 
           {/* Language selector - Mobile */}
           <div className="border-t pt-4 mt-2">
@@ -152,7 +131,7 @@ export default function Header() {
                     "flex items-center px-3 py-1 text-sm rounded-md border",
                     currentLang.code === lang.code
                       ? "bg-industrial-blue/10 text-industrial-blue border-industrial-blue/30"
-                      : "hover:bg-muted",
+                      : "hover:bg-muted"
                   )}
                   onClick={() => {
                     handleLanguageChange(lang)
@@ -170,4 +149,3 @@ export default function Header() {
     </header>
   )
 }
-
