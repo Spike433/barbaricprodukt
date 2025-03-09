@@ -20,7 +20,7 @@ export default function Header() {
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false)
   const [currentLang, setCurrentLang] = useState(languages[0])
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang: any) => {
     setCurrentLang(lang)
     setIsLangMenuOpen(false)
   }
