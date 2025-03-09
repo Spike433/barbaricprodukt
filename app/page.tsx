@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import ClientSideNavigation from "@/components/client-side-navigation"
+import { Section } from "./types"
 
 // Define sections with their content
-const sections = [
+const sections: Section[] = [
   {
     id: "celicneKonstrukcije",
     title: "Čelićne konstrukcije",
@@ -175,7 +176,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <p>{section.content}</p>                  
 
-                  {section.subheaders.map((subheader) => (
+                  {section?.subheaders?.map((subheader) => (
                     <div
                       key={subheader.id}
                       id={subheader.id}
@@ -184,34 +185,28 @@ export default function Home() {
                       <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
                       <p>
                         {subheader.content}
-                      </p>                      
-                      <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
-                        width={200}
-                        height={200}
-                        alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(200, 200)}
-                      />
+                      </p>                                            
                     </div>
                   ))}
 
                   {section?.images && (
-                    <div className="">
-                      <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
-                        width={200}
-                        height={200}
-                        alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(200, 200)}
-                      />
+                    <div className="flex flex-wrap">
+                      {section.images.map((image, index) => (
+                        <div key={index} className="w-1/3 p-2">
+                          <Image
+                            src={image}
+                            width={200}
+                            height={200}
+                            alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
+                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={generateBlurPlaceholder(200, 200)}
+                          />
+                        </div>
+                      ))}
                     </div>
-                  )}                  
+                  )}
                 </div>
               </section>
             ))}

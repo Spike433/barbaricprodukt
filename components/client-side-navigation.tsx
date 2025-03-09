@@ -3,20 +3,7 @@
 import { useState, useEffect } from "react"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
-
-type Subheader = {
-  id: string
-  title: string
-  images?: string[]
-}
-
-type Section = {
-  id: string
-  title: string
-  content: string
-  images?: string[]
-  subheaders: Subheader[]
-}
+import { Section } from "@/app/types"
 
 interface ClientSideNavigationProps {
   sections: Section[]
@@ -30,13 +17,13 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
     const handleScroll = () => {
       // Check subheaders first
       const allSubheaders = sections.flatMap((section) =>
-        section.subheaders.map((sub) => ({
+        section?.subheaders?.map((sub) => ({
           id: sub.id,
           parentId: section.id,
         })),
       )
 
-      const subheaderElements = allSubheaders.map((sub) => ({
+      const subheaderElements = allSubheaders.map((sub: any) => ({
         element: document.getElementById(sub.id),
         id: sub.id,
         parentId: sub.parentId,
@@ -103,7 +90,7 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
       }
 
       // Apply active styles to subheaders
-      section.subheaders.forEach((subheader) => {
+      section?.subheaders?.forEach((subheader) => {
         const subElement = document.getElementById(subheader.id)
         if (subElement) {
           if (activeSubheader === subheader.id) {
@@ -141,7 +128,7 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
 
               {/* Subheaders */}
               <div className="mt-1 ml-6 space-y-1">
-                {section.subheaders.map((subheader) => (
+                {section?.subheaders?.map((subheader) => (
                   <button
                     key={subheader.id}
                     onClick={() => scrollToSection(section.id, subheader.id)}
