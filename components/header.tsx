@@ -20,7 +20,7 @@ export default function Header() {
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false)
   const [currentLang, setCurrentLang] = useState(languages[0])
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang: any) => {
     setCurrentLang(lang)
     setIsLangMenuOpen(false)
   }
@@ -66,7 +66,6 @@ export default function Header() {
                 className="flex items-center text-sm font-medium hover:text-industrial-blue transition-colors"
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
               >
-                <span className="mr-1">{currentLang.flag}</span>
                 <span className="mr-1">{currentLang.code.toUpperCase()}</span>
                 <ChevronDown className="h-3 w-3" />
               </button>
@@ -82,8 +81,7 @@ export default function Header() {
                           currentLang.code === lang.code ? "bg-industrial-blue/10 text-industrial-blue" : ""
                         )}
                         onClick={() => handleLanguageChange(lang)}
-                      >
-                        <span className="mr-2">{lang.flag}</span>
+                      >                       
                         <span>{lang.name}</span>
                       </button>
                     ))}

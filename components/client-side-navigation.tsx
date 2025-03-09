@@ -11,7 +11,7 @@ interface ClientSideNavigationProps {
 export default function ClientSideNavigation({ sections }: ClientSideNavigationProps) {
   const [collapsedSections, setCollapsedSections] = useState<{ [key: string]: boolean }>(() => {
     return sections.reduce((acc, section) => {
-      if (section.subheaders) acc[section.id] = true
+      if (section.subheaders && section.subheaders.length > 0) acc[section.id] = true
       return acc
     }, {} as { [key: string]: boolean })
   })
@@ -38,12 +38,12 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
           {sections.map((section) => (
             <div key={section.id} className="mb-2">
               <button
-                onClick={() => section.subheaders ? toggleCollapse(section.id) : scrollToSection(section.id)}
+                onClick={() => section.subheaders && section.subheaders.length > 0 ? toggleCollapse(section.id) : scrollToSection(section.id)}
                 className="flex items-center w-full px-3 py-2 text-sm rounded-md transition-colors hover:bg-muted text-left text-muted-foreground"
               >
-                {section.subheaders && (
+                {section.subheaders && section.subheaders.length > 0 && (
                   <span className="mr-2">
-                      {collapsedSections[section.id] ? <ChevronRight className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                    {collapsedSections[section.id] ? <ChevronRight className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                   </span>
                 )}
                 <span className="ml-1">{section.title}</span>
