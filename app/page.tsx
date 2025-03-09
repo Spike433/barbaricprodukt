@@ -5,38 +5,95 @@ import ClientSideNavigation from "@/components/client-side-navigation"
 // Define sections with their content
 const sections = [
   {
-    id: "features",
-    title: "Features",
+    id: "celicneKonstrukcije",
+    title: "Čelićne konstrukcije",
     content:
-      "Our product comes with a wide range of features designed to make your life easier. From automated workflows to intelligent suggestions, we've got you covered.",
+      "Proizvodimo čelične konstrukcije za razne namjene. Naši proizvodi su kvalitetni i izdržljivi, te se koriste u raznim industrijama.",
     image: "/placeholder.svg?height=500&width=500",
     subheaders: [
-      { id: "features-automation", title: "Automation" },
-      { id: "features-integration", title: "Integration" },
-      { id: "features-analytics", title: "Analytics" },
     ],
   },
   {
-    id: "getting-started",
-    title: "Getting Started",
+    id: "strojogradnja",
+    title: "Strojogradnja",
     content:
-      "Getting started is easy! Simply sign up for an account, complete your profile, and you're ready to go. Our intuitive interface makes it simple to navigate and find what you need.",
+      "Naša strojogradnja obuhvaća proizvodnju strojeva za poljoprivredu, mesnu industriju, te razne druge industrije.",
+    image: "/placeholder.svg?height=500&width=500",
     subheaders: [
-      { id: "getting-started-signup", title: "Sign Up Process" },
-      { id: "getting-started-profile", title: "Profile Setup" },
-      { id: "getting-started-first-steps", title: "First Steps" },
     ],
   },
   {
-    id: "documentation",
-    title: "Documentation",
+    id: "ograde",
+    title: "Ograde",
     content:
-      "Our comprehensive documentation provides detailed information about how to use our product. Whether you're a beginner or an advanced user, you'll find the information you need.",
+      "Proizvodimo ograde za razne namjene. Naše ograde su kvalitetne i izdržljive, te se koriste u raznim industrijama.",
     image: "/placeholder.svg?height=500&width=500",
     subheaders: [
-      { id: "documentation-guides", title: "User Guides" },
-      { id: "documentation-api", title: "API Reference" },
-      { id: "documentation-examples", title: "Examples" },
+    ],
+  },
+  {
+    id: "aluPvcStolarija",
+    title: "Alu i PVC stolarija",
+    content:
+      "Proizvodimo alu i PVC stolariju za razne namjene. Naša stolarija je kvalitetna i izdržljiva, te se koristi u raznim industrijama.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [      
+      
+    ],
+  },
+  {
+    id: "opremaZaMore",
+    title: "Oprema za more",
+    content:
+      "Proizvodimo opremu za more, kao što su pontoni, staze, kajak, te razne druge proizvode.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [
+      { id: "oprema-za-more-pontoni", title: "Pontoni", content: "Pontoni su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "oprema-za-more-staze", title: "Staze", content: "Staze su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
+      { id: "oprema-za-more-kajak", title: "Kajak", content: "Kajak je izdržljiv i kvalitetan, te se koristi u raznim industrijama." },      
+    ],
+  },
+  {
+    id: "strojeviZaPoljoprivreduIVocarstvo",
+    title: "Strojevi za poljoprivredu i voćarstvo",
+    content:
+      "Proizvodimo strojeve za poljoprivredu i voćarstvo, kao što su prskalice i atomizeri.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [
+      { id: "strojevi-za-poljoprivredu-i-vocarstvo-prskalice", title: "Prskalice", content: "Prskalice su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
+      { id: "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri", title: "Atomizeri", content: "Atomizeri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },      
+    ],
+  },
+  {
+    id: "opremaZaMesnuIndustriju",
+    title: "Oprema za mesnu industriju",
+    content:
+      "Proizvodimo opremu za mesnu industriju, kao što su mesoreznice, mljevenice, te razne druge proizvode.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [],
+  },
+  {
+    id: "ekoOpremaKomunalna",
+    title: "Eko oprema komunalna",
+    content:
+      "Proizvodimo eko opremu komunalnu, kao što su kontejneri, separatori, tankvane, te razne druge proizvode.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [
+      { id: "eko-oprema-komunalna-kontejneri", title: "Kontejneri", content: "Kontejneri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "eko-oprema-komunalna-separatori", title: "Separatori", content: "Separatori su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "eko-oprema-komunalna-tankvane", title: "Tankvane", content: "Tankvane su izdržljive i kvalitetne, te se koriste u raznim industrijama." },      
+    ],
+  },
+  {
+    id: "urbanaOprema",
+    title: "Urbana oprema",
+    content:
+      "Proizvodimo urbnu opremu, kao što su klupe i koševi za parkove, kandelaberi, stajališta autobusa, te razne druge proizvode.",
+    image: "/placeholder.svg?height=500&width=500",
+    subheaders: [
+      { id: "urbana-oprema-klupe-i-kosevi-za-parkove", title: "Klupe i koševi za parkove", content: "Klupe i koševi za parkove su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "urbana-oprema-kandelaberi", title: "Kandelaberi", content: "Kandelaberi su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
+      { id: "urbana-oprema-stajalista-autobusa", title: "Stajališta autobusa", content: "Stajališta autobusa su izdržljiva i kvalitetna, te se koriste u raznim industrijama." },      
     ],
   },
 ]
@@ -116,12 +173,7 @@ export default function Home() {
               >
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
                 <div className="space-y-4">
-                  <p className="text-muted-foreground">{section.content}</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                  </p>
+                  <p>{section.content}</p>                  
 
                   {section.subheaders.map((subheader) => (
                     <div
@@ -131,15 +183,8 @@ export default function Home() {
                     >
                       <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
                       <p>
-                        This section covers everything you need to know about {subheader.title.toLowerCase()}. We
-                        provide detailed explanations and examples to help you understand and implement these concepts
-                        effectively.
-                      </p>
-                      <p className="mt-2">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
-                      </p>
+                        {subheader.content}
+                      </p>                      
                     </div>
                   ))}
 
