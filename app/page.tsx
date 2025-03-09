@@ -189,16 +189,16 @@ export default function Home() {
                   ))}
 
                   {section.image && (
-                    <div className="my-6 rounded-lg overflow-hidden shadow-md">
+                    <div className="">
                       <Image
-                        src={section.image || "/placeholder.svg"}
-                        width={500}
-                        height={500}
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png"
+                        width={400}
+                        height={400}
                         alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                        className="w-full object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(500, 500)}
+                        blurDataURL={generateBlurPlaceholder(400, 400)}
                       />
                     </div>
                   )}                  
