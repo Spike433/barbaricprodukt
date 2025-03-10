@@ -188,14 +188,35 @@ const sections: Section[] = [
   {
     id: "ekoOpremaKomunalna",
     title: "Eko oprema komunalna",
-    content:
-      "Proizvodimo eko opremu komunalnu, kao što su kontejneri, separatori, tankvane, te razne druge proizvode.",
+    content: "Proizvodimo eko opremu komunalnu, kao što su kontejneri, separatori, tankvane, te razne druge proizvode.",
     images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
-      { id: "eko-oprema-komunalna-kontejneri", title: "Kontejneri", content: "Kontejneri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
-      { id: "eko-oprema-komunalna-separatori", title: "Separatori", content: "Separatori su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
-      { id: "eko-oprema-komunalna-tankvane", title: "Tankvane", content: "Tankvane su izdržljive i kvalitetne, te se koriste u raznim industrijama." },      
-    ],
+        {
+            id: "eko-oprema-komunalna-kontejneri",
+            title: "Komunalni, rolo kontejneri",
+            content: "Otvoreni i zatvoreni kontejneri od 5, 7 i 10 m³, kao i plastične kante za smeće kapaciteta 60, 100, 200 i 300 litara.",
+            images: ["https://i.postimg.cc/GpGWhmrx/9.jpg", "https://i.postimg.cc/k4FPwXpg/1.jpg", "https://i.postimg.cc/Gt7NSBJd/13.jpg"]            
+        },
+        {
+            id: "kontejner-elektronski-otpad",
+            title: "Kontejner za elektronski otpad",
+            content: "Kontejner kapaciteta 7 m³, specijaliziran za odlaganje elektronskog otpada i krpa.",
+            images: ["https://i.postimg.cc/CxX0x28S/31.jpg", "https://i.postimg.cc/d0CYk9Rd/32.jpg"]
+        },
+        {
+            id: "septic-tank-separatori",
+            title: "Septičke jame i separatori",
+            content: "Septičke jame različitih kapaciteta, te separatori ulja i masti (800 L) u jednokomornim, dvokomornim i trokomornim varijantama.",
+            images: ["https://i.postimg.cc/XqL3N7fz/26.jpg", "https://i.postimg.cc/v8tGtXJt/27.jpg", "https://i.postimg.cc/WbpTWgjL/28.jpg"]
+        },
+        {
+            id: "rezervoari-otpadno-ulje",
+            title: "Rezervoari za otpadno ulje, tehnološku kanalizaciju",
+            content: "Plastične posude i rezervoari sa duplom stijenkom za skladištenje otpadnog ulja, kapaciteta do 20 m³. Rezervoari kapaciteta 35 m³, te rezervoari za otpadno ulje sa tankvanom od 1.000 do 20.000 litara.",
+            images: ["https://i.postimg.cc/RFT2KpW3/11.jpg", "https://i.postimg.cc/d1MJ4fQ4/23.jpg", "https://i.postimg.cc/pVCtFrj0/4.jpg", "https://i.postimg.cc/VvLpR9tK/12.jpg"]            
+        },        
+
+    ]
   },
   {
     id: "urbanaOprema",
