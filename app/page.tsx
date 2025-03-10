@@ -20,9 +20,10 @@ const sections: Section[] = [
       },
       {
         id: "kuce",
-        title: "Mobilne kuće, stambeni i industrijski objekti",
+        title: "Mobilne kuće, spremišta (zapaljivih tekućina, boca, boja i lakova), stambeni i industrijski objekti",
         content: "Mobilne kuće su izdržljive i kvalitetne, te se koriste u raznim industrijama.",
-        images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
+        images: ["https://i.postimg.cc/Pxkkm8K7/30.jpg", 
+        "https://i.postimg.cc/pd52Qvvm/22.jpg", "https://i.postimg.cc/136hf4MY/21.jpg", ]
       },
       { 
         id: "panoramsko-dizalo", 
@@ -46,21 +47,6 @@ const sections: Section[] = [
           "https://i.postimg.cc/8PxgpLd6/18.jpg", 
           "https://i.postimg.cc/FKgMVqMy/20.jpg"]
       }
-    ],
-  },
-  {
-    id: "urbanaOprema",
-    title: "Urbana oprema",
-    content: "Nudimo širok asortiman urbane opreme koja je izdržljiva, kvalitetna i prilagodljiva vašim potrebama.",
-    images: ["https://i.postimg.cc/placeholder.jpg"],
-    subheaders: [
-      { 
-        id: "klupa-a", 
-        title: "Klupe, koševi za otpadke, jarboli za zastave, stalci za bicikle", 
-        content: "Klupa dužine 2 m. Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.", 
-        images: ["https://i.postimg.cc/L4yjXF9r/0.jpg","https://i.postimg.cc/GhVYFPsK/1.jpg", 
-        "https://i.postimg.cc/fTJmSqkk/2.jpg","https://i.postimg.cc/MT6j6dh6/7.jpg","https://i.postimg.cc/q7vg3zv0/3.jpg"] 
-      },
     ],
   },
   {
@@ -113,6 +99,25 @@ const sections: Section[] = [
         }
       ],
     },
+    {
+      id: "opremaZaGradevinarstvo",
+      title: "Oprema za građevinarstvo",
+      content: "Proizvodimo visokokvalitetnu opremu za građevinarstvo, uključujući sisteme za transport građevinskog otpada kao što su tuneli za šutu i pripadajući elementi.",
+      subheaders: [
+          {
+              id: "tuneliZaSutu",
+              title: "Tuneli za šutu, polazni - usipni dio, nosač usipnog elementa",
+              content: "Tuneli za šutu izrađeni su od polietilena visoke čvrstoće pomoću roto ljeva tehnologije, što osigurava dugotrajnost i otpornost. Povezuju se pomoću lanaca, a preporučuje se dodatno učvršćivanje svakih 10 elemenata. Uključuje polazni - usipni dio i nosač usipnog elementa za stabilno držanje i efikasan početak transporta otpada.",
+              images: ["https://i.postimg.cc/fLg7XwTV/0.jpg", "https://i.postimg.cc/8c2hKtvD/1.jpg"]              
+          },
+          {
+              id: "nosaciICijevi",
+              title: "Nosač dizalice za cijevi, cijevi za šutu",
+              content: "Nosač dizalice osigurava stabilno postavljanje cijevi za transport građevinskog otpada. Cijevi za šutu su otporne na udarce i habanje, omogućujući nesmetan protok otpada kroz tunelski sistem.",
+              images: ["https://i.postimg.cc/T2Fq3Y4S/2.jpg", "https://i.postimg.cc/t4H3FvyN/3.jpg"]
+          }
+      ]
+  },  
   {
     id: "opremaZaMore",
     title: "Oprema za more",
