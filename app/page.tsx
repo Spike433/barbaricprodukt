@@ -214,8 +214,14 @@ const sections: Section[] = [
             title: "Rezervoari za otpadno ulje, tehnološku kanalizaciju",
             content: "Plastične posude i rezervoari sa duplom stijenkom za skladištenje otpadnog ulja, kapaciteta do 20 m³. Rezervoari kapaciteta 35 m³, te rezervoari za otpadno ulje sa tankvanom od 1.000 do 20.000 litara.",
             images: ["https://i.postimg.cc/RFT2KpW3/11.jpg", "https://i.postimg.cc/d1MJ4fQ4/23.jpg", "https://i.postimg.cc/pVCtFrj0/4.jpg", "https://i.postimg.cc/VvLpR9tK/12.jpg"]            
-        },        
-
+        },
+        {
+          id: "tankvane-regali",
+          title: "Tankvane i regali za bačve",
+          content: "Tankvane različitih vrsta, uključujući tankvane sa kotačima za jednostavan transport, kao i regale za bačve sa tankvanom, dostupne u otvorenim i zatvorenim verzijama. Regali sa pumpom omogućuju efikasno punjenje i doziranje, dok regali sa tankvanom podržavaju punjenje, pražnjenje i precizno doziranje tekućina.",
+          images: ["https://i.postimg.cc/Kj0SSpFX/3.jpg", "https://i.postimg.cc/2SbpMxKJ/5.jpg", "https://i.postimg.cc/5NkdsrnL/8.jpg"
+            ,"https://i.postimg.cc/K86X2MXY/7.jpg", "https://i.postimg.cc/vTsHHNpc/15.jpg"]
+        }
     ]
   },
   {
