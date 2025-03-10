@@ -38,7 +38,12 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
           {sections.map((section) => (
             <div key={section.id} className="mb-2">
               <button
-                onClick={() => section.subheaders && section.subheaders.length > 0 ? toggleCollapse(section.id) : scrollToSection(section.id)}
+                onClick={() => {
+                  scrollToSection(section.id)
+                  if (section.subheaders && section.subheaders.length > 0) {
+                    toggleCollapse(section.id)
+                  }
+                }}
                 className="flex items-center w-full px-3 py-2 text-sm rounded-md transition-colors hover:bg-muted text-left text-muted-foreground"
               >
                 {section.subheaders && section.subheaders.length > 0 && (
