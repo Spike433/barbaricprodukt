@@ -34,8 +34,8 @@ export default function Header() {
               <Image
                 src="https://i.postimg.cc/DzPYFw4X/logo.png"
                 alt="Barbarić Produkt Logo"
-                width={100}
-                height={50}
+                width={120}
+                height={120}
                 className="mb-6 mt-6"
                 priority
               />            </Link>
