@@ -327,7 +327,7 @@ const sections: Section[] = [
           id: "sahte-kanalizacija",
           title: "Sahte za kanalizaciju, septičke jame, pjeskolovi, mastolovi",
           content: "Sahte za kanalizaciju, septičke jame, pjeskolovi i mastolovi različitih dimenzija i oblika, izrađeni od visokokvalitetnih materijala. Sahte su otporne na koroziju i habanje, te se koriste u raznim industrijskim i komercijalnim okruženjima.",
-          images: ["https://i.postimg.cc/MGKLpsrd/18.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg"]
+          images: ["https://i.postimg.cc/yd3vD2hX/37.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg", "https://i.postimg.cc/MGKLpsrd/18.jpg"]
         }
     ]
   },
