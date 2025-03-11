@@ -117,7 +117,104 @@ const sections: Section[] = [
               images: ["https://i.postimg.cc/T2Fq3Y4S/2.jpg", "https://i.postimg.cc/t4H3FvyN/3.jpg"]
           }
       ]
-  },  
+  },
+  {
+    id: "industrijskaOprema",
+    title: "Industrijska oprema",
+    content: "Nudimo širok asortiman industrijske opreme, uključujući ventile, filtere, spojke, rezerovare i specijalizirane komponente za industrijske procese.",
+    subheaders: [
+        {
+            id: "inoxArmature",
+            title: "INOX armature",
+            content: "Visokokvalitetne INOX armature pogodne za industrijsku primjenu. Naša ponuda uključuje igličaste ventile 700 bara, kuglaste slavine, ublaživače udara za manometre, holendere, spojnice, prijelaze, mazalice 700 bara, boce za uzorkovanje 700 bara i nepovratne ventile.",
+            images: ["https://i.postimg.cc/L5bPqvDL/2.jpg"]
+        },    
+        // ventili
+        {
+          id: "ventili",
+          title: "Ventili",
+          content: "Ventili za industrijske primjene. Naša ponuda uključuje različite tipove ventila, uključujući leptir ventile, kuglaste ventile, igličaste ventile, nepovratne ventile, sigurnosne ventile, prigušivače, kao i specijalizirane ventile za visoke tlakove. Inox ventil automatski upravljan do 1500mm.",
+          images: ["https://i.postimg.cc/Zn788Jb9/25.jpg", "https://i.postimg.cc/CL9DSPzV/5.jpg", "https://i.postimg.cc/RZftF7HJ/6.jpg"]
+        },
+        {
+          id: "filteriIzmjenjivaci",
+          title: "Filteri i izmjenjivači",
+          content: "Filteri i izmjenjivači za različite primjene. Naša ponuda uključuje leptir ventile, industrijske filtere od nehrđajućeg čelika (INOX) te izmjenjivače topline, osiguravajući pouzdanost i dugotrajnost u industrijskim procesima.",
+          images: ["https://i.postimg.cc/KzQBbmg9/1.jpg", "https://i.postimg.cc/xjxMFTQ8/3.jpg", "https://i.postimg.cc/hG178KMS/7.jpg"]
+      },
+      {
+          id: "spojkeAktuatori",
+          title: "Spojke i aktuatori",
+          content: "Periflex spojke i aktuatori za industrijske sustave. Periflex spojke pružaju fleksibilnost i otpornost na opterećenja, dok aktuatori omogućuju preciznu kontrolu industrijskih ventila i mehanizama.",
+          images: ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg",
+        "https://i.postimg.cc/65bcRfqH/19.jpg"]
+      },
+      {
+          id: "generalniPopravak",
+          title: "Generalni popravak",
+          content: "Popravak i rehabilitacija različitih industrijskih komponenti. Nudimo generalni popravak bušotinskih zasuna, dvoputih i troputih slavina, nepovratnih ventila, kao i specijalizirane usluge poput vatrozaštite spremnika nafte. Također vršimo popravak i održavanje izmjenjivača topline, brtvi te rehabilitaciju cjevovoda uvlačenjem PE cijevi.",
+          images: []
+      },      
+      {
+        id: "cijevniSustavi",
+        title: "Cijevni sustavi",
+        content: "Cijevni zatvarači i posude za industrijske primjene.",
+        images: [
+          "https://i.postimg.cc/T245J7jW/12.jpg",
+            "https://i.postimg.cc/nzdj5T6g/10.jpg"
+          ]
+      },
+      {
+          id: "rezervoari",
+          title: "Rezervoari",
+          content: "Različiti tipovi rezervoara za specijalizirane namjene.",
+          images: [
+              "https://i.postimg.cc/90WbPxyk/14.jpg",
+              "https://i.postimg.cc/dtVnLxsk/17.jpg",
+              "https://i.postimg.cc/vZ1zvx6G/18.jpg"
+          ]
+      },
+      {
+          id: "postrojenja",
+          title: "Postrojenja",
+          content: "Postrojenja za preradu bešavnih cijevi i druge industrijske procese.",
+          images: [
+              "https://i.postimg.cc/J4F3t7Yv/27.jpg",
+              "https://i.postimg.cc/1zhpcCQK/31.jpg",
+              "https://i.postimg.cc/gJG81xrX/32.jpg"
+          ]
+      },
+      {
+          id: "zastitaZupcanika",
+          title: "Zaštita zupčanika",
+          content: "INOX zaštita zupčanika i segmenti zaštite.",
+          images: [
+              "https://i.postimg.cc/RVhQMJdw/28.jpg",
+              "https://i.postimg.cc/0NY7tY51/29.jpg"
+          ]
+      },
+      {
+          id: "transporteri",
+          title: "Transporteri",
+          content: "Kranske šine, ćelično-gumeni transporteri.",
+          images: [
+            "https://i.postimg.cc/zBNF5d2f/20.jpg",
+            "https://i.postimg.cc/L8rVQ4zL/21.jpg",
+            "https://i.postimg.cc/wBLQCKVP/22.jpg",
+            "https://i.postimg.cc/sXJ92pb4/23.jpg",
+            "https://i.postimg.cc/sgZYWFtX/30.jpg",
+          ]
+        },
+        {
+          id: "rashladnaJedinica",
+          title: "Rashladna jedinica",
+          content: "Rashladna jedinica za industrijske potrebe.",
+          images: [
+            "https://i.postimg.cc/brN0SZhc/24.jpg"
+          ]
+        }
+    ]
+  },
   {
     id: "opremaZaMore",
     title: "Oprema za more",
