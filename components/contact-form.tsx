@@ -42,66 +42,6 @@ export default function ContactForm() {
 
   return (
       <div className="container mx-auto px-4 py-12 flex flex-col items-center">
-        {/* Informacije o tvrtki */}
-        <div className="w-full max-w-xl mb-12">
-          <div className="flex flex-col items-center text-center">            
-            <h1 className="text-3xl font-bold text-industrial-blue">BARBARIĆ PRODUKT</h1>
-            <p className="text-muted-foreground">d.o.o. za proizvodnju, trgovinu i usluge</p>
-          </div>
-    
-          <Card className="mt-8 bg-gradient-to-br from-white via-gray-50 to-gray-100 border-industrial-blue/10">
-            <CardHeader className="pb-2 text-center">
-              <CardTitle className="text-industrial-blue">Kontakt informacije</CardTitle>
-              <CardDescription>Slobodno nas kontaktirajte koristeći bilo koju od sljedećih metoda.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
-                <div>
-                  <p className="font-medium">Adresa:</p>
-                  <p className="text-muted-foreground">Žutička ulica 30</p>
-                  <p className="text-muted-foreground">Ivanić-Grad 10310</p>
-                  <p className="text-muted-foreground">HRVATSKA</p>
-                </div>
-              </div>
-    
-              <div className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
-                <div>
-                  <p className="font-medium">Telefon:</p>
-                  <p className="text-muted-foreground">00385 91 282-3375</p>
-                  <p className="text-muted-foreground">00385 91 200-8801</p>
-                </div>
-              </div>
-    
-              <div className="flex items-start">
-                <Mail className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
-                <div>
-                  <p className="font-medium">Email:</p>
-                  <a href="mailto:barbaric.produkt@barbaricprodukt.com" className="text-industrial-blue hover:underline">
-                    barbaric.produkt@barbaricprodukt.com
-                  </a>
-                </div>
-              </div>
-    
-              <div className="flex items-start">
-                <Globe className="h-5 w-5 mr-3 text-industrial-blue mt-0.5" />
-                <div>
-                  <p className="font-medium">Web stranica:</p>
-                  <a
-                    href="http://barbaricprodukt.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-industrial-blue hover:underline"
-                  >
-                    barbaricprodukt.com
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-    
         {/* Kontakt obrazac */}
         <div className="w-full max-w-lg">
           <Card className="bg-gradient-to-br from-white via-gray-50 to-gray-100 border-industrial-blue/10">
@@ -180,7 +120,7 @@ export default function ContactForm() {
               )}
             </CardContent>
           </Card>
-        </div>
+        </div>        
       </div>
     )
 }
