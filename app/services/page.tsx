@@ -7,12 +7,7 @@ export const metadata: Metadata = {
 }
 
 // Define service categories and their items
-const services = [
-  {
-    id: "bravarija",
-    title: "BRAVARIJA",
-    items: [],
-  },
+const services = [  
   {
     id: "rezanje",
     title: "REZANJE",
@@ -40,10 +35,17 @@ const services = [
     ],
   },
   {
-    id: "pjeskarenje",
-    title: "PJESKARENJE",
-    items: [],
-  },
+    id: "softverska-rjesenja",
+    title: "SOFTVERSKA RJEŠENJA",
+    items: [
+      // web, mobilne aplikacije, industrijski softver, automatizacija postrojenja, kuce
+      { id: "web", title: "WEB APLIKACIJE" },
+      { id: "mobilne-aplikacije", title: "MOBILNE APLIKACIJE" },
+      { id: "industrijski-softver", title: "INDUSTRIJSKI SOFTVER" },
+      { id: "automatizacija-postrojenja", title: "AUTOMATIZACIJA POSTROJENJA" },
+      { id: "kuce", title: "KUĆE" },
+    ]
+  },  
   {
     id: "antikorozivna-zastita",
     title: "ANTIKOROZIVNA ZAŠTITA",
@@ -90,6 +92,16 @@ const services = [
   {
     id: "odrzavanje",
     title: "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA",
+    items: [],
+  }, 
+  {
+    id: "pjeskarenje",
+    title: "PJESKARENJE",
+    items: [],
+  }, 
+  {
+    id: "bravarija",
+    title: "BRAVARIJA",
     items: [],
   },
 ]
