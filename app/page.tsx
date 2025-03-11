@@ -206,35 +206,12 @@ const sections: Section[] = [
     subheaders: [
       { 
         id: "oprema-za-more-pontoni", 
-        title: "Pontoni", 
+        title: "Pontoni za sunčanje, katamarani, ribogojilišta, vežovi za čamce", 
         content: `
-          PONTONI ZA SUNČANJE
-          KATAMARANI
-          RIBOGOILIŠTA
-          VEZOVI ZA ČAMCE
-
-          OSNOVNA VELIĆINA PONTONA 2 X 4 M
-
-          MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA
-
-          Plovci 970x620x340 mm
-
+          Osnovna veličina pontona 2 x 4 m, plovci 970x620x340 mm.
           Pontoni su izrađeni od osnovne čelične konstrukcije, vruče cinčani i završno obojeni.
-          Na osnovnu čeličnu konstrukciju se montiraju plastićni plovci velićine 
-          dužina 970 mm, širina 340 i visina 620 mm punjenim zrakom ili pjenom otpornom na upijanje vode.
-          Formiranje velićine pontona se vrši po želji namjene i velićine tako da se po dužini nižu plovci dužine 970 mm te broj redova širine plovka 340 mm. ćineći tako cijelinu željenog pontona.
-          Osnovni model je izrađen u dva reda po 4 plovka koji ćine velićinu 3,9x2 m.
-          tako formirani plovci mogu činiti željeni oblik prema skici ili želji.
-          Veza sa kopnom i međusobno se povezuju gibljivom stazom širine 1, 2 m.
-          
-          Na pontone ugrađujemo 
-          -mehanizme za bicikliranje
-          -jedra
-          -motore za kombinaciju katamarana
-          -komoru pod vodom
-
+          Na pontone ugrađujemo mehanizme za bicikliranje, jedra, motore za kombinaciju katamarana
           Ovom kombinacijom mogu se formirati ribogoilišta.
-          Ukoliko dođe do oštećenja plovka, lako se zamjeni novim.
         `, 
         images: ["https://i.postimg.cc/j5vNB6pB/4.jpg", "https://i.postimg.cc/C1wkvrQj/2.jpg", "https://i.postimg.cc/d02Gjc4s/3.jpg"],    
       },
