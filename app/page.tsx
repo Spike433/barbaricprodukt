@@ -39,13 +39,15 @@ const sections: Section[] = [
         "https://i.postimg.cc/wvk933xd/3.jpg", "https://i.postimg.cc/44LT0Dmw/14.jpg"]
       },
       {     
-        id: "ograde",
-        title: "Ograde za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
+        id: "ogradeIPodovi",
+        title: "Ograde i podne rešetke za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
         content: "Ograde su izdržljive i kvalitetne, te se koriste u raznim industrijama.",
         images: [
           "https://i.postimg.cc/WbdPc5ZV/17.jpg", 
           "https://i.postimg.cc/8PxgpLd6/18.jpg", 
-          "https://i.postimg.cc/FKgMVqMy/20.jpg"]
+          "https://i.postimg.cc/FKgMVqMy/20.jpg",
+          "https://i.postimg.cc/D0Bgxqgw/16.jpg"
+        ]
       }
     ],
   },
