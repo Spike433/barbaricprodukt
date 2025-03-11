@@ -50,25 +50,7 @@ const sections: Section[] = [
         ]
       }
     ],
-  },
-  {
-    id: "strojogradnja",
-    title: "Strojogradnja",
-    content:
-      "Naša strojogradnja obuhvaća proizvodnju strojeva za poljoprivredu, mesnu industriju, te razne druge industrije.",
-    images: ["/placeholder.svg?height=500&width=500"],
-    subheaders: [
-    ],
-  },
-  {
-    id: "ograde",
-    title: "Ograde",
-    content:
-      "Proizvodimo ograde za razne namjene. Naše ograde su kvalitetne i izdržljive, te se koriste u raznim industrijama.",
-    images: ["/placeholder.svg?height=500&width=500"],
-    subheaders: [
-    ],
-  },
+  },  
   {
     id: "aluPvcStolarija",
     title: "Alu i PVC stolarija",
@@ -131,7 +113,6 @@ const sections: Section[] = [
             content: "Visokokvalitetne INOX armature pogodne za industrijsku primjenu. Naša ponuda uključuje igličaste ventile 700 bara, kuglaste slavine, ublaživače udara za manometre, holendere, spojnice, prijelaze, mazalice 700 bara, boce za uzorkovanje 700 bara i nepovratne ventile.",
             images: ["https://i.postimg.cc/L5bPqvDL/2.jpg"]
         },    
-        // ventili
         {
           id: "ventili",
           title: "Ventili",
@@ -258,11 +239,6 @@ const sections: Section[] = [
         images: ["https://i.postimg.cc/j5vNB6pB/4.jpg", "https://i.postimg.cc/C1wkvrQj/2.jpg", "https://i.postimg.cc/d02Gjc4s/3.jpg"],    
       },
       { 
-        id: "oprema-za-more-staze", 
-        title: "Staze", 
-        content: "Staze su izdržljive i kvalitetne, te se koriste u raznim industrijama." 
-      },
-      { 
         id: "oprema-za-more-kajak", 
         title: "Kajak", 
         content: "Kajak je izdržljiv i kvalitetan, te se koristi u raznim industrijama.", 
@@ -275,31 +251,46 @@ const sections: Section[] = [
     title: "Strojevi za poljoprivredu i voćarstvo",
     content:
       "Proizvodimo strojeve za poljoprivredu i voćarstvo, kao što su prskalice i atomizeri.",
-    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
-      { id: "strojevi-za-poljoprivredu-i-vocarstvo-prskalice", title: "Prskalice", content: "Prskalice su izdržljive i kvalitetne, te se koriste u raznim industrijama." },
-      { id: "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri", title: "Atomizeri", content: "Atomizeri su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },      
-    ],
-  },
-  {
-    id: "opremaZaMesnuIndustriju",
-    title: "Oprema za mesnu industriju",
-    content:
-      "Proizvodimo opremu za mesnu industriju, kao što su mesoreznice, mljevenice, te razne druge proizvode.",
-    images: ["/placeholder.svg?height=500&width=500"],
-    subheaders: [],
-  },
+      { id: "strojevi-za-poljoprivredu-i-vocarstvo-prskalice", title: "Rezeorvari za prskalice i atomizere", 
+        content: "Prskalice su izdržljive i kvalitetne, te se koriste u raznim industrijama. 400L,600L",
+        images:["https://i.postimg.cc/8sQdf5kT/12.jpg","https://i.postimg.cc/PfLBDRf7/13.jpg"]
+    },
+    { id: "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri", title: "Atomizeri", content: "Atomizeri su izdržljivi i kvalitetni, te se koriste u raznim industrijama.", 
+      images: ["https://i.postimg.cc/8sQdf5kT/12.jpg", "https://i.postimg.cc/YqYZnLWf/14.jpg", "https://i.postimg.cc/dVFXzQRM/15.jpg",]
+    },    
+    {
+      id: "pumpnaStanica",
+      title: "Pumpna stanica",
+      content: "Pumpna stanica za navodnjavanje, prskanje i zalijevanje, sa pumpom, motorom, cijevima i raspršivačima. Spremnik sa 1000L s pumpom i mjeračem protoka.",
+      images: ["https://i.postimg.cc/PxCFmCHD/21.jpg", "https://i.postimg.cc/3NpSczdJ/22.jpg"]
+    },
+    {
+      id: "kacePosudeZaMeso",
+      title: "Kace, posude za meso, vino",
+      content: "Kace i posude za meso različitih kapaciteta, 200, 310, 520, 780 litara, izrađene od inoxa. Duzina 800mmx sirina 430mm x visina 250mm. Posude za vino velcine 60, 100, 200, 300L.",
+      images: ["https://i.postimg.cc/wT8bmxGt/29.jpg", "https://i.postimg.cc/cJHDSvrz/32.jpg", "https://i.postimg.cc/0yZtFY2m/30.jpg"]
+    },
+    //rezervoar
+    {
+      id: "rezervoar",
+      title: "Rezervoar",
+      content: "Rezervoar za vodu, gorivo, kemikalije, kapaciteta 1000 litara, izrađen plastike.",
+      images: ["https://i.postimg.cc/7ZqsKsDw/31.jpg"]
+    }
+    ]
+  },      
+      
   {
     id: "ekoOpremaKomunalna",
     title: "Eko oprema komunalna",
     content: "Proizvodimo eko opremu komunalnu, kao što su kontejneri, separatori, tankvane, te razne druge proizvode.",
-    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
         {
             id: "eko-oprema-komunalna-kontejneri",
-            title: "Komunalni, rolo kontejneri",
+            title: "Komunalni, rolo kontejneri, kante za smeće",
             content: "Otvoreni i zatvoreni kontejneri od 5, 7 i 10 m³, kao i plastične kante za smeće kapaciteta 60, 100, 200 i 300 litara.",
-            images: ["https://i.postimg.cc/GpGWhmrx/9.jpg", "https://i.postimg.cc/k4FPwXpg/1.jpg", "https://i.postimg.cc/Gt7NSBJd/13.jpg"]            
+            images: ["https://i.postimg.cc/Gt7NSBJd/13.jpg", "https://i.postimg.cc/CKPQBj3Y/20.jpg", "https://i.postimg.cc/GpGWhmrx/9.jpg"]            
         },
         {
             id: "kontejner-elektronski-otpad",
@@ -325,6 +316,18 @@ const sections: Section[] = [
           content: "Tankvane različitih vrsta, uključujući tankvane sa kotačima za jednostavan transport, kao i regale za bačve sa tankvanom, dostupne u otvorenim i zatvorenim verzijama. Regali sa pumpom omogućuju efikasno punjenje i doziranje, dok regali sa tankvanom podržavaju punjenje, pražnjenje i precizno doziranje tekućina.",
           images: ["https://i.postimg.cc/Kj0SSpFX/3.jpg", "https://i.postimg.cc/2SbpMxKJ/5.jpg", "https://i.postimg.cc/5NkdsrnL/8.jpg"
             ,"https://i.postimg.cc/K86X2MXY/7.jpg", "https://i.postimg.cc/vTsHHNpc/15.jpg"]
+        },
+        {
+          id: "plasticne-barijere",
+          title: "Plastične barijere",
+          content: "Plastične barijere za sigurnost i kontrolu prometa, dostupne u različitim bojama i dimenzijama. Barijere su izdržljive i otporne na udarce, te se koriste u raznim industrijskim i komercijalnim okruženjima.",
+          images: ["https://i.postimg.cc/RCj2LLNZ/16.jpg", "https://i.postimg.cc/DwcDFV5S/17.jpg", "https://i.postimg.cc/SK3GbD0X/45.jpg"]
+        },        
+        {
+          id: "sahte-kanalizacija",
+          title: "Sahte za kanalizaciju, septičke jame, pjeskolovi, mastolovi",
+          content: "Sahte za kanalizaciju, septičke jame, pjeskolovi i mastolovi različitih dimenzija i oblika, izrađeni od visokokvalitetnih materijala. Sahte su otporne na koroziju i habanje, te se koriste u raznim industrijskim i komercijalnim okruženjima.",
+          images: ["https://i.postimg.cc/MGKLpsrd/18.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg"]
         }
     ]
   },
@@ -333,11 +336,14 @@ const sections: Section[] = [
     title: "Urbana oprema",
     content:
       "Proizvodimo urbnu opremu, kao što su klupe i koševi za parkove, kandelaberi, stajališta autobusa, te razne druge proizvode.",
-    images: ["/placeholder.svg?height=500&width=500"],
     subheaders: [
-      { id: "urbana-oprema-klupe-i-kosevi-za-parkove", title: "Klupe i koševi za parkove", content: "Klupe i koševi za parkove su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
-      { id: "urbana-oprema-kandelaberi", title: "Kandelaberi", content: "Kandelaberi su izdržljivi i kvalitetni, te se koriste u raznim industrijama." },
-      { id: "urbana-oprema-stajalista-autobusa", title: "Stajališta autobusa", content: "Stajališta autobusa su izdržljiva i kvalitetna, te se koriste u raznim industrijama." },      
+      { id: "urbana-oprema-klupe-i-kosevi-za-parkove", title: "Klupe i koševi za parkove", content: "Klupe i koševi za parkove su izdržljivi i kvalitetni, te se koriste u raznim industrijama.",
+      images:["https://i.postimg.cc/L4yjXF9r/0.jpg", "https://i.postimg.cc/GhVYFPsK/1.jpg", "https://i.postimg.cc/fTJmSqkk/2.jpg"]
+    },
+      { id: "urbana-oprema-kandelaberi", 
+        title: "Kandelaberi, stalci za bicikle", 
+        content: "Kandelaberi su izdržljivi i kvalitetni, te se koriste u raznim industrijama.",
+        images:["https://i.postimg.cc/8CV6314r/5.jpg", "https://i.postimg.cc/MT6j6dh6/7.jpg"] },
     ],
   },
 ]
