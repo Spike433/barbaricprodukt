@@ -374,19 +374,19 @@ export default function Home() {
               >
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
                 <div className="space-y-4">
-                  <p>{section.content}</p>                                    
+                  <p className="ml-4">{section.content}</p>                                    
                   {section?.subheaders?.map((subheader) => (
                     <div
                       key={subheader.id}
                       id={subheader.id}
-                      className="mt-8 mb-6 scroll-mt-24 p-9 rounded-lg card-gradient"
+                      className="mt-8 mb-6 scroll-mt-24 p-9"
                     >
                       <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
-                      <p>
+                      <p className="ml-4 mb-2">
                         {subheader.content}
                       </p>  
                       {subheader?.images && (
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap ml-2">
                       {subheader.images.map((image, index) => (
                         <div key={index} className="w-1/3 p-2">
                           <Image
