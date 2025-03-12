@@ -39,6 +39,12 @@ const sections: Section[] = [
             title: "Ograde i podne rešetke za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
             content: "Ograde i podne rešetke izrađene su od izdržljivih materijala koji osiguravaju sigurnost i dugotrajnost. Posebno dizajnirane rešetkaste zaštite pružaju dodatnu sigurnost prozorima i vratima, a istovremeno omogućuju dobru ventilaciju.",
             images: ["https://i.postimg.cc/WbdPc5ZV/17.jpg", "https://i.postimg.cc/8PxgpLd6/18.jpg", "https://i.postimg.cc/FKgMVqMy/20.jpg", "https://i.postimg.cc/D0Bgxqgw/16.jpg"]
+        },
+        {
+          id: "gumirani-celicni-spremnici",
+          title: "Gumirani čelični spremnici za transport kiselina i lužina",
+          content: "Osiguravaju sigurnost i pouzdanost u industrijskim procesima. Izrađeni od visokokvalitetnih materijala, prilagođeni su zahtjevima specifičnih primjena.",
+          images: ["https://i.postimg.cc/hjDxprSQ/3.jpg", "https://i.postimg.cc/B6mFyK6Y/4.jpg", "https://i.postimg.cc/KcsLDBC4/7.jpg"]
         }
     ]
   },
@@ -250,6 +256,26 @@ const sections: Section[] = [
             "content": "Šahte, septičke jame, pjeskolovi i mastolovi izrađeni su od visokokvalitetnih materijala otpornih na koroziju i ekstremne uvjete. Različitih dimenzija i oblika, prilagođeni su za široku primjenu u komunalnoj infrastrukturi i industriji.",
             "images": ["https://i.postimg.cc/yd3vD2hX/37.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg", "https://i.postimg.cc/MGKLpsrd/18.jpg"]
         }
+
+    ]
+  },
+  {
+    id: "gumirani-celicni-elementi",
+    title: "Gumirani i plastificirani čelični elementi za transport kiselina i lužina",
+    content: "Gumirani i plastificirani čelični elementi osiguravaju otpornost na korozivne tvari i ekstremne uvjete. Idealni su za transport kiselina i lužina u industrijskim postrojenjima, nudeći dugotrajnu zaštitu i pouzdanost.",
+    subheaders: [
+      {
+        id: "ventili",
+        title: "Ventili",
+        content: "Izrađeni od visokokvalitetnih materijala, osiguravaju dugotrajnost i otpornost na koroziju.",
+        images: ["https://i.postimg.cc/hGbTLwqq/5.jpg", "https://i.postimg.cc/NFLXwj2g/6.jpg"]
+      },
+      {
+        id: "cjevovodiISpojevi",
+        title: "Cjevovodi i spojevi",
+        content: "Gumirane cijevi, koljena i redukcioni elementi osiguravaju siguran transport kiselina i lužina u industrijskim postrojenjima. Prilagođeni su visokim temperaturama i agresivnim tvarima, osiguravajući pouzdanost i dugotrajnost sistema.",
+        images: ["https://i.postimg.cc/zf1TRN6j/2.jpg"]        
+      }
     ]
   },
   {
