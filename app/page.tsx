@@ -8,14 +8,13 @@ const sections: Section[] = [
   {
     id: "celicneKonstrukcije",
     title: "Čelične konstrukcije",
-    content: "Proizvodimo visokokvalitetne čelične konstrukcije prilagođene različitim industrijama. Naši proizvodi osiguravaju dugotrajnost, sigurnost i otpornost u zahtjevnim uvjetima.",
-    images: ["https://i.postimg.cc/FK5vZ074/10.jpg", "https://i.postimg.cc/YS6HyjWm/11.jpg"],
+    content: "Proizvodimo visokokvalitetne čelične konstrukcije prilagođene različitim industrijama. Naši proizvodi osiguravaju dugotrajnost, sigurnost i otpornost u zahtjevnim uvjetima.",    
     subheaders: [
-        {
+      {
             id: "montazne-hale",
             title: "Montažne hale, hangari i garaže",
             content: "Montažne hale, hangari i garaže izrađeni su od čvrstih i otpornih materijala, prilagođeni različitim klimatskim uvjetima. Njihova modularna konstrukcija omogućava brzu montažu i prilagodbu specifičnim potrebama korisnika.",
-            images: ["https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg"]
+            images: ["https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg", "https://i.postimg.cc/FK5vZ074/10.jpg", "https://i.postimg.cc/YS6HyjWm/11.jpg"]
         },
         {
             id: "kuce",
@@ -334,7 +333,7 @@ export default function Home() {
         <section className="mb-16 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gradient">Barbarić Produkt d.o.o</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-             za proizvodnju, trgovinu i usluge          
+             za proizvodnju, trgovinu, usluge obrade metala i plastike        
           </p>
         </section>        
 
@@ -349,25 +348,7 @@ export default function Home() {
               >
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
                 <div className="space-y-4">
-                  <p>{section.content}</p>                  
-                  {section?.images && (
-                    <div className="flex flex-wrap">
-                      {section.images.map((image, index) => (
-                        <div key={index} className="w-1/3 p-2">
-                          <Image
-                            src={image}
-                            width={200}
-                            height={200}
-                            alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                            className="object-cover hover:scale-105 transition-transform duration-500"
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL={generateBlurPlaceholder(400, 400)}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <p>{section.content}</p>                                    
                   {section?.subheaders?.map((subheader) => (
                     <div
                       key={subheader.id}
