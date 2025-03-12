@@ -381,7 +381,7 @@ export default function Home() {
                       id={subheader.id}
                       className="mt-8 mb-6 scroll-mt-24 p-9"
                     >
-                      <h3 className="text-xl font-medium mb-3">{subheader.title}</h3>
+                      <h3 className="text-xl font-medium mb-3 text-industrial-blue">{subheader.title}</h3>
                       <p className="ml-4 mb-2">
                         {subheader.content}
                       </p>  
