@@ -26,7 +26,7 @@ const sections: Section[] = [
             id: "panoramsko-dizalo",
             title: "Panoramsko dizalo, paviljon",
             content: "Panoramska dizala nude moderan dizajn i vrhunsku funkcionalnost, idealna za poslovne i stambene objekte. Paviljoni su estetski privlačni i prilagodljivi različitim namjenama, od izložbenih prostora do turističkih objekata.",
-            images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/QMkTZRYY/6.jpg"]
+            images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/LsfZHWs1/211.jpg"]
         },
         {
             id: "krovista",
