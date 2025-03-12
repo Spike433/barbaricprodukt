@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-300 to-red-300 text-white py-8 shadow-lg">
+    <footer className="bg-gradient-to-r from-blue-200 to-red-100 text-black py-8 shadow-lg">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Email & Website */}
         <div>

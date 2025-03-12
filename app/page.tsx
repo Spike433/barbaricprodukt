@@ -101,14 +101,8 @@ const sections: Section[] = [
   {
       "id": "industrijskaOprema",
       "title": "Industrijska oprema",
-      "content": "Razvijamo i isporučujemo visokokvalitetnu industrijsku opremu, uključujući ventile, filtere, spojke, rezervoare i prilagođena rješenja za specijalizirane industrijske procese.",
-      "subheaders": [        
-            {
-              "id": "generalniPopravak",
-              "title": "Generalni popravak",
-              "content": "Nudimo kompletne usluge generalnog popravka i rekonstrukcije industrijske opreme, uključujući ventile, izmjenjivače topline i bušotinske zasune. Također pružamo specijalizirane usluge vatrozaštite spremnika nafte i rehabilitaciju cjevovoda metodom PE uvlačenja.",
-              "images": []
-          },  
+      "content": "Razvijamo i isporučujemo visokokvalitetnu industrijsku opremu, uključujući ventile, filtere, spojke, rezervoare i prilagođena rješenja za specijalizirane industrijske procese. Nudimo kompletne usluge generalnog popravka i rekonstrukcije industrijske opreme, uključujući ventile, izmjenjivače topline i bušotinske zasune. Također pružamo specijalizirane usluge vatrozaštite spremnika nafte i rehabilitaciju cjevovoda metodom PE uvlačenja.",
+      "subheaders": [                      
           {
               "id": "inoxArmature",
               "title": "INOX armature",
@@ -382,7 +376,7 @@ export default function Home() {
               <section
                 key={section.id}
                 id={section.id}
-                className="mb-16 scroll-mt-24 rounded-xl p-6 transition-all duration-300 hover:shadow-md"
+                className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
               >
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
                 <div className="space-y-4">
@@ -398,9 +392,9 @@ export default function Home() {
                         {subheader.content}
                       </p>  
                       {subheader?.images && (
-                    <div className="flex flex-wrap ml-2">
+                    <div className="flex flex-wrap p-4">
                       {subheader.images.map((image, index) => (
-                        <div key={index} className="w-1/3 p-2">
+                        <div key={index} className="w-1/3 p-1">
                           <Image
                             src={image}
                             width={300}
