@@ -114,7 +114,7 @@ export default function ServicesPage() {
 
       <div className="container relative mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-industrial-blue via-primary to-industrial-red bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-industrial-blue via-primary to-industrial-red bg-clip-text text-transparent leading-tight p-1">
             Usluge
           </h1>
 
