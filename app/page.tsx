@@ -211,11 +211,11 @@ const sections: Section[] = [
             "id": "kacePosudeZaMeso",
             "title": "Kace, posude za meso i vino",
             "content": "Izrađene od visokokvalitetnog inoxa, naše kace i posude osiguravaju dugotrajnost i higijensku obradu mesa, vina i drugih namirnica. Dostupne u različitim kapacitetima (200L, 310L, 520L, 780L), prilagođene su prehrambenoj industriji i kućnoj upotrebi.",
-            "images": ["https://i.postimg.cc/wT8bmxGt/29.jpg", "https://i.postimg.cc/cJHDSvrz/32.jpg", "https://i.postimg.cc/0yZtFY2m/30.jpg"]
+            "images": ["https://i.postimg.cc/cJHDSvrz/32.jpg","https://i.postimg.cc/wT8bmxGt/29.jpg"]
         },
         {
             "id": "rezervoar",
-            "title": "Rezervoar",
+            "title": "Plastični rezervoar",
             "content": "Praktični rezervoari kapaciteta 1000L izrađeni su od izdržljive plastike, idealni za skladištenje vode, goriva ili kemikalija. Njihova robustna konstrukcija omogućava siguran transport i dugoročnu upotrebu u poljoprivredi i industriji.",
             "images": ["https://i.postimg.cc/7ZqsKsDw/31.jpg"]
         }
@@ -248,7 +248,7 @@ const sections: Section[] = [
             "id": "rezervoari-otpadno-ulje",
             "title": "Rezervoari za otpadno ulje i tehnološku kanalizaciju",
             "content": "Plastični rezervoari sa duplom stijenkom omogućuju sigurno skladištenje otpadnog ulja u kapacitetima do 20 m³. Također nudimo rezervoare od 35 m³ i tankvane za otpadno ulje (1.000L – 20.000L) prilagođene industrijskim potrebama.",
-            "images": ["https://i.postimg.cc/RFT2KpW3/11.jpg", "https://i.postimg.cc/d1MJ4fQ4/23.jpg", "https://i.postimg.cc/pVCtFrj0/4.jpg", "https://i.postimg.cc/VvLpR9tK/12.jpg"]
+            "images": ["https://i.postimg.cc/d1MJ4fQ4/23.jpg", "https://i.postimg.cc/pVCtFrj0/4.jpg", "https://i.postimg.cc/VvLpR9tK/12.jpg"]
         },
         {
             "id": "tankvane-regali",
@@ -260,7 +260,7 @@ const sections: Section[] = [
             "id": "plasticne-barijere",
             "title": "Plastične barijere",
             "content": "Robusne plastične barijere osiguravaju sigurnost i kontrolu prometa, dostupne u različitim bojama i dimenzijama. Otporne na udarce i vremenske uvjete, idealne su za upotrebu na gradilištima, javnim površinama i industrijskim postrojenjima.",
-            "images": ["https://i.postimg.cc/RCj2LLNZ/16.jpg", "https://i.postimg.cc/DwcDFV5S/17.jpg", "https://i.postimg.cc/SK3GbD0X/45.jpg"]
+            "images": ["https://i.postimg.cc/RCj2LLNZ/16.jpg", "https://i.postimg.cc/DwcDFV5S/17.jpg"]
         },
         {
             "id": "sahte-kanalizacija",
@@ -280,7 +280,7 @@ const sections: Section[] = [
         id: "ventili",
         title: "Ventili",
         content: "Izrađeni od visokokvalitetnih materijala, osiguravaju dugotrajnost i otpornost na koroziju.",
-        images: ["https://i.postimg.cc/hGbTLwqq/5.jpg", "https://i.postimg.cc/NFLXwj2g/6.jpg"]
+        images: ["https://i.postimg.cc/NFLXwj2g/6.jpg", "https://i.postimg.cc/hGbTLwqq/5.jpg"]
       },
       {
         id: "cjevovodiISpojevi",
@@ -403,8 +403,8 @@ export default function Home() {
                         <div key={index} className="w-1/3 p-2">
                           <Image
                             src={image}
-                            width={400}
-                            height={400}
+                            width={300}
+                            height={300}
                             alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
                             className="object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
                             loading="lazy"
