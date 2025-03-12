@@ -52,7 +52,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <div className="pt-16">{children}</div>
-        <Footer />
       </body>
     </html>
   )
@@ -61,4 +60,3 @@ export default function RootLayout({
 
 
 import './globals.css'
-import Footer from "@/components/footer"
