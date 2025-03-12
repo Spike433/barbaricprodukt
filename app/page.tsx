@@ -20,7 +20,7 @@ const sections: Section[] = [
             id: "kuce",
             title: "Mobilne kuće, spremišta (zapaljivih tekućina, boca, boja i lakova), stambeni i industrijski objekti",
             content: "Mobilne kuće i industrijska spremišta dizajnirana su za sigurnu pohranu i udoban boravak. Konstrukcije osiguravaju zaštitu od vremenskih uvjeta i zadovoljavaju visoke standarde sigurnosti.",
-            images: ["https://i.postimg.cc/Pxkkm8K7/30.jpg", "https://i.postimg.cc/pd52Qvvm/22.jpg", "https://i.postimg.cc/136hf4MY/21.jpg"]
+            images: ["https://i.postimg.cc/136hf4MY/21.jpg", "https://i.postimg.cc/Pxkkm8K7/30.jpg", "https://i.postimg.cc/pd52Qvvm/22.jpg"]
         },
         {
             id: "panoramsko-dizalo",
@@ -102,7 +102,13 @@ const sections: Section[] = [
       "id": "industrijskaOprema",
       "title": "Industrijska oprema",
       "content": "Razvijamo i isporučujemo visokokvalitetnu industrijsku opremu, uključujući ventile, filtere, spojke, rezervoare i prilagođena rješenja za specijalizirane industrijske procese.",
-      "subheaders": [
+      "subheaders": [        
+            {
+              "id": "generalniPopravak",
+              "title": "Generalni popravak",
+              "content": "Nudimo kompletne usluge generalnog popravka i rekonstrukcije industrijske opreme, uključujući ventile, izmjenjivače topline i bušotinske zasune. Također pružamo specijalizirane usluge vatrozaštite spremnika nafte i rehabilitaciju cjevovoda metodom PE uvlačenja.",
+              "images": []
+          },  
           {
               "id": "inoxArmature",
               "title": "INOX armature",
@@ -125,14 +131,8 @@ const sections: Section[] = [
               "id": "spojkeAktuatori",
               "title": "Spojke i aktuatori",
               "content": "Naše industrijske spojke i aktuatori osiguravaju vrhunsku kontrolu i fleksibilnost u radu mehaničkih sistema. Periflex spojke smanjuju vibracije i povećavaju pouzdanost, dok precizni aktuatori omogućuju automatizirano upravljanje industrijskim procesima.",
-              "images": ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg", "https://i.postimg.cc/65bcRfqH/19.jpg"]
-          },
-          {
-              "id": "generalniPopravak",
-              "title": "Generalni popravak",
-              "content": "Nudimo kompletne usluge generalnog popravka i rekonstrukcije industrijske opreme, uključujući ventile, izmjenjivače topline i bušotinske zasune. Također pružamo specijalizirane usluge vatrozaštite spremnika nafte i rehabilitaciju cjevovoda metodom PE uvlačenja.",
-              "images": []
-          },      
+              "images": ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg"]
+          },    
           {
               "id": "cijevniSustavi",
               "title": "Cijevni sustavi",
@@ -140,10 +140,22 @@ const sections: Section[] = [
               "images": ["https://i.postimg.cc/T245J7jW/12.jpg", "https://i.postimg.cc/nzdj5T6g/10.jpg"]
           },
           {
-              "id": "rezervoari",
-              "title": "Rezervoari",
+              "id": "rezervoariZaKiseline",
+              "title": "Filterska jedinica za otežanu vodu, anionski i katjonski izmjenjivači, rezervoari za kiseline i lužine",
               "content": "Proizvodimo rezervoare različitih veličina i namjena, izrađene od vrhunskih materijala za sigurnu pohranu tekućina i plinova u industrijskim postrojenjima.",
               "images": ["https://i.postimg.cc/90WbPxyk/14.jpg", "https://i.postimg.cc/dtVnLxsk/17.jpg", "https://i.postimg.cc/vZ1zvx6G/18.jpg"]
+          },
+          {
+            "id": "rashladnaJedinica",
+            "title": "Rashladne jedinice",
+            "content": "Osiguravaju efikasno hlađenje i održavanje optimalnih temperatura u industrijskim postrojenjima. Naši proizvodi pružaju pouzdan rad i dugotrajnost, uz mogućnost prilagodbe specifičnim zahtjevima korisnika.",
+            "images": ["https://i.postimg.cc/sXJ92pb4/23.jpg"]
+          }, // kranske sine, macka krana, dijelovi macke krana, gumeno  celicni transporer
+          {
+            "id": "kranskeSine",
+            "title": "Kranske šine, mačka krana, dijelovi mačke krana",
+            "content": "Nudimo visokokvalitetne kranske šine, mačke krana i dijelove mačke krana za sve vaše potrebe.",
+            "images": ["https://i.postimg.cc/sXJ92pb4/23.jpg", "https://i.postimg.cc/zBNF5d2f/20.jpg", "https://i.postimg.cc/L8rVQ4zL/21.jpg"]
           },
           {
               "id": "postrojenja",
@@ -187,7 +199,7 @@ const sections: Section[] = [
             "id": "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri",
             "title": "Atomizeri",
             "content": "Visokoučinkoviti atomizeri osiguravaju ravnomjernu distribuciju tekućine i optimalnu zaštitu usjeva. Zahvaljujući snažnim komponentama i preciznim mlaznicama, prilagođeni su različitim tipovima biljaka i terena.",
-            "images": ["https://i.postimg.cc/8sQdf5kT/12.jpg", "https://i.postimg.cc/YqYZnLWf/14.jpg", "https://i.postimg.cc/dVFXzQRM/15.jpg"]
+            "images": ["https://i.postimg.cc/YqYZnLWf/14.jpg", "https://i.postimg.cc/dVFXzQRM/15.jpg"]
         },
         {
             "id": "pumpnaStanica",
