@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react"
+import { Circle } from "lucide-react" // If available, otherwise use HTML
 
 type SubItem = {
   id: string
@@ -26,7 +26,8 @@ export default function ServiceCard({ title, items }: ServiceCardProps) {
           {items.map((item) => (
             <li key={item.id}>
               <div className="flex items-start">
-                <ChevronRight className="h-5 w-5 text-industrial-blue shrink-0 mt-0.5" />
+                {/* Using HTML circle */}
+                <Circle className="h-3 w-3 text-industrial-blue shrink-0 mt-1 mr-2" />
                 <div>
                   <p className="font-medium">{item.title}</p>
                   {item.subitems && item.subitems.length > 0 && (
@@ -46,11 +47,10 @@ export default function ServiceCard({ title, items }: ServiceCardProps) {
         </ul>
       ) : (
         <div className="flex items-center text-muted-foreground">
-          <ChevronRight className="h-5 w-5 text-industrial-blue shrink-0" />
+          <Circle className="h-3 w-3 text-industrial-blue shrink-0 mr-2" />
           <span>Opće usluge</span>
         </div>
       )}
     </div>
   )
 }
-

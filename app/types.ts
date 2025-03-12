@@ -4,6 +4,10 @@ export type Subheader = {
     content: string
     images?: string[]
   }
+
+  export type Picture = {
+    size: string,
+  }
   
   export type Section = {
     id: string
