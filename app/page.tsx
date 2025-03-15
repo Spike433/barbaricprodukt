@@ -342,7 +342,7 @@ export default function Home() {
               "@type": "Organization",
               name: "Barbarić Produkt",
               url: "https://www.barbaricprodukt.hr/",
-              logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SIkE1iKtjUIZEdiNFuJ5AcRdJA8HlJ.png",
+              logo: "https://i.postimg.cc/HsmzZWqq/logo.png",
               description: "Barbarić Produkt d.o.o. za proizvodnju, trgovinu i usluge",
               address: {
                 "@type": "PostalAddress",

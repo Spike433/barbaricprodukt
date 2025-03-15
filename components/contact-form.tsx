@@ -210,19 +210,15 @@ export default function ContactForm() {
               </CardHeader>
               <CardContent className="space-y-6 flex-grow">
                 {/* Company Image */}
-                <div className="rounded-lg overflow-hidden shadow-sm h-[120px] relative mb-6">
+                <div className="rounded-lg overflow-hidden shadow-sm h-[120px] relative mb-2 flex items-center justify-center">
                   <Image
-                    src="/placeholder.svg?height=400&width=600&text=Barbarić Produkt"
+                    src="https://i.postimg.cc/HsmzZWqq/logo.png"
                     alt="Barbarić Produkt zgrada"
-                    fill
+                    width={200}
+                    height={200}
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
-                    <div className="p-3 text-white">
-                      <h3 className="font-bold text-lg">Barbarić Produkt d.o.o.</h3>
-                      <p className="text-sm text-gray-200">Proizvodnja, trgovina i usluge</p>
-                    </div>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent flex items-end"></div>
                 </div>
 
                 <div className="flex items-start">
