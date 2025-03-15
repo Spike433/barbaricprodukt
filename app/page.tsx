@@ -472,18 +472,7 @@ export default function Home() {
             }),
           }}
         />
-
-        <Link href="/" className="flex items-center">
-              <Image
-                src="https://i.postimg.cc/HsmzZWqq/logo.png"
-                alt="Barbarić Produkt Logo"
-                width={300}
-                height={300}
-                className="mb-6 mt-6"
-                priority
-              />            
-          </Link>        
-
+              
         <div className="flex flex-col lg:flex-row">
           {/* Main content - Server-side rendered for SEO */}
           <div className="w-full lg:w-3/4 pr-0 lg:pr-8">
