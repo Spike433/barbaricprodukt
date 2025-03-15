@@ -340,7 +340,7 @@ const sections: Section[] = [
         },
         {
             "id": "vodomjerna-okna-sahte",
-            "title": "Vodomjerna okna, sahte",
+            "title": "Vodomjerna okna, šahte",
             "content": "",
             "images": ["https://i.postimg.cc/jdBNVS1q/10.jpg", "https://i.postimg.cc/s2rhX0yt/11.jpg"]
         },
