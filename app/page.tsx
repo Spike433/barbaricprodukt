@@ -20,13 +20,13 @@ const sections: Section[] = [
         {
             id: "kuce",
             title: "Mobilne kuće",
-            content: "Mobilne kuće i industrijska spremišta dizajnirana su za sigurnu pohranu i udoban boravak. Konstrukcije osiguravaju zaštitu od vremenskih uvjeta i zadovoljavaju visoke standarde sigurnosti.",
+            content: "",
             images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
         },
         {
             id: "panoramsko-dizalo",
             title: "Panoramsko dizalo, paviljon",
-            content: "Panoramska dizala nude moderan dizajn i vrhunsku funkcionalnost, idealna za poslovne i stambene objekte. Paviljoni su estetski privlačni i prilagodljivi različitim namjenama, od izložbenih prostora do turističkih objekata.",
+            content: "",
             images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/LsfZHWs1/211.jpg"]
         },
         {
@@ -53,13 +53,39 @@ const sections: Section[] = [
             title: "Podne rešetke",
             content: "",
             images: ["https://i.postimg.cc/D0Bgxqgw/16.jpg"]
+        }
+    ]
+  },
+  {
+    id: "gumiraniIplastificiraniProizvodi",    
+    title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
+    content: "Ovi proizvodi pružaju izvanrednu otpornost na koroziju i abraziju, čineći ih idealnim za industrijske procese koji zahtijevaju visoke standarde zaštite i dugovječnosti. Naša rješenja jamče dugotrajan rad, pouzdanost i sigurnost u uvjetima agresivnih kemikalija.",    
+    subheaders: [      
+        {
+          id: "gumirani-membranski-ventili",
+          title: "Gumirani membranski, nepovratni ventili",
+          content: "",
+          images: ["https://i.postimg.cc/hGbTLwqq/5.jpg", "https://i.postimg.cc/NFLXwj2g/6.jpg"]
         },
         {
-          id: "gumirani-celicni-spremnici",
-          title: "Gumirani čelični spremnici za transport kiselina i lužina",
-          content: "Osiguravaju sigurnost i pouzdanost u industrijskim procesima. Izrađeni od visokokvalitetnih materijala, prilagođeni su zahtjevima specifičnih primjena.",
-          images: ["https://i.postimg.cc/hjDxprSQ/3.jpg", "https://i.postimg.cc/B6mFyK6Y/4.jpg", "https://i.postimg.cc/KcsLDBC4/7.jpg"]
+          id: "gumirane-cijevi",
+          title: "Gumirane cijevi, koljena 90°, 45°, redukcioni elementi",
+          content: "",
+          images: ["https://i.postimg.cc/zf1TRN6j/2.jpg"]
+        },        
+        {
+          id: "gumirani-celikni-spremnici",
+          title: "Gumirani čelični spremnici",
+          content: "",
+          images: ["https://i.postimg.cc/B6mFyK6Y/4.jpg", "https://i.postimg.cc/hjDxprSQ/3.jpg"]
+        },
+        {
+          id: "gumirani-celikni-anionski-i-kationski-izmjenjivaci",
+          title: "Gumirani čelični anionski i kationski izmjenjivači",
+          content: "",
+          images: ["https://i.postimg.cc/4yM94Rpp/1.jpg", "https://i.postimg.cc/KcsLDBC4/7.jpg"]
         }
+
     ]
   },
   {
@@ -76,21 +102,21 @@ const sections: Section[] = [
         { 
           id: "podizneRampe", 
           title: "Podizne rampe", 
-          content: "Izrađujemo podizne rampe koje omogućuju nesmetan i siguran transport tereta u skladištima, industrijskim pogonima i logističkim centrima. Naše rampe su robusne, prilagodljive i jednostavne za integraciju u postojeće sisteme.", 
+          content: "", 
           images: ["https://i.postimg.cc/m2ZxRMXb/6.jpg"] 
         },
         { 
-          id: "prozori", 
-          title: "Staklene fasade, prozori", 
-          content: "Naše staklene fasade donose elegantan izgled i vrhunsku izolaciju, prilagođene savremenim arhitektonskim zahtjevima. Proizvodimo aluminijske i PVC prozore različitih dimenzija, s fokusom na dugovječnost i energetsku efikasnost.", 
-          images: ["https://i.postimg.cc/JnwVW2gg/3.jpg", "https://i.postimg.cc/WpwRQS7W/5.jpg"] 
-        },
-        { 
-          id: "zimskiVrtovi", 
-          title: "Zimski vrtovi", 
-          content: "Kreiramo zimske vrtove koji proširuju vaš životni prostor i omogućuju uživanje u prirodi tokom cijele godine. Naši sistemi su izrađeni od vrhunskih materijala, osiguravajući odličnu izolaciju i otpornost na vremenske uvjete.", 
-          images: ["https://i.postimg.cc/brTKkNJc/1.jpg"] 
-        }
+          id: "fasade", 
+          title: "Staklene fasade", 
+          content: "", 
+          images: ["https://i.postimg.cc/WpwRQS7W/5.jpg"] 
+        },                 
+        {
+          id: "prozori",
+          title: "Prozori, staklene stijene, fasade od panela",
+          content: "",
+          images: ["https://i.postimg.cc/JnwVW2gg/3.jpg"]
+        },        
     ]
   },
   {
@@ -125,40 +151,100 @@ const sections: Section[] = [
           },    
           {
               "id": "ventili",
-              "title": "Ventili",
-              "content": "Proizvodimo širok asortiman industrijskih ventila dizajniranih za visoke tlakove i specijalizirane primjene. Naša ponuda uključuje leptir, kuglaste, igličaste, nepovratne i sigurnosne ventile, kao i napredne automatski upravljane INOX ventile do 1500 mm, prilagođene specifičnim potrebama industrije.",
-              "images": ["https://i.postimg.cc/Zn788Jb9/25.jpg", "https://i.postimg.cc/CL9DSPzV/5.jpg", "https://i.postimg.cc/RZftF7HJ/6.jpg"]
+              "title": "Inox leptir ventili, automatski upravljan",
+              "content": "",
+              "images": ["https://i.postimg.cc/Zn788Jb9/25.jpg"]
+          },          
+          {
+              "id": "hvatacIOdasiljacKugli",
+              "title": "Hvatač i odašiljač kugli",
+              "content": "",
+              "images": ["https://i.postimg.cc/1X2gRXRK/13.jpg"]
+          },          
+          {
+              "id": "parkiralistaKugli",
+              "title": "Parkirališta kugli",
+              "content": "",
+              "images": ["https://i.postimg.cc/T1pLXgxw/11.jpg"]
           },
           {
               "id": "filteriIzmjenjivaci",
-              "title": "Filteri i izmjenjivači",
+              "title": "Industrijski filteri (inox) i izmjenjivači",
               "content": "Naši filteri i izmjenjivači osiguravaju efikasnu filtraciju i optimalnu razmjenu topline u industrijskim postrojenjima. Proizvodimo industrijske INOX filtere, izmjenjivače topline i specijalizirane komponente koje poboljšavaju performanse i produžuju vijek trajanja sistema.",
               "images": ["https://i.postimg.cc/KzQBbmg9/1.jpg", "https://i.postimg.cc/xjxMFTQ8/3.jpg", "https://i.postimg.cc/hG178KMS/7.jpg"]
           },
           {
               "id": "spojkeAktuatori",
-              "title": "Spojke i aktuatori",
+              "title": "Periflex spojke, aktuatori",
               "content": "Naše industrijske spojke i aktuatori osiguravaju vrhunsku kontrolu i fleksibilnost u radu mehaničkih sistema. Periflex spojke smanjuju vibracije i povećavaju pouzdanost, dok precizni aktuatori omogućuju automatizirano upravljanje industrijskim procesima.",
-              "images": ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg"]
-          },    
+              "images": ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg", "https://i.postimg.cc/65bcRfqH/19.jpg"]
+          },  
+          {
+            "id": "posudeZaVadjenjeCistaca",
+            "title": "Posude za vađenje čistača PC",
+            "content": "",
+            "images": ["https://i.postimg.cc/T245J7jW/12.jpg"]
+          },
           {
               "id": "cijevniSustavi",
-              "title": "Cijevni sustavi",
-              "content": "Proizvodimo visokokvalitetne cijevne sustave i posude prilagođene specijaliziranim industrijskim potrebama. Naši proizvodi osiguravaju dugovječnost i otpornost na ekstremne uvjete rada.",
-              "images": ["https://i.postimg.cc/T245J7jW/12.jpg", "https://i.postimg.cc/nzdj5T6g/10.jpg"]
+              "title": "Cijevni zatvarači",
+              "content": "",
+              "images": ["https://i.postimg.cc/nzdj5T6g/10.jpg"]
+          },
+          {
+            "id": "rezervoariGumiraniZaKiselineILuzine",
+            "title": "Gumirani rezervoari za kiseline i lužine",
+            "content": "",
+            "images": ["https://i.postimg.cc/wxV0xppY/15.jpg"]
+          } ,                         
+          {
+              "id": "rezervoari",
+              "title": "Rezervoari za benzinske postaje, rezervoari tehnološke kanalizacije",
+              "content": "",
+              "images": ["https://i.postimg.cc/3wTvDkXS/9.jpg"]
+          },
+          {
+              "id": "anionskiIKatjonskiIzmjenjivaci",
+              "title": "Anionski i katjonski izmjenjivači",
+              "content": "Anionski i katjonski izmjenjivači pružaju visoku učinkovitost i pouzdanost u procesima pročišćavanja vode i tretiranja otpadnih voda. Izrađeni su od kvalitetnih materijala koji osiguravaju dugotrajan rad i optimalne performanse.",
+              "images": ["https://i.postimg.cc/dtVnLxsk/17.jpg"]
           },
           {
               "id": "rezervoariZaKiseline",
-              "title": "Filterska jedinica za otežanu vodu, anionski i katjonski izmjenjivači, rezervoari za kiseline i lužine",
-              "content": "Proizvodimo rezervoare različitih veličina i namjena, izrađene od vrhunskih materijala za sigurnu pohranu tekućina i plinova u industrijskim postrojenjima.",
-              "images": ["https://i.postimg.cc/90WbPxyk/14.jpg", "https://i.postimg.cc/dtVnLxsk/17.jpg", "https://i.postimg.cc/vZ1zvx6G/18.jpg"]
+              "title": "Rezervoari za kiseline i lužine",
+              "content": "Rezervoari za kiseline i lužine izrađeni su od visokokvalitetnih materijala koji osiguravaju sigurno skladištenje i transport agresivnih kemikalija. Prilagođeni su različitim industrijskim procesima i zahtjevima korisnika.",
+              "images": ["https://i.postimg.cc/vZ1zvx6G/18.jpg"]
+          },          
+          {
+              "id": "filteri",
+              "title": "Filterska jedinica za otežanu vodu",
+              "content": "",
+              "images": ["https://i.postimg.cc/90WbPxyk/14.jpg",]
           },
           {
             "id": "rashladnaJedinica",
             "title": "Rashladne jedinice",
             "content": "Osiguravaju efikasno hlađenje i održavanje optimalnih temperatura u industrijskim postrojenjima. Naši proizvodi pružaju pouzdan rad i dugotrajnost, uz mogućnost prilagodbe specifičnim zahtjevima korisnika.",
-            "images": ["https://i.postimg.cc/sXJ92pb4/23.jpg"]
-          }, // kranske sine, macka krana, dijelovi macke krana, gumeno  celicni transporer
+            "images": ["https://i.postimg.cc/brN0SZhc/24.jpg"]
+          },
+          {
+            "id": "segmentiZastiteZupcanika", 
+            "title": "Segmenti zaštite zupčanika",
+            "content": "",
+            "images": ["https://i.postimg.cc/0NY7tY51/29.jpg"]
+          },
+          {
+            "id": "zastitaZupcanika",
+            "title": "Zaštita zupčanika",
+            "content": "",
+            "images": ["https://i.postimg.cc/RVhQMJdw/28.jpg"]
+          },          
+          {
+            "id": "transporteri",
+            "title": "Čelično gumeni transporter",
+            "content": "",
+            "images": ["https://i.postimg.cc/sgZYWFtX/30.jpg"]
+          },
           {
             "id": "kranskeSine",
             "title": "Kranske šine, mačka krana, dijelovi mačke krana",
@@ -167,7 +253,7 @@ const sections: Section[] = [
           },
           {
               "id": "postrojenja",
-              "title": "Postrojenja",
+              "title": "Postrojenje za preradu bešavnih cijevi",
               "content": "Dizajniramo i proizvodimo industrijska postrojenja za preradu bešavnih cijevi i druge ključne procese, osiguravajući visoku učinkovitost i pouzdanost proizvodnje.",
               "images": ["https://i.postimg.cc/J4F3t7Yv/27.jpg", "https://i.postimg.cc/1zhpcCQK/31.jpg", "https://i.postimg.cc/gJG81xrX/32.jpg"]
           }
