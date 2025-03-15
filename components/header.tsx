@@ -32,7 +32,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="https://i.postimg.cc/DzPYFw4X/logo.png"
+                src="https://i.postimg.cc/HsmzZWqq/logo.png"
                 alt="Barbarić Produkt Logo"
                 width={120}
                 height={120}
