@@ -334,14 +334,14 @@ const sections: Section[] = [
         },
         {
             "id": "septic-tank-separatori",
-            "title": "Septičke jame i separatori",
+            "title": "Septičke jame, separatori ulja i masti",
             "content": "Naše septičke jame dostupne su u različitim kapacitetima i izrađene su od materijala otpornog na habanje. Separatori ulja i masti (800L), dostupni u jednokomornim, dvokomornim i trokomornim varijantama, osiguravaju efikasnu filtraciju otpadnih tekućina.",
             "images": ["https://i.postimg.cc/XqL3N7fz/26.jpg", "https://i.postimg.cc/v8tGtXJt/27.jpg", "https://i.postimg.cc/WbpTWgjL/28.jpg", "https://i.postimg.cc/wT1Jbm0b/9.jpg"]
         },
         {
             "id": "vodomjerna-okna-sahte",
             "title": "Vodomjerna okna, šahte",
-            "content": "",
+            "content": "Vodomjerno okno namijenjeno je za ugradnju u manjim objektima i štiti vodomjer od smrzavanja. Nakon montaže instalacije (cijevi, koljena, ventili, vodomjer), sve se pokrije termo poklopcem, a potom poklopcem vodomjera. Kućište i poklopac izrađeni su od polietilena s rebrima za ojačanje, bez potrebe za dodatnim betoniranjem. Za promet vozilima potrebno je ojačati kućište betonom i ugraditi čelični poklopac.",
             "images": ["https://i.postimg.cc/jdBNVS1q/10.jpg", "https://i.postimg.cc/s2rhX0yt/11.jpg"]
         },
         {
