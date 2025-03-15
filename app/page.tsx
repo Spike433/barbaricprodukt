@@ -336,7 +336,13 @@ const sections: Section[] = [
             "id": "septic-tank-separatori",
             "title": "Septičke jame i separatori",
             "content": "Naše septičke jame dostupne su u različitim kapacitetima i izrađene su od materijala otpornog na habanje. Separatori ulja i masti (800L), dostupni u jednokomornim, dvokomornim i trokomornim varijantama, osiguravaju efikasnu filtraciju otpadnih tekućina.",
-            "images": ["https://i.postimg.cc/XqL3N7fz/26.jpg", "https://i.postimg.cc/v8tGtXJt/27.jpg", "https://i.postimg.cc/WbpTWgjL/28.jpg"]
+            "images": ["https://i.postimg.cc/XqL3N7fz/26.jpg", "https://i.postimg.cc/v8tGtXJt/27.jpg", "https://i.postimg.cc/WbpTWgjL/28.jpg", "https://i.postimg.cc/wT1Jbm0b/9.jpg"]
+        },
+        {
+            "id": "vodomjerna-okna-sahte",
+            "title": "Vodomjerna okna, sahte",
+            "content": "",
+            "images": ["https://i.postimg.cc/jdBNVS1q/10.jpg", "https://i.postimg.cc/s2rhX0yt/11.jpg"]
         },
         {
             "id": "rezervoari-otpadno-ulje",
