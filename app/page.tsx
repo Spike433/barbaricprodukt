@@ -1,529 +1,276 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
-import ClientSideNavigation from "@/components/client-side-navigation"
-import { Section } from "./types"
 import Link from "next/link"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { cn } from "@/lib/utils"
 
-// Define sections with their content
-const sections: Section[] = [
+// Service categories with placeholder images
+const serviceCategories = [
   {
-    id: "celicneKonstrukcije",
+    id: "celicne-konstrukcije",
     title: "Čelične konstrukcije",
-    content: "Proizvodimo visokokvalitetne čelične konstrukcije prilagođene različitim industrijama. Naši proizvodi osiguravaju dugotrajnost, sigurnost i otpornost u zahtjevnim uvjetima.",    
-    subheaders: [
-      {
-            id: "montazne-hale",
-            title: "Montažne hale, hangari i garaže",
-            content: "Montažne hale, hangari i garaže izrađeni su od čvrstih i otpornih materijala, prilagođeni različitim klimatskim uvjetima. Njihova modularna konstrukcija omogućava brzu montažu i prilagodbu specifičnim potrebama korisnika.",
-            images: ["https://i.postimg.cc/L5CRB7ZC/1.jpg", "https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg", "https://i.postimg.cc/4dXgCZ62/9.jpg", "https://i.postimg.cc/YS6HyjWm/11.jpg", "https://i.postimg.cc/FK5vZ074/10.jpg"]
-        },        
-        {
-            id: "kuce",
-            title: "Mobilne kuće",
-            content: "",
-            images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
-        },
-        {
-            id: "panoramsko-dizalo",
-            title: "Panoramsko dizalo, paviljon",
-            content: "",
-            images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/LsfZHWs1/211.jpg"]
-        },
-        {
-            id: "stakleneILimeneFasade",
-            title: "Staklene i limene fasade",
-            content: "",
-            images: ["https://i.postimg.cc/Bb6f6gwx/13.jpg", "https://i.postimg.cc/NfnBK3tL/7.jpg", "https://i.postimg.cc/XqzSyCTt/15.jpg"]
-        },
-        {
-            id: "krovista",
-            title: "Krovišta, krovni prozori, krovne kupole, svjetlarnici",
-            content: "",
-            images: ["https://i.postimg.cc/qMqpMk99/6.jpg", "https://i.postimg.cc/pTv22KHZ/2.jpg", "https://i.postimg.cc/wvk933xd/3.jpg", "https://i.postimg.cc/44LT0Dmw/14.jpg"]
-        },
-        {
-            id: "ogradeIPodovi",
-            title: "Ograde za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
-            content: "",
-            images: ["https://i.postimg.cc/WbdPc5ZV/17.jpg", "https://i.postimg.cc/8PxgpLd6/18.jpg", "https://i.postimg.cc/FKgMVqMy/20.jpg"]
-        },
-        //podne rešetke 
-        {
-            id: "podneResetke",
-            title: "Podne rešetke",
-            content: "",
-            images: ["https://i.postimg.cc/D0Bgxqgw/16.jpg"]
-        }
-    ]
+    image: "https://i.postimg.cc/4dXgCZ62/9.jpg",
+    description: "Izrada i montaža čeličnih konstrukcija za različite namjene.",
   },
   {
-    id: "gumiraniIplastificiraniProizvodi",    
+    id: "gumirani-elementi",
     title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
-    content: "Ovi proizvodi pružaju izvanrednu otpornost na koroziju i abraziju, čineći ih idealnim za industrijske procese koji zahtijevaju visoke standarde zaštite i dugovječnosti. Naša rješenja jamče dugotrajan rad, pouzdanost i sigurnost u uvjetima agresivnih kemikalija.",    
-    subheaders: [      
-        {
-          id: "gumirani-membranski-ventili",
-          title: "Gumirani membranski, nepovratni ventili",
-          content: "",
-          images: ["https://i.postimg.cc/hGbTLwqq/5.jpg", "https://i.postimg.cc/NFLXwj2g/6.jpg"]
-        },
-        {
-          id: "gumirane-cijevi",
-          title: "Gumirane cijevi, koljena 90°, 45°, redukcioni elementi",
-          content: "",
-          images: ["https://i.postimg.cc/zf1TRN6j/2.jpg"]
-        },        
-        {
-          id: "gumirani-celikni-spremnici",
-          title: "Gumirani čelični spremnici",
-          content: "",
-          images: ["https://i.postimg.cc/B6mFyK6Y/4.jpg", "https://i.postimg.cc/hjDxprSQ/3.jpg"]
-        },
-        {
-          id: "gumirani-celikni-anionski-i-kationski-izmjenjivaci",
-          title: "Gumirani čelični anionski i kationski izmjenjivači",
-          content: "",
-          images: ["https://i.postimg.cc/4yM94Rpp/1.jpg", "https://i.postimg.cc/KcsLDBC4/7.jpg"]
-        }
-
-    ]
+    image: "/placeholder.svg?height=600&width=800&text=Gumirani elementi",
+    description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
   },
   {
-    id: "aluPvcStolarija",
+    id: "alu-pvc",
     title: "Alu i PVC stolarija",
-    content: "Proizvodimo vrhunsku alu i PVC stolariju, prilagođenu specifičnim potrebama različitih industrija i privatnih objekata. Naši proizvodi odlikuju se dugotrajnošću, modernim dizajnom i visokim standardima energetske efikasnosti.",
-    subheaders: [        
-        { 
-          id: "segmentnaPodiznaVrata", 
-          title: "Segmentna podizna vrata, jednokrilna, klizna, automatska vrata", 
-          content: "Naša segmentna podizna vrata dizajnirana su za optimalnu sigurnost i lakoću korištenja u industrijskim, komercijalnim i privatnim objektima. Izrađujemo i jednokrilna, klizna te automatska vrata koja se prilagođavaju vašim specifičnim potrebama.", 
-          images: ["https://i.postimg.cc/FzmMYJhV/4.jpg", "https://i.postimg.cc/MTykZYJG/2.jpg"] 
-        },
-        { 
-          id: "podizneRampe", 
-          title: "Podizne rampe", 
-          content: "", 
-          images: ["https://i.postimg.cc/m2ZxRMXb/6.jpg"] 
-        },
-        { 
-          id: "fasade", 
-          title: "Staklene fasade", 
-          content: "", 
-          images: ["https://i.postimg.cc/WpwRQS7W/5.jpg"] 
-        },                 
-        {
-          id: "prozori",
-          title: "Prozori, staklene stijene, fasade od panela",
-          content: "",
-          images: ["https://i.postimg.cc/JnwVW2gg/3.jpg"]
-        },        
-    ]
+    image: "/placeholder.svg?height=600&width=800&text=Alu i PVC stolarija",
+    description: "Visokokvalitetna aluminijska i PVC stolarija za sve vrste objekata.",
   },
   {
-    "id": "opremaZaGradevinarstvo",
-    "title": "Oprema za građevinarstvo",
-    "content": "Proizvodimo inovativnu i izdržljivu opremu za građevinarstvo, uključujući napredne sisteme za transport građevinskog otpada poput tunela za šutu i specijaliziranih nosača, osiguravajući efikasnost i sigurnost na gradilištima.",
-    "subheaders": [
-        {
-            "id": "tuneliZaSutu",
-            "title": "Tuneli za šutu, polazni - usipni dio, nosač usipnog elementa",
-            "content": "Naši tuneli za šutu, izrađeni od visokootpornog polietilena metodom roto ljevanja, omogućuju brzo i sigurno uklanjanje građevinskog otpada. Modularni dizajn omogućava lako povezivanje pomoću lanaca, dok nosači osiguravaju stabilnost i optimalan protok materijala bez začepljenja.",
-            "images": ["https://i.postimg.cc/fLg7XwTV/0.jpg", "https://i.postimg.cc/8c2hKtvD/1.jpg"]              
-        },
-        {
-            "id": "nosaciICijevi",
-            "title": "Nosač dizalice za cijevi, cijevi za šutu",
-            "content": "Prilagodljivi nosači dizalice osiguravaju sigurno i precizno postavljanje cijevi za šutu, smanjujući vibracije i rizik od oštećenja. Naše cijevi su izrađene od otpornih materijala koji podnose visoka opterećenja, omogućujući dugotrajan i nesmetan rad u svim uvjetima.",
-            "images": ["https://i.postimg.cc/T2Fq3Y4S/2.jpg", "https://i.postimg.cc/t4H3FvyN/3.jpg"]
-        }
-    ]
-  },  
-  {
-      "id": "industrijskaOprema",
-      "title": "Industrijska oprema",
-      "content": "Razvijamo i isporučujemo visokokvalitetnu industrijsku opremu, uključujući ventile, filtere, spojke, rezervoare i prilagođena rješenja za specijalizirane industrijske procese. Nudimo kompletne usluge generalnog popravka i rekonstrukcije industrijske opreme, uključujući ventile, izmjenjivače topline i bušotinske zasune. Također pružamo specijalizirane usluge vatrozaštite spremnika nafte i rehabilitaciju cjevovoda metodom PE uvlačenja.",
-      "subheaders": [                      
-          {
-              "id": "inoxArmature",
-              "title": "INOX armature",
-              "content": "Proizvodimo visokokvalitetne INOX armature koje pružaju dugotrajnost i pouzdanost u zahtjevnim industrijskim uvjetima. U našoj ponudi nalaze se igličasti ventili do 700 bara, nepovratni ventili, kuglaste slavine, mazalice, boce za uzorkovanje i druge komponente izrađene prema najvišim standardima.",
-              "images": ["https://i.postimg.cc/L5bPqvDL/2.jpg"]
-          },    
-          {
-              "id": "ventili",
-              "title": "Inox leptir ventili, automatski upravljan",
-              "content": "",
-              "images": ["https://i.postimg.cc/Zn788Jb9/25.jpg"]
-          },          
-          {
-              "id": "hvatacIOdasiljacKugli",
-              "title": "Hvatač i odašiljač kugli",
-              "content": "",
-              "images": ["https://i.postimg.cc/1X2gRXRK/13.jpg"]
-          },          
-          {
-              "id": "parkiralistaKugli",
-              "title": "Parkirališta kugli",
-              "content": "",
-              "images": ["https://i.postimg.cc/T1pLXgxw/11.jpg"]
-          },
-          {
-              "id": "filteriIzmjenjivaci",
-              "title": "Industrijski filteri (inox) i izmjenjivači",
-              "content": "Naši filteri i izmjenjivači osiguravaju efikasnu filtraciju i optimalnu razmjenu topline u industrijskim postrojenjima. Proizvodimo industrijske INOX filtere, izmjenjivače topline i specijalizirane komponente koje poboljšavaju performanse i produžuju vijek trajanja sistema.",
-              "images": ["https://i.postimg.cc/KzQBbmg9/1.jpg", "https://i.postimg.cc/xjxMFTQ8/3.jpg", "https://i.postimg.cc/hG178KMS/7.jpg"]
-          },
-          {
-              "id": "spojkeAktuatori",
-              "title": "Periflex spojke, aktuatori",
-              "content": "Naše industrijske spojke i aktuatori osiguravaju vrhunsku kontrolu i fleksibilnost u radu mehaničkih sistema. Periflex spojke smanjuju vibracije i povećavaju pouzdanost, dok precizni aktuatori omogućuju automatizirano upravljanje industrijskim procesima.",
-              "images": ["https://i.postimg.cc/fLWSB1gY/8.jpg", "https://i.postimg.cc/gkx89FcD/4.jpg", "https://i.postimg.cc/65bcRfqH/19.jpg"]
-          },  
-          {
-            "id": "posudeZaVadjenjeCistaca",
-            "title": "Posude za vađenje čistača PC",
-            "content": "",
-            "images": ["https://i.postimg.cc/T245J7jW/12.jpg"]
-          },
-          {
-              "id": "cijevniSustavi",
-              "title": "Cijevni zatvarači",
-              "content": "",
-              "images": ["https://i.postimg.cc/nzdj5T6g/10.jpg"]
-          },
-          {
-            "id": "rezervoariGumiraniZaKiselineILuzine",
-            "title": "Gumirani rezervoari za kiseline i lužine",
-            "content": "",
-            "images": ["https://i.postimg.cc/wxV0xppY/15.jpg"]
-          } ,                         
-          {
-              "id": "rezervoari",
-              "title": "Rezervoari za benzinske postaje, rezervoari tehnološke kanalizacije",
-              "content": "",
-              "images": ["https://i.postimg.cc/3wTvDkXS/9.jpg"]
-          },
-          {
-              "id": "anionskiIKatjonskiIzmjenjivaci",
-              "title": "Anionski i katjonski izmjenjivači",
-              "content": "Anionski i katjonski izmjenjivači pružaju visoku učinkovitost i pouzdanost u procesima pročišćavanja vode i tretiranja otpadnih voda. Izrađeni su od kvalitetnih materijala koji osiguravaju dugotrajan rad i optimalne performanse.",
-              "images": ["https://i.postimg.cc/dtVnLxsk/17.jpg"]
-          },
-          {
-              "id": "rezervoariZaKiseline",
-              "title": "Rezervoari za kiseline i lužine",
-              "content": "Rezervoari za kiseline i lužine izrađeni su od visokokvalitetnih materijala koji osiguravaju sigurno skladištenje i transport agresivnih kemikalija. Prilagođeni su različitim industrijskim procesima i zahtjevima korisnika.",
-              "images": ["https://i.postimg.cc/vZ1zvx6G/18.jpg"]
-          },          
-          {
-              "id": "filteri",
-              "title": "Filterska jedinica za otežanu vodu",
-              "content": "",
-              "images": ["https://i.postimg.cc/90WbPxyk/14.jpg",]
-          },
-          {
-            "id": "rashladnaJedinica",
-            "title": "Rashladne jedinice",
-            "content": "Osiguravaju efikasno hlađenje i održavanje optimalnih temperatura u industrijskim postrojenjima. Naši proizvodi pružaju pouzdan rad i dugotrajnost, uz mogućnost prilagodbe specifičnim zahtjevima korisnika.",
-            "images": ["https://i.postimg.cc/brN0SZhc/24.jpg"]
-          },
-          {
-            "id": "segmentiZastiteZupcanika", 
-            "title": "Segmenti zaštite zupčanika",
-            "content": "",
-            "images": ["https://i.postimg.cc/0NY7tY51/29.jpg"]
-          },
-          {
-            "id": "zastitaZupcanika",
-            "title": "Zaštita zupčanika",
-            "content": "",
-            "images": ["https://i.postimg.cc/RVhQMJdw/28.jpg"]
-          },          
-          {
-            "id": "transporteri",
-            "title": "Čelično gumeni transporter",
-            "content": "",
-            "images": ["https://i.postimg.cc/sgZYWFtX/30.jpg"]
-          },
-          {
-            "id": "kranskeSine",
-            "title": "Kranske šine, mačka krana, dijelovi mačke krana",
-            "content": "Nudimo visokokvalitetne kranske šine, mačke krana i dijelove mačke krana za sve vaše potrebe.",
-            "images": ["https://i.postimg.cc/sXJ92pb4/23.jpg", "https://i.postimg.cc/zBNF5d2f/20.jpg", "https://i.postimg.cc/L8rVQ4zL/21.jpg"]
-          },
-          {
-              "id": "postrojenja",
-              "title": "Postrojenje za preradu bešavnih cijevi",
-              "content": "Dizajniramo i proizvodimo industrijska postrojenja za preradu bešavnih cijevi i druge ključne procese, osiguravajući visoku učinkovitost i pouzdanost proizvodnje.",
-              "images": ["https://i.postimg.cc/J4F3t7Yv/27.jpg", "https://i.postimg.cc/1zhpcCQK/31.jpg", "https://i.postimg.cc/gJG81xrX/32.jpg"]
-          }
-      ]
+    id: "oprema-gradevinarstvo",
+    title: "Oprema za građevinarstvo",
+    image: "/placeholder.svg?height=600&width=800&text=Oprema za građevinarstvo",
+    description: "Profesionalna oprema i alati za građevinsku industriju.",
   },
   {
-    "id": "opremaZaMore",
-    "title": "Oprema za more",
-    "content": "Specijalizirani smo za proizvodnju visokokvalitetne opreme za more, uključujući pontone, staze, kajake i druge inovativne proizvode za rekreaciju i industrijsku upotrebu.",
-    "subheaders": [
-        { 
-            "id": "oprema-za-more-pontoni", 
-            "title": "Pontoni za sunčanje, katamarani, ribogojilišta, vežovi za čamce", 
-            "content": "Pontoni dimenzija 2 x 4 m s plovcima 970x620x340 mm pružaju stabilnost i sigurnost na vodi. Izrađeni su od vruće cinčane čelične konstrukcije, dodatno zaštićene završnim premazom. Modularni dizajn omogućava prilagodbu za ribogojilišta, katamarane i plutajuće platforme, uz mogućnost ugradnje pedala, jedara ili motora za različite namjene.", 
-            "images": ["https://i.postimg.cc/j5vNB6pB/4.jpg", "https://i.postimg.cc/C1wkvrQj/2.jpg", "https://i.postimg.cc/d02Gjc4s/3.jpg"]
-        },
-        { 
-            "id": "oprema-za-more-kajak", 
-            "title": "Kajak", 
-            "content": "Kajak izrađen od visokootpornih materijala osigurava dugotrajan rad u različitim uvjetima. Ergonomski dizajn garantira udobnost, dok lagana, ali čvrsta konstrukcija omogućava lako upravljanje na rekama, jezerima i morima.", 
-            "images": ["https://i.postimg.cc/TPMrb3jN/1.jpg"]
-        }      
-    ]
+    id: "industrijska-oprema",
+    title: "Industrijska oprema",
+    image: "/placeholder.svg?height=600&width=800&text=Industrijska oprema",
+    description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
   },
   {
-    "id": "strojeviZaPoljoprivreduIVocarstvo",
-    "title": "Strojevi za poljoprivredu i voćarstvo",
-    "content": "Proizvodimo inovativne i izdržljive strojeve za poljoprivredu i voćarstvo, uključujući prskalice, atomizere, pumpne stanice i specijalizirane rezervoare, prilagođene potrebama modernih poljoprivrednika.",
-    "subheaders": [
-        {
-            "id": "strojevi-za-poljoprivredu-i-vocarstvo-prskalice",
-            "title": "Rezervoari za prskalice i atomizere",
-            "content": "Naši rezervoari za prskalice i atomizere, dostupni u kapacitetima od 400L i 600L, izrađeni su od visokokvalitetnih materijala koji osiguravaju dugotrajnost i otpornost na kemikalije. Savršeni su za precizno raspršivanje zaštitnih sredstava u voćnjacima i poljoprivrednim kulturama.",
-            "images": ["https://i.postimg.cc/8sQdf5kT/12.jpg","https://i.postimg.cc/PfLBDRf7/13.jpg"]
-        },
-        {
-            "id": "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri",
-            "title": "Atomizeri",
-            "content": "Visokoučinkoviti atomizeri osiguravaju ravnomjernu distribuciju tekućine i optimalnu zaštitu usjeva. Zahvaljujući snažnim komponentama i preciznim mlaznicama, prilagođeni su različitim tipovima biljaka i terena.",
-            "images": ["https://i.postimg.cc/YqYZnLWf/14.jpg", "https://i.postimg.cc/dVFXzQRM/15.jpg"]
-        },
-        {
-            "id": "pumpnaStanica",
-            "title": "Pumpna stanica",
-            "content": "Svestrana pumpna stanica osigurava efikasno navodnjavanje, prskanje i zalijevanje, prilagođena poljoprivrednim i hortikulturnim potrebama. Sadrži spremnik kapaciteta 1000L, snažnu pumpu, motor i precizni mjerač protoka za optimalnu potrošnju vode.",
-            "images": ["https://i.postimg.cc/PxCFmCHD/21.jpg", "https://i.postimg.cc/3NpSczdJ/22.jpg"]
-        },
-        {
-            "id": "kacePosudeZaMeso",
-            "title": "Kace, posude za meso i vino",
-            "content": "Izrađene od visokokvalitetnog inoxa, naše kace i posude osiguravaju dugotrajnost i higijensku obradu mesa, vina i drugih namirnica. Dostupne u različitim kapacitetima (200L, 310L, 520L, 780L), prilagođene su prehrambenoj industriji i kućnoj upotrebi.",
-            "images": ["https://i.postimg.cc/cJHDSvrz/32.jpg","https://i.postimg.cc/wT8bmxGt/29.jpg"]
-        },
-        {
-            "id": "rezervoar",
-            "title": "Plastični rezervoar",
-            "content": "Praktični rezervoari kapaciteta 1000L izrađeni su od izdržljive plastike, idealni za skladištenje vode, goriva ili kemikalija. Njihova robustna konstrukcija omogućava siguran transport i dugoročnu upotrebu u poljoprivredi i industriji.",
-            "images": ["https://i.postimg.cc/7ZqsKsDw/31.jpg"]
-        }
-    ]
-  },            
-  {
-    "id": "ekoOpremaKomunalna",
-    "title": "Eko oprema komunalna",
-    "content": "Proizvodimo visokokvalitetnu komunalnu eko opremu, uključujući kontejnere, separatore, tankvane i specijalizirane rezervoare. Naši proizvodi su dizajnirani za dugotrajnu upotrebu i prilagođeni potrebama modernog upravljanja otpadom i resursima.",
-    "subheaders": [
-        {
-            "id": "eko-oprema-komunalna-kontejneri",
-            "title": "Komunalni i rolo kontejneri, kante za smeće",
-            "content": "Otvoreni i zatvoreni kontejneri kapaciteta 5, 7 i 10 m³ izrađeni su od izdržljivih materijala za sigurno skladištenje i transport otpada. Plastične kante za smeće (60L, 100L, 200L, 300L) osiguravaju jednostavno rukovanje i dugotrajnu upotrebu u domaćinstvima i industriji.",
-            "images": ["https://i.postimg.cc/Gt7NSBJd/13.jpg", "https://i.postimg.cc/CKPQBj3Y/20.jpg", "https://i.postimg.cc/GpGWhmrx/9.jpg"]
-        },
-        {
-            "id": "kontejner-elektronski-otpad",
-            "title": "Kontejner za elektronski otpad",
-            "content": "Specijalizirani kontejner kapaciteta 7 m³ osmišljen je za sigurno odlaganje elektronskog otpada i tekstilnih materijala. Njegova čvrsta konstrukcija omogućava ekološki prihvatljivo skladištenje i jednostavan transport na reciklažna postrojenja.",
-            "images": ["https://i.postimg.cc/CxX0x28S/31.jpg", "https://i.postimg.cc/d0CYk9Rd/32.jpg"]
-        },
-        {
-            "id": "septic-tank-separatori",
-            "title": "Septičke jame, separatori ulja i masti",
-            "content": "Naše septičke jame dostupne su u različitim kapacitetima i izrađene su od materijala otpornog na habanje. Separatori ulja i masti (800L), dostupni u jednokomornim, dvokomornim i trokomornim varijantama, osiguravaju efikasnu filtraciju otpadnih tekućina.",
-            "images": ["https://i.postimg.cc/XqL3N7fz/26.jpg", "https://i.postimg.cc/v8tGtXJt/27.jpg", "https://i.postimg.cc/WbpTWgjL/28.jpg", "https://i.postimg.cc/wT1Jbm0b/9.jpg"]
-        },
-        {
-            "id": "vodomjerna-okna-sahte",
-            "title": "Vodomjerna okna, šahte",
-            "content": "Vodomjerno okno namijenjeno je za ugradnju u manjim objektima i štiti vodomjer od smrzavanja. Nakon montaže instalacije (cijevi, koljena, ventili, vodomjer), sve se pokrije termo poklopcem, a potom poklopcem vodomjera. Kućište i poklopac izrađeni su od polietilena s rebrima za ojačanje, bez potrebe za dodatnim betoniranjem. Za promet vozilima potrebno je ojačati kućište betonom i ugraditi čelični poklopac.",
-            "images": ["https://i.postimg.cc/jdBNVS1q/10.jpg", "https://i.postimg.cc/s2rhX0yt/11.jpg"]
-        },
-        {
-            "id": "rezervoari-otpadno-ulje",
-            "title": "Rezervoari za otpadno ulje i tehnološku kanalizaciju",
-            "content": "Plastični rezervoari sa duplom stijenkom omogućuju sigurno skladištenje otpadnog ulja u kapacitetima do 20 m³. Također nudimo rezervoare od 35 m³ i tankvane za otpadno ulje (1.000L – 20.000L) prilagođene industrijskim potrebama.",
-            "images": ["https://i.postimg.cc/d1MJ4fQ4/23.jpg", "https://i.postimg.cc/pVCtFrj0/4.jpg", "https://i.postimg.cc/VvLpR9tK/12.jpg"]
-        },
-        {
-            "id": "tankvane-regali",
-            "title": "Tankvane i regali za bačve",
-            "content": "Praktične tankvane sa kotačima omogućuju jednostavan transport tekućina, dok regali za bačve dolaze u otvorenim i zatvorenim verzijama. Specijalizirani regali sa pumpama olakšavaju precizno punjenje, pražnjenje i doziranje tekućina u industrijskim pogonima.",
-            "images": ["https://i.postimg.cc/Kj0SSpFX/3.jpg", "https://i.postimg.cc/2SbpMxKJ/5.jpg", "https://i.postimg.cc/5NkdsrnL/8.jpg", "https://i.postimg.cc/K86X2MXY/7.jpg", "https://i.postimg.cc/vTsHHNpc/15.jpg"]
-        },
-        {
-            "id": "plasticne-barijere",
-            "title": "Plastične barijere",
-            "content": "Robusne plastične barijere osiguravaju sigurnost i kontrolu prometa, dostupne u različitim bojama i dimenzijama. Otporne na udarce i vremenske uvjete, idealne su za upotrebu na gradilištima, javnim površinama i industrijskim postrojenjima.",
-            "images": ["https://i.postimg.cc/RCj2LLNZ/16.jpg", "https://i.postimg.cc/DwcDFV5S/17.jpg"]
-        },
-        {
-            "id": "sahte-kanalizacija",
-            "title": "Šahte za kanalizaciju, septičke jame, pjeskolovi i mastolovi",
-            "content": "Šahte, septičke jame, pjeskolovi i mastolovi izrađeni su od visokokvalitetnih materijala otpornih na koroziju i ekstremne uvjete. Različitih dimenzija i oblika, prilagođeni su za široku primjenu u komunalnoj infrastrukturi i industriji.",
-            "images": ["https://i.postimg.cc/yd3vD2hX/37.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg", "https://i.postimg.cc/MGKLpsrd/18.jpg"]
-        },
-        {
-            "id": "spremista",
-            "title": "Spremišta za zapaljive tekućine, boce, boje i lakove",
-            "content": "Naša spremišta za zapaljive tekućine, boce, boje i lakove osiguravaju sigurno skladištenje i rukovanje opasnim tvarima. Izrađena od čvrstih materijala, prilagođena su specifičnim zahtjevima industrije i komunalnih službi.",
-            "images": ["https://i.postimg.cc/Pxkkm8K7/30.jpg", "https://i.postimg.cc/pd52Qvvm/22.jpg"]
-        }
-
-    ]
+    id: "oprema-more",
+    title: "Oprema za more",
+    image: "/placeholder.svg?height=600&width=800&text=Oprema za more",
+    description: "Oprema i komponente za pomorsku industriju i nautiku.",
   },
   {
-    id: "gumirani-celicni-elementi",
-    title: "Gumirani i plastificirani čelični elementi za transport kiselina i lužina",
-    content: "Gumirani i plastificirani čelični elementi osiguravaju otpornost na korozivne tvari i ekstremne uvjete. Idealni su za transport kiselina i lužina u industrijskim postrojenjima, nudeći dugotrajnu zaštitu i pouzdanost.",
-    subheaders: [
-      {
-        id: "ventili",
-        title: "Ventili",
-        content: "Izrađeni od visokokvalitetnih materijala, osiguravaju dugotrajnost i otpornost na koroziju.",
-        images: ["https://i.postimg.cc/NFLXwj2g/6.jpg", "https://i.postimg.cc/hGbTLwqq/5.jpg"]
-      },
-      {
-        id: "cjevovodiISpojevi",
-        title: "Cjevovodi i spojevi",
-        content: "Gumirane cijevi, koljena i redukcioni elementi osiguravaju siguran transport kiselina i lužina u industrijskim postrojenjima. Prilagođeni su visokim temperaturama i agresivnim tvarima, osiguravajući pouzdanost i dugotrajnost sistema.",
-        images: ["https://i.postimg.cc/zf1TRN6j/2.jpg"]        
-      }
-    ]
+    id: "poljoprivreda",
+    title: "Strojevi za poljoprivredu i voćarstvo",
+    image: "/placeholder.svg?height=600&width=800&text=Poljoprivredni strojevi",
+    description: "Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.",
   },
   {
-    "id": "urbanaOprema",
-    "title": "Urbana oprema",
-    "content": "Proizvodimo vrhunsku urbanu opremu, uključujući klupe, koševe za parkove, kandelabere i autobusna stajališta. Naši proizvodi su dizajnirani za dugovječnost i estetski se uklapaju u svako urbano okruženje, poboljšavajući funkcionalnost i izgled javnih prostora.",
-    "subheaders": [
-        {
-            "id": "urbana-oprema-klupe-i-kosevi-za-parkove",
-            "title": "Klupe i koševi za parkove",
-            "content": "Izdržljive i estetski oblikovane klupe izrađene su od kvalitetnih materijala, osiguravajući udobnost i otpornost na vremenske uvjete. Koševi za parkove dizajnirani su tako da olakšavaju održavanje čistoće i pridonose urednom javnom prostoru.",
-            "images": ["https://i.postimg.cc/L4yjXF9r/0.jpg", "https://i.postimg.cc/GhVYFPsK/1.jpg", "https://i.postimg.cc/fTJmSqkk/2.jpg"]
-        },
-        {
-            "id": "urbana-oprema-kandelaberi",
-            "title": "Kandelaberi i stalci za bicikle",
-            "content": "Kandelaberi izrađeni od visokokvalitetnih materijala osiguravaju dugotrajan i energetski učinkovit izvor rasvjete u urbanim sredinama. Stalci za bicikle nude sigurno i praktično rješenje za parkiranje, potičući održivu mobilnost u gradovima.",
-            "images": ["https://i.postimg.cc/8CV6314r/5.jpg", "https://i.postimg.cc/MT6j6dh6/7.jpg"]
-        }
-    ]
-  }
+    id: "eko-oprema",
+    title: "Eko oprema komunalna",
+    image: "/placeholder.svg?height=600&width=800&text=Eko oprema",
+    description: "Ekološka oprema za komunalne službe i održavanje javnih površina.",
+  },
+  {
+    id: "urbana-oprema",
+    title: "Urbana oprema",
+    image: "/placeholder.svg?height=600&width=800&text=Urbana oprema",
+    description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
+  },
 ]
 
-export const metadata: Metadata = {
-  title: "Barbarić Produkt | Home",
-  description:
-    "Barbarić Produkt d.o.o. is a leading company specializing in manufacturing, trade, and services based in Ivanić-Grad, Croatia.",
-}
+export default function HomePage() {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [isAutoplay, setIsAutoplay] = useState(true)
+  const autoplayRef = useRef<NodeJS.Timeout | null>(null)
+  const sliderRef = useRef<HTMLDivElement>(null)
 
-// Helper function to generate blur data URL for placeholder
-function generateBlurPlaceholder(width: number, height: number, color = "e4e4e7", borderRadius = 10): string {
-  // Create a simple SVG with the specified dimensions, color, and rounded corners
-  const svg = `
-    <svg width="${width}" height="${height}" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <rect width="${width}" height="${height}" fill="#${color}" rx="${borderRadius}" ry="${borderRadius}"/>
-    </svg>
-  `
-  // Convert SVG to base64
-  const toBase64 =
-    typeof window === "undefined"
-      ? (str: string) => Buffer.from(str).toString("base64")
-      : (str: string) => window.btoa(str)
+  // Handle autoplay
+  useEffect(() => {
+    if (isAutoplay) {
+      autoplayRef.current = setInterval(() => {
+        setActiveIndex((prev) => (prev + 1) % serviceCategories.length)
+      }, 5000) // Change slide every 5 seconds
+    }
 
-  return `data:image/svg+xml;base64,${toBase64(svg)}`
-}
+    return () => {
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current)
+      }
+    }
+  }, [isAutoplay])
 
-// JSON-LD structured data for better SEO
-export default function Home() {
+  // Pause autoplay on hover
+  const handleMouseEnter = () => setIsAutoplay(false)
+  const handleMouseLeave = () => setIsAutoplay(true)
+
+  // Navigation functions
+  const goToSlide = (index: number) => {
+    setActiveIndex(index)
+    // Reset autoplay timer when manually changing slides
+    if (autoplayRef.current) {
+      clearInterval(autoplayRef.current)
+      setIsAutoplay(true)
+    }
+  }
+
+  const goToPrevSlide = () => {
+    setActiveIndex((prev) => (prev === 0 ? serviceCategories.length - 1 : prev - 1))
+  }
+
+  const goToNextSlide = () => {
+    setActiveIndex((prev) => (prev + 1) % serviceCategories.length)
+  }
+
   return (
-    <main className="min-h-screen bg-background">
-      <div className="container relative mx-auto px-4 py-16">
-        {/* JSON-LD structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Barbarić Produkt",
-              url: "https://www.barbaricprodukt.hr/",
-              logo: "https://i.postimg.cc/HsmzZWqq/logo.png",
-              description: "Barbarić Produkt d.o.o. za proizvodnju, trgovinu i usluge",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Žutička ulica 30",
-                addressLocality: "Ivanić-Grad",
-                postalCode: "10310",
-                addressCountry: "HR",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+385-91-282-3375",
-                email: "barbaricprodukt@barbaricprodukt.hr",
-                contactType: "Customer Service",
-              },
-            }),
-          }}
+    <main className="min-h-screen">
+      {/* Hero Section - Full Width */}
+      <section className="relative w-full h-[70vh] min-h-[500px]">
+        <Image
+          src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+          alt="Čelične konstrukcije - Barbarić Produkt"
+          fill
+          className="object-cover"
+          priority
         />
-              
-        <div className="flex flex-col lg:flex-row">
-          {/* Main content - Server-side rendered for SEO */}
-          <div className="w-full lg:w-3/4 pr-0 lg:pr-8">
-            {sections.map((section) => (
-              <section
-                key={section.id}
-                id={section.id}
-                className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
+          <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl">Barbarić Produkt</h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-8">
+              Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 rounded-md bg-industrial-blue text-white font-medium shadow-lg hover:bg-industrial-blue/90 transition-colors"
+            >
+              Kontaktirajte nas
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Carousel Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-industrial-blue">Naše usluge</h2>
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Pružamo širok spektar usluga u proizvodnji i obradi metala, plastike i gume za različite industrije
+          </p>
+
+          {/* Carousel */}
+          <div
+            className="relative max-w-5xl mx-auto"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            ref={sliderRef}
+          >
+            {/* Main Carousel */}
+            <div className="overflow-hidden rounded-xl shadow-lg">
+              <div className="relative h-[500px] transition-all duration-500 ease-in-out">
+                {serviceCategories.map((category, index) => (
+                  <div
+                    key={category.id}
+                    className={cn(
+                      "absolute inset-0 transition-opacity duration-500",
+                      index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0",
+                    )}
+                  >
+                    <Image
+                      src={category.image || "/placeholder.svg"}
+                      alt={category.title}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-8">
+                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">{category.title}</h3>
+                      <p className="text-white/90 max-w-2xl mb-4">{category.description}</p>
+                      <Link
+                        href={`/services#${category.id}`}
+                        className="inline-flex items-center px-4 py-2 rounded-md bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors w-fit"
+                      >
+                        Saznajte više
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={goToPrevSlide}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-colors rounded-full p-2 text-white"
+              aria-label="Prethodni"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+            <button
+              onClick={goToNextSlide}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-colors rounded-full p-2 text-white"
+              aria-label="Sljedeći"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+
+            {/* Indicators */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {serviceCategories.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={cn(
+                    "w-3 h-3 rounded-full transition-all duration-300",
+                    index === activeIndex ? "bg-industrial-blue w-6" : "bg-gray-300 hover:bg-gray-400",
+                  )}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Categories Grid */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue">Naše kategorije usluga</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {serviceCategories.map((category) => (
+              <Link
+                href={`/services#${category.id}`}
+                key={category.id}
+                className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
               >
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue">{section.title}</h2>
-                <div className="space-y-4">
-                  <p className="ml-4">{section.content}</p>                                    
-                  {section?.subheaders?.map((subheader) => (
-                    <div
-                      key={subheader.id}
-                      id={subheader.id}
-                      className="mt-8 mb-6 scroll-mt-24 p-9"
-                    >
-                      <h3 className="text-xl font-medium mb-3 text-industrial-blue">{subheader.title}</h3>
-                      <p className="ml-4 mb-2">
-                        {subheader.content}
-                      </p>  
-                      {subheader?.images && (
-                    <div className="flex flex-wrap p-4">
-                      {subheader.images.map((image, index) => (
-                        <div key={index} className="w-1/3 p-1">
-                          <Image
-                            src={image}
-                            width={300}
-                            height={300}
-                            alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                            className="object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL={generateBlurPlaceholder(400, 400)}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  )}                      
-                    </div>
-                  ))}                  
+                <div className="relative h-48">
+                  <Image
+                    src={category.image || "/placeholder.svg"}
+                    alt={category.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
-              </section>
+                <div className="p-4">
+                  <h3 className="font-bold text-lg mb-2 group-hover:text-industrial-blue transition-colors">
+                    {category.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">{category.description}</p>
+                </div>
+              </Link>
             ))}
           </div>
-
-          {/* Client-side navigation component */}
-          <ClientSideNavigation sections={sections} />
         </div>
-      </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-gradient-to-r from-industrial-blue to-primary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Spremni smo za vašu viziju</h2>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+            Bez obzira na veličinu ili složenost vašeg projekta, naš tim stručnjaka je spreman pomoći vam u realizaciji.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 rounded-md bg-white text-industrial-blue font-medium shadow hover:bg-gray-100 transition-colors"
+            >
+              Zatražite ponudu
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center px-6 py-3 rounded-md border border-white/30 text-white font-medium hover:bg-white/10 transition-colors"
+            >
+              Saznajte više o nama
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

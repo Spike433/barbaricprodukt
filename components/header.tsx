@@ -48,9 +48,9 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {[
-              { href: "/", label: "Početna" },
+              { href: "/", label: "Početna" },              
               { href: "/about", label: "O nama" },
-              { href: "/production", label: "Proizvodnja" },
+              { href: "/products", label: "Proizvodnja" },
               { href: "/services", label: "Usluge" },
               { href: "/contact", label: "Kontakt" },
             ].map((link) => (
