@@ -17,7 +17,7 @@ const serviceCategories = [
   {
     id: "gumirani-elementi",
     title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
-    image: "/placeholder.svg?height=600&width=800&text=Gumirani elementi",
+    image: "https://i.postimg.cc/zf1TRN6j/2.jpg",
     description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
   },
   {
@@ -29,19 +29,19 @@ const serviceCategories = [
   {
     id: "oprema-gradevinarstvo",
     title: "Oprema za građevinarstvo",
-    image: "/placeholder.svg?height=600&width=800&text=Oprema za građevinarstvo",
+    image: "https://i.postimg.cc/8c2hKtvD/1.jpg",
     description: "Profesionalna oprema i alati za građevinsku industriju.",
   },
   {
     id: "industrijska-oprema",
     title: "Industrijska oprema",
-    image: "/placeholder.svg?height=600&width=800&text=Industrijska oprema",
+    image: "https://i.postimg.cc/1zhpcCQK/31.jpg",
     description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
   },
   {
     id: "oprema-more",
     title: "Oprema za more",
-    image: "/placeholder.svg?height=600&width=800&text=Oprema za more",
+    image: "https://i.postimg.cc/j5vNB6pB/4.jpg",
     description: "Oprema i komponente za pomorsku industriju i nautiku.",
   },
   {
@@ -59,7 +59,7 @@ const serviceCategories = [
   {
     id: "urbana-oprema",
     title: "Urbana oprema",
-    image: "/placeholder.svg?height=600&width=800&text=Urbana oprema",
+    image: "https://i.postimg.cc/L4yjXF9r/0.jpg",
     description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
   },
 ]
@@ -133,88 +133,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Services Carousel Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-industrial-blue">Naše usluge</h2>
-          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Pružamo širok spektar usluga u proizvodnji i obradi metala, plastike i gume za različite industrije
-          </p>
-
-          {/* Carousel */}
-          <div
-            className="relative max-w-5xl mx-auto"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            ref={sliderRef}
-          >
-            {/* Main Carousel */}
-            <div className="overflow-hidden rounded-xl shadow-lg">
-              <div className="relative h-[500px] transition-all duration-500 ease-in-out">
-                {serviceCategories.map((category, index) => (
-                  <div
-                    key={category.id}
-                    className={cn(
-                      "absolute inset-0 transition-opacity duration-500",
-                      index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0",
-                    )}
-                  >
-                    <Image
-                      src={category.image || "/placeholder.svg"}
-                      alt={category.title}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-8">
-                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">{category.title}</h3>
-                      <p className="text-white/90 max-w-2xl mb-4">{category.description}</p>
-                      <Link
-                        href={`/services#${category.id}`}
-                        className="inline-flex items-center px-4 py-2 rounded-md bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors w-fit"
-                      >
-                        Saznajte više
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Navigation Arrows */}
-            <button
-              onClick={goToPrevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-colors rounded-full p-2 text-white"
-              aria-label="Prethodni"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </button>
-            <button
-              onClick={goToNextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-colors rounded-full p-2 text-white"
-              aria-label="Sljedeći"
-            >
-              <ChevronRight className="h-6 w-6" />
-            </button>
-
-            {/* Indicators */}
-            <div className="flex justify-center mt-6 space-x-2">
-              {serviceCategories.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={cn(
-                    "w-3 h-3 rounded-full transition-all duration-300",
-                    index === activeIndex ? "bg-industrial-blue w-6" : "bg-gray-300 hover:bg-gray-400",
-                  )}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Service Categories Grid */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
