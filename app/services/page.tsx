@@ -7,7 +7,17 @@ export const metadata: Metadata = {
 }
 
 // Define service categories and their items
-const services = [  
+const services = [ 
+  {
+    id: "pjeskarenje",
+    title: "PJESKARENJE",
+    items: [],
+  }, 
+  {
+    id: "bravarija",
+    title: "BRAVARIJA",
+    items: [],
+  }, 
   {
     id: "rezanje",
     title: "REZANJE",
@@ -33,18 +43,6 @@ const services = [
       { id: "tig", title: "TIG" },
       { id: "plinsko-zavarivanje", title: "PLINSKO" },
     ],
-  },
-  {
-    id: "softverska-rjesenja",
-    title: "SOFTVERSKA RJEŠENJA",
-    items: [
-      // web, mobilne aplikacije, industrijski softver, automatizacija postrojenja, kuce
-      { id: "web", title: "WEB APLIKACIJE" },
-      { id: "mobilne-aplikacije", title: "MOBILNE APLIKACIJE" },
-      { id: "industrijski-softver", title: "INDUSTRIJSKI SOFTVER" },
-      { id: "automatizacija-postrojenja", title: "AUTOMATIZACIJA POSTROJENJA" },
-      { id: "kuce", title: "KUĆE" },
-    ]
   },  
   {
     id: "antikorozivna-zastita",
@@ -54,17 +52,7 @@ const services = [
       { id: "gumiranje", title: "GUMIRANJE" },
       { id: "plastificiranje", title: "PLASTIFICIRANJE" },
     ],
-  },
-  {
-    id: "strojna-obrada",
-    title: "STROJNA OBRADA METALA I NEMETALA",
-    items: [
-      { id: "tokarenje", title: "TOKARENJE" },
-      { id: "glodanje", title: "GLODANJE" },
-      { id: "busenje", title: "BUŠENJE" },
-      { id: "stancanje", title: "ŠTANCANJE" },
-    ],
-  },
+  },  
   {
     id: "limarski-radovi",
     title: "LIMARSKI RADOVI",
@@ -93,17 +81,29 @@ const services = [
     id: "odrzavanje",
     title: "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA",
     items: [],
-  }, 
+  },  
   {
-    id: "pjeskarenje",
-    title: "PJESKARENJE",
-    items: [],
-  }, 
-  {
-    id: "bravarija",
-    title: "BRAVARIJA",
-    items: [],
+    id: "strojna-obrada",
+    title: "STROJNA OBRADA METALA I NEMETALA",
+    items: [
+      { id: "tokarenje", title: "TOKARENJE" },
+      { id: "glodanje", title: "GLODANJE" },
+      { id: "busenje", title: "BUŠENJE" },
+      { id: "stancanje", title: "ŠTANCANJE" },
+    ],
   },
+  {
+    id: "softverska-rjesenja",
+    title: "SOFTVERSKA RJEŠENJA",
+    items: [
+      // web, mobilne aplikacije, industrijski softver, automatizacija postrojenja, kuce
+      { id: "web", title: "WEB APLIKACIJE" },
+      { id: "mobilne-aplikacije", title: "MOBILNE APLIKACIJE" },
+      { id: "industrijski-softver", title: "INDUSTRIJSKI SOFTVER" },
+      { id: "automatizacija-postrojenja", title: "AUTOMATIZACIJA POSTROJENJA" },
+      { id: "kuce", title: "KUĆE" },
+    ]
+  },  
 ]
 
 export default function ServicesPage() {

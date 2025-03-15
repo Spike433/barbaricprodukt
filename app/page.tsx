@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import ClientSideNavigation from "@/components/client-side-navigation"
 import { Section } from "./types"
+import Link from "next/link"
 
 // Define sections with their content
 const sections: Section[] = [
@@ -361,13 +362,16 @@ export default function Home() {
           }}
         />
 
-        {/* Hero section with new gradient */}
-        <section className="mb-16 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gradient">Barbarić Produkt d.o.o</h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-             za proizvodnju, trgovinu, usluge obrade metala i plastike        
-          </p>
-        </section>        
+        <Link href="/" className="flex items-center">
+              <Image
+                src="https://i.postimg.cc/HsmzZWqq/logo.png"
+                alt="Barbarić Produkt Logo"
+                width={300}
+                height={300}
+                className="mb-6 mt-6"
+                priority
+              />            
+          </Link>        
 
         <div className="flex flex-col lg:flex-row">
           {/* Main content - Server-side rendered for SEO */}

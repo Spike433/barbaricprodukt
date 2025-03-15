@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
@@ -36,15 +36,21 @@ export default function Header() {
                 alt="Barbarić Produkt Logo"
                 width={120}
                 height={120}
-                className="mb-6 mt-6"
+                className="mr-4 mt-6 mb-4"
                 priority
-              />            </Link>
+              />
+              <div className="text-left text-sm mt-6 mb-4">
+                <span>za proizvodnju, trgovinu, usluge obrade metala i plastike</span>
+              </div>
+            </Link>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {[
-              { href: "/", label: "Proizvodnja" },
+              { href: "/", label: "Početna" },
+              { href: "/aboutus", label: "O nama" },
+              { href: "/production", label: "Proizvodnja" },
               { href: "/services", label: "Usluge" },
               { href: "/contact", label: "Kontakt" },
             ].map((link) => (
