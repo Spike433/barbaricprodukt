@@ -15,13 +15,13 @@ const sections: Section[] = [
             id: "montazne-hale",
             title: "Montažne hale, hangari i garaže",
             content: "Montažne hale, hangari i garaže izrađeni su od čvrstih i otpornih materijala, prilagođeni različitim klimatskim uvjetima. Njihova modularna konstrukcija omogućava brzu montažu i prilagodbu specifičnim potrebama korisnika.",
-            images: ["https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg", "https://i.postimg.cc/FK5vZ074/10.jpg", "https://i.postimg.cc/YS6HyjWm/11.jpg"]
-        },
+            images: ["https://i.postimg.cc/L5CRB7ZC/1.jpg", "https://i.postimg.cc/pTktR7kW/12.jpg", "https://i.postimg.cc/CMmFgZ6G/5.jpg", "https://i.postimg.cc/4dXgCZ62/9.jpg", "https://i.postimg.cc/YS6HyjWm/11.jpg", "https://i.postimg.cc/FK5vZ074/10.jpg"]
+        },        
         {
             id: "kuce",
-            title: "Mobilne kuće, spremišta (zapaljivih tekućina, boca, boja i lakova), stambeni i industrijski objekti",
+            title: "Mobilne kuće",
             content: "Mobilne kuće i industrijska spremišta dizajnirana su za sigurnu pohranu i udoban boravak. Konstrukcije osiguravaju zaštitu od vremenskih uvjeta i zadovoljavaju visoke standarde sigurnosti.",
-            images: ["https://i.postimg.cc/136hf4MY/21.jpg", "https://i.postimg.cc/Pxkkm8K7/30.jpg", "https://i.postimg.cc/pd52Qvvm/22.jpg"]
+            images: ["https://i.postimg.cc/136hf4MY/21.jpg"]
         },
         {
             id: "panoramsko-dizalo",
@@ -30,16 +30,29 @@ const sections: Section[] = [
             images: ["https://i.postimg.cc/vTHbnMDx/4.jpg", "https://i.postimg.cc/LsfZHWs1/211.jpg"]
         },
         {
+            id: "stakleneILimeneFasade",
+            title: "Staklene i limene fasade",
+            content: "",
+            images: ["https://i.postimg.cc/Bb6f6gwx/13.jpg", "https://i.postimg.cc/NfnBK3tL/7.jpg", "https://i.postimg.cc/XqzSyCTt/15.jpg"]
+        },
+        {
             id: "krovista",
-            title: "Krovišta, krovni prozori, kupole, svjetlarnici",
-            content: "Krovišta i krovni elementi osiguravaju optimalnu zaštitu i prirodno osvjetljenje prostora. Kupole i svjetlarnici dodaju estetiku i energetsku učinkovitost, smanjujući potrebu za umjetnom rasvjetom.",
+            title: "Krovišta, krovni prozori, krovne kupole, svjetlarnici",
+            content: "",
             images: ["https://i.postimg.cc/qMqpMk99/6.jpg", "https://i.postimg.cc/pTv22KHZ/2.jpg", "https://i.postimg.cc/wvk933xd/3.jpg", "https://i.postimg.cc/44LT0Dmw/14.jpg"]
         },
         {
             id: "ogradeIPodovi",
-            title: "Ograde i podne rešetke za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
-            content: "Ograde i podne rešetke izrađene su od izdržljivih materijala koji osiguravaju sigurnost i dugotrajnost. Posebno dizajnirane rešetkaste zaštite pružaju dodatnu sigurnost prozorima i vratima, a istovremeno omogućuju dobru ventilaciju.",
-            images: ["https://i.postimg.cc/WbdPc5ZV/17.jpg", "https://i.postimg.cc/8PxgpLd6/18.jpg", "https://i.postimg.cc/FKgMVqMy/20.jpg", "https://i.postimg.cc/D0Bgxqgw/16.jpg"]
+            title: "Ograde za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
+            content: "",
+            images: ["https://i.postimg.cc/WbdPc5ZV/17.jpg", "https://i.postimg.cc/8PxgpLd6/18.jpg", "https://i.postimg.cc/FKgMVqMy/20.jpg"]
+        },
+        //podne rešetke 
+        {
+            id: "podneResetke",
+            title: "Podne rešetke",
+            content: "",
+            images: ["https://i.postimg.cc/D0Bgxqgw/16.jpg"]
         },
         {
           id: "gumirani-celicni-spremnici",
@@ -262,6 +275,12 @@ const sections: Section[] = [
             "title": "Šahte za kanalizaciju, septičke jame, pjeskolovi i mastolovi",
             "content": "Šahte, septičke jame, pjeskolovi i mastolovi izrađeni su od visokokvalitetnih materijala otpornih na koroziju i ekstremne uvjete. Različitih dimenzija i oblika, prilagođeni su za široku primjenu u komunalnoj infrastrukturi i industriji.",
             "images": ["https://i.postimg.cc/yd3vD2hX/37.jpg", "https://i.postimg.cc/vm3v2bhv/8.jpg", "https://i.postimg.cc/rmsNv3Y2/9.jpg", "https://i.postimg.cc/MGKLpsrd/18.jpg"]
+        },
+        {
+            "id": "spremista",
+            "title": "Spremišta za zapaljive tekućine, boce, boje i lakove",
+            "content": "Naša spremišta za zapaljive tekućine, boce, boje i lakove osiguravaju sigurno skladištenje i rukovanje opasnim tvarima. Izrađena od čvrstih materijala, prilagođena su specifičnim zahtjevima industrije i komunalnih službi.",
+            "images": ["https://i.postimg.cc/Pxkkm8K7/30.jpg", "https://i.postimg.cc/pd52Qvvm/22.jpg"]
         }
 
     ]
