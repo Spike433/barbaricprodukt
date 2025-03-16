@@ -5,55 +5,55 @@ import Link from "next/link"
 
 const serviceCategories = [
   {
-    id: "celicne-konstrukcije",
+    id: "celicneKonstrukcije",
     title: "Čelične konstrukcije",
     image: "https://i.postimg.cc/4dXgCZ62/9.jpg",
     description: "Izrada i montaža čeličnih konstrukcija za različite namjene.",
   },
   {
-    id: "gumirani-elementi",
+    id: "gumirani-celicni-elementi",
     title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
     image: "https://i.postimg.cc/zf1TRN6j/2.jpg",
     description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
   },
   {
-    id: "alu-pvc",
+    id: "aluPvcStolarija",
     title: "Alu i PVC stolarija",
     image: "https://i.postimg.cc/JnwVW2gg/3.jpg",
     description: "Visokokvalitetna aluminijska i PVC stolarija za sve vrste objekata.",
   },
   {
-    id: "oprema-gradevinarstvo",
+    id: "opremaZaGradevinarstvo",
     title: "Oprema za građevinarstvo",
     image: "https://i.postimg.cc/8c2hKtvD/1.jpg",
     description: "Profesionalna oprema i alati za građevinsku industriju.",
   },
   {
-    id: "industrijska-oprema",
+    id: "industrijskaOprema",
     title: "Industrijska oprema",
     image: "https://i.postimg.cc/1zhpcCQK/31.jpg",
     description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
   },
   {
-    id: "oprema-more",
+    id: "opremaZaMore",
     title: "Oprema za more",
     image: "https://i.postimg.cc/j5vNB6pB/4.jpg",
     description: "Oprema i komponente za pomorsku industriju i nautiku.",
   },
   {
-    id: "poljoprivreda",
+    id: "strojeviZaPoljoprivreduIVocarstvo",
     title: "Strojevi za poljoprivredu i voćarstvo",
     image: "https://i.postimg.cc/YqYZnLWf/14.jpg",
     description: "Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.",
   },
   {
-    id: "eko-oprema",
+    id: "ekoOpremaKomunalna",
     title: "Komunalna eko oprema",
     image: "https://i.postimg.cc/Pxkkm8K7/30.jpg",
     description: "Ekološka oprema za komunalne službe i održavanje javnih površina.",
   },
   {
-    id: "urbana-oprema",
+    id: "urbanaOprema",
     title: "Urbana oprema",
     image: "https://i.postimg.cc/L4yjXF9r/0.jpg",
     description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
@@ -90,12 +90,12 @@ export default function HomePage() {
       {/* Service Categories Grid */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue">Naše kategorije usluga</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue">Naše kategorije proizvoda</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {serviceCategories.map((category) => (
               <Link
-                href={`/services#${category.id}`}
+                href={`/products#${category.id}`}
                 key={category.id}
                 className="group bg-white rounded-xl "
               >
