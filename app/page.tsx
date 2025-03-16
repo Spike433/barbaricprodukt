@@ -118,16 +118,16 @@ export default function HomePage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
-          <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-            <div className="bg-industrial-blue p-8 rounded-lg shadow-lg">
+        <div className="absolute inset-0">
+          <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
+            <div className="bg-industrial-blue pt-4 pb-4 rounded-3xl shadow-lg">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl drop-shadow-md">
                 Barbarić Produkt
               </h1>
               <p className="text-xl md:text-2xl text-white/90 max-w-2xl drop-shadow-md">
                 Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
               </p>
-            </div>            
+            </div>
           </div>
         </div>
       </section>
