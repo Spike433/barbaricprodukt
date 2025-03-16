@@ -149,7 +149,7 @@ export default function HomePage() {
                     src={category.image || "/placeholder.svg"}
                     alt={category.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
                   />
                   <div className="absolute inset-0"></div>
                 </div>
