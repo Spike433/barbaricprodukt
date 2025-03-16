@@ -3,8 +3,6 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
 
 // Service categories with placeholder images
 const serviceCategories = [
@@ -23,7 +21,7 @@ const serviceCategories = [
   {
     id: "alu-pvc",
     title: "Alu i PVC stolarija",
-    image: "/placeholder.svg?height=600&width=800&text=Alu i PVC stolarija",
+    image: "https://i.postimg.cc/JnwVW2gg/3.jpg",
     description: "Visokokvalitetna aluminijska i PVC stolarija za sve vrste objekata.",
   },
   {
@@ -47,13 +45,13 @@ const serviceCategories = [
   {
     id: "poljoprivreda",
     title: "Strojevi za poljoprivredu i voćarstvo",
-    image: "/placeholder.svg?height=600&width=800&text=Poljoprivredni strojevi",
+    image: "https://i.postimg.cc/YqYZnLWf/14.jpg",
     description: "Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.",
   },
   {
     id: "eko-oprema",
-    title: "Eko oprema komunalna",
-    image: "/placeholder.svg?height=600&width=800&text=Eko oprema",
+    title: "Komunalna eko oprema",
+    image: "https://i.postimg.cc/Pxkkm8K7/30.jpg",
     description: "Ekološka oprema za komunalne službe i održavanje javnih površina.",
   },
   {
