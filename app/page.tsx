@@ -1,10 +1,8 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-// Service categories with placeholder images
 const serviceCategories = [
   {
     id: "celicne-konstrukcije",
