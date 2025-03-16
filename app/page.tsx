@@ -142,7 +142,7 @@ export default function HomePage() {
               <Link
                 href={`/services#${category.id}`}
                 key={category.id}
-                className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
+                className="group bg-white rounded-xl "
               >
                 <div className="relative h-48">
                   <Image
@@ -151,7 +151,7 @@ export default function HomePage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute inset-0"></div>
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-lg mb-2 group-hover:text-industrial-blue transition-colors">
