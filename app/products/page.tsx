@@ -443,7 +443,7 @@ function generateBlurPlaceholder(width: number, height: number, color = "e4e4e7"
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <div className="container relative mx-auto px-4 py-16">
+      <div className="container relative mx-auto px-4 py-8">
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
@@ -488,7 +488,7 @@ export default function Home() {
                     <div
                       key={subheader.id}
                       id={subheader.id}
-                      className="mt-8 mb-6 scroll-mt-24 p-9"
+                      className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
                     >
                       <h3 className="text-xl font-medium mb-3 text-industrial-blue">{subheader.title}</h3>
                       <p className="ml-4 mb-2">
