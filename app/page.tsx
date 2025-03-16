@@ -120,16 +120,14 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl">Barbarić Produkt</h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-8">
-              Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-6 py-3 rounded-md bg-industrial-blue text-white font-medium shadow-lg hover:bg-industrial-blue/90 transition-colors"
-            >
-              Kontaktirajte nas
-            </Link>
+            <div className="bg-industrial-blue p-8 rounded-lg shadow-lg">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl drop-shadow-md">
+                Barbarić Produkt
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 max-w-2xl drop-shadow-md">
+                Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
+              </p>
+            </div>            
           </div>
         </div>
       </section>
