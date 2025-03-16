@@ -63,47 +63,6 @@ const serviceCategories = [
 ]
 
 export default function HomePage() {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [isAutoplay, setIsAutoplay] = useState(true)
-  const autoplayRef = useRef<NodeJS.Timeout | null>(null)
-  const sliderRef = useRef<HTMLDivElement>(null)
-
-  // Handle autoplay
-  useEffect(() => {
-    if (isAutoplay) {
-      autoplayRef.current = setInterval(() => {
-        setActiveIndex((prev) => (prev + 1) % serviceCategories.length)
-      }, 5000) // Change slide every 5 seconds
-    }
-
-    return () => {
-      if (autoplayRef.current) {
-        clearInterval(autoplayRef.current)
-      }
-    }
-  }, [isAutoplay])
-
-  // Pause autoplay on hover
-  const handleMouseEnter = () => setIsAutoplay(false)
-  const handleMouseLeave = () => setIsAutoplay(true)
-
-  // Navigation functions
-  const goToSlide = (index: number) => {
-    setActiveIndex(index)
-    // Reset autoplay timer when manually changing slides
-    if (autoplayRef.current) {
-      clearInterval(autoplayRef.current)
-      setIsAutoplay(true)
-    }
-  }
-
-  const goToPrevSlide = () => {
-    setActiveIndex((prev) => (prev === 0 ? serviceCategories.length - 1 : prev - 1))
-  }
-
-  const goToNextSlide = () => {
-    setActiveIndex((prev) => (prev + 1) % serviceCategories.length)
-  }
 
   return (
     <main className="min-h-screen">
