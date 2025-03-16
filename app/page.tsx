@@ -120,7 +120,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
-            <div className="bg-industrial-blue pt-4 pb-4 rounded-3xl shadow-lg">
+            <div className="bg-industrial-blue bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl drop-shadow-md">
                 Barbarić Produkt
               </h1>
