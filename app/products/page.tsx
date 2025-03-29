@@ -497,17 +497,19 @@ export default function Home() {
                       {subheader?.images && (
                     <div className="flex flex-wrap p-4">
                       {subheader.images.map((image, index) => (
-                        <div key={index} className="w-1/3 p-1">
-                          <Image
-                            src={image}
-                            width={300}
-                            height={300}
-                            alt={`${section.title} - Detailed illustration of our ${section.title.toLowerCase()} at Barbarić Produkt`}
-                            className="object-cover hover:scale-105 transition-transform duration-500 rounded-lg"
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL={generateBlurPlaceholder(400, 400)}
-                          />
+                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 p-2">
+                          <div className="w-full h-[250px] relative overflow-hidden rounded-lg">
+                            <Image
+                              src={image}
+                              fill // Fill the parent container
+                              alt={`${section.title} - Detailed illustration`}
+                              className="object-cover hover:scale-105 transition-transform duration-500"
+                              loading="lazy"
+                              placeholder="blur"
+                              blurDataURL={generateBlurPlaceholder(250, 0)} // Match container size
+                              sizes="(max-width: 250px) 100vw, 250px" // Responsive sizing hints
+                            />
+                          </div>
                         </div>
                       ))}
                     </div>
