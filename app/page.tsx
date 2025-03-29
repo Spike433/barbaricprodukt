@@ -61,8 +61,8 @@ const serviceCategories = [
   },
 ]
 
-export default function HomePage() {
 
+export default function HomePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Full Width */}
@@ -87,37 +87,40 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Service Categories Grid */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue">Naše kategorije proizvoda</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue md:text-4xl">
+            Naše kategorije proizvoda
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
             {serviceCategories.map((category) => (
               <Link
                 href={`/products#${category.id}`}
                 key={category.id}
-                className="group bg-white rounded-xl "
+                className="group bg-white rounded-xl hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-               <div className="relative aspect-square w-full overflow-hidden rounded-xl">
-  <Image
-    src={category.image || "/placeholder.svg"}
-    alt={category.title}
-    fill
-    className="object-cover group-hover:scale-105 transition-transform duration-500"
-    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-    placeholder="blur"
-    blurDataURL={generateBlurPlaceholder(300, 300)}
-    loading="lazy"
-  />
-  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-</div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg mb-2 group-hover:text-industrial-blue transition-colors">
+                <div className="relative aspect-square w-full overflow-hidden rounded-xl">
+                  <Image
+                    src={category.image || "/placeholder.svg"}
+                    alt={category.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
                     {category.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm">{category.description}</p>
+                  <p className="text-muted-foreground text-sm line-clamp-3">
+                    {category.description}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -149,6 +152,5 @@ export default function HomePage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
-
