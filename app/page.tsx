@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { generateBlurPlaceholder } from "../lib/utils"
 
 const serviceCategories = [
   {
@@ -99,15 +100,19 @@ export default function HomePage() {
                 key={category.id}
                 className="group bg-white rounded-xl "
               >
-                <div className="relative h-48">
-                  <Image
-                    src={category.image || "/placeholder.svg"}
-                    alt={category.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
-                  />
-                  <div className="absolute inset-0"></div>
-                </div>
+               <div className="relative aspect-square w-full overflow-hidden rounded-xl">
+  <Image
+    src={category.image || "/placeholder.svg"}
+    alt={category.title}
+    fill
+    className="object-cover group-hover:scale-105 transition-transform duration-500"
+    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+    placeholder="blur"
+    blurDataURL={generateBlurPlaceholder(300, 300)}
+    loading="lazy"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+</div>
                 <div className="p-4">
                   <h3 className="font-bold text-lg mb-2 group-hover:text-industrial-blue transition-colors">
                     {category.title}
