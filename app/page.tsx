@@ -89,42 +89,74 @@ export default function HomePage() {
       </section>
 
       {/* Service Categories Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue md:text-4xl">
             Naše kategorije proizvoda
           </h2>
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
+  {serviceCategories.map((category) => (
+    <Link
+      href={`/products#${category.id}`}
+      key={category.id}
+      className="group bg-white rounded-t-xl hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+    >
+      <div className="relative aspect-square w-full overflow-hidden rounded-t-xl">
+        <Image
+          src={category.image || "/placeholder.svg"}
+          alt={category.title}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out rounded-t-xl p-0.4"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 400)}
+          loading="lazy"
+        />
+      </div>
+      <div className="p-4 flex-1 flex flex-col">
+        <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+          {category.title}
+        </h3>
+        <p className="text-muted-foreground text-sm line-clamp-3">
+          {category.description}
+        </p>
+      </div>
+    </Link>
+  ))}
+          </div> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-            {serviceCategories.map((category) => (
-              <Link
-                href={`/products#${category.id}`}
-                key={category.id}
-                className="group bg-white rounded-xl hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="relative aspect-square w-full overflow-hidden rounded-xl">
+          {serviceCategories.map((category) => (
+            <Link
+              href={`/products#${category.id}`}
+              key={category.id}
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              {/* Image container with padding - the key is here */}
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden"> {/* This div creates the spacing */}
                   <Image
                     src={category.image || "/placeholder.svg"}
                     alt={category.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out "
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 400)}
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                    {category.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm line-clamp-3">
-                    {category.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  {category.title}
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  {category.description}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
         </div>
       </section>
 
