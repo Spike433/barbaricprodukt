@@ -86,7 +86,7 @@ export default function ContactForm() {
 
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-industrial-blue via-primary to-industrial-red bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
             Kontaktirajte nas
           </h1>
 
@@ -95,16 +95,11 @@ export default function ContactForm() {
             roku.
           </p>
 
-          {/* Decorative element */}
-          <div className="flex justify-center mb-12">
-            <div className="h-1 w-24 bg-gradient-to-r from-industrial-blue to-industrial-red rounded-full"></div>
-          </div>
-
           {/* Two cards with equal height */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             {/* Contact Form */}
             <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
-              <div className="h-2 bg-gradient-to-r from-industrial-blue to-primary"></div>
+              <div className="h-2 bg-industrial-blue"></div>
               <CardHeader className="pb-2">
                 <CardTitle className="text-industrial-blue">Pošaljite nam poruku</CardTitle>
                 <CardDescription>Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.</CardDescription>
@@ -181,7 +176,7 @@ export default function ContactForm() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-industrial-blue to-primary hover:from-industrial-blue/90 hover:to-primary/90 transition-all duration-300"
+                      className="w-full bg-industrial-blue hover:bg-industrial-blue/50 transition-all duration-300"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -203,7 +198,7 @@ export default function ContactForm() {
 
             {/* Company Information */}
             <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
-              <div className="h-2 bg-gradient-to-r from-industrial-blue to-primary"></div>
+              <div className="h-2 bg-industrial-blue"></div>
               <CardHeader className="pb-2">
                 <CardTitle className="text-industrial-blue">Kontakt informacije</CardTitle>
                 <CardDescription>Možete nas kontaktirati i direktno putem sljedećih kanala</CardDescription>
