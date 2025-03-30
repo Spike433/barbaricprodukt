@@ -31,7 +31,7 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
   }
 
   return (
-    <div className="w-full lg:w-1/4 mt-8 lg:mt-0">
+    <div className="w-full mt-8">
       <div className="sticky top-24 p-6 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md max-h-[80vh] overflow-y-auto">
         <h3 className="text-lg font-medium mb-6 pb-2 border-b border-industrial-steel/20 text-left">Sadržaj</h3>
         <nav className="space-y-1 text-left" aria-label="Page navigation">

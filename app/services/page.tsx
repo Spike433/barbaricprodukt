@@ -114,7 +114,7 @@ export default function ServicesPage() {
 
       <div className="container relative mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-industrial-blue via-primary to-industrial-red bg-clip-text text-transparent leading-tight p-1">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue ">
             Usluge
           </h1>
 
@@ -122,12 +122,7 @@ export default function ServicesPage() {
             Barbarić Produkt d.o.o. pruža širok spektar usluga u metalnoj industriji, od bravarije i zavarivanja do
             strojne obrade i održavanja industrijskih postrojenja.
           </p>
-
-          {/* Decorative element */}
-          <div className="flex justify-center mb-12">
-            <div className="h-1 w-24 bg-gradient-to-r from-industrial-blue to-industrial-red rounded-full"></div>
-          </div>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <ServiceCard key={service.id} title={service.title} items={service.items} />

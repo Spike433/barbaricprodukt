@@ -39,7 +39,7 @@ export default function Header() {
                 className="mr-4 mt-6 mb-4"
                 priority
               />
-              <div className="text-left text-sm mt-6 mb-4">
+              <div className="text-left text-sm mt-6 mb-4 hidden sm:block">
                 <span>za proizvodnju, trgovinu, usluge obrade metala i plastike</span>
               </div>
             </Link>

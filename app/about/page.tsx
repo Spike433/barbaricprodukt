@@ -50,7 +50,7 @@ export default function AboutPage() {
 
       <div className="container relative mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-gradient-to-r from-industrial-blue via-primary to-industrial-red bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-clip-text text-industrial-blue">
             O nama
           </h1>
 
@@ -59,11 +59,6 @@ export default function AboutPage() {
             plastike i gume.
           </p>
 
-          {/* Decorative element */}
-          <div className="flex justify-center mb-12">
-            <div className="h-1 w-24 bg-gradient-to-r from-industrial-blue to-industrial-red rounded-full"></div>
-          </div>
-          
           {/* Company introduction */}
           <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-md border border-gray-100 mb-12">
             <h2 className="text-2xl font-bold text-industrial-blue mb-6">Naša priča</h2>

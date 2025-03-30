@@ -427,7 +427,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <div className="container relative mx-auto px-4 py-8">
+      <div className="container relative mx-auto px-4">
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
@@ -455,10 +455,26 @@ export default function Home() {
             }),
           }}
         />
+        <div className="container relative mx-auto px-4 py-14">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
+            Proizvodnja
+          </h1>
+
+          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Proizvodimo čelične konstrukcije, gumificirane i plastificirane elemente, alu i PVC stolariju, industrijsku opremu i opremu za more. Obrađujemo metal i plastiku te radimo po individualnoj narudžbi.
+          </p>
+        </div>
+        </div>
               
         <div className="flex flex-col lg:flex-row">
-          {/* Main content - Server-side rendered for SEO */}
-          <div className="w-full lg:w-3/4 pr-0 lg:pr-8">
+            {/* Navigation first on mobile, second on desktop */}
+            <div className="order-1 lg:order-2 w-full lg:w-[30%] mb-6 lg:mb-0 lg:pl-4">
+              <ClientSideNavigation sections={sections} />
+            </div>
+          
+            {/* Main content second on mobile, first on desktop */}
+            <div className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-8">
             {sections.map((section) => (
               <section
                 key={section.id}
@@ -503,10 +519,7 @@ export default function Home() {
                 </div>
               </section>
             ))}
-          </div>
-
-          {/* Client-side navigation component */}
-          <ClientSideNavigation sections={sections} />
+          </div>          
         </div>
       </div>
     </main>
