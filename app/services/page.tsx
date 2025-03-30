@@ -138,7 +138,7 @@ export default function ServicesPage() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="/contact"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-gradient-to-r from-industrial-blue to-primary text-white font-medium shadow hover:from-industrial-blue/90 hover:to-primary/90 transition-colors"
+                className="inline-flex items-center px-6 py-3 rounded-md bg-industrial-blue/70 text-white font-medium shadow hover:from-industrial-blue/90 hover:to-primary/90 transition-colors"
               >
                 Kontaktirajte nas
               </a>
