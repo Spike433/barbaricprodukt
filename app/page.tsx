@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-5 bg-industrial-blue">
+      <section className="py-5 bg-industrial-blue/90">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-white">Spremni smo za vašu viziju</h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
