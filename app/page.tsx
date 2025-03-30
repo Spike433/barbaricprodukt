@@ -80,10 +80,10 @@ export default function HomePage() {
               <Image
                 src="https://i.postimg.cc/HsmzZWqq/logo.png"
                 alt="Barbarić Produkt Logo"
-                width={700}
-                height={700}
-                
-                priority
+                width={500}
+                height={500}                
+                priority                
+                className="mx-auto"
               />
               <p className="text-xl md:text-2xl text-white/90 max-w-2xl drop-shadow-md">
                 Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
