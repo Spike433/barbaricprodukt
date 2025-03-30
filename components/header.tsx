@@ -14,6 +14,15 @@ const languages = [
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
 ]
 
+// Navigation items
+const navItems = [
+  { href: "/", label: "Početna" },              
+  { href: "/about", label: "O nama" },
+  { href: "/products", label: "Proizvodnja" },
+  { href: "/services", label: "Usluge" },
+  { href: "/contact", label: "Kontakt" },
+]
+
 export default function Header() {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -47,13 +56,7 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {[
-              { href: "/", label: "Početna" },              
-              { href: "/about", label: "O nama" },
-              { href: "/products", label: "Proizvodnja" },
-              { href: "/services", label: "Usluge" },
-              { href: "/contact", label: "Kontakt" },
-            ].map((link) => (
+            {navItems.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -110,21 +113,16 @@ export default function Header() {
       <div
         className={cn(
           "md:hidden absolute w-full bg-background border-b transition-all duration-300 ease-in-out",
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         )}
       >
         <nav className="flex flex-col space-y-4 p-4">
-          {[
-            { href: "/", label: "Home" },
-            { href: "/about", label: "About Us" },
-            { href: "/services", label: "Services" },
-            { href: "/contact", label: "Contact" },
-          ].map((link) => (
+          {navItems.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-industrial-blue",
+                "text-sm font-medium transition-colors hover:text-industrial-blue py-2",
                 pathname === link.href ? "text-industrial-blue border-b-2 border-industrial-blue pb-1" : ""
               )}
               onClick={() => setIsMenuOpen(false)}
@@ -135,7 +133,7 @@ export default function Header() {
 
           {/* Language selector - Mobile */}
           <div className="border-t pt-4 mt-2">
-            <p className="text-xs text-muted-foreground mb-2">Select Language</p>
+            <p className="text-xs text-muted-foreground mb-2">Odaberi jezik</p>
             <div className="flex flex-wrap gap-2">
               {languages.map((lang) => (
                 <button
@@ -152,7 +150,7 @@ export default function Header() {
                   }}
                 >
                   <span className="mr-1">{lang.flag}</span>
-                  <span>{lang.code.toUpperCase()}</span>
+                  <span>{lang.name}</span>
                 </button>
               ))}
             </div>
