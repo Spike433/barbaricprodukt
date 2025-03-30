@@ -274,26 +274,26 @@ export default function ContactForm() {
             </Card>
           </div>
 
-          {/* Map - Full Width */}
-          <div className="mt-8 rounded-xl overflow-hidden shadow-md border border-gray-200 h-[400px] relative bg-gray-100 w-full">
-            {isMapLoaded ? (
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7890741539917!2d16.393869!3d45.7082903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766837b35c5c4e7%3A0x6a5b7ff34a3b8d56!2sBarbaric%20Produkt%20d.o.o.!5e0!3m2!1sen!2shr!4v1648226542428!5m2!1sen!2shr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Barbarić Produkt lokacija"
-                className="absolute inset-0"
-              />
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Loader2 className="h-8 w-8 text-industrial-blue animate-spin" />
-              </div>
-            )}
-          </div>
+            {/* Map - Full Width */}
+            <div className="mt-8 rounded-xl overflow-hidden shadow-md border border-gray-200 h-[400px] relative bg-gray-100 w-full">
+              {isMapLoaded ? (
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.4757019445099!2d16.402815570824625!3d45.69059789346183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47665e215d82cbe1%3A0xabf73eb7930b95bf!2sBarbari%C4%87%20produkt%20d.o.o.!5e0!3m2!1shr!2shr!4v1743333548948!5m2!1shr!2shr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Barbarić Produkt lokacija"
+                  className="absolute inset-0"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Loader2 className="h-8 w-8 text-industrial-blue animate-spin" />
+                </div>
+              )}
+            </div>
         </div>
       </div>
     </main>
