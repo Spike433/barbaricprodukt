@@ -424,7 +424,7 @@ export const metadata: Metadata = {
 }
 
 // JSON-LD structured data for better SEO
-export default function Home() {
+export default function ProductPage() {
   return (
     <main className="min-h-screen bg-background">
       <div className="container relative mx-auto px-4">
