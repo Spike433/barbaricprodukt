@@ -1,83 +1,18 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Globe, CheckCircle, Loader2, Send } from "lucide-react"
-import { cn } from "@/lib/utils"
-
-type FormData = {
-  name: string
-  email: string
-  subject: string
-  message: string
-}
+import { Mail, Phone, MapPin, Globe, Loader2 } from "lucide-react"
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const [formErrors, setFormErrors] = useState<Partial<FormData>>({})
   const [isMapLoaded, setIsMapLoaded] = useState(false)
 
   // Load map after component mounts to avoid SSR issues
   useEffect(() => {
     setIsMapLoaded(true)
   }, [])
-
-  const validateForm = (): boolean => {
-    const errors: Partial<FormData> = {}
-
-    if (!formData.name.trim()) errors.name = "Ime je obavezno"
-    if (!formData.email.trim()) {
-      errors.email = "Email je obavezan"
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      errors.email = "Unesite valjanu email adresu"
-    }
-    if (!formData.subject.trim()) errors.subject = "Predmet je obavezan"
-    if (!formData.message.trim()) errors.message = "Poruka je obavezna"
-
-    setFormErrors(errors)
-    return Object.keys(errors).length === 0
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-
-    // Clear error when user types
-    if (formErrors[name as keyof FormData]) {
-      setFormErrors((prev) => ({ ...prev, [name]: undefined }))
-    }
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-    if (!validateForm()) return
-
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-
-    setTimeout(() => setIsSubmitted(false), 5000)
-  }
 
   return (
     <main className="min-h-screen py-16">
@@ -96,112 +31,14 @@ export default function ContactForm() {
           </p>
 
           {/* Two cards with equal height */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Contact Form */}
-            <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
-              <div className="h-2 bg-industrial-blue"></div>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-industrial-blue">Pošaljite nam poruku</CardTitle>
-                <CardDescription>Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                {isSubmitted ? (
-                  <div className="bg-green-50 border border-green-200 p-6 rounded-md text-center space-y-3 animate-in fade-in-50 duration-300">
-                    <CheckCircle className="h-12 w-12 text-green-500 mx-auto" />
-                    <h3 className="text-lg font-medium text-green-800">Poruka uspješno poslana!</h3>
-                    <p className="text-green-700">Hvala vam na poruci! Javit ćemo vam se uskoro.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="space-y-1">
-                      <Label htmlFor="name" className={cn(formErrors.name && "text-destructive")}>
-                        Vaše ime
-                      </Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Unesite vaše ime"
-                        className={cn("bg-white", formErrors.name && "border-destructive")}
-                      />
-                      {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label htmlFor="email" className={cn(formErrors.email && "text-destructive")}>
-                        Email adresa
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Unesite vaš email"
-                        className={cn("bg-white", formErrors.email && "border-destructive")}
-                      />
-                      {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label htmlFor="subject" className={cn(formErrors.subject && "text-destructive")}>
-                        Predmet
-                      </Label>
-                      <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="O čemu se radi?"
-                        className={cn("bg-white", formErrors.subject && "border-destructive")}
-                      />
-                      {formErrors.subject && <p className="text-xs text-destructive mt-1">{formErrors.subject}</p>}
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label htmlFor="message" className={cn(formErrors.message && "text-destructive")}>
-                        Poruka
-                      </Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Unesite vašu poruku"
-                        className={cn("min-h-[150px] bg-white", formErrors.message && "border-destructive")}
-                      />
-                      {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
-                    </div>
-
-                    <Button
-                      type="submit"
-                      className="w-full bg-industrial-blue hover:bg-industrial-blue/50 transition-all duration-300"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                          Šaljem...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="mr-2 h-4 w-4" />
-                          Pošalji poruku
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* Company Information */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-8">
+            {/* Company Information - Left side */}
             <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
               <div className="h-2 bg-industrial-blue"></div>
               <CardHeader className="pb-2">
                 <CardTitle className="text-industrial-blue">Kontakt informacije</CardTitle>
-                <CardDescription>Možete nas kontaktirati i direktno putem sljedećih kanala</CardDescription>
+                <CardDescription className="text-center">Možete nas kontaktirati i direktno putem sljedećih kanala</CardDescription>
+                
               </CardHeader>
               <CardContent className="space-y-6 flex-grow">
                 {/* Company Image */}
@@ -272,31 +109,41 @@ export default function ContactForm() {
                 <p className="text-sm text-muted-foreground">Radno vrijeme: Ponedjeljak - Petak, 8:00 - 16:00</p>
               </CardFooter>
             </Card>
+
+            {/* Expanded Map in Card - Right side */}
+            <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
+              <div className="h-2 bg-industrial-blue"></div>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-industrial-blue">Gdje se nalazimo</CardTitle>
+                <CardDescription className="text-center">Detaljna lokacija našeg pogona</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow p-0 flex">
+                <div className="h-full w-full relative bg-gray-100">
+                  {isMapLoaded ? (
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.4757019445099!2d16.402815570824625!3d45.69059789346183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47665e215d82cbe1%3A0xabf73eb7930b95bf!2sBarbari%C4%87%20produkt%20d.o.o.!5e0!3m2!1shr!2shr!4v1743333548948!5m2!1shr!2shr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Barbarić Produkt lokacija"
+                      className="absolute inset-0"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Loader2 className="h-8 w-8 text-industrial-blue animate-spin" />
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
-            {/* Map - Full Width */}
-            <div className="mt-8 rounded-xl overflow-hidden shadow-md border border-gray-200 h-[400px] relative bg-gray-100 w-full">
-              {isMapLoaded ? (
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.4757019445099!2d16.402815570824625!3d45.69059789346183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47665e215d82cbe1%3A0xabf73eb7930b95bf!2sBarbari%C4%87%20produkt%20d.o.o.!5e0!3m2!1shr!2shr!4v1743333548948!5m2!1shr!2shr"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Barbarić Produkt lokacija"
-                  className="absolute inset-0"
-                />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Loader2 className="h-8 w-8 text-industrial-blue animate-spin" />
-                </div>
-              )}
-            </div>
+          {/* Full Width Expanded Map - Removed since we've incorporated it into the right card */}
         </div>
       </div>
     </main>
   )
 }
-
