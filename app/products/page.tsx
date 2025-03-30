@@ -461,7 +461,7 @@ export default function Home() {
             Proizvodnja
           </h1>
 
-          <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-center text-muted-foreground max-w-3xl mx-auto">
             Proizvodimo čelične konstrukcije, gumificirane i plastificirane elemente, alu i PVC stolariju, industrijsku opremu i opremu za more. Obrađujemo metal i plastiku te radimo po individualnoj narudžbi.
           </p>
         </div>
