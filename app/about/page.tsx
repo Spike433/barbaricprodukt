@@ -122,7 +122,7 @@ export default function AboutPage() {
           </div>
 
           {/* Call to action */}
-          <div className="bg-gradient-to-r from-industrial-blue to-primary rounded-xl p-8 shadow-lg text-white text-center">
+          <div className="bg-industrial-blue/85 rounded-xl p-8 shadow-lg text-white text-center">
             <h2 className="text-2xl font-bold mb-4">Zainteresirani ste za suradnju?</h2>
             <p className="mb-6 max-w-2xl mx-auto">
               Kontaktirajte nas za više informacija o našim uslugama ili za dogovor o potencijalnoj suradnji. Naš tim
