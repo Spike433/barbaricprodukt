@@ -474,7 +474,7 @@ export default function Home() {
             </div>
           
             {/* Main content second on mobile, first on desktop */}
-            <div className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-8">
+            <div className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-2">
             {sections.map((section) => (
               <section
                 key={section.id}
