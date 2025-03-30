@@ -76,10 +76,15 @@ export default function HomePage() {
         />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
-            <div className="bg-industrial-blue bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-4xl drop-shadow-md">
-                Barbarić Produkt
-              </h1>
+            <div className=" bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
+              <Image
+                src="https://i.postimg.cc/HsmzZWqq/logo.png"
+                alt="Barbarić Produkt Logo"
+                width={700}
+                height={700}
+                
+                priority
+              />
               <p className="text-xl md:text-2xl text-white/90 max-w-2xl drop-shadow-md">
                 Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
               </p>
