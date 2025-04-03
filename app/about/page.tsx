@@ -65,8 +65,8 @@ export default function AboutPage() {
 
             <div className="space-y-4 text-muted-foreground">
               <p className="text-lg">
-                <span className="font-semibold text-foreground">Barbarić Produkt d.o.o.</span> je obiteljska tvrtka,
-                orijentirana na proizvodnju i obradu proizvoda od metala, plastike i gume, usluge izrade i montaže
+                <span className="font-semibold text-foreground">Barbarić Produkt d.o.o.</span> je obiteljska tvrtka.
+                Orijentirana na proizvodnju i obradu proizvoda od metala, plastike i gume, usluge izrade i montaže
                 metalnih konstrukcija, antikorozivnu zaštitu, gumiranja i plastificiranja cjevovoda, ventila, rezervoara
                 i industrijskih postrojenja.
               </p>
