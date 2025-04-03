@@ -6,16 +6,16 @@ import { generateBlurPlaceholder } from "../lib/utils"
 
 const serviceCategories = [
   {
+    id: "industrijskaOprema",
+    title: "Industrijska oprema",
+    image: "https://i.postimg.cc/1zhpcCQK/31.jpg",
+    description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
+  },  
+  {
     id: "celicneKonstrukcije",
     title: "Čelične konstrukcije",
     image: "https://i.postimg.cc/4dXgCZ62/9.jpg",
     description: "Izrada i montaža čeličnih konstrukcija za različite namjene.",
-  },
-  {
-    id: "gumirani-celicni-elementi",
-    title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
-    image: "https://i.postimg.cc/zf1TRN6j/2.jpg",
-    description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
   },
   {
     id: "aluPvcStolarija",
@@ -30,22 +30,22 @@ const serviceCategories = [
     description: "Profesionalna oprema i alati za građevinsku industriju.",
   },
   {
-    id: "industrijskaOprema",
-    title: "Industrijska oprema",
-    image: "https://i.postimg.cc/1zhpcCQK/31.jpg",
-    description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
-  },
-  {
-    id: "opremaZaMore",
-    title: "Oprema za more",
-    image: "https://i.postimg.cc/j5vNB6pB/4.jpg",
-    description: "Oprema i komponente za pomorsku industriju i nautiku.",
-  },
+    id: "gumirani-celicni-elementi",
+    title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
+    image: "https://i.postimg.cc/zf1TRN6j/2.jpg",
+    description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
+  },   
   {
     id: "strojeviZaPoljoprivreduIVocarstvo",
     title: "Strojevi za poljoprivredu i voćarstvo",
     image: "https://i.postimg.cc/YqYZnLWf/14.jpg",
     description: "Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.",
+  },  
+  {
+    id: "urbanaOprema",
+    title: "Urbana oprema",
+    image: "https://i.postimg.cc/L4yjXF9r/0.jpg",
+    description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
   },
   {
     id: "ekoOpremaKomunalna",
@@ -54,10 +54,10 @@ const serviceCategories = [
     description: "Ekološka oprema za komunalne službe i održavanje javnih površina.",
   },
   {
-    id: "urbanaOprema",
-    title: "Urbana oprema",
-    image: "https://i.postimg.cc/L4yjXF9r/0.jpg",
-    description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
+    id: "opremaZaMore",
+    title: "Oprema za more",
+    image: "https://i.postimg.cc/j5vNB6pB/4.jpg",
+    description: "Oprema i komponente za pomorsku industriju i nautiku.",
   },
 ]
 
