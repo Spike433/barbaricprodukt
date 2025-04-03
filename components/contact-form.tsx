@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,6 +11,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Mail, Phone, MapPin, Globe, CheckCircle, Loader2, Send } from "lucide-react"
 import { cn } from "@/lib/utils"
+import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 type FormData = {
   name: string
@@ -29,9 +31,13 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formErrors, setFormErrors] = useState<Partial<FormData>>({})
-  const [isMapLoaded, setIsMapLoaded] = useState(false)
+  const [isMapLoaded, setIsMapLoaded] = useState(false)  
   const [isMapLoading, setIsMapLoading] = useState(true)
 
+  const recaptchaRef = useRef<ReCAPTCHA>(null)  
+  const [isSending, setIsSending] = useState(false)
+
+  const endpoint = "https://jlhyggvfdklnoxzzhxbh.supabase.co/functions/v1/send-qoretech-email-barbaricprodukt";
   // Load map after component mounts to avoid SSR issues
   useEffect(() => {
     setIsMapLoaded(true)
@@ -50,6 +56,14 @@ export default function ContactForm() {
     if (!formData.message.trim()) errors.message = "Poruka je obavezna"
 
     setFormErrors(errors)
+
+    const recaptchaValue = recaptchaRef.current?.getValue();
+    if (!recaptchaValue) {
+      toast.error("Please complete the CAPTCHA.");
+      setIsSending(false);
+      return;
+    }
+
     return Object.keys(errors).length === 0
   }
 
@@ -68,7 +82,7 @@ export default function ContactForm() {
 
     if (!validateForm()) return
 
-    setIsSubmitting(true)
+    setIsSubmitting(true)    
 
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500))
@@ -79,6 +93,9 @@ export default function ContactForm() {
 
     setTimeout(() => setIsSubmitted(false), 5000)
   }
+
+  const localhost = '6Lczy-UqAAAAAKPvkeSLeU_eU112sjBta8555L8z';
+  const qoretech = '6Le4yeUqAAAAACjZxgbYgHembon8Ah2Js5wHDnhr';
 
   return (
     <main className="min-h-screen py-16">
@@ -174,7 +191,12 @@ export default function ContactForm() {
                       />
                       {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
                     </div>
-
+                    <ReCAPTCHA
+                      sitekey={qoretech}
+                      ref={recaptchaRef}
+                      //theme={"dark"}
+                      size={"normal"}
+                    />
                     <Button
                       type="submit"
                       className="w-full bg-industrial-blue hover:bg-industrial-blue/50 transition-all duration-300"
