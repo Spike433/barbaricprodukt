@@ -6,12 +6,13 @@ import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import ReactCountryFlag from "react-country-flag" // Add this import
 
-// Language options
+// Language options - remove flag emojis
 const languages = [
-  { code: "hr", name: "Hrvatski", flag: "🇭🇷" },
-  { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "hr", name: "Hrvatski" },
+  { code: "en", name: "English" },
+  { code: "de", name: "Deutsch" },
 ]
 
 // Navigation items
@@ -69,37 +70,45 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Language selector - Desktop */}
-            <div className="relative">
-              <button
-                className="flex items-center text-sm font-medium hover:text-industrial-blue transition-colors"
-                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-              >
-                <span className="mr-1">{currentLang.flag}</span>
-                <span className="mr-1">{currentLang.code.toUpperCase()}</span>
-                <ChevronDown className="h-3 w-3" />
-              </button>
+              {/* Language selector - Desktop - Updated */}
+        <div className="relative">
+          <button
+            className="flex items-center text-sm font-medium hover:text-industrial-blue transition-colors"
+            onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+          >
+            <ReactCountryFlag
+              countryCode={currentLang.code === 'en' ? 'GB' : currentLang.code.toUpperCase()}
+              svg
+              style={{ width: '1em', height: '1em', marginRight: '4px' }}
+            />
+            <span className="mr-1">{currentLang.code.toUpperCase()}</span>
+            <ChevronDown className="h-3 w-3" />
+          </button>
 
-              {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-background border z-50">
-                  <div className="py-1">
-                    {languages.map((lang) => (
-                      <button
-                        key={lang.code}
-                        className={cn(
-                          "flex items-center w-full px-4 py-2 text-sm text-left hover:bg-muted",
-                          currentLang.code === lang.code ? "bg-industrial-blue/10 text-industrial-blue" : ""
-                        )}
-                        onClick={() => handleLanguageChange(lang)}
-                      >
-                        <span className="mr-2">{lang.flag}</span>
-                        <span>{lang.name}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+          {isLangMenuOpen && (
+            <div className="absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-background border z-50">
+              <div className="py-1">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    className={cn(
+                      "flex items-center w-full px-4 py-2 text-sm text-left hover:bg-muted",
+                      currentLang.code === lang.code ? "bg-industrial-blue/10 text-industrial-blue" : ""
+                    )}
+                    onClick={() => handleLanguageChange(lang)}
+                  >
+                    <ReactCountryFlag
+                      countryCode={lang.code === 'en' ? 'GB' : lang.code.toUpperCase()}
+                      svg
+                      style={{ width: '1em', height: '1em', marginRight: '8px' }}
+                    />
+                    <span>{lang.name}</span>
+                  </button>
+                ))}
+              </div>
             </div>
+          )}
+        </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -131,7 +140,7 @@ export default function Header() {
             </Link>
           ))}
 
-          {/* Language selector - Mobile */}
+          {/* Language selector - Mobile - Updated */}
           <div className="border-t pt-4 mt-2">
             <p className="text-xs text-muted-foreground mb-2">Odaberi jezik</p>
             <div className="flex flex-wrap gap-2">
@@ -149,7 +158,11 @@ export default function Header() {
                     setIsMenuOpen(false)
                   }}
                 >
-                  <span className="mr-1">{lang.flag}</span>
+                  <ReactCountryFlag
+                    countryCode={lang.code === 'en' ? 'GB' : lang.code.toUpperCase()}
+                    svg
+                    style={{ width: '1em', height: '1em', marginRight: '4px' }}
+                  />
                   <span>{lang.name}</span>
                 </button>
               ))}
