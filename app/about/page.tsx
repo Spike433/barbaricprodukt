@@ -129,12 +129,12 @@ export default function AboutPage() {
               stoji vam na raspolaganju za sva pitanja.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-white text-industrial-blue font-medium shadow hover:bg-gray-100 transition-colors"
-              >
-                Kontaktirajte nas
-              </Link>
+            <a
+              href="mailto:barbaricprodukt@barbaricprodukt.com"
+              className="inline-flex items-center px-6 py-3 rounded-md bg-white text-industrial-blue font-medium shadow hover:bg-gray-100 transition-colors"
+            >
+              Kontaktirajte nas putem maila
+            </a>
               <Link
                 href="/services"
                 className="inline-flex items-center px-6 py-3 rounded-md border border-white/30 text-white font-medium hover:bg-white/10 transition-colors"
