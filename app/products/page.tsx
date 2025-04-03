@@ -1,5 +1,7 @@
+"use client"
 import type { Metadata } from "next"
 import Image from "next/image"
+import { useState, useCallback } from "react"
 import ClientSideNavigation from "@/components/client-side-navigation"
 import { Section } from "../types"
 import { generateBlurPlaceholder } from "../../lib/utils"
@@ -417,14 +419,53 @@ const sections: Section[] = [
   }
 ]
 
-export const metadata: Metadata = {
-  title: "Barbarić Produkt | Home",
-  description:
-    "Barbarić Produkt d.o.o. is a leading company specializing in manufacturing, trade, and services based in Ivanić-Grad, Croatia.",
-}
 
-// JSON-LD structured data for better SEO
+// export const metadata: Metadata = {
+//   title: "Barbarić Produkt | Home",
+//   description:
+//     "Barbarić Produkt d.o.o. is a leading company specializing in manufacturing, trade, and services based in Ivanić-Grad, Croatia.",
+// }
+
 export default function ProductPage() {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [currentImages, setCurrentImages] = useState<string[]>([])
+
+  const openGallery = useCallback((images: string[], index: number) => {
+    setCurrentImages(images)
+    setCurrentImageIndex(index)
+    setIsGalleryOpen(true)
+    document.body.style.overflow = 'hidden' // Prevent scrolling when gallery is open
+  }, [])
+
+  const closeGallery = useCallback(() => {
+    setIsGalleryOpen(false)
+    document.body.style.overflow = 'auto' // Re-enable scrolling
+  }, [])
+
+  const navigateImages = useCallback((direction: 'prev' | 'next') => {
+    if (direction === 'prev') {
+      setCurrentImageIndex(prev => 
+        prev === 0 ? currentImages.length - 1 : prev - 1
+      )
+    } else {
+      setCurrentImageIndex(prev => 
+        prev === currentImages.length - 1 ? 0 : prev + 1
+      )
+    }
+  }, [currentImages.length])
+
+  // Handle keyboard navigation
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      closeGallery()
+    } else if (e.key === 'ArrowLeft') {
+      navigateImages('prev')
+    } else if (e.key === 'ArrowRight') {
+      navigateImages('next')
+    }
+  }, [closeGallery, navigateImages])
+
   return (
     <main className="min-h-screen bg-background">
       <div className="container relative mx-auto px-4">
@@ -456,25 +497,25 @@ export default function ProductPage() {
           }}
         />
         <div className="container relative mx-auto px-4 py-14">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
-            Proizvodnja
-          </h1>
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
+              Proizvodnja
+            </h1>
 
-          <p className="text-lg text-center text-muted-foreground max-w-3xl mx-auto">
-            Proizvodimo čelične konstrukcije, gumificirane i plastificirane elemente, alu i PVC stolariju, industrijsku opremu i opremu za more. Obrađujemo metal i plastiku te radimo po individualnoj narudžbi.
-          </p>
-        </div>
+            <p className="text-lg text-center text-muted-foreground max-w-3xl mx-auto">
+              Proizvodimo čelične konstrukcije, gumificirane i plastificirane elemente, alu i PVC stolariju, industrijsku opremu i opremu za more. Obrađujemo metal i plastiku te radimo po individualnoj narudžbi.
+            </p>
+          </div>
         </div>
               
         <div className="flex flex-col lg:flex-row">
-            {/* Navigation first on mobile, second on desktop */}
-            <div className="order-1 lg:order-2 w-full lg:w-[30%] mb-6 lg:mb-0 lg:pl-4">
-              <ClientSideNavigation sections={sections} />
-            </div>
+          {/* Navigation first on mobile, second on desktop */}
+          <div className="order-1 lg:order-2 w-full lg:w-[30%] mb-6 lg:mb-0 lg:pl-4">
+            <ClientSideNavigation sections={sections} />
+          </div>
           
-            {/* Main content second on mobile, first on desktop */}
-            <div className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-2">
+          {/* Main content second on mobile, first on desktop */}
+          <div className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-2">
             {sections.map((section) => (
               <section
                 key={section.id}
@@ -495,25 +536,29 @@ export default function ProductPage() {
                         {subheader.content}
                       </p>  
                       {subheader?.images && (
-                    <div className="flex flex-wrap p-4">
-                      {subheader.images.map((image, index) => (
-                        <div key={index} className="w-full sm:w-1/2 md:w-1/3 p-2">
-                          <div className="w-full h-[250px] relative overflow-hidden rounded-lg">
-                            <Image
-                              src={image}
-                              fill // Fill the parent container
-                              alt={`${section.title} - Detailed illustration`}
-                              className="object-cover hover:scale-105 transition-transform duration-500"
-                              loading="lazy"
-                              placeholder="blur"
-                              blurDataURL={generateBlurPlaceholder(250, 0)} // Match container size
-                              sizes="(max-width: 250px) 100vw, 250px" // Responsive sizing hints
-                            />
-                          </div>
+                        <div className="flex flex-wrap p-4">
+                          {subheader.images.map((image, index) => (
+                            <div 
+                              key={index} 
+                              className="w-full sm:w-1/2 md:w-1/3 p-2 cursor-pointer"
+                              onClick={() => openGallery(subheader.images, index)}
+                            >
+                              <div className="w-full h-[250px] relative overflow-hidden rounded-lg">
+                                <Image
+                                  src={image}
+                                  fill
+                                  alt={`${section.title} - ${subheader.title} image ${index + 1}`}
+                                  className="object-cover hover:scale-105 transition-transform duration-500"
+                                  loading="lazy"
+                                  placeholder="blur"
+                                  blurDataURL={generateBlurPlaceholder(250, 0)}
+                                  sizes="(max-width: 250px) 100vw, 250px"
+                                />
+                              </div>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  )}                      
+                      )}                      
                     </div>
                   ))}                  
                 </div>
@@ -521,8 +566,68 @@ export default function ProductPage() {
             ))}
           </div>          
         </div>
+
+        {/* Gallery Modal */}
+        {isGalleryOpen && (
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+            onClick={closeGallery}
+            onKeyDown={handleKeyDown}
+            tabIndex={0}
+          >
+            <button 
+              className="absolute top-4 right-4 text-white text-4xl z-50"
+              onClick={closeGallery}
+              aria-label="Close gallery"
+            >
+              &times;
+            </button>
+            
+            <div 
+              className="relative max-w-4xl w-full max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative w-full h-full">
+                <Image
+                  src={currentImages[currentImageIndex]}
+                  alt={`Gallery image ${currentImageIndex + 1}`}
+                  width={1200}
+                  height={800}
+                  className="object-contain max-h-[80vh] w-full"
+                  priority
+                />
+              </div>
+              
+              <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    navigateImages('prev')
+                  }}
+                  className="bg-white bg-opacity-30 hover:bg-opacity-50 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                  aria-label="Previous image"
+                >
+                  &#10094;
+                </button>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    navigateImages('next')
+                  }}
+                  className="bg-white bg-opacity-30 hover:bg-opacity-50 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                  aria-label="Next image"
+                >
+                  &#10095;
+                </button>
+              </div>
+              
+              <div className="text-white text-center mt-2">
+                {currentImageIndex + 1} / {currentImages.length}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </main>
   )
 }
-
