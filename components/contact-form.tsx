@@ -11,21 +11,21 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Mail, Phone, MapPin, Globe, CheckCircle, Loader2, Send } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { ToastContainer, toast } from "react-toastify";
+
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 
 type FormData = {
   name: string
-  email: string
-  subject: string
+  email: string  
   message: string
 }
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
-    email: "",
-    subject: "",
+    email: "",    
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -52,7 +52,7 @@ export default function ContactForm() {
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
       errors.email = "Unesite valjanu email adresu"
     }
-    if (!formData.subject.trim()) errors.subject = "Predmet je obavezan"
+    
     if (!formData.message.trim()) errors.message = "Poruka je obavezna"
 
     setFormErrors(errors)
@@ -60,8 +60,7 @@ export default function ContactForm() {
     const recaptchaValue = recaptchaRef.current?.getValue();
     if (!recaptchaValue) {
       toast.error("Please complete the CAPTCHA.");
-      setIsSending(false);
-      return;
+      setIsSending(false);      
     }
 
     return Object.keys(errors).length === 0
@@ -87,7 +86,7 @@ export default function ContactForm() {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setFormData({ name: "", email: "", message: "" })
     setIsSubmitting(false)
     setIsSubmitted(true)
 
@@ -161,22 +160,7 @@ export default function ContactForm() {
                       />
                       {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
                     </div>
-
-                    <div className="space-y-1">
-                      <Label htmlFor="subject" className={cn(formErrors.subject && "text-destructive")}>
-                        Predmet
-                      </Label>
-                      <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="O čemu se radi?"
-                        className={cn("bg-white", formErrors.subject && "border-destructive")}
-                      />
-                      {formErrors.subject && <p className="text-xs text-destructive mt-1">{formErrors.subject}</p>}
-                    </div>
-
+                    
                     <div className="space-y-1">
                       <Label htmlFor="message" className={cn(formErrors.message && "text-destructive")}>
                         Poruka
@@ -192,7 +176,7 @@ export default function ContactForm() {
                       {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
                     </div>
                     <ReCAPTCHA
-                      sitekey={qoretech}
+                      sitekey={localhost}
                       ref={recaptchaRef}
                       //theme={"dark"}
                       size={"normal"}
@@ -321,6 +305,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </main>
   )
 }
