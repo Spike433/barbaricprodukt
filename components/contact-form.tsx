@@ -29,19 +29,22 @@ export default function ContactForm() {
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
   const [formErrors, setFormErrors] = useState<Partial<FormData>>({})
   const [isMapLoaded, setIsMapLoaded] = useState(false)  
   const [isMapLoading, setIsMapLoading] = useState(true)
 
-  const recaptchaRef = useRef<ReCAPTCHA>(null)  
-  const [isSending, setIsSending] = useState(false)
-
+  const recaptchaRef = useRef<ReCAPTCHA>(null)
   const endpoint = "https://jlhyggvfdklnoxzzhxbh.supabase.co/functions/v1/send-qoretech-email-barbaricprodukt";
+
   // Load map after component mounts to avoid SSR issues
   useEffect(() => {
     setIsMapLoaded(true)
   }, [])
+
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const validateForm = (): boolean => {
     const errors: Partial<FormData> = {}
@@ -49,20 +52,13 @@ export default function ContactForm() {
     if (!formData.name.trim()) errors.name = "Ime je obavezno"
     if (!formData.email.trim()) {
       errors.email = "Email je obavezan"
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+    } else if (!validateEmail(formData.email)) {
       errors.email = "Unesite valjanu email adresu"
     }
     
     if (!formData.message.trim()) errors.message = "Poruka je obavezna"
 
     setFormErrors(errors)
-
-    const recaptchaValue = recaptchaRef.current?.getValue();
-    if (!recaptchaValue) {
-      toast.error("Please complete the CAPTCHA.");
-      setIsSending(false);      
-    }
-
     return Object.keys(errors).length === 0
   }
 
@@ -81,16 +77,41 @@ export default function ContactForm() {
 
     if (!validateForm()) return
 
-    setIsSubmitting(true)    
+    const recaptchaValue = recaptchaRef.current?.getValue();
+    if (!recaptchaValue) {
+      toast.error("Molimo potvrdite da niste robot.");
+      return;
+    }
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    setIsSubmitting(true)
 
-    setFormData({ name: "", email: "", message: "" })
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      const response = await axios.post(
+        endpoint, 
+        { 
+          ...formData, 
+          recaptcha: recaptchaValue 
+        }, 
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
+          },
+        }
+      );
 
-    setTimeout(() => setIsSubmitted(false), 5000)
+      if (response.status === 200) {
+        toast.success("Vaša poruka je uspješno poslana!");
+        setFormData({ name: "", email: "", message: "" });
+        recaptchaRef.current?.reset();
+      } else {
+        toast.error("Došlo je do greške pri slanju poruke.");
+      }
+    } catch (error: any) {
+      toast.error(error.response?.data?.error || "Došlo je do greške pri slanju poruke.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const localhost = '6Lczy-UqAAAAAKPvkeSLeU_eU112sjBta8555L8z';
@@ -122,84 +143,77 @@ export default function ContactForm() {
                 <CardDescription>Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
-                {isSubmitted ? (
-                  <div className="bg-green-50 border border-green-200 p-6 rounded-md text-center space-y-3 animate-in fade-in-50 duration-300">
-                    <CheckCircle className="h-12 w-12 text-green-500 mx-auto" />
-                    <h3 className="text-lg font-medium text-green-800">Poruka uspješno poslana!</h3>
-                    <p className="text-green-700">Hvala vam na poruci! Javit ćemo vam se uskoro.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="space-y-1">
-                      <Label htmlFor="name" className={cn(formErrors.name && "text-destructive")}>
-                        Vaše ime
-                      </Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Unesite vaše ime"
-                        className={cn("bg-white", formErrors.name && "border-destructive")}
-                      />
-                      {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
-                    </div>
-
-                    <div className="space-y-1">
-                      <Label htmlFor="email" className={cn(formErrors.email && "text-destructive")}>
-                        Email adresa
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Unesite vaš email"
-                        className={cn("bg-white", formErrors.email && "border-destructive")}
-                      />
-                      {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
-                    </div>
-                    
-                    <div className="space-y-1">
-                      <Label htmlFor="message" className={cn(formErrors.message && "text-destructive")}>
-                        Poruka
-                      </Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Unesite vašu poruku"
-                        className={cn("min-h-[150px] bg-white", formErrors.message && "border-destructive")}
-                      />
-                      {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
-                    </div>
-                    <ReCAPTCHA
-                      sitekey={localhost}
-                      ref={recaptchaRef}
-                      //theme={"dark"}
-                      size={"normal"}
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="space-y-1">
+                    <Label htmlFor="name" className={cn(formErrors.name && "text-destructive")}>
+                      Vaše ime
+                    </Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Unesite vaše ime"
+                      className={cn("bg-white", formErrors.name && "border-destructive")}
                     />
-                    <Button
-                      type="submit"
-                      className="w-full bg-industrial-blue hover:bg-industrial-blue/50 transition-all duration-300"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                          Šaljem...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="mr-2 h-4 w-4" />
-                          Pošalji poruku
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                )}
+                    {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
+                  </div>
+
+                  <div className="space-y-1">
+                    <Label htmlFor="email" className={cn(formErrors.email && "text-destructive")}>
+                      Email adresa
+                    </Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Unesite vaš email"
+                      className={cn("bg-white", formErrors.email && "border-destructive")}
+                    />
+                    {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
+                  </div>
+                  
+                  <div className="space-y-1">
+                    <Label htmlFor="message" className={cn(formErrors.message && "text-destructive")}>
+                      Poruka
+                    </Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Unesite vašu poruku"
+                      className={cn("min-h-[150px] bg-white", formErrors.message && "border-destructive")}
+                    />
+                    {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
+                  </div>
+                  
+                  <ReCAPTCHA
+                    sitekey={qoretech}
+                    ref={recaptchaRef}
+                    size={"normal"}
+                  />
+
+                  <Button
+                    type="submit"
+                    className="w-full bg-industrial-blue hover:bg-industrial-blue/50 transition-all duration-300"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Šaljem...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-4 w-4" />
+                        Pošalji poruku
+                      </>
+                    )}
+                  </Button>
+                </form>
               </CardContent>
             </Card>
 
