@@ -3,35 +3,71 @@ import type { Metadata } from "next";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "Proizvodnja | Barbarić Produkt",
-  description: "Specijalizirani proizvodi: čelične konstrukcije, alu i PVC stolarija, industrijska oprema i više. Visokokvalitetna proizvodnja u Hrvatskoj.",
+  title: "Barbarić Produkt | Proizvodnja industrijskih rješenja u Hrvatskoj",
+  description: "Proizvodimo visokokvalitetne čelične konstrukcije, industrijske ventile, gumirane elemente, PVC/alu stolariju, opremu za more i komunalne proizvode. 30+ godina iskustva u proizvodnji i montaži.",
   keywords: [
-    "čelične konstrukcije",
-    "alu stolarija",
-    "PVC stolarija",
-    "gumificirani elementi",
-    "plastificirani elementi",
-    "oprema za more",    
     "industrijska oprema",
+    "čelične konstrukcije",
+    "gumirani ventili",
+    "PVC stolarija",
+    "alu stolarija",
+    "komunalna oprema",
+    "oprema za more",
+    "montažne hale",
+    "rezervoari za kiseline",
     "proizvodnja Hrvatska",
+    "čelični izmjenjivači",
+    "separatori ulja",
+    "urbana oprema",
+    "pontoni i kajaci",
     "Barbarić Produkt"
   ],
   openGraph: {
-    title: "Proizvodnja | Barbarić Produkt",
-    description: "Visokokvalitetna proizvodnja čeličnih konstrukcija i industrijske opreme u Hrvatskoj",
+    title: "Barbarić Produkt | Vodeći proizvođač industrijskih rješenja",
+    description: "Specijalizirani proizvodi za industriju, graditeljstvo i komunalne usluge - od čeličnih konstrukcija do opreme za more",
     url: "https://www.barbaricprodukt.hr/proizvodnja",
-    siteName: "Barbarić Produkt",
+    siteName: "Barbarić Produkt d.o.o.",
     images: [
       {
         url: "https://i.postimg.cc/HsmzZWqq/logo.png",
-        width: 800,
-        height: 600,
-        alt: "Barbarić Produkt Logo",
+        width: 1200,
+        height: 630,
+        alt: "Barbarić Produkt - Proizvodnja industrijskih rješenja",
       },
+      {
+        url: "https://i.postimg.cc/L5CRB7ZC/1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Montažne čelične hale proizvodnje Barbarić Produkt",
+      }
     ],
     locale: "hr_HR",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Barbarić Produkt | Industrijska rješenja po mjeri",
+    description: "Proizvodnja čeličnih konstrukcija, industrijskih ventila i specijalizirane opreme u Hrvatskoj",
+    images: ["https://i.postimg.cc/HsmzZWqq/logo.png"]
+  },
+  alternates: {
+    canonical: "https://www.barbaricprodukt.hr/proizvodnja",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  metadataBase: new URL("https://www.barbaricprodukt.hr"),
+  category: "manufacturing",
 };
 
 export default function ProductPage() {
