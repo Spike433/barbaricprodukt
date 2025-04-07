@@ -70,13 +70,13 @@ export default function ImageGallery({
             src={images[currentIndex].src}
             alt={images[currentIndex].title}
             fill
-            className="object-contain"
+            className="object-contain rounded-md"
             priority
           />
         </div>
         
         {/* Description below image */}
-        <div className="text-white text-center py-4 px-10 rounded-b-md">
+        <div className="text-white text-center py-4 md:px-10 rounded-b-md">
           <p className="text-sm md:text-base max-h-32 overflow-y-auto mb-2 scrollbar-black">
             {images[currentIndex].description}
           </p>

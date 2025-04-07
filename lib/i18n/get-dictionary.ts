@@ -1,6 +1,6 @@
-import { dictionaries, type Locale } from "./dictionaries"
+import 'server-only'
+import { Locale, dictionaries } from './dictionariy'
 
-export const getDictionary = (locale: Locale) => {
-  return dictionaries[locale]
+export const getDictionary = async (locale: Locale) => {
+  return dictionaries[locale]()
 }
-

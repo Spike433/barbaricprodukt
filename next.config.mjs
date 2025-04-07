@@ -21,6 +21,23 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // i18n: {
+  //   // List all the locales you want to support
+  //   locales: ['en', 'hr', 'de'],
+  //   // Default locale when visiting a non-locale prefixed path
+  //   defaultLocale: 'hr',
+  //   // Optional: Configure domains for specific locales
+  //   // domains: [
+  //   //   {
+  //   //     domain: 'example.com',
+  //   //     defaultLocale: 'hr',
+  //   //   },
+  //   //   {
+  //   //     domain: 'example.com/en',
+  //   //     defaultLocale: 'en',
+  //   //   },
+  //   // ],
+  // },
 }
 
 mergeConfig(nextConfig, userConfig)

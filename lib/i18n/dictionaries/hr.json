@@ -1,0 +1,81 @@
+{
+  "common": {
+    "home": "Početna",
+    "aboutUs": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt",
+    "requestQuote": "Zatražite ponudu",
+    "contactUs": "Kontaktirajte nas",
+    "learnMore": "Saznajte više"
+  },
+  "services": {
+    "title": "Usluge",
+    "description": "Barbarić Produkt d.o.o. pruža širok spektar usluga u metalnoj industriji, od bravarije i zavarivanja do strojne obrade i održavanja industrijskih postrojenja.",
+    "requestQuoteTitle": "Zatražite ponudu",
+    "requestQuoteDescription": "Za više informacija o našim uslugama ili za dobivanje ponude, molimo vas da nas kontaktirate putem našeg obrasca za kontakt ili direktno putem telefona.",
+    "generalServices": "Opće usluge",
+    "categories": {
+      "metalwork": "BRAVARIJA",
+      "cutting": "REZANJE",
+      "bending": "SAVIJANJE",
+      "welding": "ZAVARIVANJE",
+      "sandblasting": "PJESKARENJE",
+      "anticorrosion": "ANTIKOROZIVNA ZAŠTITA",
+      "machining": "STROJNA OBRADA METALA I NEMETALA",
+      "tinsmithing": "LIMARSKI RADOVI",
+      "plasticProcessing": "PRERADA PLASTIČNIH MASA",
+      "maintenance": "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA"
+    },
+    "subcategories": {
+      "gas": "PLINSKO",
+      "plasma": "PLAZMA",
+      "angular": "KUTNO",
+      "circular": "KRUŽNO",
+      "rel": "REL",
+      "migMag": "MIG MAG",
+      "tig": "TIG",
+      "gasWelding": "PLINSKO",
+      "painting": "BOJANJE",
+      "rubberizing": "GUMIRANJE",
+      "plasticizing": "PLASTIFICIRANJE",
+      "turning": "TOKARENJE",
+      "milling": "GLODANJE",
+      "drilling": "BUŠENJE",
+      "punching": "ŠTANCANJE",
+      "constructionTinsmithing": "GRAĐEVINSKA LIMARIJA",
+      "roofing": "POKROVI",
+      "facades": "FASADE",
+      "insulationTinsmithing": "IZOLATERSKA LIMARIJA",
+      "rotoCasting": "ROTO LIJEV",
+      "plasticWelding": "ZAVARIVANJE",
+      "lamination": "LAMINIRANJE"
+    }
+  },
+  "contact": {
+    "title": "Pošaljite nam poruku",
+    "description": "Ispunite obrazac ispod i javit ćemo vam se u najkraćem mogućem roku.",
+    "name": "Vaše ime",
+    "email": "Email adresa",
+    "subject": "Predmet",
+    "message": "Poruka",
+    "send": "Pošalji poruku",
+    "sending": "Slanje...",
+    "success": "Hvala na vašoj poruci! Javit ćemo vam se uskoro.",
+    "contactInfo": "Kontakt informacije",
+    "contactDescription": "Slobodno nas kontaktirajte koristeći bilo koji od sljedećih načina.",
+    "address": "Adresa:",
+    "phone": "Telefon:",
+    "website": "Web stranica:"
+  },
+  "about": {
+    "title": "O nama",
+    "description": "Mi smo tim strastvenih pojedinaca posvećenih stvaranju izvanrednih proizvoda koji pomažu našim klijentima da uspiju.",
+    "mission": "Naša misija",
+    "team": "Naš tim"
+  },
+  "home": {
+    "title": "Barbarić Produkt d.o.o",
+    "description": "Sve što trebate znati o našoj platformi, značajkama i kako započeti.",
+    "onThisPage": "Na ovoj stranici"
+  }
+}
