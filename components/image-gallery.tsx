@@ -60,7 +60,7 @@ export default function ImageGallery({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Title above image */}
-        <div className="bg-black bg-opacity-30 text-white text-center py-2 rounded-t-md">
+        <div className="text-white text-center py-2 rounded-t-md">
           <h1 className="text-2xl font-medium">{images[currentIndex].title}</h1>        
         </div>            
         
@@ -76,7 +76,7 @@ export default function ImageGallery({
         </div>
         
         {/* Description below image */}
-        <div className="bg-black bg-opacity-30 text-white text-center py-4 px-10 rounded-b-md">
+        <div className="text-white text-center py-4 px-10 rounded-b-md">
           <p className="text-sm md:text-base max-h-32 overflow-y-auto mb-2 scrollbar-black">
             {images[currentIndex].description}
           </p>
