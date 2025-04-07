@@ -280,7 +280,7 @@ export const sections: Section[] = [
           "content": "Montažne hale, hangari i garaže izrađeni su od čvrstih i otpornih materijala, prilagođeni različitim klimatskim uvjetima. Njihova modularna konstrukcija omogućava brzu montažu i prilagodbu specifičnim potrebama korisnika.",
           "images": [
             {
-              "title": "Industrijska montažna hala",
+              "title": "Montažna hala",
               "description": "Čelična konstrukcija hale sa trapeznim limom i velikim rasponima, idealna za skladišta i proizvodne pogone.",
               "src": "https://i.postimg.cc/L5CRB7ZC/1.jpg"
             },
@@ -295,18 +295,18 @@ export const sections: Section[] = [
               "src": "https://i.postimg.cc/CMmFgZ6G/5.jpg"
             },
             {
-              "title": "Poljoprivredna hala",
-              "description": "Hala sa prirodnom ventilacijom i osvjetljenjem, optimizirana za poljoprivrednu upotrebu.",
+              "title": "Čelinčne konstrukcije",
+              "description": "",
               "src": "https://i.postimg.cc/4dXgCZ62/9.jpg"
             },
             {
-              "title": "Skladišni kompleks",
-              "description": "Visoki skladišni prostor sa regalnim sistemima i transportnim trakama.",
+              "title": "Čelinčne konstrukcije",
+              "description": "",
               "src": "https://i.postimg.cc/YS6HyjWm/11.jpg"
             },
             {
-              "title": "Logistički centar",
-              "description": "Velika montažna hala sa dokovima za utovar i istovar, prilagođena teškim uvjetima rada.",
+              "title": "Čelinčne konstrukcije",
+              "description": "",
               "src": "https://i.postimg.cc/FK5vZ074/10.jpg"
             }
           ]
@@ -325,14 +325,21 @@ export const sections: Section[] = [
         },
         {
           "id": "panoramsko-dizalo",
-          "title": "Panoramsko dizalo, paviljon",
+          "title": "Panoramsko dizalo",
           "content": "",
           "images": [
             {
               "title": "Panoramsko stakleno dizalo",
-              "description": "Lux dizalo sa čeličnom konstrukcijom i panoramskim staklom za hotelske i poslovne objekte.",
+              "description": "Dizalo sa čeličnom konstrukcijom i panoramskim staklom za hotelske i poslovne objekte.",
               "src": "https://i.postimg.cc/vTHbnMDx/4.jpg"
-            },
+            },            
+          ]
+        },
+        {
+          "id": "paviljon",
+          "title": "Paviljon",
+          "content": "",
+          "images": [
             {
               "title": "Čelični paviljon",
               "description": "Elegantan paviljon sa staklenim oplatom i finim čeličnim detaljima za javne prostore.",
@@ -346,52 +353,62 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Staklena fasada",
-              "description": "Suvremena staklena fasada sa čeličnim nosivim sustavom i visokim stupnjem energetske učinkovitosti.",
+              "title": "Limena fasada",
+              "description": "",
               "src": "https://i.postimg.cc/Bb6f6gwx/13.jpg"
             },
             {
               "title": "Trapezni lim fasade",
-              "description": "Industrijska fasada od trapeznog lima sa protukorozivnom zaštitom i dugim vijekom trajanja.",
+              "description": "",
               "src": "https://i.postimg.cc/NfnBK3tL/7.jpg"
             },
             {
               "title": "Kombinirana fasada",
-              "description": "Mješovita fasada koja kombinira čelične panele i staklene elemente za modernu estetiku.",
+              "description": "",
               "src": "https://i.postimg.cc/XqzSyCTt/15.jpg"
+            },
+            {
+              "title": "Staklena fasada",
+              "description": "",
+              "src": "https://i.postimg.cc/WpwRQS7W/5.jpg"
+            },
+            {
+              "title": "Zimski vrtovi",
+              "description": "",
+              "src": "https://i.postimg.cc/brTKkNJc/1.jpg"           
             }
           ]
         },
         {
           "id": "krovista",
-          "title": "Krovišta, krovni prozori, krovne kupole, svjetlarnici",
+          "title": "Krovišta",
           "content": "",
           "images": [
             {
-              "title": "Industrijsko krovište",
+              "title": "Krovište",
               "description": "Čelična krovna konstrukcija sa trapeznim limom i ventilacijskim elementima.",
               "src": "https://i.postimg.cc/qMqpMk99/6.jpg"
             },
             {
               "title": "Krovni prozori",
+              "description": "Veliki čelični svjetlarnik sa polikarbonatnim pločama za optimalnu rasvjetu radnih prostora.",
+              "src": "https://i.postimg.cc/44LT0Dmw/14.jpg"
+            },
+            {
+              "title": "Krovne kupole",
               "description": "Čelični okviri krovnih prozora sa termoizolacionim svojstvima i jednostavnim održavanjem.",
               "src": "https://i.postimg.cc/pTv22KHZ/2.jpg"
             },
             {
-              "title": "Krovna kupola",
+              "title": "Svjetlarnici",
               "description": "Elegantna čelična kupola sa staklenim elementima za prirodno osvjetljenje unutrašnjih prostora.",
               "src": "https://i.postimg.cc/wvk933xd/3.jpg"
-            },
-            {
-              "title": "Industrijski svjetlarnik",
-              "description": "Veliki čelični svjetlarnik sa polikarbonatnim pločama za optimalnu rasvjetu radnih prostora.",
-              "src": "https://i.postimg.cc/44LT0Dmw/14.jpg"
-            }
+            },            
           ]
         },
         {
           "id": "ogradeIPodovi",
-          "title": "Ograde za balkone, kuće, industriju, rešetkaste zaštite za prozore i vrata",
+          "title": "Ograde",
           "content": "",
           "images": [
             {
@@ -417,9 +434,14 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Industrijske podne rešetke",
+              "title": "",
               "description": "Čelične rešetke za podove sa visokim opterećenjem i protukliznim svojstvima za industrijske prostore.",
               "src": "https://i.postimg.cc/D0Bgxqgw/16.jpg"
+            },
+            {
+              "title": "",
+              "description": "",
+              "src": "https://i.postimg.cc/3RhPyQx5/10.jpg"
             }
           ]
         }
@@ -433,7 +455,7 @@ export const sections: Section[] = [
         {
           "id": "segmentnaPodiznaVrata",
           "title": "Segmentna podizna vrata, jednokrilna, klizna, automatska vrata",
-          "content": "Naša segmentna podizna vrata dizajnirana su za optimalnu sigurnost i lakoću korištenja u industrijskim, komercijalnim i privatnim objektima. Izrađujemo i jednokrilna, klizna te automatska vrata koja se prilagođavaju vašim specifičnim potrebama.",
+          "content": "",
           "images": [
             {
               "title": "Segmentna podizna vrata",
@@ -441,7 +463,7 @@ export const sections: Section[] = [
               "src": "https://i.postimg.cc/FzmMYJhV/4.jpg"
             },
             {
-              "title": "Automatska klizna vrata",
+              "title": "Dvokrilna i jednokrilna klizna automatska vrata", 
               "description": "Moderni sustav kliznih vrata sa senzorima pokreta i daljinskim upravljanjem, izrađen od aluminijskih profila sa termo-prekidom.",
               "src": "https://i.postimg.cc/MTykZYJG/2.jpg"
             }
@@ -453,21 +475,9 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Aluminijska podizna rampa",
-              "description": "Robusna podizna rampa sa hidrauličnim pogonom i protivkliznom površinom, dizajnirana za pristup osobama s invaliditetom i transport tereta.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/m2ZxRMXb/6.jpg"
-            }
-          ]
-        },
-        {
-          "id": "fasade",
-          "title": "Staklene fasade",
-          "content": "",
-          "images": [
-            {
-              "title": "Staklena fasada",
-              "description": "Suvremena aluminijska staklena fasada sa visokoprofilnim sustavom i energetski učinkovitim dvostrukim staklom za poslovne zgrade.",
-              "src": "https://i.postimg.cc/WpwRQS7W/5.jpg"
             }
           ]
         },
@@ -477,8 +487,8 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "PVC prozorski sustav",
-              "description": "Energetski efikasni PVC prozori sa 5-komornim sistemom, niskoemisionim staklom i poboljšanom zvučnom izolacijom.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/JnwVW2gg/3.jpg"
             }
           ]
@@ -630,13 +640,13 @@ export const sections: Section[] = [
           "content": "Svestrana pumpna stanica osigurava efikasno navodnjavanje, prskanje i zalijevanje, prilagođena poljoprivrednim i hortikulturnim potrebama. Sadrži spremnik kapaciteta 1000L, snažnu pumpu, motor i precizni mjerač protoka za optimalnu potrošnju vode.",
           "images": [
             {
-              "title": "Kompletna pumpna stanica",
-              "description": "Modularna jedinica sa čeličnim okvirom, centrifugalnom pumpom i kontrolnim panelom za upravljanje pritiskom i protokom.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/PxCFmCHD/21.jpg"
             },
             {
-              "title": "Kompletna pumpna stanica",
-              "description": "Stanica prikazana u poljskim uvjetima sa priključcima za više linija navodnjavanja i prskanja.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/3NpSczdJ/22.jpg"
             }
           ]
@@ -682,6 +692,11 @@ export const sections: Section[] = [
               "title": "",
               "description": "",
               "src": "https://i.postimg.cc/7ZqsKsDw/31.jpg"
+            },
+            {
+              "title": "",
+              "description": "",
+              "src": "https://i.postimg.cc/nr8TBT08/38.jpg"
             }
           ]
         }
@@ -725,13 +740,13 @@ export const sections: Section[] = [
           "content": "Specijalizirani kontejner kapaciteta 7 m³ osmišljen je za sigurno odlaganje elektronskog otpada i tekstilnih materijala. Njegova čvrsta konstrukcija omogućava ekološki prihvatljivo skladištenje i jednostavan transport na reciklažna postrojenja.",
           "images": [
             {
-              "title": "Kontejner za e-otpad",
-              "description": "Specijalizirani kontejner sa sigurnosnim karakteristikama za prikupljanje elektronskog otpada, sa oznakama za pravilno odvajanje komponenti.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/CxX0x28S/31.jpg"
             },
             {
-              "title": "Kontejner za e-otpad",            
-              "description": "Čelični kontejner sa zaštitnim premazom za prikupljanje tekstilnog otpada, sa ventilacijskim otvorima i jednostavnim sistemom pražnjenja.",
+              "title": "",            
+              "description": "",
               "src": "https://i.postimg.cc/d0CYk9Rd/32.jpg"
             }
           ]
@@ -1011,6 +1026,11 @@ export const sections: Section[] = [
                       "title": "Pontoni za čamce",
                       "description": "Pontoni su opremljeni vezovima za čamce i prilagođeni su za sidrenje i zaštitu plovila u marinama i lukama.",
                       "src": "https://i.postimg.cc/d02Gjc4s/3.jpg"
+                  },
+                  {
+                    "title": "Plovci 970x620x340 mm",
+                    "description": "Pontoni su opremljeni vezovima za čamce i prilagođeni su za sidrenje i zaštitu plovila u marinama i lukama.",
+                    "src": "https://i.postimg.cc/cCb3Lx4m/6.jpg"
                   }
               ]
           },
