@@ -1,17 +1,12 @@
 "use client"
 import type { Metadata } from "next"
 import Image from "next/image"
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback } from "react"
 import ClientSideNavigation from "@/components/client-side-navigation"
+import ImageGallery from "@/components/image-gallery" // Import the new component
 import { Picture, Section } from "../types"
 import { generateBlurPlaceholder } from "../../lib/utils"
 import { sections } from "@/lib/constants"
-
-// export const metadata: Metadata = {
-//   title: "Barbarić Produkt | Home",
-//   description:
-//     "Barbarić Produkt d.o.o. is a leading company specializing in manufacturing, trade, and services based in Ivanić-Grad, Croatia.",
-// }
 
 export default function ProductPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false)
@@ -41,27 +36,7 @@ export default function ProductPage() {
       )
     }
   }, [currentImages.length])
-
-  // Handle keyboard navigation
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') {
-      closeGallery()
-    } else if (e.key === 'ArrowLeft') {
-      navigateImages('prev')
-    } else if (e.key === 'ArrowRight') {
-      navigateImages('next')
-    }
-  }, [closeGallery, navigateImages])
-
-  useEffect(() => {
-    if (isGalleryOpen) {
-      window.addEventListener('keydown', handleKeyDown)
-      return () => {
-        window.removeEventListener('keydown', handleKeyDown)
-      }
-    }
-  }, [isGalleryOpen, handleKeyDown])
-  console.log("Current Image:", currentImages[currentImageIndex]);
+  
   return (
     <main className="min-h-screen bg-background">
       <div className="container relative mx-auto px-4">
@@ -163,77 +138,13 @@ export default function ProductPage() {
             ))}
           </div>          
         </div>
-
-        {/* Gallery Modal */}
-        {isGalleryOpen && currentImages.length > 0 && (
-  <div 
-    className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-    onClick={closeGallery}
-  >
-    <button 
-      className="absolute top-4 right-4 text-white text-4xl z-50 hover:text-gray-300 transition-colors"
-      onClick={closeGallery}
-      aria-label="Close gallery"
-    >
-      &times;
-    </button>
-    
-    <div 
-      className="relative max-w-4xl w-full max-h-[90vh] flex flex-col"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {/* Title above image */}
-      <div className="bg-black bg-opacity-30 text-white text-center py-2 rounded-t-md">
-        <h1 className="text-2xl font-medium">{currentImages[currentImageIndex].title}</h1>        
-      </div>            
-      
-      {/* Image container with fixed height and rounded corners */}
-      <div className="relative w-full h-[65vh] overflow-hidden rounded-md">
-        <Image
-          src={currentImages[currentImageIndex].src}
-          alt={currentImages[currentImageIndex].title}
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-      
-      {/* Description below image */}
-      <div className="bg-black bg-opacity-30 text-white text-center py-4 px-10 rounded-b-md">
-        <p className="text-sm md:text-base max-h-32 overflow-y-auto mb-2 scrollbar-black">
-          {currentImages[currentImageIndex].description}
-        </p>
-        {/* Image counter moved here */}
-        <div className="text-white text-sm">
-          {currentImageIndex + 1} / {currentImages.length}
-        </div>           
-      </div>
-      
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
-        <button 
-          onClick={(e) => {
-            e.stopPropagation()
-            navigateImages('prev')
-          }}
-          className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center transition-all"
-          aria-label="Previous image"
-        >
-          &#10094;
-        </button>
-        <button 
-          onClick={(e) => {
-            e.stopPropagation()
-            navigateImages('next')
-          }}
-          className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center transition-all"
-          aria-label="Next image"
-        >
-          &#10095;
-        </button>
-      </div>
-    </div>
-  </div>
-)}
+        <ImageGallery
+          isOpen={isGalleryOpen}
+          onClose={closeGallery}
+          images={currentImages}
+          currentIndex={currentImageIndex}
+          navigateImages={navigateImages}
+      />
       </div>
     </main>
   )
