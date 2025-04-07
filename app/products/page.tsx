@@ -597,12 +597,12 @@ export default function ProductPage() {
                 alt={`Gallery image ${currentImageIndex + 1}`}
                 width={1000}
                 height={600}
-                className="object-contain max-h-[80vh] w-full rounded-xl"
+                className="object-contain max-h-[65vh] w-full rounded-xl"
                 priority
               />
             </div>
-        {/* Description below image */}
-        <div className="bg-black bg-opacity-30 text-white text-center py-2">
+            {/* Description below image */}
+            <div className="bg-black bg-opacity-30 text-white text-center py-2">
               <p className="text-md h-32 overflow-y-scroll scrollbar-black">
                 Proizvodimo je u različitim dimenzijama kako bismo zadovoljili potrebe naših kupaca. Naša proizvodnja uključuje širok raspon veličina koje su prilagođene specifičnim zahtjevima i standardima industrije. Bez obzira na to trebate li male, srednje ili velike dimenzije, možemo vam ponuditi rješenje koje će odgovarati vašim potrebama. Naši proizvodi su izrađeni od visokokvalitetnih materijala i prolaze stroge kontrole kvalitete kako bi se osigurala njihova dugotrajnost i pouzdanost. Ponosni smo na našu sposobnost da prilagodimo proizvodne procese kako bismo ispunili specifične zahtjeve svakog kupca. Kontaktirajte nas za više informacija o dostupnim dimenzijama i kako vam možemo pomoći u vašem projektu.
               </p>           
