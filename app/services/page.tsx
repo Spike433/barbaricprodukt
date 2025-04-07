@@ -140,7 +140,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 rounded-md bg-industrial-blue/70 text-white font-medium shadow hover:from-industrial-blue/90 hover:to-primary/90 transition-colors"
               >
-                Kontaktirajte nas
+                Kontaktirajte nas putem obrasca
               </a>
               <a
                 href="tel:+385 91 282-3375"
