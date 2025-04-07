@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useState, useCallback } from "react"
 import ClientSideNavigation from "@/components/client-side-navigation"
 import ImageGallery from "@/components/image-gallery" // Import the new component
-import { Picture, Section } from "../types"
+import { Picture } from "../types"
 import { generateBlurPlaceholder } from "../../lib/utils"
 import { sections } from "@/lib/constants"
 
