@@ -570,62 +570,71 @@ export default function ProductPage() {
         {/* Gallery Modal */}
         {isGalleryOpen && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={closeGallery}
+          onKeyDown={handleKeyDown}
+          tabIndex={0}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white text-4xl z-50"
             onClick={closeGallery}
-            onKeyDown={handleKeyDown}
-            tabIndex={0}
+            aria-label="Close gallery"
           >
-            <button 
-              className="absolute top-4 right-4 text-white text-4xl z-50"
-              onClick={closeGallery}
-              aria-label="Close gallery"
-            >
-              &times;
-            </button>
+            &times;
+          </button>
+          
+          <div 
+            className="relative max-w-4xl w-full max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Title above image */}
+            <div className="bg-black bg-opacity-30 text-white text-center py-2 rounded-t-md">
+              <h1 className="text-2xl">Montažna hala</h1>
+            </div>            
+            <div className="relative w-full">
+              <Image
+                src={currentImages[currentImageIndex]}
+                alt={`Gallery image ${currentImageIndex + 1}`}
+                width={1000}
+                height={600}
+                className="object-contain max-h-[80vh] w-full rounded-xl"
+                priority
+              />
+            </div>
+        {/* Description below image */}
+        <div className="bg-black bg-opacity-30 text-white text-center py-2">
+              <p className="text-md h-32 overflow-y-scroll scrollbar-black">
+                Proizvodimo je u različitim dimenzijama kako bismo zadovoljili potrebe naših kupaca. Naša proizvodnja uključuje širok raspon veličina koje su prilagođene specifičnim zahtjevima i standardima industrije. Bez obzira na to trebate li male, srednje ili velike dimenzije, možemo vam ponuditi rješenje koje će odgovarati vašim potrebama. Naši proizvodi su izrađeni od visokokvalitetnih materijala i prolaze stroge kontrole kvalitete kako bi se osigurala njihova dugotrajnost i pouzdanost. Ponosni smo na našu sposobnost da prilagodimo proizvodne procese kako bismo ispunili specifične zahtjeve svakog kupca. Kontaktirajte nas za više informacija o dostupnim dimenzijama i kako vam možemo pomoći u vašem projektu.
+              </p>           
+            </div>
+            <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation()
+                  navigateImages('prev')
+                }}
+                className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                aria-label="Previous image"
+              >
+                &#10094;
+              </button>
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation()
+                  navigateImages('next')
+                }}
+                className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                aria-label="Next image"
+              >
+                &#10095;
+              </button>
+            </div>
             
-            <div 
-              className="relative max-w-4xl w-full max-h-[90vh]"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="relative w-full h-full">
-                <Image
-                  src={currentImages[currentImageIndex]}
-                  alt={`Gallery image ${currentImageIndex + 1}`}
-                  width={1200}
-                  height={800}
-                  className="object-contain max-h-[80vh] w-full"
-                  priority
-                />
-              </div>
-              
-              <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    navigateImages('prev')
-                  }}
-                  className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
-                  aria-label="Previous image"
-                >
-                  &#10094;
-                </button>
-                <button 
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    navigateImages('next')
-                  }}
-                  className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
-                  aria-label="Next image"
-                >
-                  &#10095;
-                </button>
-              </div>
-              
-              <div className="text-white text-center mt-2">
-                {currentImageIndex + 1} / {currentImages.length}
-              </div>
+            <div className="text-white text-sm text-center">
+              {currentImageIndex + 1} / {currentImages.length}
             </div>
           </div>
+        </div>
         )}
       </div>
     </main>

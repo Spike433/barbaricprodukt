@@ -97,3 +97,21 @@
     @apply bg-gradient-to-br from-white via-gray-50 to-gray-100;
   }
 }
+
+/* Custom scrollbar styles */
+.scrollbar-black::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-black::-webkit-scrollbar-track {
+  background: #f1f1f1c1;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
