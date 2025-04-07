@@ -604,7 +604,7 @@ export default function ProductPage() {
                     e.stopPropagation()
                     navigateImages('prev')
                   }}
-                  className="bg-white bg-opacity-30 hover:bg-opacity-50 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                  className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
                   aria-label="Previous image"
                 >
                   &#10094;
@@ -614,7 +614,7 @@ export default function ProductPage() {
                     e.stopPropagation()
                     navigateImages('next')
                   }}
-                  className="bg-white bg-opacity-30 hover:bg-opacity-50 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
+                  className="bg-black bg-opacity-70 hover:bg-opacity-90 text-white text-2xl p-2 rounded-full w-12 h-12 flex items-center justify-center"
                   aria-label="Next image"
                 >
                   &#10095;
