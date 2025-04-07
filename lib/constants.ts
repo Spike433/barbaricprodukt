@@ -28,30 +28,16 @@ export const sections: Section[] = [
               "title": "Automatski INOX leptir ventili",
               "description": "Pneumatski upravljani leptir ventili sa preciznim regulacijskim karakteristikama za kontrolu protoka u kemijskoj i petrokemijskoj industriji.",
               "src": "https://i.postimg.cc/Zn788Jb9/25.jpg"
-            }
-          ]
-        },
-        {
-          "id": "hvatacIOdasiljacKugli",
-          "title": "Hvatač i odašiljač kugli",
-          "content": "",
-          "images": [
+            },
             {
-              "title": "Sustav za čišćenje cjevovoda",
-              "description": "Profesionalni hvatač i odašiljač kugli za održavanje i čišćenje unutarnjih površina cjevovoda u naftnoj i plinskoj industriji.",
-              "src": "https://i.postimg.cc/1X2gRXRK/13.jpg"
-            }
-          ]
-        },
-        {
-          "id": "parkiralistaKugli",
-          "title": "Parkirališta kugli",
-          "content": "",
-          "images": [
+              "title": "Leptir ventili",
+              "description": "Pneumatski upravljani leptir ventili sa preciznim regulacijskim karakteristikama za kontrolu protoka u kemijskoj i petrokemijskoj industriji.",
+              "src": "https://i.postimg.cc/CL9DSPzV/5.jpg"
+            },
             {
-              "title": "Parkirni sustav za čističe cjevovoda",
-              "description": "Organizirani sustav za skladištenje i održavanje kugli za čišćenje cjevovoda sa oznakama za različite veličine i namjene.",
-              "src": "https://i.postimg.cc/T1pLXgxw/11.jpg"
+              "title": "Leptir ventili",
+              "description": "Pneumatski upravljani leptir ventili sa preciznim regulacijskim karakteristikama za kontrolu protoka u kemijskoj i petrokemijskoj industriji.",
+              "src": "https://i.postimg.cc/RZftF7HJ/6.jpg"
             }
           ]
         },
@@ -61,17 +47,17 @@ export const sections: Section[] = [
           "content": "Naši filteri i izmjenjivači osiguravaju efikasnu filtraciju i optimalnu razmjenu topline u industrijskim postrojenjima. Proizvodimo industrijske INOX filtere, izmjenjivače topline i specijalizirane komponente koje poboljšavaju performanse i produžuju vijek trajanja sistema.",
           "images": [
             {
-              "title": "INOX filterska jedinica",
+              "title": "Izmjenjivač",
               "description": "Visokokapacitetni industrijski filter sa višestupanjskim sistemom čišćenja i pristupnim otvorima za održavanje.",
               "src": "https://i.postimg.cc/KzQBbmg9/1.jpg"
             },
             {
-              "title": "Pločasti izmjenjivač topline",
+              "title": "Industrijski filteri (inox)",
               "description": "Kompaktni INOX izmjenjivač topline sa serpentinskim kanalima za maksimalnu efikasnost prijenosa topline u procesnim industrijama.",
               "src": "https://i.postimg.cc/xjxMFTQ8/3.jpg"
             },
             {
-              "title": "Cijevni izmjenjivač",
+              "title": "Industrijski filteri (inox)",
               "description": "Velikokapacitetni cijevni izmjenjivač topline sa U-cijevima i pristupnim poklopcima za čišćenje i održavanje.",
               "src": "https://i.postimg.cc/hG178KMS/7.jpg"
             }
@@ -88,26 +74,14 @@ export const sections: Section[] = [
               "src": "https://i.postimg.cc/fLWSB1gY/8.jpg"
             },
             {
-              "title": "Pneumatski aktuator",
+              "title": "Aktuator",
               "description": "Snažni pneumatski aktuator sa preciznim pozicioniranjem za upravljanje industrijskim ventilima i zaklopkama.",
               "src": "https://i.postimg.cc/gkx89FcD/4.jpg"
             },
             {
-              "title": "Električni aktuator",
+              "title": "Aktuator",
               "description": "Modularni električni aktuator sa digitalnim kontrolerom za automatizirano upravljanje procesima u petrokemijskoj industriji.",
               "src": "https://i.postimg.cc/65bcRfqH/19.jpg"
-            }
-          ]
-        },
-        {
-          "id": "posudeZaVadjenjeCistaca",
-          "title": "Posude za vađenje čistača PC",
-          "content": "",
-          "images": [
-            {
-              "title": "Spremnik za čistače cjevovoda",
-              "description": "Specijalizirani spremnik sa hidrauličkim sistemom za ekstrakciju i skladištenje čistača cjevovoda (pigs) nakon korištenja.",
-              "src": "https://i.postimg.cc/T245J7jW/12.jpg"
             }
           ]
         },
@@ -124,51 +98,66 @@ export const sections: Section[] = [
           ]
         },
         {
-          "id": "rezervoariGumiraniZaKiselineILuzine",
-          "title": "Gumirani rezervoari za kiseline i lužine",
+          "id": "posudeZaVadjenjeCistaca",
+          "title": "Posude za vađenje čistača PC",
           "content": "",
           "images": [
+            {
+              "title": "Spremnik za čistače cjevovoda",
+              "description": "Specijalizirani spremnik sa hidrauličkim sistemom za ekstrakciju i skladištenje čistača cjevovoda (pigs) nakon korištenja.",
+              "src": "https://i.postimg.cc/T245J7jW/12.jpg"
+            }
+          ]
+        }, 
+        {
+          "id": "parkiralistaKugli",
+          "title": "Parkirališta kugli",
+          "content": "",
+          "images": [
+            {
+              "title": "Parkirni sustav za čističe cjevovoda",
+              "description": "Organizirani sustav za skladištenje i održavanje kugli za čišćenje cjevovoda sa oznakama za različite veličine i namjene.",
+              "src": "https://i.postimg.cc/T1pLXgxw/11.jpg"
+            }
+          ]
+        },              
+        {
+          "id": "hvatacIOdasiljacKugli",
+          "title": "Hvatač i odašiljač kugli",
+          "content": "",
+          "images": [
+            {
+              "title": "Sustav za čišćenje cjevovoda",
+              "description": "Profesionalni hvatač i odašiljač kugli za održavanje i čišćenje unutarnjih površina cjevovoda u naftnoj i plinskoj industriji.",
+              "src": "https://i.postimg.cc/1X2gRXRK/13.jpg"
+            }
+          ]
+        },      
+        {
+          "id": "rezervoari",
+          "title": "Rezervoari",
+          "content": "",
+          "images": [
+            {
+              "title": "Gumirani rezervoari za kiseline",
+              "description": "Čelični rezervoar sa zaštitnim premazom i ventilacijskim sistemom za skladištenje i transport korozivnih tekućina.",
+              "src": "https://i.postimg.cc/vZ1zvx6G/18.jpg"
+            },
+            {
+              "title": "Gumirani čelični rezervoar sa razvodom za kiseline i lužine 35 m^3",
+              "description": "Čelični rezervoar sa zaštitnim premazom i ventilacijskim sistemom za skladištenje i transport korozivnih tekućina.",
+              "src": "https://i.postimg.cc/Y09gqT6t/33.jpg"
+            },
+            {
+              "title": "Rezervoari za benzinske postaje, rezervoari tehnološke kanalizacije",
+              "description": "Podzemni rezervoar sa duplim stijenkama i sistemom za detekciju curenja za benzinske postaje i skladišta goriva.",
+              "src": "https://i.postimg.cc/3wTvDkXS/9.jpg"
+            },
             {
               "title": "Gumirani kemijski rezervoar",
               "description": "Vertikalni rezervoar sa unutarnjim gumiranim premazom za skladištenje koncentriranih kiselina i lužina u kemijskoj industriji.",
               "src": "https://i.postimg.cc/wxV0xppY/15.jpg"
-            }
-          ]
-        },
-        {
-          "id": "rezervoari",
-          "title": "Rezervoari za benzinske postaje, rezervoari tehnološke kanalizacije",
-          "content": "",
-          "images": [
-            {
-              "title": "Dvoljušturni rezervoar za gorivo",
-              "description": "Podzemni rezervoar sa duplim stijenkama i sistemom za detekciju curenja za benzinske postaje i skladišta goriva.",
-              "src": "https://i.postimg.cc/3wTvDkXS/9.jpg"
-            }
-          ]
-        },
-        {
-          "id": "anionskiIKatjonskiIzmjenjivaci",
-          "title": "Anionski i katjonski izmjenjivači",
-          "content": "Anionski i katjonski izmjenjivači pružaju visoku učinkovitost i pouzdanost u procesima pročišćavanja vode i tretiranja otpadnih voda. Izrađeni su od kvalitetnih materijala koji osiguravaju dugotrajan rad i optimalne performanse.",
-          "images": [
-            {
-              "title": "Sustav ionske izmjene",
-              "description": "Kompletan sistem sa anionskim i katjonskim kolonama za demineralizaciju vode u energetskim postrojenjima.",
-              "src": "https://i.postimg.cc/dtVnLxsk/17.jpg"
-            }
-          ]
-        },
-        {
-          "id": "rezervoariZaKiseline",
-          "title": "Rezervoari za kiseline i lužine",
-          "content": "Rezervoari za kiseline i lužine izrađeni su od visokokvalitetnih materijala koji osiguravaju sigurno skladištenje i transport agresivnih kemikalija. Prilagođeni su različitim industrijskim procesima i zahtjevima korisnika.",
-          "images": [
-            {
-              "title": "Horizontalni rezervoar za kiseline",
-              "description": "Čelični rezervoar sa zaštitnim premazom i ventilacijskim sistemom za skladištenje i transport korozivnih tekućina.",
-              "src": "https://i.postimg.cc/vZ1zvx6G/18.jpg"
-            }
+            }           
           ]
         },
         {
@@ -177,7 +166,7 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Multi-medijski filter",
+              "title": "Filterska jedinica za otežanu vodu",
               "description": "Visokoučinkoviti filter sa slojevima kvarcnog pijeska i antracita za uklanjanje suspendiranih čestica iz tehnološke vode.",
               "src": "https://i.postimg.cc/90WbPxyk/14.jpg"
             }
@@ -186,24 +175,12 @@ export const sections: Section[] = [
         {
           "id": "rashladnaJedinica",
           "title": "Rashladne jedinice",
-          "content": "Osiguravaju efikasno hlađenje i održavanje optimalnih temperatura u industrijskim postrojenjima. Naši proizvodi pružaju pouzdan rad i dugotrajnost, uz mogućnost prilagodbe specifičnim zahtjevima korisnika.",
+          "content": "",
           "images": [
             {
               "title": "Industrijska rashladna jedinica",
               "description": "Kompresorska rashladna jedinica sa spiralnim izmjenjivačem topline za procesno hlađenje u prehrambenoj industriji.",
               "src": "https://i.postimg.cc/brN0SZhc/24.jpg"
-            }
-          ]
-        },
-        {
-          "id": "segmentiZastiteZupcanika",
-          "title": "Segmenti zaštite zupčanika",
-          "content": "",
-          "images": [
-            {
-              "title": "Zaštitni segmenti za zupčanike",
-              "description": "Liveni čelični segmenti sa gumiranim umetcima za zaštitu pogonskih zupčanika od habanja i udara.",
-              "src": "https://i.postimg.cc/0NY7tY51/29.jpg"
             }
           ]
         },
@@ -216,25 +193,35 @@ export const sections: Section[] = [
               "title": "Kompletna zaštita zupčanika",
               "description": "Modularni zaštitni omotači sa pristupnim otvorima za održavanje velikih industrijskih zupčanika i lančanika.",
               "src": "https://i.postimg.cc/RVhQMJdw/28.jpg"
+            },
+            {
+              "title": "Zaštitni segmenti za zupčanike",
+              "description": "Liveni čelični segmenti sa gumiranim umetcima za zaštitu pogonskih zupčanika od habanja i udara.",
+              "src": "https://i.postimg.cc/0NY7tY51/29.jpg"
             }
           ]
         },
         {
-          "id": "transporteri",
+          "id": "transporteri1",
           "title": "Čelično gumeni transporter",
           "content": "",
           "images": [
             {
               "title": "Traka za transport materijala",
               "description": "Čelično-gumeni transporter sa profilisanim površinama za transport vrućih i abrazivnih materijala u rudarstvu i cementarama.",
+              "src": "https://i.postimg.cc/mkkm851Y/26.jpg"
+            },
+            {
+              "title": "Traka za transport materijala",
+              "description": "Čelično-gumeni transporter sa profilisanim površinama za transport vrućih i abrazivnih materijala u rudarstvu i cementarama.",
               "src": "https://i.postimg.cc/sgZYWFtX/30.jpg"
             }
           ]
-        },
+        },        
         {
           "id": "kranskeSine",
           "title": "Kranske šine, mačka krana, dijelovi mačke krana",
-          "content": "Nudimo visokokvalitetne kranske šine, mačke krana i dijelove mačke krana za sve vaše potrebe.",
+          "content": "",
           "images": [
             {
               "title": "Kranske šine i kolosjek",
@@ -250,6 +237,11 @@ export const sections: Section[] = [
               "title": "Dijelovi mačke krana",
               "description": "Kompletan asortiman zamjenskih dijelova i komponenti za održavanje pokretnih dizalica.",
               "src": "https://i.postimg.cc/L8rVQ4zL/21.jpg"
+            },
+            {
+              "title": "Dijelovi mačke krana",
+              "description": "Kompletan asortiman zamjenskih dijelova i komponenti za održavanje pokretnih dizalica.",
+              "src": "https://i.postimg.cc/wBLQCKVP/22.jpg"
             }
           ]
         },
@@ -259,18 +251,18 @@ export const sections: Section[] = [
           "content": "Dizajniramo i proizvodimo industrijska postrojenja za preradu bešavnih cijevi i druge ključne procese, osiguravajući visoku učinkovitost i pouzdanost proizvodnje.",
           "images": [
             {
-              "title": "Linija za proizvodnju cijevi",
+              "title": "",
               "description": "Automatska linija za kaljenje i obradu bešavnih čeličnih cijevi sa CNC kontrolnim sistemima.",
               "src": "https://i.postimg.cc/J4F3t7Yv/27.jpg"
             },
             {
-              "title": "Valjaonica cijevi",
+              "title": "",
               "description": "Industrijski kompleks sa valjaonicom i toplinskom obradom za proizvodnju bešavnih cijevi velikih promjera.",
               "src": "https://i.postimg.cc/1zhpcCQK/31.jpg"
             },
             {
-              "title": "Kontrolna stanica",
-              "description": "Centralizirani upravljački panel sa SCADA sistemom za nadzor i upravljanje procesima u cjevovodnoj industriji.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/gJG81xrX/32.jpg"
             }
           ]
@@ -500,28 +492,21 @@ export const sections: Section[] = [
       "subheaders": [
         {
           "id": "tuneliZaSutu",
-          "title": "Tuneli za šutu, polazni - usipni dio, nosač usipnog elementa",
-          "content": "Naši tuneli za šutu, izrađeni od visokootpornog polietilena metodom roto ljevanja, omogućuju brzo i sigurno uklanjanje građevinskog otpada. Modularni dizajn omogućava lako povezivanje pomoću lanaca, dok nosači osiguravaju stabilnost i optimalan protok materijala bez začepljenja.",
+          "title": "Cijevi za šutu",
+          "content": "Tuneli za šutu, izrađeni od visokootpornog polietilena metodom roto ljevanja, omogućuju brzo i sigurno uklanjanje građevinskog otpada. Modularni dizajn omogućava lako povezivanje pomoću lanaca, dok nosači osiguravaju stabilnost i optimalan protok materijala bez začepljenja.",
           "images": [
             {
-              "title": "Tunel za šutu - kompletni sistem",
-              "description": "Modularni tunelni sistem od visokokvalitetnog polietilena sa spojnim elementima i nosačima za efikasno odvođenje građevinskog otpada sa gradilišta.",
+              "title": "Vitlo za dizanje cijevi",
+              "description": "",
               "src": "https://i.postimg.cc/fLg7XwTV/0.jpg"
             },
             {
-              "title": "Polazni usipni dio tunela",
+              "title": "Ulazni element",
               "description": "Pojačani usipni element sa rebrima za ojačanje i ergonomskim oblikom koji omogućava jednostavno punjenje šute i građevinskog otpada.",
               "src": "https://i.postimg.cc/8c2hKtvD/1.jpg"
-            }
-          ]
-        },
-        {
-          "id": "nosaciICijevi",
-          "title": "Nosač dizalice za cijevi, cijevi za šutu",
-          "content": "Prilagodljivi nosači dizalice osiguravaju sigurno i precizno postavljanje cijevi za šutu, smanjujući vibracije i rizik od oštećenja. Naše cijevi su izrađene od otpornih materijala koji podnose visoka opterećenja, omogućujući dugotrajan i nesmetan rad u svim uvjetima.",
-          "images": [
+            },
             {
-              "title": "Nosač za cijevi sa dizalicom",
+              "title": "Kompletan sistem",
               "description": "Čelični nosač sa hidrauličnim sistemom za stabilno držanje i precizno postavljanje cijevi za šutu tokom građevinskih radova.",
               "src": "https://i.postimg.cc/T2Fq3Y4S/2.jpg"
             },
@@ -531,7 +516,7 @@ export const sections: Section[] = [
               "src": "https://i.postimg.cc/t4H3FvyN/3.jpg"
             }
           ]
-        }
+        },        
       ]
     },    
     {
@@ -541,7 +526,7 @@ export const sections: Section[] = [
       subheaders: [      
         {
           id: "gumirani-membranski-ventili",
-          title: "Gumirani membranski, nepovratni ventili",
+          title: "Gumirani ventili",
           content: "",
           images: [            
             {
@@ -574,13 +559,13 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Gumirani čelični spremnici",
-              "description": "Gumirani čelični spremnici kombiniraju čvrstoću čelika sa zaštitnim gumiranim premazom, što ih čini idealnim za skladištenje agresivnih tekućina i kemikalija.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/B6mFyK6Y/4.jpg"
             },
             {
-              "title": "Gumirani spremnici za kemikalije",
-              "description": "Gumirani spremnici sa unutarnjim zaštitnim slojem osiguravaju sigurno skladištenje i transport korozivnih materijala, spriječavajući reakcije između sadržaja i čeličnog omotača.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/hjDxprSQ/3.jpg"
             }
           ]
@@ -591,12 +576,12 @@ export const sections: Section[] = [
           "content": "",
           "images": [
             {
-              "title": "Gumirani anionski izmjenjivači",
+              "title": "",
               "description": "Gumirani čelični anionski izmjenjivači dizajnirani su za ionsku izmjenu u kemijskim procesima, sa gumiranom zaštitom koja sprječava koroziju i povećava trajnost opreme.",
               "src": "https://i.postimg.cc/4yM94Rpp/1.jpg"
             },
             {
-              "title": "Gumirani kationski izmjenjivači",
+              "title": "",
               "description": "Gumirani kationski izmjenjivači u čeličnom kućištu sa zaštitnim gumiranim premazom omogućuju sigurnu i efikasnu ionsku izmjenu u zahtjevnim industrijskim uvjetima.",
               "src": "https://i.postimg.cc/KcsLDBC4/7.jpg"
             }
@@ -631,11 +616,12 @@ export const sections: Section[] = [
           "title": "Atomizeri",
           "content": "Visokoučinkoviti atomizeri osiguravaju ravnomjernu distribuciju tekućine i optimalnu zaštitu usjeva. Zahvaljujući snažnim komponentama i preciznim mlaznicama, prilagođeni su različitim tipovima biljaka i terena.",
           "images": [
+            
             {
               "title": "Poljoprivredni atomizer",
               "description": "Profesionalni atomizer sa hidrauličnim pokretnim krakom i regulacijom protoka, pokriva širinu do 12 metara.",
               "src": "https://i.postimg.cc/YqYZnLWf/14.jpg"
-            },          
+            },                      
           ]
         },
         {
@@ -656,25 +642,45 @@ export const sections: Section[] = [
           ]
         },
         {
-          "id": "kacePosudeZaMeso",
-          "title": "Kace, posude za meso i vino",
+          "id": "kace",
+          "title": "Posude",
           "content": "Izrađene od visokokvalitetnog inoxa, naše kace i posude osiguravaju dugotrajnost i higijensku obradu mesa, vina i drugih namirnica. Dostupne u različitim kapacitetima (200L, 310L, 520L, 780L), prilagođene su prehrambenoj industriji i kućnoj upotrebi.",
           "images": [          
+            {
+              "title": "Posude za vino sa plutajućim poklopcem i zatvorene",
+              "description": "Posude dolaze u različitim dimenzijama kako bi zadovoljile različite potrebe naših kupaca. Dostupni volumeni su 60L, 100L, 200L i 300L. Dimenzije proizvoda su sljedeće: A - 324mm, 420mm, 580mm i 580mm; B - 630mm, 670mm, 676mm i 995mm; C - 714mm, 770mm, 776mm i 1100mm; D - 466mm, 520mm, 720mm i 720mm.",
+              "src": "https://i.postimg.cc/0yZtFY2m/30.jpg"
+            },
+            {
+              "title": "Posude za vino",
+              "description": "Posude dolaze u različitim dimenzijama kako bi zadovoljile različite potrebe naših kupaca. Dostupni volumeni su 60L, 100L, 200L i 300L. Dimenzije proizvoda su sljedeće: A - 324mm, 420mm, 580mm i 580mm; B - 630mm, 670mm, 676mm i 995mm; C - 714mm, 770mm, 776mm i 1100mm; D - 466mm, 520mm, 720mm i 720mm.",
+              "src": "https://i.postimg.cc/hPTKry8W/1.jpg"
+            },
             {
               "title": "Posude za meso",
               "description": "Profesionalne posude za preradu mesa sa zaobljenim uglovima za jednostavno čišćenje i sanitarno održavanje.",
               "src": "https://i.postimg.cc/cJHDSvrz/32.jpg"
-            }
+            },
+            {
+              "title": "Kace",
+              "description": "Naši proizvodi dolaze u različitim dimenzijama kako bi zadovoljili različite potrebe naših kupaca. Dostupni volumeni su 200L, 310L, 520L i 780L. Promjeri proizvoda su 630mm, 785mm, 845mm i 845mm, dok su visine 730mm, 770mm, 1030mm i 1100mm. Ove dimenzije omogućuju fleksibilnost i prilagodbu specifičnim zahtjevima industrije.",
+              "src": "https://i.postimg.cc/wT8bmxGt/29.jpg"
+            },
+            {
+              "title": "Karnister 50L",
+              "description": "",
+              "src": "https://i.postimg.cc/m2YpNxvm/28.jpg"
+            },            
           ]
         },
         {
           "id": "rezervoar",
-          "title": "Plastični rezervoar",
-          "content": "Praktični rezervoari kapaciteta 1000L izrađeni su od izdržljive plastike, idealni za skladištenje vode, goriva ili kemikalija. Njihova robustna konstrukcija omogućava siguran transport i dugoročnu upotrebu u poljoprivredi i industriji.",
+          "title": "Plastični rezervoari",
+          "content": "Za volumen od 1000L, dimenzije su sljedeće: dužina - 1150mm, širina - 950mm, visina - 1000mm, otvor - fi 160mm, ispust - 2\". Ove dimenzije omogućuju fleksibilnost i prilagodbu specifičnim zahtjevima industrije.",          
           "images": [
             {
-              "title": "Plastični rezervoar 1000L",
-              "description": "Moderan dizajn sa širokim otvorom za punjenje, drenažnim ventilom i unutarnjim mjernim oznakama za precizno praćenje količine.",
+              "title": "",
+              "description": "",
               "src": "https://i.postimg.cc/7ZqsKsDw/31.jpg"
             }
           ]
@@ -692,20 +698,25 @@ export const sections: Section[] = [
           "content": "Otvoreni i zatvoreni kontejneri kapaciteta 5, 7 i 10 m³ izrađeni su od izdržljivih materijala za sigurno skladištenje i transport otpada. Plastične kante za smeće (60L, 100L, 200L, 300L) osiguravaju jednostavno rukovanje i dugotrajnu upotrebu u domaćinstvima i industriji.",
           "images": [
             {
-              "title": "Komunalni kontejneri",
+              "title": "Komunalni otvoreni i zatvoreni kontejneri 5,7, 10 m³",
+              "description": "",
+              "src": "https://i.postimg.cc/GpGWhmrx/9.jpg"
+            },
+            {
+              "title": "Komunalni otvoreni i zatvoreni kontejneri 5,7, 10 m³",
+              "description": "",
+              "src": "https://i.postimg.cc/k4FPwXpg/1.jpg"
+            },
+            {
+              "title": "Rolo kontejneri 32 m³",
               "description": "Robusni otvoreni i zatvoreni kontejneri kapaciteta 5-10 m³ za efikasno prikupljanje komunalnog otpada, izrađeni od visokokvalitetnih materijala otpornih na vremenske uvjete.",
               "src": "https://i.postimg.cc/Gt7NSBJd/13.jpg"
             },
             {
               "title": "Plastične kante za smeće",
-              "description": "Ergonomske kante u kapacitetima od 60L do 300L sa praktičnim poklopcima i ručkama za jednostavno korištenje u svakodnevnim uvjetima.",
+              "description": "Dostupni volumeni su 60L, 100L, 200L i 300L. Dimenzije proizvoda su sljedeće: Za volumen od 60L, A - 324mm, B - 630mm, C - 714mm, D - 466mm; Za volumen od 100L, A - 420mm, B - 670mm, C - 770mm, D - 520mm; Za volumen od 200L, A - 580mm, B - 676mm, C - 776mm, D - 720mm; Za volumen od 300L, A - 580mm, B - 995mm, C - 1100mm, D - 720mm.",
               "src": "https://i.postimg.cc/CKPQBj3Y/20.jpg"
-            },
-            {
-              "title": "Rolo kontejneri",
-              "description": "Praktični rolo kontejneri sa mehanizmom za jednostavno pražnjenje, idealni za komunalne službe i industrijske komplekse.",
-              "src": "https://i.postimg.cc/GpGWhmrx/9.jpg"
-            }
+            },            
           ]
         },
         {
@@ -775,20 +786,30 @@ export const sections: Section[] = [
           "content": "Plastični rezervoari sa duplom stijenkom omogućuju sigurno skladištenje otpadnog ulja u kapacitetima do 20 m³. Također nudimo rezervoare od 35 m³ i tankvane za otpadno ulje (1.000L – 20.000L) prilagođene industrijskim potrebama.",
           "images": [
             {
-              "title": "Rezervoar za ulje",
-              "description": "Dvoljušturni plastični rezervoar sa sistemom za nadzor punjenja i sigurnosnim ventilima, kapaciteta do 20m³.",
-              "src": "https://i.postimg.cc/d1MJ4fQ4/23.jpg"
-            },
+              "title": "Rezervoari sa duplom stijenkom za otpadno ulje",
+              "description": "",
+              "src": "https://i.postimg.cc/VvLpR9tK/12.jpg"
+            },                        
             {
-              "title": "Industrijski tankvani",
-              "description": "Veliki tankvani za otpadno ulje sa pumpnim sistemom i pristupnim platformama, kapaciteta do 20.000 litara.",
+              "title": "Plastične posude za otpadno ulje",
+              "description": "",
+              "src": "https://i.postimg.cc/5NP1ZyNH/29.jpg"
+            },            
+            {
+              "title": "Rezervoari za otpadno ulje 20m³",
+              "description": "",
+              "src": "https://i.postimg.cc/MTyq4Yvx/25.jpg"
+            },            
+            {
+              "title": "Rezervoari tehnološke kanalizacije 35m³",
+              "description": "",
               "src": "https://i.postimg.cc/pVCtFrj0/4.jpg"
             },
             {
-              "title": "Tehnološka kanalizacija",
-              "description": "Specijalizirani rezervoari za tehnološku kanalizaciju sa sistemom za odvajanje tekućina i čvrstih čestica.",
-              "src": "https://i.postimg.cc/VvLpR9tK/12.jpg"
-            }
+              "title": "Rezervoar za otpadno ulje sa sankvanom od 1000L do 20000L.",
+              "description": "Dvoljušturni plastični rezervoar sa sistemom za nadzor punjenja i sigurnosnim ventilima, kapaciteta do 20m³.",
+              "src": "https://i.postimg.cc/d1MJ4fQ4/23.jpg"
+            },
           ]
         },
         {
@@ -840,7 +861,7 @@ export const sections: Section[] = [
           "images": [
             {
               "title": "Prometne barijere",
-              "description": "Visoke plastične barijere u upadljivim bojama sa refleksnim elementima za kontrolu prometa na gradilištima i javnim površinama.",
+              "description": "Visoke plastične barijere dimenzija 1000mm dužine, 400mm širine i 600mm visine u upadljivim bojama sa refleksnim elementima za kontrolu prometa na gradilištima i javnim površinama.",
               "src": "https://i.postimg.cc/RCj2LLNZ/16.jpg"
             },
             {
@@ -861,20 +882,44 @@ export const sections: Section[] = [
               "src": "https://i.postimg.cc/yd3vD2hX/37.jpg"
             },
             {
-              "title": "Pjeskolovi",
-              "description": "Specijalizirani pjeskolovi sa višeslojnim filtarskim sistemom za odvajanje čvrstih čestica u kanalizacijskim sistemima.",
+              "title": "Šahte za vodomjere",
+              "description": "",
               "src": "https://i.postimg.cc/vm3v2bhv/8.jpg"
             },
             {
-              "title": "Mastolovi",
-              "description": "Industrijski mastolovi sa sistemom za odvajanje masti i mehaničkim skidačem za jednostavno održavanje.",
+              "title": "Šahte, pjeskolovi, mastolovi",
+              "description": "",
               "src": "https://i.postimg.cc/rmsNv3Y2/9.jpg"
-            },
+            },            
             {
-              "title": "Septičke šahte",
-              "description": "Kompletni sistemi septičkih šahti sa pristupnim otvorima i ventilacijom za efikasno održavanje.",
-              "src": "https://i.postimg.cc/MGKLpsrd/18.jpg"
+              "title": "Jednokomorne, dvokomorne i trokomorne septičke jame",
+              "description": "",
+              "src": "https://i.postimg.cc/wMsRFX2f/11.jpg"
             }
+          ]
+        },
+        {
+          "id": "posude-za-akumulatore-zauljene-krpe-i-pijesak",
+          "title": "Posude za akumulatore, zauljene krpe i pijesak",
+          "content": "Posude za akumulatore, zauljene krpe i pijesak izrađene su od visokokvalitetnih materijala koji osiguravaju sigurnost i dugotrajnost. Dizajnirane su za sigurno skladištenje i transport opasnih materijala.",
+          "images": [
+            {
+              "title": "Posude za akumulatore, zauljene krpe i pijesak",
+              "description": "Sigurne i izdržljive posude za skladištenje i transport akumulatora.",
+              "src": "https://i.postimg.cc/T1ffXWDb/24.jpg"
+            },           
+          ]
+        },
+        {
+          "id": "plinski-ormari",
+          "title": "Plinski ormari",
+          "content": "Plinski ormari izrađeni su od visokokvalitetnih materijala otpornih na koroziju i ekstremne uvjete. Dostupni su u različitim dimenzijama i oblicima, prilagođeni za široku primjenu u plinskoj infrastrukturi.",
+          "images": [
+            {
+              "title": "Plinski ormari za vanjsku montažu",
+              "description": "Ormari za vanjsku montažu sa zaštitom od vremenskih uvjeta i vandalizma.",
+              "src": "https://i.postimg.cc/fyznPnGj/2.jpg"
+            }            
           ]
         },
         {
@@ -883,14 +928,19 @@ export const sections: Section[] = [
           "content": "Naša spremišta za zapaljive tekućine, boce, boje i lakove osiguravaju sigurno skladištenje i rukovanje opasnim tvarima. Izrađena od čvrstih materijala, prilagođena su specifičnim zahtjevima industrije i komunalnih službi.",
           "images": [
             {
-              "title": "Spremnik za boce",
-              "description": "Ventilirani čelični spremnik sa regulatorom temperature za sigurno skladištenje plinskih boca i zapaljivih tekućina.",
+              "title": "Mobilna spremišta, spremišta zapaljivih tekućina, spremišta boja i lakova, spremište boca",
+              "description": "",
               "src": "https://i.postimg.cc/Pxkkm8K7/30.jpg"
             },
             {
-              "title": "Spremnik za boje",
-              "description": "Specijalizirani spremnik sa antistatičkim svojstvima za skladištenje boja i lakova, sa sistemom za kontrolu vlage.",
+              "title": "Mobilna spremišta, spremišta zapaljivih tekućina, spremišta boja i lakova, spremište boca",
+              "description": "",
               "src": "https://i.postimg.cc/pd52Qvvm/22.jpg"
+            },
+            {
+              "title": "Mobilno spremište dvoetažno izolirano sa pomoćnom prostorijom za opasni otpad",
+              "description": "Specijalizirani spremnik sa antistatičkim svojstvima za skladištenje boja i lakova, sa sistemom za kontrolu vlage.",
+              "src": "https://i.postimg.cc/SxJqq4Jg/33.jpg"
             }
           ]
         }
@@ -970,7 +1020,7 @@ export const sections: Section[] = [
               "content": "",
               "images": [
                   {
-                      "title": "Kajak za more",
+                      "title": "Kajak za more, dvosjed",
                       "description": "Kajak izrađen od visokootpornih materijala osigurava dugotrajan rad u različitim uvjetima. Ergonomski dizajn garantira udobnost, dok lagana, ali čvrsta konstrukcija omogućava lako upravljanje na rekama, jezerima i morima.",
                       "src": "https://i.postimg.cc/TPMrb3jN/1.jpg"
                   }
