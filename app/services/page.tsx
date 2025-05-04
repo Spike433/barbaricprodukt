@@ -7,42 +7,66 @@ export const metadata: Metadata = {
 }
 
 // Define service categories and their items
-const services = [ 
-  {
-    id: "pjeskarenje",
-    title: "PJESKARENJE",
-    items: [],
-  }, 
+const services = [
   {
     id: "bravarija",
     title: "BRAVARIJA",
-    items: [],
-  }, 
-  {
-    id: "rezanje",
-    title: "REZANJE",
     items: [
-      { id: "plinsko", title: "PLINSKO" },
-      { id: "plazma", title: "PLAZMA" },
-    ],
+      {
+        id: "rezanje",
+        title: "REZANJE",
+        subitems: [
+          { id: "cnc", title: "CNC" },
+          { id: "plinsko", title: "PLINSKO" },
+          { id: "plazma", title: "PLAZMA" }
+        ]
+      },
+      {
+        id: "savijanje",
+        title: "SAVIJANJE",
+        subitems: [
+          { id: "kutno", title: "KUTNO" },
+          { id: "kruzno", title: "KRUŽNO" }
+        ]
+      },      
+      {
+        id: "zavarivanje",
+        title: "ZAVARIVANJE",
+        subitems: [
+          { id: "rel", title: "REL" },
+          { id: "mig-mag", title: "MIG MAG" },
+          { id: "tig", title: "TIG" },
+          { id: "plinsko-zavarivanje", title: "PLINSKO" }
+        ]
+      },
+      {
+        id: "pjeskarenje",
+        title: "PJESKARENJE",
+        items: []
+      }
+    ]
   },
   {
-    id: "savijanje",
-    title: "SAVIJANJE",
+    id: "strojna-obrada",
+    title: "STROJNA OBRADA METALA I NEMETALA",
     items: [
-      { id: "kutno", title: "KUTNO" },
-      { id: "kruzno", title: "KRUŽNO" },
-    ],
+      { id: "tokarenje", title: "TOKARENJE" },
+      { id: "glodanje", title: "GLODANJE" },
+      { id: "busenje", title: "BUŠENJE" },
+      { id: "brusenje", title: "BRUŠENJE" },
+      { id: "stancanje", title: "ŠTANCANJE" }
+    ]
   },
   {
-    id: "zavarivanje",
-    title: "ZAVARIVANJE",
+    id: "softverska-rjesenja",
+    title: "SOFTVERSKA RJEŠENJA",
     items: [
-      { id: "rel", title: "REL" },
-      { id: "mig-mag", title: "MIG MAG" },
-      { id: "tig", title: "TIG" },
-      { id: "plinsko-zavarivanje", title: "PLINSKO" },
-    ],
+      { id: "web", title: "WEB APLIKACIJE" },
+      { id: "mobilne-aplikacije", title: "MOBILNE APLIKACIJE" },
+      { id: "industrijski-softver", title: "INDUSTRIJSKI SOFTVER" },
+      { id: "automatizacija-postrojenja", title: "AUTOMATIZACIJA POSTROJENJA" },
+      { id: "kuce", title: "PAMETNE KUĆE" }
+    ]
   },  
   {
     id: "antikorozivna-zastita",
@@ -50,9 +74,9 @@ const services = [
     items: [
       { id: "bojanje", title: "BOJANJE" },
       { id: "gumiranje", title: "GUMIRANJE" },
-      { id: "plastificiranje", title: "PLASTIFICIRANJE" },
-    ],
-  },  
+      { id: "plastificiranje", title: "PLASTIFICIRANJE" }
+    ]
+  },
   {
     id: "limarski-radovi",
     title: "LIMARSKI RADOVI",
@@ -62,11 +86,11 @@ const services = [
         title: "GRAĐEVINSKA LIMARIJA",
         subitems: [
           { id: "pokrovi", title: "POKROVI" },
-          { id: "fasade", title: "FASADE" },
-        ],
+          { id: "fasade", title: "FASADE" }
+        ]
       },
-      { id: "izolaterska-limarija", title: "IZOLATERSKA LIMARIJA" },
-    ],
+      { id: "izolaterska-limarija", title: "IZOLATERSKA LIMARIJA" }
+    ]
   },
   {
     id: "prerada-plasticnih-masa",
@@ -74,37 +98,15 @@ const services = [
     items: [
       { id: "roto-lijev", title: "ROTO LIJEV" },
       { id: "zavarivanje-plastike", title: "ZAVARIVANJE" },
-      { id: "laminiranje", title: "LAMINIRANJE" },
-    ],
+      { id: "laminiranje", title: "LAMINIRANJE" }
+    ]
   },
   {
     id: "odrzavanje",
     title: "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA",
-    items: [],
-  },  
-  {
-    id: "strojna-obrada",
-    title: "STROJNA OBRADA METALA I NEMETALA",
-    items: [
-      { id: "tokarenje", title: "TOKARENJE" },
-      { id: "glodanje", title: "GLODANJE" },
-      { id: "busenje", title: "BUŠENJE" },
-      { id: "stancanje", title: "ŠTANCANJE" },
-    ],
-  },
-  {
-    id: "softverska-rjesenja",
-    title: "SOFTVERSKA RJEŠENJA",
-    items: [
-      // web, mobilne aplikacije, industrijski softver, automatizacija postrojenja, kuce
-      { id: "web", title: "WEB APLIKACIJE" },
-      { id: "mobilne-aplikacije", title: "MOBILNE APLIKACIJE" },
-      { id: "industrijski-softver", title: "INDUSTRIJSKI SOFTVER" },
-      { id: "automatizacija-postrojenja", title: "AUTOMATIZACIJA POSTROJENJA" },
-      { id: "kuce", title: "KUĆE" },
-    ]
-  },  
-]
+    items: []
+  },    
+];
 
 export default function ServicesPage() {
   return (
