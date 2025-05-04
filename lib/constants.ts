@@ -781,17 +781,22 @@ export const sections: Section[] = [
         {
           "id": "vodomjerna-okna-sahte",
           "title": "Vodomjerna okna, šahte",
-          "content": "Vodomjerno okno namijenjeno je za ugradnju u manjim objektima i štiti vodomjer od smrzavanja. Nakon montaže instalacije (cijevi, koljena, ventili, vodomjer), sve se pokrije termo poklopcem, a potom poklopcem vodomjera. Kućište i poklopac izrađeni su od polietilena s rebrima za ojačanje, bez potrebe za dodatnim betoniranjem. Za promet vozilima potrebno je ojačati kućište betonom i ugraditi čelični poklopac.",
+          "content": "Vodomjerno okno je namijenjeno za ugradnju kod manjih objekata i štiti vodomjer od zamrzavanja. Kućište i poklopac izrađeni su od polietilena s rebrima za ojačanje, a za promet vozilima potrebno je dodatno ojačanje betonom i ugradnja čeličnog poklopca.",
           "images": [
             {
               "title": "Vodomjerno okno",
-              "description": "Polietilensko vodomjerno okno sa termoizolacijom i rebrima za ojačanje, spremno za ugradnju bez dodatnog betoniranja.",
+              "description": "Polietilensko vodomjerno okno sa termoizolacijom i rebrima za ojačanje, spremno za ugradnju bez dodatnog betoniranja. Tehničke karakteristike uključuju visinu kućišta od 990 mm, dužinu od 660 mm i širinu od 450 mm. Boja kućišta može biti bijela, plava ili crna.",
               "src": "https://i.postimg.cc/jdBNVS1q/10.jpg"
             },
             {
               "title": "Šahta za vodomjer",
-              "description": "Kompletna šahta sa poklopcem i ventilacijom, dizajnirana za zaštitu vodomjera u vanjskim uvjetima.",
+              "description": "Kompletna šahta sa poklopcem i ventilacijom, dizajnirana za zaštitu vodomjera u vanjskim uvjetima. Unutarnja instalacija uključuje noseću plastičnu ploču za cijevi, brze spojnice, ventile sa holenderima, vodomjer i termo poklopac.",
               "src": "https://i.postimg.cc/s2rhX0yt/11.jpg"
+            },
+            {
+              "title": "Šahta za vodomjer",
+              "description": "Kompletna šahta sa poklopcem i ventilacijom, dizajnirana za zaštitu vodomjera u vanjskim uvjetima.",
+              "src": "https://i.postimg.cc/7ZKS8dzr/7.jpg"
             }
           ]
         },
