@@ -50,7 +50,7 @@ export default function Header() {
                 priority
               />
               <div className="text-left text-sm mt-6 mb-4 hidden sm:block">
-                <span>za proizvodnju, trgovinu, usluge obrade metala i plastike</span>
+                <span>d.o.o. za proizvodnju, trgovinu i usluge</span>
               </div>
             </Link>
           </div>
