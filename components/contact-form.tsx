@@ -290,7 +290,7 @@ export default function ContactForm() {
                 </div>
               </CardContent>
               <CardFooter className="bg-gray-50 border-t border-gray-100 px-6 py-4 mt-auto">
-                <p className="text-sm text-muted-foreground">Radno vrijeme: Ponedjeljak - Petak, 8:00 - 16:00</p>
+                <p className="text-sm text-muted-foreground">Radno vrijeme: Ponedjeljak - Petak, 7:00 - 15:00</p>
               </CardFooter>
             </Card>
           </div>
