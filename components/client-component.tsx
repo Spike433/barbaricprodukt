@@ -1,7 +1,7 @@
-"use client";
+//"use client";
 
-import { useGallery } from "@/hooks/use-gallery";
-import ImageGallery from "@/components/image-gallery";
+//import { useGallery } from "@/hooks/use-gallery";
+//import ImageGallery from "@/components/image-gallery";
 import ClientSideNavigation from "@/components/client-side-navigation";
 
 import { sections } from "@/lib/constants";
@@ -9,14 +9,14 @@ import Image from "next/image";
 import { generateBlurPlaceholder } from "@/lib/utils";
 
 export default function ProductPageClient() {
-  const {
-    isGalleryOpen,
-    currentImageIndex,
-    currentImages,
-    openGallery,
-    closeGallery,
-    navigateImages
-  } = useGallery();
+  //const {
+    //isGalleryOpen,
+    //currentImageIndex,
+    //currentImages,
+    //openGallery,
+    //closeGallery,
+    //navigateImages
+  //} = useGallery();
 
   return (
     <>
@@ -39,31 +39,20 @@ export default function ProductPageClient() {
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
                   {section.title}
                 </h2>
-                <div className="space-y-4">
-                  <p className="ml-4" itemProp="description">
-                    {section.content}
-                  </p>                                    
+                <div className="space-y-4">                  
                   {section?.subheaders?.map((subheader) => (
                     <div
                       key={subheader.id}
                       id={subheader.id}
                       className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-                    >
-                      <h3 className="text-xl font-medium mb-3 text-industrial-blue">
-                        {subheader.title}
-                      </h3>
-                      {subheader.content && (
-                        <p className="ml-4 mb-2">
-                          {subheader.content}
-                        </p>
-                      )}
+                    >                      
                       {subheader?.images && (
                         <div className="flex flex-wrap p-4">
                           {subheader.images.map((image, index) => (
                             <figure 
                               key={index} 
                               className="w-full sm:w-1/2 md:w-1/3 p-2 cursor-pointer"
-                              onClick={() => openGallery(subheader.images!, index)}
+                              //onClick={() => openGallery(subheader.images!, index)}
                               itemScope
                               itemType="https://schema.org/ImageObject"
                             >
@@ -95,13 +84,13 @@ export default function ProductPageClient() {
         </article>          
       </div>
       
-      <ImageGallery
+      {/* <ImageGallery
         isOpen={isGalleryOpen}
         onClose={closeGallery}
         images={currentImages}
         currentIndex={currentImageIndex}
         navigateImages={navigateImages}
-      />
+      /> */}
     </>
   );
 }

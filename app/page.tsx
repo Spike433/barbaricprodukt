@@ -4,64 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { generateBlurPlaceholder } from "../lib/utils"
 
-const serviceCategories = [
-  {
-    id: "industrijskaOprema",
-    title: "Industrijska oprema",
-    image: "https://i.postimg.cc/1zhpcCQK/31.jpg",
-    description: "Specijalizirana oprema za različite industrijske procese i postrojenja.",
-  },  
-  {
-    id: "celicneKonstrukcije",
-    title: "Čelične konstrukcije",
-    image: "https://i.postimg.cc/4dXgCZ62/9.jpg",
-    description: "Izrada i montaža čeličnih konstrukcija za različite namjene.",
-  },
-  {
-    id: "aluPvcStolarija",
-    title: "Alu i PVC stolarija",
-    image: "https://i.postimg.cc/JnwVW2gg/3.jpg",
-    description: "Visokokvalitetna aluminijska i PVC stolarija za sve vrste objekata.",
-  },
-  {
-    id: "opremaZaGradevinarstvo",
-    title: "Oprema za građevinarstvo",
-    image: "https://i.postimg.cc/8c2hKtvD/1.jpg",
-    description: "Profesionalna oprema i alati za građevinsku industriju.",
-  },
-  {
-    id: "gumirani-celicni-elementi",
-    title: "Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina",
-    image: "https://i.postimg.cc/zf1TRN6j/2.jpg",
-    description: "Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.",
-  },   
-  {
-    id: "strojeviZaPoljoprivreduIVocarstvo",
-    title: "Strojevi za poljoprivredu i voćarstvo",
-    image: "https://i.postimg.cc/YqYZnLWf/14.jpg",
-    description: "Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.",
-  },  
-  {
-    id: "urbanaOprema",
-    title: "Urbana oprema",
-    image: "https://i.postimg.cc/L4yjXF9r/0.jpg",
-    description: "Oprema za uređenje i opremanje javnih i urbanih prostora.",
-  },
-  {
-    id: "ekoOpremaKomunalna",
-    title: "Komunalna eko oprema",
-    image: "https://i.postimg.cc/Pxkkm8K7/30.jpg",
-    description: "Ekološka oprema za komunalne službe i održavanje javnih površina.",
-  },
-  {
-    id: "opremaZaMore",
-    title: "Oprema za more",
-    image: "https://i.postimg.cc/j5vNB6pB/4.jpg",
-    description: "Oprema i komponente za pomorsku industriju i nautiku.",
-  },
-]
-
-
 export default function HomePage() {
   return (
     <main className="min-h-screen">
@@ -72,6 +14,7 @@ export default function HomePage() {
           alt="Čelične konstrukcije - Barbarić Produkt"
           fill
           className="object-cover"
+          style={{ objectPosition: "30% 30%" }}
           priority
         />
         <div className="absolute inset-0">
@@ -84,10 +27,7 @@ export default function HomePage() {
                 height={500}                
                 priority                
                 className="mx-auto"
-              />
-              <p className="text-xl md:text-2xl text-white/90 max-w-2xl drop-shadow-md">
-                Specijalizirani za proizvodnju i obradu proizvoda od metala, plastike i gume
-              </p>
+              />              
             </div>
           </div>
         </div>
@@ -99,51 +39,19 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue md:text-4xl">
             Naše kategorije proizvoda
           </h2>
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-  {serviceCategories.map((category) => (
-    <Link
-      href={`/products#${category.id}`}
-      key={category.id}
-      className="group bg-white rounded-t-xl hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-    >
-      <div className="relative aspect-square w-full overflow-hidden rounded-t-xl">
-        <Image
-          src={category.image || "/placeholder.svg"}
-          alt={category.title}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out rounded-t-xl p-0.4"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 400)}
-          loading="lazy"
-        />
-      </div>
-      <div className="p-4 flex-1 flex flex-col">
-        <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-          {category.title}
-        </h3>
-        <p className="text-muted-foreground text-sm line-clamp-3">
-          {category.description}
-        </p>
-      </div>
-    </Link>
-  ))}
-          </div> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-          {serviceCategories.map((category) => (
+            {/* Industrijska oprema */}
             <Link
-              href={`/products#${category.id}`}
-              key={category.id}
+              href="/products#industrijskaOprema"
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
             >
-              {/* Image container with padding - the key is here */}
               <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden"> {/* This div creates the spacing */}
+                <div className="absolute inset-3 rounded-md overflow-hidden">
                   <Image
-                    src={category.image || "/placeholder.svg"}
-                    alt={category.title}
+                    src="https://i.postimg.cc/1zhpcCQK/31.jpg"
+                    alt="Industrijska oprema"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out "
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 400)}
@@ -153,15 +61,246 @@ export default function HomePage() {
               </div>
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  {category.title}
+                  Industrijska oprema
                 </h3>
                 <p className="text-muted-foreground text-sm line-clamp-3">
-                  {category.description}
+                  Specijalizirana oprema za različite industrijske procese i postrojenja.
                 </p>
               </div>
             </Link>
-          ))}
-        </div>
+
+            {/* Čelične konstrukcije */}
+            <Link
+              href="/products#celicneKonstrukcije"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                    alt="Čelične konstrukcije"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Čelične konstrukcije
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Izrada i montaža čeličnih konstrukcija za različite namjene.
+                </p>
+              </div>
+            </Link>
+
+            {/* Alu i PVC stolarija */}
+            <Link
+              href="/products#aluPvcStolarija"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/JnwVW2gg/3.jpg"
+                    alt="Alu i PVC stolarija"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Alu i PVC stolarija
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Visokokvalitetna aluminijska i PVC stolarija za sve vrste objekata.
+                </p>
+              </div>
+            </Link>
+
+            {/* Oprema za građevinarstvo */}
+            <Link
+              href="/products#opremaZaGradevinarstvo"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/8c2hKtvD/1.jpg"
+                    alt="Oprema za građevinarstvo"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Oprema za građevinarstvo
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Profesionalna oprema i alati za građevinsku industriju.
+                </p>
+              </div>
+            </Link>
+
+            {/* Gumirani čelinčni elementi */}
+            <Link
+              href="/products#gumirani-celicni-elementi"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/zf1TRN6j/2.jpg"
+                    alt="Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Specijalizirani elementi otporni na koroziju za siguran transport agresivnih tekućina.
+                </p>
+              </div>
+            </Link>
+
+            {/* Strojevi za poljoprivredu i voćarstvo */}
+            <Link
+              href="/products#strojeviZaPoljoprivreduIVocarstvo"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/YqYZnLWf/14.jpg"
+                    alt="Strojevi za poljoprivredu i voćarstvo"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Strojevi za poljoprivredu i voćarstvo
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Specijalizirani strojevi i oprema za poljoprivrednu proizvodnju.
+                </p>
+              </div>
+            </Link>
+
+            {/* Urbana oprema */}
+            <Link
+              href="/products#urbanaOprema"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/L4yjXF9r/0.jpg"
+                    alt="Urbana oprema"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Urbana oprema
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Oprema za uređenje i opremanje javnih i urbanih prostora.
+                </p>
+              </div>
+            </Link>
+
+            {/* Komunalna eko oprema */}
+            <Link
+              href="/products#ekoOpremaKomunalna"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
+                    alt="Komunalna eko oprema"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Komunalna eko oprema
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Ekološka oprema za komunalne službe i održavanje javnih površina.
+                </p>
+              </div>
+            </Link>
+
+            {/* Oprema za more */}
+            <Link
+              href="/products#opremaZaMore"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+            >
+              <div className="relative aspect-square w-full overflow-hidden">
+                <div className="absolute inset-3 rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/j5vNB6pB/4.jpg"
+                    alt="Oprema za more"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                  Oprema za more
+                </h3>
+                <p className="text-muted-foreground text-sm line-clamp-3">
+                  Oprema i komponente za pomorsku industriju i nautiku.
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 

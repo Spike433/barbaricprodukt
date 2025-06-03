@@ -107,10 +107,7 @@ export default function ProductPage() {
           <div className="max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
               Proizvodnja
-            </h1>
-            <p className="text-lg text-center text-muted-foreground max-w-3xl mx-auto">
-              Proizvodimo čelične konstrukcije, gumificirane i plastificirane elemente, alu i PVC stolariju, industrijsku opremu i opremu za more. Obrađujemo metal i plastiku te radimo po individualnoj narudžbi.
-            </p>
+            </h1>            
           </div>
         </header>
               

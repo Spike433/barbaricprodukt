@@ -1,19 +1,15 @@
 export type Subheader = {
-    id: string
-    title: string
-    content: string
+    id: string    
     images?: Picture[]
   }
 
   export type Picture = {
-    title: string
-    description: string
+    title: string    
     src: string    
   }
   
   export type Section = {
     id: string
-    title: string
-    content: string    
+    title: string    
     subheaders?: Subheader[]
   }
