@@ -3,6 +3,161 @@ import { Section } from "@/app/types";
 // Define sections with their content
 export const sections: Section[] = [
     {
+      "id": "celicneKonstrukcije",
+      "title": "ČELIČNE KONSTRUKCIJE",
+      "subheaders": [
+        {
+          "id": "montazne-hale",
+          "images": [
+            {
+              "title": "MONTAŽNE HALE",
+              "src": "https://i.postimg.cc/L5CRB7ZC/1.jpg"
+            },
+            {
+              "title": "AVIONSKI HANGAR",
+              "src": "https://i.postimg.cc/pTktR7kW/12.jpg"
+            },
+            {
+              "title": "GARAŽA",
+              "src": "https://i.postimg.cc/CMmFgZ6G/5.jpg"
+            },
+            {
+              "title": "ČELINČNE KONSTRUKCIJE",
+              "src": "https://i.postimg.cc/4dXgCZ62/9.jpg"
+            },
+            {
+              "title": "ČELIČNE KONSTRUKCIJE",
+              "src": "https://i.postimg.cc/YS6HyjWm/11.jpg"
+            },
+            {
+              "title": "PANORAMSKO DIZALO",
+              "src": "https://i.postimg.cc/vTHbnMDx/4.jpg"
+            },            
+            {
+              "title": "ČELIČNE KONSTRUKCIJE",
+              "src": "https://i.postimg.cc/FK5vZ074/10.jpg"           
+            },            
+            {
+              "title": "ČELIČNE KONSTRUKCIJE",
+              "src": "https://i.postimg.cc/DwbFLxf6/8.jpg"
+            }, 
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/XqzSyCTt/15.jpg"
+            }, 
+          ]
+        },      
+        {
+          "id": "stakleneILimeneFasade",
+          "images": [
+            {
+              "title": "FASADE	STAKLENE LIMENE",
+              "src": "https://i.postimg.cc/Bb6f6gwx/13.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/NfnBK3tL/7.jpg"
+            },
+            {
+              "title": "KROVIŠTA",
+              "src": "https://i.postimg.cc/qMqpMk99/6.jpg"
+            },
+            {
+              "title": "KROVNI PROZORI",
+              "src": "https://i.postimg.cc/44LT0Dmw/14.jpg"
+            },
+            {
+              "title": "KROVNE KUPOLE",
+              "src": "https://i.postimg.cc/pTv22KHZ/2.jpg"
+            },
+            {
+              "title": "SVJETLARNICI",
+              "src": "https://i.postimg.cc/wvk933xd/3.jpg"
+            },
+          ]
+        },
+        {
+          "id": "ogradeIPodovi",
+          "images": [
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/8PxgpLd6/18.jpg"
+            },            
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/WbdPc5ZV/17.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/QM3L5syN/19.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/FKgMVqMy/20.jpg"
+            }            
+          ]
+        },
+        {
+          "id": "kuce",
+          "images": [
+            {
+              "title": "MODULARNE -MOBILNE KUĆE",
+              "src": "https://i.postimg.cc/136hf4MY/21.jpg"
+            }
+          ]
+        },
+        {
+          "id": "pontoniKatamarani",
+          "images": [
+            {
+              "title": "PONTONI I KATAMARANI",
+              "src": "https://i.postimg.cc/j5vNB6pB/4.jpg"
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "id": "aluPvcStolarija",
+      "title": "ALUMINIJSKA STOLARIJA",
+      "subheaders": [
+        {
+          "id": "segmentnaPodiznaVrata",
+          "images": [
+            {
+              "title": "DVOKRINAI JEDNOKRILNA KLIZNA", 
+              "src": "https://i.postimg.cc/MTykZYJG/2.jpg"
+            },
+            {
+              "title": "AUTOMATSKA VRATA",
+              "src": "https://i.postimg.cc/FzmMYJhV/4.jpg"
+            },            
+            {
+              "title": "PODIZNE RAMPE",              
+              "src": "https://i.postimg.cc/m2ZxRMXb/6.jpg"
+            }
+          ]
+        },
+        {
+          "id": "prozori",
+          "images": [
+            {
+              "title": "PROZORI STAKLENE STIJENE FASADE OD PANELA",
+              "src": "https://i.postimg.cc/JnwVW2gg/3.jpg"
+            },
+            {
+              "title": "STAKLENE FASADE",
+              "src": "https://i.postimg.cc/brTKkNJc/1.jpg"
+            },
+            {
+              "title": "ZIMSKI VRTOVI",
+              "src": "https://i.postimg.cc/WpwRQS7W/5.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "industrijskaOprema",
       "title": "INDUSTRIJSKA OPREMA",
       "subheaders": [
@@ -211,351 +366,10 @@ export const sections: Section[] = [
           ]
         },        
       ]
-    },
-    {
-      "id": "celicneKonstrukcije",
-      "title": "ČELIČNE KONSTRUKCIJE",
-      "subheaders": [
-        {
-          "id": "montazne-hale",
-          "images": [
-            {
-              "title": "MONTAŽNE HALE",
-              "src": "https://i.postimg.cc/L5CRB7ZC/1.jpg"
-            },
-            {
-              "title": "AVIONSKI HANGAR",
-              "src": "https://i.postimg.cc/pTktR7kW/12.jpg"
-            },
-            {
-              "title": "GARAŽA",
-              "src": "https://i.postimg.cc/CMmFgZ6G/5.jpg"
-            },
-            {
-              "title": "ČELINČNE KONSTRUKCIJE",
-              "src": "https://i.postimg.cc/4dXgCZ62/9.jpg"
-            },
-            {
-              "title": "ČELIČNE KONSTRUKCIJE",
-              "src": "https://i.postimg.cc/YS6HyjWm/11.jpg"
-            },
-            {
-              "title": "PANORAMSKO DIZALO",
-              "src": "https://i.postimg.cc/vTHbnMDx/4.jpg"
-            },            
-            {
-              "title": "ČELIČNE KONSTRUKCIJE",
-              "src": "https://i.postimg.cc/FK5vZ074/10.jpg"           
-            },            
-            {
-              "title": "ČELIČNE KONSTRUKCIJE",
-              "src": "https://i.postimg.cc/DwbFLxf6/8.jpg"
-            }, 
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/XqzSyCTt/15.jpg"
-            }, 
-          ]
-        },      
-        {
-          "id": "stakleneILimeneFasade",
-          "images": [
-            {
-              "title": "FASADE	STAKLENE LIMENE",
-              "src": "https://i.postimg.cc/Bb6f6gwx/13.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/NfnBK3tL/7.jpg"
-            },
-            {
-              "title": "KROVIŠTA",
-              "src": "https://i.postimg.cc/qMqpMk99/6.jpg"
-            },
-            {
-              "title": "KROVNI PROZORI",
-              "src": "https://i.postimg.cc/44LT0Dmw/14.jpg"
-            },
-            {
-              "title": "KROVNE KUPOLE",
-              "src": "https://i.postimg.cc/pTv22KHZ/2.jpg"
-            },
-            {
-              "title": "SVJETLARNICI",
-              "src": "https://i.postimg.cc/wvk933xd/3.jpg"
-            },
-          ]
-        },
-        {
-          "id": "ogradeIPodovi",
-          "images": [
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/8PxgpLd6/18.jpg"
-            },            
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/WbdPc5ZV/17.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/QM3L5syN/19.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/FKgMVqMy/20.jpg"
-            }            
-          ]
-        },
-        {
-          "id": "kuce",
-          "images": [
-            {
-              "title": "MODULARNE -MOBILNE KUĆE",
-              "src": "https://i.postimg.cc/136hf4MY/21.jpg"
-            }
-          ]
-        },
-        {
-          "id": "pontoniKatamarani",
-          "images": [
-            {
-              "title": "PONTONI I KATAMARANI",
-              "src": "https://i.postimg.cc/j5vNB6pB/4.jpg"
-            }
-          ]
-        },
-      ]
-    },  
-    {
-      "id": "aluPvcStolarija",
-      "title": "ALU I PVC STOLARIJA",
-      "subheaders": [
-        {
-          "id": "segmentnaPodiznaVrata",
-          "images": [
-            {
-              "title": "DVOKRINAI JEDNOKRILNA KLIZNA", 
-              "src": "https://i.postimg.cc/MTykZYJG/2.jpg"
-            },
-            {
-              "title": "AUTOMATSKA VRATA",
-              "src": "https://i.postimg.cc/FzmMYJhV/4.jpg"
-            },            
-            {
-              "title": "PODIZNE RAMPE",              
-              "src": "https://i.postimg.cc/m2ZxRMXb/6.jpg"
-            }
-          ]
-        },
-        {
-          "id": "prozori",
-          "images": [
-            {
-              "title": "PROZORI STAKLENE STIJENE FASADE OD PANELA",
-              "src": "https://i.postimg.cc/JnwVW2gg/3.jpg"
-            },
-            {
-              "title": "STAKLENE FASADE",
-              "src": "https://i.postimg.cc/brTKkNJc/1.jpg"
-            },
-            {
-              "title": "ZIMSKI VRTOVI",
-              "src": "https://i.postimg.cc/WpwRQS7W/5.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "opremaZaGradevinarstvo",
-      "title": "OPREMA ZA GRAĐEVINARSTVO",
-      "subheaders": [
-        {
-          "id": "tuneliZaSutu",
-          "images": [
-            {
-              "title": "POLAZNI -USIPNI DIO",
-              "src": "https://i.postimg.cc/fLg7XwTV/0.jpg"
-            },
-            {
-              "title": "NOSAČ USIPNOG ELEMENTA",
-              "src": "https://i.postimg.cc/8c2hKtvD/1.jpg"
-            },
-            {
-              "title": "NOSAČ DIZALICE ZA CIJEVI",
-              "src": "https://i.postimg.cc/T2Fq3Y4S/2.jpg"
-            },
-            {
-              "title": "CIJEVI ZA ŠUTU",
-              "src": "https://i.postimg.cc/t4H3FvyN/3.jpg"
-            }
-          ]
-        }, 
-        {
-          "id": "septickaJama",
-          "images": [
-            {
-              "title": "SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI  ,VODOMJER NEPROPUSNI",
-              "src": "https://i.postimg.cc/ncmKjf8L/4.jpg"
-            },           
-          ]
-        },     
-        {
-          "id": "septickaJama2",
-          "images": [
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/bwQRMcL5/5.jpg"
-            },           
-          ]
-        },     
-        {
-          "id": "vodomjernoOkno",
-          "images": [
-            {
-              "title": "VODOMJERNO OKNO PLASTIČNO",
-              "src": "https://i.postimg.cc/mDrNtcRx/6.jpg"
-            },           
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/J0DN59GP/7.jpg"
-            },
-          ]
-        }, 
-      ]
-    },    
-    {
-      id: "gumiraniIplastificiraniProizvodi",    
-      title: "GUMIRANI I PLASTIFICIRANI ČELIČNI ELEMENTI ZA TRANSPORT KISELINA I LUŽINA",
-      subheaders: [      
-        {
-          id: "gumirani-membranski-ventili",
-          images: [            
-            {
-              title: "GUMIRANI MEMBRANSKI VENTILI",
-              src: "https://i.postimg.cc/hGbTLwqq/5.jpg",
-            },
-            {
-              title: "GUMIRANI NEPOVRATI VENTILI",
-              src: "https://i.postimg.cc/NFLXwj2g/6.jpg"
-            },                 
-          ]
-        },
-        {
-          "id": "gumirane-cijevi",
-          "images": [
-            {
-              "title": "Gumirane cijevi",
-              "src": "https://i.postimg.cc/zf1TRN6j/2.jpg"
-            }
-          ]
-        },
-        {
-          "id": "gumirani-celikni-spremnici",
-          "images": [
-            {
-              "title": "GUMIRANI ČELIČNI SPREMNICI",
-              "src": "https://i.postimg.cc/B6mFyK6Y/4.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/hjDxprSQ/3.jpg"
-            }
-          ]
-        },
-        {
-          "id": "gumirani-celikni-anionski-i-kationski-izmjenjivaci",
-          "images": [
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/4yM94Rpp/1.jpg"
-            },
-            {
-              "title": "GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI",
-              "src": "https://i.postimg.cc/KcsLDBC4/7.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "strojeviZaPoljoprivreduIVocarstvo",
-      "title": "ROTO LJEV-PLASTIĆNI PROIZVODI",
-      "subheaders": [
-        {
-          "id": "kace",
-          "images": [          
-            {
-              "title": "KARNISTER 50L",
-              "src": "https://i.postimg.cc/m2YpNxvm/28.jpg"
-            },
-            {
-              "title": "POSUDE ZA MESO",
-              "src": "https://i.postimg.cc/cJHDSvrz/32.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/7ZqsKsDw/31.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/nr8TBT08/38.jpg"
-            },              
-            {
-              "title": "BAČVE ZA VlNO SA PLUTAJUĆlM POKLOPCEM l ZATVORENE",
-              "src": "https://i.postimg.cc/0yZtFY2m/30.jpg"
-            },
-            {
-              "title": "Posude za vino",
-              "src": "https://i.postimg.cc/hPTKry8W/1.jpg"
-            },            
-            {
-              "title": "KACE",
-              "src": "https://i.postimg.cc/wT8bmxGt/29.jpg"
-            },            
-          ]
-        },
-        {
-          "id": "strojevi-za-poljoprivredu-i-vocarstvo-prskalice",
-          "images": [
-            {
-              "title": "Rezervoar za prskalicu 600L",
-              "src": "https://i.postimg.cc/8sQdf5kT/12.jpg"
-            },
-            {
-              "title": "Rezervoar za atomizer 400L",
-              "src": "https://i.postimg.cc/PfLBDRf7/13.jpg"
-            }
-          ]
-        },
-        {
-          "id": "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri",
-          "images": [            
-            {
-              "title": "Poljoprivredni atomizer",
-              "src": "https://i.postimg.cc/YqYZnLWf/14.jpg"
-            },                      
-          ]
-        },
-        {
-          "id": "pumpnaStanica",
-          "images": [
-            {
-              "title": "REZERVOAR 1000 LITARA SA PUMPOM",
-              "src": "https://i.postimg.cc/PxCFmCHD/21.jpg"
-            },
-            {
-              "title": "",
-              "src": "https://i.postimg.cc/3NpSczdJ/22.jpg"
-            }
-          ]
-        },                
-      ]
-    },
+    },                 
     {
       "id": "ekoOpremaKomunalna",
-      "title": "EKO OPREMA KOMUNALNA",
+      "title": "KOMUNALNA EKO OPREMA",
       "subheaders": [
         {
           "id": "eko-oprema-komunalna-kontejneri",
@@ -735,83 +549,64 @@ export const sections: Section[] = [
           ]
         }
       ]
-    },  
+    },              
     {
-      "id": "urbanaOprema",
-      "title": "URBANA OPREMA",
-      "subheaders": [
+      id: "gumiraniIplastificiraniProizvodi",    
+      title: "GUMIRANI ČELIČNI MEMBRANSKI VENTILI ,NEPOVRATNI VENTILI ,CIJEVNI EELEMENTI I REZERVOARI",
+      subheaders: [      
         {
-          "id": "urbana-oprema-klupe-i-kosevi-za-parkove",
-          "images": [
+          id: "gumirani-membranski-ventili",
+          images: [            
             {
-              "title": "KLUPA  A",
-              "src": "https://i.postimg.cc/L4yjXF9r/0.jpg"
+              title: "GUMIRANI MEMBRANSKI VENTILI",
+              src: "https://i.postimg.cc/hGbTLwqq/5.jpg",
             },
+            {
+              title: "GUMIRANI NEPOVRATI VENTILI",
+              src: "https://i.postimg.cc/NFLXwj2g/6.jpg"
+            },                 
           ]
         },
         {
-          "id": "urbana-oprema2",
+          "id": "gumirane-cijevi",
           "images": [
             {
-              "title": "KOŠ ZA OTPADKE  A1   60 litara",
-              "src": "https://i.postimg.cc/GhVYFPsK/1.jpg"            
+              "title": "Gumirane cijevi",
+              "src": "https://i.postimg.cc/zf1TRN6j/2.jpg"
+            }
+          ]
+        },
+        {
+          "id": "gumirani-celikni-spremnici",
+          "images": [
+            {
+              "title": "GUMIRANI ČELIČNI SPREMNICI",
+              "src": "https://i.postimg.cc/B6mFyK6Y/4.jpg"
             },
             {
               "title": "",
-              "src": "https://i.postimg.cc/fTJmSqkk/2.jpg"
+              "src": "https://i.postimg.cc/hjDxprSQ/3.jpg"
             }
           ]
         },
         {
-          "id": "urbana-oprema3",
+          "id": "gumirani-celikni-anionski-i-kationski-izmjenjivaci",
           "images": [
             {
-              "title": "Klupa C",
-              "src": "https://i.postimg.cc/RFrsNFWy/3.jpg"            
-            },            
-          ]
-        },
-        {
-          "id": "urbana-oprema4",
-          "images": [
+              "title": "",
+              "src": "https://i.postimg.cc/4yM94Rpp/1.jpg"
+            },
             {
-              "title": "KOŠ ZA OTPADKE C1   50 litara",
-              "src": "https://i.postimg.cc/0yM0Dv1s/4.jpg"            
-            },            
-          ]
-        },
-        {
-          "id": "urbana-oprema-5",
-          "images": [
-            {
-              "title": "KANDABLERI",
-              "src": "https://i.postimg.cc/8CV6314r/5.jpg"
-            },           
-          ]
-        },        
-        {
-          "id": "urbana-5",
-          "images": [
-            {
-              "title": "PAVILJON",
-              "src": "https://i.postimg.cc/LsfZHWs1/211.jpg"
-            },           
-          ]
-        },       
-        {
-          "id": "urbana5",
-          "images": [         
-            {
-              "title": "STALCI ZA BICIKLE",
-              "src": "https://i.postimg.cc/MT6j6dh6/7.jpg"
+              "title": "GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI",
+              "src": "https://i.postimg.cc/KcsLDBC4/7.jpg"
             }
           ]
-        },        
+        }
       ]
     },
     {
       "id": "opremaZaMore",
-      "title": "OPREMA ZA MORE",
+      "title": "OPREMA ZA MORA JEZERA RIJEKA - KAMPOVE",
       "subheaders": [
           {
             "id": "pontoni-i-plutajuće-platforme-1",
@@ -892,6 +687,211 @@ export const sections: Section[] = [
               },                
             ]
           },         
+      ]
+    },
+    {
+      "id": "urbanaOprema",
+      "title": "URBANA OPREMA",
+      "subheaders": [
+        {
+          "id": "urbana-oprema-klupe-i-kosevi-za-parkove",
+          "images": [
+            {
+              "title": "KLUPA  A",
+              "src": "https://i.postimg.cc/L4yjXF9r/0.jpg"
+            },
+          ]
+        },
+        {
+          "id": "urbana-oprema2",
+          "images": [
+            {
+              "title": "KOŠ ZA OTPADKE  A1   60 litara",
+              "src": "https://i.postimg.cc/GhVYFPsK/1.jpg"            
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/fTJmSqkk/2.jpg"
+            }
+          ]
+        },
+        {
+          "id": "urbana-oprema3",
+          "images": [
+            {
+              "title": "Klupa C",
+              "src": "https://i.postimg.cc/RFrsNFWy/3.jpg"            
+            },            
+          ]
+        },
+        {
+          "id": "urbana-oprema4",
+          "images": [
+            {
+              "title": "KOŠ ZA OTPADKE C1   50 litara",
+              "src": "https://i.postimg.cc/0yM0Dv1s/4.jpg"            
+            },            
+          ]
+        },
+        {
+          "id": "urbana-oprema-5",
+          "images": [
+            {
+              "title": "KANDABLERI",
+              "src": "https://i.postimg.cc/8CV6314r/5.jpg"
+            },           
+          ]
+        },        
+        {
+          "id": "urbana-5",
+          "images": [
+            {
+              "title": "PAVILJON",
+              "src": "https://i.postimg.cc/LsfZHWs1/211.jpg"
+            },           
+          ]
+        },       
+        {
+          "id": "urbana5",
+          "images": [         
+            {
+              "title": "STALCI ZA BICIKLE",
+              "src": "https://i.postimg.cc/MT6j6dh6/7.jpg"
+            }
+          ]
+        },        
+      ]
+    },
+    {
+      "id": "opremaZaGradevinarstvo",
+      "title": "OPREMA ZA GRAĐEVINARSTVO",
+      "subheaders": [
+        {
+          "id": "tuneliZaSutu",
+          "images": [
+            {
+              "title": "POLAZNI -USIPNI DIO",
+              "src": "https://i.postimg.cc/fLg7XwTV/0.jpg"
+            },
+            {
+              "title": "NOSAČ USIPNOG ELEMENTA",
+              "src": "https://i.postimg.cc/8c2hKtvD/1.jpg"
+            },
+            {
+              "title": "NOSAČ DIZALICE ZA CIJEVI",
+              "src": "https://i.postimg.cc/T2Fq3Y4S/2.jpg"
+            },
+            {
+              "title": "CIJEVI ZA ŠUTU",
+              "src": "https://i.postimg.cc/t4H3FvyN/3.jpg"
+            }
+          ]
+        }, 
+        {
+          "id": "septickaJama",
+          "images": [
+            {
+              "title": "SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI  ,VODOMJER NEPROPUSNI",
+              "src": "https://i.postimg.cc/ncmKjf8L/4.jpg"
+            },           
+          ]
+        },     
+        {
+          "id": "septickaJama2",
+          "images": [
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/bwQRMcL5/5.jpg"
+            },           
+          ]
+        },     
+        {
+          "id": "vodomjernoOkno",
+          "images": [
+            {
+              "title": "VODOMJERNO OKNO PLASTIČNO",
+              "src": "https://i.postimg.cc/mDrNtcRx/6.jpg"
+            },           
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/J0DN59GP/7.jpg"
+            },
+          ]
+        }, 
+      ]
+    },    
+    {
+      "id": "strojeviZaPoljoprivreduIVocarstvo",
+      "title": "ROTO LJEV-PLASTIĆNI PROIZVODI",
+      "subheaders": [
+        {
+          "id": "kace",
+          "images": [          
+            {
+              "title": "KARNISTER 50L",
+              "src": "https://i.postimg.cc/m2YpNxvm/28.jpg"
+            },
+            {
+              "title": "POSUDE ZA MESO",
+              "src": "https://i.postimg.cc/cJHDSvrz/32.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/7ZqsKsDw/31.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/nr8TBT08/38.jpg"
+            },              
+            {
+              "title": "BAČVE ZA VlNO SA PLUTAJUĆlM POKLOPCEM l ZATVORENE",
+              "src": "https://i.postimg.cc/0yZtFY2m/30.jpg"
+            },
+            {
+              "title": "Posude za vino",
+              "src": "https://i.postimg.cc/hPTKry8W/1.jpg"
+            },            
+            {
+              "title": "KACE",
+              "src": "https://i.postimg.cc/wT8bmxGt/29.jpg"
+            },            
+          ]
+        },
+        {
+          "id": "strojevi-za-poljoprivredu-i-vocarstvo-prskalice",
+          "images": [
+            {
+              "title": "Rezervoar za prskalicu 600L",
+              "src": "https://i.postimg.cc/8sQdf5kT/12.jpg"
+            },
+            {
+              "title": "Rezervoar za atomizer 400L",
+              "src": "https://i.postimg.cc/PfLBDRf7/13.jpg"
+            }
+          ]
+        },
+        {
+          "id": "strojevi-za-poljoprivredu-i-vocarstvo-atomizeri",
+          "images": [            
+            {
+              "title": "Poljoprivredni atomizer",
+              "src": "https://i.postimg.cc/YqYZnLWf/14.jpg"
+            },                      
+          ]
+        },
+        {
+          "id": "pumpnaStanica",
+          "images": [
+            {
+              "title": "REZERVOAR 1000 LITARA SA PUMPOM",
+              "src": "https://i.postimg.cc/PxCFmCHD/21.jpg"
+            },
+            {
+              "title": "",
+              "src": "https://i.postimg.cc/3NpSczdJ/22.jpg"
+            }
+          ]
+        },                
       ]
     },
   ]
