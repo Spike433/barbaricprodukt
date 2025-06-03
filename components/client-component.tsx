@@ -664,14 +664,29 @@ export default function ProductPageClient() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
               INDUSTRIJSKA OPREMA
             </h2>
+            <div className="mt-8 mb-6 pl-9 pt-4 text-left ml-20">
+              <h2 className="text-2xl font-bold mb-4">INOX ARMATURE</h2>              
+            </div>
             <div className="space-y-4">
               {/* Inox armature subsection */}
+              <div className="w-full md:w-1/2 space-y-2 p-20 font-medium">
+                    <div className="text-lg">IGLIČASTI VENTILI 700 bara</div>
+                    <div className="text-lg">KUGLASTE SLAVINE</div>
+                    <div className="text-lg">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
+                    <div className="text-lg">HOLENDERI</div>
+                    <div className="text-lg">SPOJNICE</div>
+                    <div className="text-lg">PRIJELAZI</div>
+                    <div className="text-lg">MAZALICE 700 bara</div>
+                    <div className="text-lg">BOCE ZA UZORKOVANJE 700 bara</div>
+                    <div className="text-lg">NEPOVRATNI VENTILI</div>
+                  </div>
+                
               <div
                 id="inoxArmature"
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
                         src="https://i.postimg.cc/L5bPqvDL/2.jpg"
@@ -684,10 +699,7 @@ export default function ProductPageClient() {
                         sizes="(max-width: 250px) 100vw, 250px"
                         itemProp="image"
                       />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      INOX ARMATURE
-                    </figcaption>
+                    </div>                   
                   </figure>
                 </div>
               </div>
@@ -698,8 +710,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/CL9DSPzV/5.jpg"
                         fill
@@ -707,8 +719,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(500, 0)}
+                        sizes="(max-width: 250px) 100vw, 500px"
                         itemProp="image"
                       />
                     </div>
@@ -717,8 +729,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/RZftF7HJ/6.jpg"
                         fill
@@ -726,14 +738,11 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(500, 0)}
+                        sizes="(max-width: 250px) 100vw, 500px"
                         itemProp="image"
                       />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      LEPTIR VENTIL
-                    </figcaption>
+                    </div>                    
                   </figure>
                 </div>
               </div>
@@ -759,7 +768,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      FILTERI INDUSTRIJSKI (INOX)
+                      FILTERI 
                     </figcaption>
                   </figure>
                   
@@ -777,8 +786,8 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
+                    <figcaption className="mt-2 text-sm font-medium text-center -ml-15" itemProp="caption">
+                    INDUSTRIJSKI (INOX)
                     </figcaption>
                   </figure>
                   
@@ -796,7 +805,7 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    <figcaption className="mt-2 text-sm font-medium text-center -ml-20" itemProp="caption">
                       IZMJENJIVAČI
                     </figcaption>
                   </figure>
