@@ -518,7 +518,8 @@ export default function ProductPageClient() {
             itemType="https://schema.org/Product"
           >
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              ALUMINIJSKA STOLARIJA
+            ALU STOLARIJA <br/> PVC STOLARIJA
+
             </h2>
             <div className="space-y-4">
               {/* Segmentna podizna vrata subsection */}
@@ -542,7 +543,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      DVOKRINAI JEDNOKRILNA KLIZNA
+                      DVOKRILNA JEDNOKRILNA KLIZNA
                     </figcaption>
                   </figure>
                   
@@ -580,8 +581,8 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PODIZNE RAMPE
-                    </figcaption>
+                    SEGMENTNA PODIZNA VRATA   PODIZNE RAMPE
+                     </figcaption>
                   </figure>
                 </div>
               </div>
@@ -607,14 +608,14 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PROZORI STAKLENE STIJENE FASADE OD PANELA
+                      PROZORI <br/> STAKLENE STIJENE <br/> FASADE OD PANELA
                     </figcaption>
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/brTKkNJc/1.jpg"
+                        src="https://i.postimg.cc/WpwRQS7W/5.jpg"
                         fill
                         alt="STAKLENE FASADE"
                         className="object-cover hover:scale-105 transition-transform duration-500"
@@ -633,7 +634,7 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/WpwRQS7W/5.jpg"
+                        src="https://i.postimg.cc/brTKkNJc/1.jpg"
                         fill
                         alt="ZIMSKI VRTOVI"
                         className="object-cover hover:scale-105 transition-transform duration-500"
