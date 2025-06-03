@@ -334,14 +334,14 @@ export default function ProductPageClient() {
 
               <div className="w-full space-y-8">
   {/* Industrijska vrata section */}
-  <div className="mt-8 mb-6 pl-9 pt-4 text-left ml-25">
+  <div className="mt-8 mb-6 pl-9 pt-4 text-center">
     <h2 className="text-2xl font-bold mb-4">Industrijaska vrata klizna podizna automatska</h2>
     <h2 className="text-2xl font-bold mb-4">Ulazna automatska dvokrilna i klizna vrata automatska</h2>    
   </div>
 
   {/* Ograde i podovi subsection */}
   <div id="ogradeIPodovi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
-    <div className="flex flex-wrap p-4">
+    <div className="flex flex-wrap">
       {/* Ograde content */}
       <div className="w-full md:w-1/2 space-y-2 p-4 font-medium">
         <div className="text-lg font-semibold">OGRADE</div>
@@ -351,87 +351,8 @@ export default function ProductPageClient() {
         <div className="ml-4 text-lg">Rešetkaste zaštite za prozore i vrata</div>
       </div>
 
-      {/* Existing images */}
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[250px]">
-          <Image
-            src="https://i.postimg.cc/8PxgpLd6/18.jpg"
-            fill
-            alt="Ograde i podovi primjer 1"
-            className="object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(250, 0)}
-            sizes="(max-width: 250px) 100vw, 250px"
-            itemProp="image"
-          />
-        </div>
-      </figure>
-      
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[250px]">
-          <Image
-            src="https://i.postimg.cc/WbdPc5ZV/17.jpg"
-            fill
-            alt="Ograde i podovi primjer 2"
-            className="object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(250, 0)}
-            sizes="(max-width: 250px) 100vw, 250px"
-            itemProp="image"
-          />
-        </div>
-      </figure>
-      
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[250px]">
-          <Image
-            src="https://i.postimg.cc/QM3L5syN/19.jpg"
-            fill
-            alt="Ograde i podovi primjer 3"
-            className="object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(250, 0)}
-            sizes="(max-width: 250px) 100vw, 250px"
-            itemProp="image"
-          />
-        </div>
-      </figure>
-
-      {/* Additional content */}
-      <div className="w-full md:w-1/2 space-y-2 p-4 font-medium">
-        <div className="text-lg">RASVIJETNA TIJELA</div>
-        <div className="text-lg">KANDELABERI</div>
-        <div className="text-lg">KLUPE ZA PARKOVE</div>
-        <div className="text-lg">KOŠEVI ZA SMEĆE</div>
-        <div className="text-lg">REKLAMNI PANOI</div>
-        <div className="text-lg">STUPOVI ZA ZASTAVE</div>
-        
-        <div className="mt-4 text-lg">KONTEINERI</div>
-        <div className="ml-8 text-lg">STAMBENI</div>
-        <div className="ml-8 text-lg">INDUSTRIJSKI</div>
-        
-        <div className="mt-8 text-lg">KIOSCI</div>
+     
       </div>
-      
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[500px]">
-          <Image
-            src="https://i.postimg.cc/FKgMVqMy/20.jpg"
-            fill
-            alt="Dodatni proizvodi"
-            className="object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(250, 0)}
-            sizes="(max-width: 250px) 100vw, 250px"
-            itemProp="image"
-          />
-        </div>
-      </figure>                  
-    </div>
   </div>
 </div>
 
