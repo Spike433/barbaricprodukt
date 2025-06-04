@@ -664,50 +664,48 @@ export default function ProductPageClient() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
               INDUSTRIJSKA OPREMA
             </h2>
-            <div className="mt-8 mb-6 pl-9 pt-4 text-left ml-20">
+            <div className="mt-8 pl-9 pt-4 text-left ml-20">
               <h2 className="text-2xl font-bold mb-4">INOX ARMATURE</h2>              
             </div>
             <div className="space-y-4">
-              {/* Inox armature subsection */}
-              <div className="w-full md:w-1/2 space-y-2 p-20 font-medium">
-                    <div className="text-lg">IGLIČASTI VENTILI 700 bara</div>
-                    <div className="text-lg">KUGLASTE SLAVINE</div>
-                    <div className="text-lg">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
-                    <div className="text-lg">HOLENDERI</div>
-                    <div className="text-lg">SPOJNICE</div>
-                    <div className="text-lg">PRIJELAZI</div>
-                    <div className="text-lg">MAZALICE 700 bara</div>
-                    <div className="text-lg">BOCE ZA UZORKOVANJE 700 bara</div>
-                    <div className="text-lg">NEPOVRATNI VENTILI</div>
-                  </div>
-                
-              <div
-                id="inoxArmature"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/L5bPqvDL/2.jpg"
-                        fill
-                        alt="INOX ARMATURE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>                   
-                  </figure>
-                </div>
-              </div>
+            <div id="inoxArmature" className="mt-8 mb-6 scroll-mt-24 pl-9">
+  <div className="flex flex-col md:flex-row">
+    {/* Image on the left */}
+    <figure className="w-full md:w-1/1" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg h-[500px]">
+        <Image
+          src="https://i.postimg.cc/L5bPqvDL/2.jpg"
+          fill
+          alt="INOX ARMATURE"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(500, 0)}
+          sizes="(max-width: 250px) 100vw, 500px"
+          itemProp="image"
+        />
+      </div>                   
+    </figure>
+
+    {/* Text content on the right */}
+    <div className="w-full md:w-1/3 space-y-3 pl-0 md:pl-5 font-medium flex flex-col justify-center">
+      <div className="text-xs">IGLIČASTI VENTILI 700 bara</div>
+      <div className="text-xs">KUGLASTE SLAVINE</div>
+      <div className="text-xs">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
+      <div className="text-xs">HOLENDERI</div>
+      <div className="text-xs">SPOJNICE</div>
+      <div className="text-xs">PRIJELAZI</div>
+      <div className="text-xs">MAZALICE 700 bara</div>
+      <div className="text-xs">BOCE ZA UZORKOVANJE 700 bara</div>
+      <div className="text-xs">NEPOVRATNI VENTILI</div>
+    </div>
+  </div>
+</div>
 
               {/* Ventili subsection */}
               <div
                 id="ventili"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className=" scroll-mt-24 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -724,7 +722,7 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    <figcaption className="text-sm font-medium text-center" itemProp="caption">
                       LEPTIR VENTIL
                     </figcaption>
                   </figure>
@@ -877,51 +875,66 @@ export default function ProductPageClient() {
                 </div>
               </div>
 
-              {/* Cijevni sustavi subsection */}
-              <div
-                id="cijevniSustavi"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/nzdj5T6g/10.jpg"
-                        fill
-                        alt="CIJEVNI ZATVARAČI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      CIJEVNI ZATVARAČI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/T245J7jW/12.jpg"
-                        fill
-                        alt="POSUDA ZA VAĐENJE ČISTAČA PČ"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      POSUDA ZA VAĐENJE ČISTAČA PČ
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+              <div className="w-full space-y-8">
+  {/* Generalni popravak section */}
+  <div className="mt-8 mb-6 pl-9 pt-4">
+    <h2 className="text-2xl font-bold mb-4 pl-8">GENERALNI POPRAVAK</h2>
+    <div className="flex flex-wrap ">
+      <div className="w-full md:w-1/2 space-y-2 pl-24 font-medium">
+        <div className="ml-4 text-md">BUŠOTINSKIH ZASUNA</div>
+        <div className="ml-4 text-md">DVOPUTIH I TROPUTIH SLAVINA</div>
+        <div className="ml-4 text-md">NEPOVRATNIH VENTILA</div>
+        <div className="ml-4 text-md">VATROZAŠTITA SPREMNIKA NAFTE</div>
+        <div className="ml-4 text-md">IZMJENJIVAČI TOPLINE</div>
+        <div className="ml-4 text-md">BRTVE</div>
+        <div className="ml-4 text-md">REHABILITACIJA CIJEVOVODA UVLAČENJEM PE CIJEVI</div>
+      </div>
+    </div>
+  </div>
+
+  {/* Cijevni sustavi subsection */}
+  <div id="cijevniSustavi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
+    <div className="flex flex-wrap p-4">
+      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+        <div className="relative overflow-hidden rounded-lg h-[400px]">
+          <Image
+            src="https://i.postimg.cc/nzdj5T6g/10.jpg"
+            fill
+            alt="CIJEVNI ZATVARAČI"
+            className="object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={generateBlurPlaceholder(400, 0)}
+            sizes="(max-width: 250px) 100vw, 400px"
+            itemProp="image"
+          />
+        </div>
+        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+          CIJEVNI ZATVARAČI
+        </figcaption>
+      </figure>
+      
+      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+        <div className="relative overflow-hidden rounded-lg h-[400px]">
+          <Image
+            src="https://i.postimg.cc/T245J7jW/12.jpg"
+            fill
+            alt="POSUDA ZA VAĐENJE ČISTAČA PČ"
+            className="object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={generateBlurPlaceholder(400, 0)}
+            sizes="(max-width: 250px) 100vw, 400px"
+            itemProp="image"
+          />
+        </div>
+        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+          POSUDA ZA VAĐENJE ČISTAČA PČ
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
 
               {/* Parkiralista kugli subsection */}
               <div
@@ -929,8 +942,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/T1pLXgxw/11.jpg"
                         fill
@@ -938,8 +951,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -948,8 +961,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/1X2gRXRK/13.jpg"
                         fill
@@ -957,8 +970,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -975,8 +988,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/3wTvDkXS/9.jpg"
                         fill
@@ -984,18 +997,18 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE
+                      REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/wxV0xppY/15.jpg"
                         fill
@@ -1003,13 +1016,13 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOAR GUMIRANI ZA KISELINE I LUŽINE
+                      REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
                     </figcaption>
                   </figure>
                 </div>
@@ -1021,8 +1034,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
                         fill
@@ -1030,8 +1043,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1040,8 +1053,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/vZ1zvx6G/18.jpg"
                         fill
@@ -1049,8 +1062,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1067,8 +1080,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/D0Bgxqgw/16.jpg"
                         fill
@@ -1076,18 +1089,18 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PODNE REŠETKE REŠETKASTA STUBIŠTA
+                      PODNE REŠETKE <br/> REŠETKASTA STUBIŠTA
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/90WbPxyk/14.jpg"
                         fill
@@ -1095,8 +1108,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1127,8 +1140,8 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">                      
+                      GUMIRANI ČELIČNI REZERVOAR SA RAZVODOM ZA KISELINE I LUŽINE 35 m³
                     </figcaption>
                   </figure>
                 </div>
@@ -1167,8 +1180,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/RVhQMJdw/28.jpg"
                         fill
@@ -1176,8 +1189,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1186,8 +1199,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/0NY7tY51/29.jpg"
                         fill
@@ -1195,8 +1208,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1213,8 +1226,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/Zn788Jb9/25.jpg"
                         fill
@@ -1222,18 +1235,18 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN
+                      INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/brN0SZhc/24.jpg"
                         fill
@@ -1241,8 +1254,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1259,8 +1272,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/mkkm851Y/26.jpg"
                         fill
@@ -1268,18 +1281,17 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      TRAKA ZA TRANSPORT MATERIJALA
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/sgZYWFtX/30.jpg"
                         fill
@@ -1287,8 +1299,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1305,8 +1317,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/sXJ92pb4/23.jpg"
                         fill
@@ -1314,8 +1326,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1324,8 +1336,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/zBNF5d2f/20.jpg"
                         fill
@@ -1333,8 +1345,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1351,8 +1363,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/L8rVQ4zL/21.jpg"
                         fill
@@ -1360,8 +1372,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -1370,8 +1382,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/wBLQCKVP/22.jpg"
                         fill
@@ -1379,8 +1391,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
