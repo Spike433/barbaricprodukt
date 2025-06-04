@@ -2603,6 +2603,10 @@ export default function ProductPageClient() {
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
                       KLUPA A
                     </figcaption>
+                    <div className="mt-2 text-sm text-left text-gray-600">
+                      Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, <br/>
+                      obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.
+                    </div>
                   </figure>
                 </div>
               </div>
@@ -2613,27 +2617,26 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/GhVYFPsK/1.jpg"
-                        fill
-                        alt="KOŠ ZA OTPADKE A1 60 litara"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KOŠ ZA OTPADKE A1 60 litara
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/GhVYFPsK/1.jpg"
+                      fill
+                      alt="KOŠ ZA OTPADKE A1 60 litara"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 400px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    KOŠ ZA OTPADKE A1 60 litara
+                  </figcaption>
+                </figure>
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/fTJmSqkk/2.jpg"
                         fill
@@ -2641,15 +2644,17 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
-                    </figcaption>
+                    </div>                    
                   </figure>
+                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                    <p>Izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca,</p>
+                    <p>obložena drvenim platicama zaštićena lazurom za drvo.</p>
+                    <p>Posuda korpe se prazni nagibom u oba smijera bez skidanja.</p>
+                  </div>
                 </div>
               </div>
 
@@ -2674,9 +2679,14 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Klupa C
+                      KLUPA C
                     </figcaption>
                   </figure>
+                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                    <strong>Klupa dužine 2 m</strong>
+                    <p>Nosači klupe su izrađeni od aluminija zaštičeni bojom po želji obloženi drvenim platicama</p>
+                    <p>zaštićene lazurom za drvo ili u boji po želji.</p>
+                  </div>
                 </div>
               </div>
 
@@ -2701,9 +2711,13 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KOŠ ZA OTPADKE C1 50 litara
+                      <strong>KOŠ ZA OTPADKE C1 50 litara</strong>
                     </figcaption>
                   </figure>
+                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                    <p>Izrađena od aluminija i čelika zaštićena temeljnom i završnom bojom po želji.</p>
+                    <p>Posuda se prazni nagibom u obe strane.</p>
+                  </div>
                 </div>
               </div>
 
@@ -2762,10 +2776,16 @@ export default function ProductPageClient() {
               </div>
 
               {/* Stalci za bicikle subsection */}
+              
               <div
                 id="urbana5"
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
+                <div className="mt-4 text-left">
+                  <h3 className="text-lg font-semibold">STANICE ZA STAJALIŠTA</h3>
+                  <h3 className="text-lg font-semibold">JARBOLI ZA ZASTAVE - inox</h3>
+                  <h3 className="text-lg font-semibold">REKLAMNI PANOI</h3>
+                </div>
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
@@ -2785,7 +2805,7 @@ export default function ProductPageClient() {
                       STALCI ZA BICIKLE
                     </figcaption>
                   </figure>
-                </div>
+                </div>                
               </div>
             </div>
           </section>
@@ -2807,8 +2827,8 @@ export default function ProductPageClient() {
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
                         fill
@@ -2816,8 +2836,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -2826,8 +2846,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                         fill
@@ -2835,8 +2855,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -2845,8 +2865,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
                         fill
@@ -2854,8 +2874,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 400px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
@@ -2864,8 +2884,8 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/t4H3FvyN/3.jpg"
                         fill
@@ -2873,8 +2893,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw,400px"
                         itemProp="image"
                       />
                     </div>
@@ -2882,21 +2902,23 @@ export default function ProductPageClient() {
                       CJEVI ZA ŠUTU
                     </figcaption>
                   </figure>
+                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                    <p>Elementi su izrađeni tehnologijom roto ljeva od polietilena velike čvrstoće,</p>
+                    <p>a međusobno se povezuju preko lanaca.</p>
+                    <p>Preporučuje se svakih 10 elemenata dodatno učvrstiti.</p>
+                  </div>
                 </div>
               </div>
 
               {/* Septička jama subsection */}
-              <div
-                id="septickaJama"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
+              <div id="septickaJama" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image
                         src="https://i.postimg.cc/ncmKjf8L/4.jpg"
                         fill
-                        alt="SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI  ,VODOMJER NEPROPUSNI"
+                        alt="SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI ,VODOMJER NEPROPUSNI"
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2906,8 +2928,30 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      SEPTICKA JAMA ,SEPARAZOR ULJA I MASTI ,VODOMJER NEPROPUSNI
+                      SEPTIČKA JAMA, SEPARATOR ULJA I MASTI, VODOMJER NEPROPUSNI
                     </figcaption>
+                    <div className="mt-3 text-sm text-gray-700 bg-gray-50 p-4 rounded-lg">
+                        <div>
+                          <p className="font-semibold"><strong>A</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPTIČKA JAM. 1000 / 800 / 500 LITARA</p>                          
+                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEDNOKOMORNA</p>
+                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DVOKOMORNA</p>
+                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TROKOMORNA</p>
+                          <p className="mt-2">Vežu se jedna u drugu preko ugrađenih cijevi fi 110 mm.</p>
+                        </div>
+                        <br/>
+                        <div>
+                          <p className="font-semibold"><strong>B</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPARATORI ULJA I MASTI 1000 / 800 / 500 LIT</p>                                                                              
+                        </div>                      
+                        <br/>
+                        <div>
+                          <p className="font-semibold"><strong>C</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VODOMJERNO OKNO 1000 LIT. NEPROPUSNO</p>                                                    
+                        </div>
+                        <p className="mt-3">
+                          U mogućnosti smo izvesti plastične šahte promjera 600, 800 i 1000 mm
+                          volumena prema vašoj želji sa priključcima po potrebi.
+                        </p>
+
+                    </div>
                   </figure>
                 </div>
               </div>
@@ -2933,7 +2977,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
+                      VODOMJERNO OKNO PLASTIČNO
                     </figcaption>
                   </figure>
                 </div>
@@ -2984,6 +3028,36 @@ export default function ProductPageClient() {
                   </figure>
                 </div>
               </div>
+              <div className="mt-4 p-4 bg-gray-50 rounded-lg text-left">
+  <h3 className="text-lg font-bold mb-3 text-gray-800">Namjena:</h3>
+  <p className="mb-4 text-gray-700 ml-10">
+    Vodomjerno okno je namjenjeno za ugradnju kod manjih objekata.
+    Konstrukcija vodomjernog okna zaštičuje vodomjer od zamrzavanja.
+    Nakon montaže instalacije sa armaturom (cijevi, koljena, ventila i vodomjera),
+    sve se pokrije sa termo poklopcem te konačno sa poklopcem samog vodomjera.
+    Kučište i poklopac vodomjernog okna je izrađen od polietilena sa rebrima za ojačanje,
+    te nije potrebno dodatno betoniranje oko njega.
+    Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom,
+    te umjesto plastičnog poklopca ugraditi čelični poklopac.
+  </p>
+
+  <h3 className="text-lg font-bold mb-3 text-gray-800">Tehničke karakteristike:</h3>
+  <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
+    <li>Visina kučišta: 990 mm</li>
+    <li>Dužina: 660 mm</li>
+    <li>Širina: 450 mm</li>
+    <li>Boja kučišta: bijela, plava ili crna</li>
+  </ul>
+
+  <h3 className="text-lg font-bold mb-3 text-gray-800">Unutarnja instalacija se sastoji od:</h3>
+  <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
+    <li>Noseće plastične ploče za cijevi</li>
+    <li>Brze spojnice za cijevi</li>
+    <li>Ventili sa holenderima za vodomjer</li>
+    <li>Vodomjer</li>
+    <li>Termo poklopac</li>
+  </ul>
+</div>
             </div>
           </section>
 
