@@ -1412,7 +1412,7 @@ export default function ProductPageClient() {
             itemScope
             itemType="https://schema.org/Product"
           >
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-green-700" itemProp="name">
               KOMUNALNA EKO OPREMA
             </h2>
             <div className="space-y-4">
