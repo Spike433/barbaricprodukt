@@ -8,15 +8,19 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Full Width */}
-      <section className="relative w-full h-[70vh] min-h-[500px]">
-        <Image
-          src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-          alt="Čelične konstrukcije - Barbarić Produkt"
-          fill
-          className="object-cover"
-          style={{ objectPosition: "30% 30%" }}
-          priority
-        />
+      <section className="relative w-full h-[90vh] min-h-[500px]">
+      <Image
+                    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                    alt="Čelične konstrukcije"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    loading="lazy"
+                    style={{ objectPosition: "40% 100%" }}
+
+                  />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
             <div className=" bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
@@ -39,59 +43,72 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue md:text-4xl">
             Naše kategorije proizvoda
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-            {/* Čelične konstrukcije */}
-            <Link
-              href="/products#celicneKonstrukcije"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          <div>
+          <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Čelične konstrukcije - Combined two images */}
+            <Link 
+              href="/products#celicneKonstrukcije" 
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex gap-3 p-3">
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
-                    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-                    alt="Čelične konstrukcije"
+                    src="https://i.postimg.cc/DwbFLxf6/8.jpg"
+                    alt="Čelične konstrukcije 1"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
                   ČELIČNE KONSTRUKCIJE
                 </h3>
               </div>
             </Link>
 
-            {/* Alu i PVC stolarija */}
+            {/* Aluminijska stolarija - Now with matching padding */}
             <Link
               href="/products#aluPvcStolarija"
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex p-3"> {/* Added flex container with p-3 to match */}
+                <div className="w-full relative aspect-video rounded-md overflow-hidden">
                   <Image
                     src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                     alt="Alu i PVC stolarija"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  ALUMINIJSKA STOLARIJA 
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                  ALUMINIJSKA STOLARIJA
                 </h3>                
               </div>
-            </Link>           
-
+            </Link>
+          </section>
             {/* Industrijska oprema */}
             <Link
               href="/products#industrijskaOprema"
