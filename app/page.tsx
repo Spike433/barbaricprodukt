@@ -10,17 +10,15 @@ export default function HomePage() {
       {/* Hero Section - Full Width */}
       <section className="relative w-full h-[90vh] min-h-[500px]">
       <Image
-                    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-                    alt="Čelične konstrukcije"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
-                    loading="lazy"
-                    style={{ objectPosition: "40% 100%" }}
-
-                  />
+        src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+        alt="Čelične konstrukcije"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
+        placeholder="blur"
+        blurDataURL={generateBlurPlaceholder(400, 400)}
+        loading="lazy"
+        style={{ objectPosition: "40% 100%" }} />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
             <div className=" bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
@@ -110,189 +108,270 @@ export default function HomePage() {
             </Link>
           </section>
             {/* Industrijska oprema */}
+            <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Komunalna eko oprema - Combined two images */}
+          <Link 
+            href="/products#ekoOpremaKomunalna" 
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
+          >
+            <div className="flex gap-3 p-3">
+              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <Image
+                  src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
+                  alt="Komunalna eko oprema 1"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <Image
+                  src="https://i.postimg.cc/vTsHHNpc/15.jpg"
+                  alt="Komunalna eko oprema 2"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                KOMUNALNA EKO OPREMA
+              </h3>
+            </div>
+          </Link>
+
+            {/* Gumirani čelični ventili - Single image */}
             <Link
-              href="/products#industrijskaOprema"
+              href="/products#gumiraniCelici"
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex p-3">
+                <div className="w-full relative aspect-video rounded-md overflow-hidden">
                   <Image
-                    src="https://i.postimg.cc/1zhpcCQK/31.jpg"
-                    alt="Industrijska oprema"
+                    src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
+                    alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  INDUSTRIJSKI PROIZVODI
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                  GUMIRANI ČELIČNI MEMBRANSKI VENTILI, NEPOVRATNI VENTILI, CIJEVNI ELEMENTI I REZERVOARI
                 </h3>                
               </div>
             </Link>
+          </section>
 
-            {/* Komunalna eko oprema */}
-            <Link
-              href="/products#ekoOpremaKomunalna"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          {/* Oprema za more */}
+            <Link 
+              href="/products#opremaZaMore" 
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
-                  <Image
-                    src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
-                    alt="Komunalna eko oprema"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  KOMUNALNA EKO OPREMA
-                </h3>                
-              </div>
-            </Link>
-
-            {/* Gumirani čelinčni elementi */}
-            <Link
-              href="/products#gumirani-celicni-elementi"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-            >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
-                  <Image
-                    src="https://i.postimg.cc/zf1TRN6j/2.jpg"
-                    alt="Gumirani i plastificirani čelinčni elementi za transport kiselina i lužina"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  GUMIRANI ČELIČNI MEMBRANSKI VENTILI ,NEPOVRATNI VENTILI ,CIJEVNI EELEMENTI I REZERVOARI
-                </h3>                
-              </div>
-            </Link>
-
-            {/* OPREMA ZA MORA JEZERA RIJEKA - KAMPOVE */}
-            <Link
-              href="/products#opremaZaMore"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-            >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex gap-3 p-3">
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
                     src="https://i.postimg.cc/j5vNB6pB/4.jpg"
-                    alt="Oprema za more"
+                    alt="Čelične konstrukcije 1"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/TPMrb3jN/1.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  OPREMA ZA MORA JEZERA RIJEKA - KAMPOVE
-                </h3>
-                <p className="text-muted-foreground text-sm line-clamp-3">
-                  PONTONI ,SUNČALIŠTA,VEZOVI ZA ČAMCE,KATAMARANI
-                </p>
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                  OPREMA ZA MORA JEZERA RIJEKA - KAMPOVE <br/> PONTONI ,SUNČALIŠTA,VEZOVI ZA ČAMCE,KATAMARANI
+                </h3>                
               </div>
             </Link>
-
+        
              {/* Urbana oprema */}
-             <Link
+             <Link                
               href="/products#urbanaOprema"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex gap-3 p-3">
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
                     src="https://i.postimg.cc/L4yjXF9r/0.jpg"
-                    alt="Urbana oprema"
+                    alt="Čelične konstrukcije 1"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/yYqfvb3w/urbana2.png"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
                   URBANA OPREMA
                 </h3>                
               </div>
             </Link>
-
+             
              {/* Oprema za građevinarstvo */}
-             <Link
+             <Link                
               href="/products#opremaZaGradevinarstvo"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex gap-3 p-3">
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
                     src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                    alt="Oprema za građevinarstvo"
+                    alt="Čelične konstrukcije 1"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/ncmKjf8L/4.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/mDrNtcRx/6.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
                   GRAĐEVINSKA OPREMA
                 </h3>                
               </div>
             </Link>
 
-             {/* PLASTICNI ROTO LJEV */}
-             <Link
+            <Link                              
               href="/products#strojeviZaPoljoprivreduIVocarstvo"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
             >
-              <div className="relative aspect-square w-full overflow-hidden">
-                <div className="absolute inset-3 rounded-md overflow-hidden">
+              <div className="flex gap-3 p-3">
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
-                    src="https://i.postimg.cc/YqYZnLWf/14.jpg"
-                    alt="Strojevi za poljoprivredu i voćarstvo"
+                    src="https://i.postimg.cc/nLC1WNWb/4.jpg"
+                    alt="Čelične konstrukcije 1"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 400)}
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/cJHDSvrz/32.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <Image
+                    src="https://i.postimg.cc/PfLBDRf7/13.jpg"
+                    alt="Čelične konstrukcije 2"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
                   />
                 </div>
               </div>
               <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors">
-                  ROTO LJEV-PLASTIĆNI PROIZVODI
+                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                ROTO LJEV-PLASTIČNI PROIZVODI
                 </h3>                
               </div>
-            </Link> 
+            </Link>
           </div>
         </div>
       </section>
