@@ -930,96 +930,90 @@ export default function ProductPageClient() {
 </div>
 
               {/* Parkiralista kugli subsection */}
-              <div
-                id="parkiralistaKugli"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/T1pLXgxw/11.jpg"
-                        fill
-                        alt="PARKIRALIŠTE KUGLI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PARKIRALIŠTE KUGLI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/1X2gRXRK/13.jpg"
-                        fill
-                        alt="HVATAČ I ODAŠILJAČ KUGLI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      HVATAČ I ODAŠILJAČ KUGLI
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+<div id="parkiralistaKugli" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+  <div className="flex flex-wrap p-4">
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+        <Image
+          src="https://i.postimg.cc/T1pLXgxw/11.jpg"
+          fill
+          alt="PARKIRALIŠTE KUGLI"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 800px) 100vw, 50vw"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        PARKIRALIŠTE KUGLI
+      </figcaption>
+    </figure>
+    
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+        <Image
+          src="https://i.postimg.cc/1X2gRXRK/13.jpg"
+          fill
+          alt="HVATAČ I ODAŠILJAČ KUGLI"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 800px) 100vw, 50vw"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        HVATAČ I ODAŠILJAČ KUGLI
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
-              {/* Rezervoari subsection */}
-              <div
-                id="rezervoari"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/3wTvDkXS/9.jpg"
-                        fill
-                        alt="REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/wxV0xppY/15.jpg"
-                        fill
-                        alt="REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+{/* Rezervoari subsection */}
+<div id="rezervoari" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+  <div className="flex flex-wrap p-4">
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+        <Image
+          src="https://i.postimg.cc/3wTvDkXS/9.jpg"
+          fill
+          alt="REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 800px) 100vw, 50vw"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
+      </figcaption>
+    </figure>
+    
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+        <Image
+          src="https://i.postimg.cc/wxV0xppY/15.jpg"
+          fill
+          alt="REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 800px) 100vw, 50vw"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
               {/* Rezervoari 2 subsection */}
               <div
