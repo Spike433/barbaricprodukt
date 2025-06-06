@@ -47,7 +47,90 @@ export default function ClientSideNavigation() {
         { id: "kranskeSine", title: "Kranske šine i oprema" },
         { id: "dijeloviMackeKrana", title: "Dijelovi mačke krana" },
       ]
-    }
+    },
+    {
+      id: "gumiraniIplastificiraniProizvodi",
+      title: "GUMIRANI I PLASTIFICIRANI PROIZVODI",
+      subheaders: [
+        { id: "gumirani-membranski-ventili", title: "Gumirani membranski ventili i nepovratni ventili" },
+        { id: "gumirane-cijevi", title: "Gumirane cijevi i cjevni elementi" },
+        { id: "gumirani-celikni-spremnici", title: "Gumirani čelični spremnici" },
+        { id: "gumirani-celikni-anionski-i-kationski-izmjenjivaci", title: "Gumirani anionski i kationski izmjenjivači" }
+      ]
+    }, 
+    {
+      id: "opremaZaMore",
+      title: "OPREMA ZA MORA JEZERA RIJEKA – KAMPOVE",
+      subheaders: [
+        {
+          id: "pontoni-i-plutajuće-platforme-1",
+          title: "Osnovna veličina pontona 2 × 4 m"
+        },
+        {
+          id: "pontoni-i-plutajuće-platforme-2",
+          title: "Moduli sunčališta sa pristupnim stazama + plovci"
+        },
+        {
+          id: "pontoni-i-plutajuće-platforme",
+          title: "Pontoni i plutajuće platforme - opis"
+        },
+        {
+          id: "kajaci-i-rekreativna-oprema",
+          title: "Kajaci i rekreativna oprema"
+        },
+        {
+          id: "pontoni-i-plutajuće-2",
+          title: "Modularne mobilne kućice"
+        },
+        {
+          id: "vodomjerna-okna",
+          title: "Vodomjerna okna"
+        },
+        {
+          id: "sahte",
+          title: "Šahte"
+        }
+      ]
+    },
+    {
+      id: "urbanaOprema",
+      title: "URBANA OPREMA",
+      subheaders: [
+        {
+          id: "urbana-oprema-klupe-i-kosevi-za-parkove",
+          title: "Klupe i koševi za parkove",
+        },
+        {
+          id: "urbana-oprema2",
+          title: "Koš za otpadke A1 (60 litara)",
+        },
+        { id: "urbana-oprema3", title: "Klupa C (2 m)" },
+        {
+          id: "urbana-oprema4",
+          title: "Koš za otpadke C1 (50 litara)",
+        },
+        { id: "urbana-oprema-5", title: "Kandableri" },
+        { id: "urbana-5", title: "Paviljon" },
+        {
+          id: "urbana5",
+          title:
+            "Stalci za bicikle / Stanice za stajališta / Jarboli za zastave / Reklamni panoi",
+        },
+      ],
+    }, 
+    {
+      id: "opremaZaGradevinarstvo",
+      title: "OPREMA ZA GRAĐEVINARSTVO",
+      subheaders: [
+        { id: "tuneliZaSutu", title: "Tuneli za šutu" },
+        {
+          id: "septickaJama",
+          title: "Septička jama / separator ulja i masti / vodomjerne šahte",
+        },
+        { id: "septickaJama2", title: "Vodomjerno okno plastično" },
+        { id: "vodomjernoOkno", title: "Vodomjerno okno (tehničke karakteristike)" },
+      ],
+    },  
   ]
 
   const [collapsedSections, setCollapsedSections] = useState<{ [key: string]: boolean }>(() => {
