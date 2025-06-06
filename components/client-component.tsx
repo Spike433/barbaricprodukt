@@ -1408,11 +1408,11 @@ export default function ProductPageClient() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-green-700" itemProp="name">
               KOMUNALNA EKO OPREMA
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-2">
               {/* Kontejneri subsection */}
               <div
                 id="eko-oprema-komunalna-kontejneri"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="mt-8 scroll-mt-24 pl-9 pt-4"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
@@ -1531,7 +1531,7 @@ export default function ProductPageClient() {
               {/* Septic tank separatori subsection */}
               <div
                 id="septic-tank-separatori"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="mb-6 scroll-mt-24 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
