@@ -9,32 +9,32 @@ export default function HomePage() {
     <main className="min-h-screen">
       {/* Hero Section - Full Width */}
       <section className="relative w-full h-[90vh] min-h-[500px]">
-      <Image
-        src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-        alt="Čelične konstrukcije"
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
-        placeholder="blur"
-        blurDataURL={generateBlurPlaceholder(400, 400)}
-        loading="lazy"
-        style={{ objectPosition: "40% 100%" }} />
-        <div className="absolute inset-0">
-          <div className="container mx-auto px-4 h-full flex flex-col justify-end items-center text-center pb-8">
-            <div className=" bg-opacity-60 pt-4 pb-4 rounded-3xl shadow-lg">
-              <Image
-                src="https://i.postimg.cc/HsmzZWqq/logo.png"
-                alt="Barbarić Produkt Logo"
-                width={500}
-                height={500}                
-                priority                
-                className="mx-auto"
-              />              
-            </div>
-          </div>
-        </div>
-      </section>
-
+  <Image
+    src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+    alt="Čelične konstrukcije"
+    fill
+    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
+    placeholder="blur"
+    blurDataURL={generateBlurPlaceholder(400, 400)}
+    loading="lazy"
+    style={{ objectPosition: "40% 94%" }} 
+  />
+  <div className="absolute inset-0">
+    <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+      <div className="bg-opacity-60 rounded-3xl shadow-lg -mt-36 ml-12 transform -rotate-3">
+        <Image
+          src="https://i.postimg.cc/HsmzZWqq/logo.png"
+          alt="Barbarić Produkt Logo"
+          width={500}
+          height={500}                
+          priority                
+          className="mx-auto"
+        />              
+      </div>
+    </div>
+  </div>
+</section>
       {/* Service Categories Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
