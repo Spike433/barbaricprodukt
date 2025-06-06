@@ -1873,7 +1873,7 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[195px]">
                       <Image
                         src="https://i.postimg.cc/T1ffXWDb/24.jpg"
                         fill
@@ -1892,16 +1892,16 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1070/525' }}>
                       <Image
-                        src="https://i.postimg.cc/fyznPnGj/2.jpg"
+                        src="https://i.postimg.cc/dVZVZksY/2.png"
                         fill
                         alt="PLINSKI ORMARI"
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
+                        sizes="(max-width: 1070px) 100vw, 1070px"
                         itemProp="image"
                       />
                     </div>
@@ -2024,7 +2024,7 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                         fill
@@ -2032,8 +2032,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
+                        blurDataURL={generateBlurPlaceholder(500, 0)}
+                        sizes="(max-width: 250px) 100vw, 500px"
                         itemProp="image"
                       />
                     </div>
@@ -2043,7 +2043,7 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/3RhPyQx5/10.jpg"
                         fill
@@ -2051,8 +2051,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
+                        blurDataURL={generateBlurPlaceholder(500, 0)}
+                        sizes="(max-width: 250px) 100vw, 500px"
                         itemProp="image"
                       />
                     </div>
@@ -2107,7 +2107,7 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[600px]">
                       <Image
                         src="https://i.postimg.cc/hGbTLwqq/5.jpg"
                         fill
@@ -2115,8 +2115,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(600, 0)}
+                        sizes="(max-width: 250px) 100vw, 600px"
                         itemProp="image"
                       />
                     </div>
@@ -2126,7 +2126,7 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[600px]">
                       <Image
                         src="https://i.postimg.cc/NFLXwj2g/6.jpg"
                         fill
@@ -2134,8 +2134,8 @@ export default function ProductPageClient() {
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(600, 0)}
+                        sizes="(max-width: 250px) 100vw, 600px"
                         itemProp="image"
                       />
                     </div>
