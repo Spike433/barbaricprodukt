@@ -2470,7 +2470,7 @@ export default function ProductPageClient() {
           {/* Kajaci i rekreativna oprema subsection */}
           <div
             id="kajaci-i-rekreativna-oprema"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            className="mb-6 scroll-mt-24 pl-9"
           >
             <div className="flex flex-wrap p-4">
               <figure
@@ -2479,8 +2479,8 @@ export default function ProductPageClient() {
                 itemType="https://schema.org/ImageObject"
               >
                 <div className="relative overflow-hidden rounded-lg aspect-square">
-                  <Image
-                    src="https://i.postimg.cc/TPMrb3jN/1.jpg"
+                  <Image                    
+                    src="https://i.postimg.cc/0N1Nqkp0/1.png"
                     fill
                     alt="KAJAK DVOSJED"
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -2504,34 +2504,35 @@ export default function ProductPageClient() {
           {/* Pontoni i plutajuće 2 subsection */}
           <div
             id="pontoni-i-plutajuće-2"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            className="mb-6 scroll-mt-24 pl-9"
           >
             <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full"
-                itemScope
-                itemType="https://schema.org/ImageObject"
+            <figure
+              className="p-2 cursor-pointer w-full"
+              itemScope
+              itemType="https://schema.org/ImageObject"
+            >
+              <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
+                <Image
+                  src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                  width={1200}  // Replace with your image's actual width
+                  height={800}  // Replace with your image's actual height
+                  alt="MODULARNE MOBILNE KUĆICE"
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={generateBlurPlaceholder(250, 0)}
+                  sizes="(max-width: 1200px) 100vw, 1200px"  // Adjusted to match image width
+                  itemProp="image"
+                />
+              </div>
+              <figcaption
+                className="mt-2 text-sm font-medium text-center"
+                itemProp="caption"
               >
-                <div className="relative overflow-hidden rounded-lg aspect-square">
-                  <Image
-                    src="https://i.postimg.cc/WpWgnn6k/7.jpg"
-                    fill
-                    alt="MODULARNE MOBILNE KUĆICE"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  MODULARNE MOBILNE KUĆICE
-                </figcaption>
-              </figure>
+                MODULARNE MOBILNE KUĆICE
+              </figcaption>
+            </figure>
             </div>
           </div>
 

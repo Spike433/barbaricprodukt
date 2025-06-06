@@ -194,7 +194,7 @@ export default function HomePage() {
                 </div>
                 <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                   <Image
-                    src="https://i.postimg.cc/TPMrb3jN/1.jpg"
+                    src="https://i.postimg.cc/0N1Nqkp0/1.png"
                     alt="Čelične konstrukcije 2"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
