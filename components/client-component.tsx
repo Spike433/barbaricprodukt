@@ -2324,7 +2324,7 @@ export default function ProductPageClient() {
                 itemScope
                 itemType="https://schema.org/ImageObject"
               >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
+                <div className="relative overflow-hidden rounded-lg h-[500px]">
                   <Image
                     src="https://i.postimg.cc/5yL4djZ3/12.png"
                     fill
@@ -2332,13 +2332,13 @@ export default function ProductPageClient() {
                     className="object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 400px"
+                    blurDataURL={generateBlurPlaceholder(500, 0)}
+                    sizes="(max-width: 250px) 100vw, 500px"
                     itemProp="image"
                   />
                 </div>
                 <figcaption
-                  className="mt-2 text-sm font-medium text-center"
+                  className="mt-4 text-sm font-medium text-center"
                   itemProp="caption"
                 >
                   MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA
@@ -2350,7 +2350,7 @@ export default function ProductPageClient() {
                 itemScope
                 itemType="https://schema.org/ImageObject"
               >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
+                <div className="relative overflow-hidden rounded-lg h-[500px]">
                   <Image
                     src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
                     fill
@@ -2358,13 +2358,13 @@ export default function ProductPageClient() {
                     className="object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 400px"
+                    blurDataURL={generateBlurPlaceholder(500, 0)}
+                    sizes="(max-width: 250px) 100vw, 500px"
                     itemProp="image"
                   />
                 </div>
                 <figcaption
-                  className="mt-2 text-sm font-medium text-center"
+                  className="mt-4 text-sm font-medium text-center"
                   itemProp="caption"
                 >
                   Plovci 970×620×340 mm
