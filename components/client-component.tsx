@@ -38,7 +38,7 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/L5CRB7ZC/1.jpg"
+                        src="https://i.postimg.cc/nL3NGTc9/1.png"
                         fill
                         alt="MONTAŽNE HALE"
                         className="object-cover hover:scale-105 transition-transform duration-500"
@@ -450,32 +450,29 @@ export default function ProductPageClient() {
               </div>
 
               {/* Kuće subsection */}
-              <div
-                id="kuce"
-                className="mt-8 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/136hf4MY/21.jpg"
-                        fill
-                        alt="MODULARNE -MOBILNE KUĆE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="ml-10 mt-2 text-xl font-medium text-left" itemProp="caption">
-                      <strong>MODULARNE -MOBILNE KUĆE</strong>
-                    </figcaption>
-                  </figure>
-                </div>
+            <div id="kuce" className="mt-8 scroll-mt-24 pl-9 pt-4">
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
+                    <Image
+                      src="https://i.postimg.cc/136hf4MY/21.jpg"
+                      width={1200}
+                      height={593}
+                      alt="MODULARNE -MOBILNE KUĆE"
+                      className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 1200px) 100vw, 1200px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="ml-10 mt-2 text-xl font-medium text-left" itemProp="caption">
+                    <strong>MODULARNE -MOBILNE KUĆE</strong>
+                  </figcaption>
+                </figure>
               </div>
-
+            </div>
               {/* Pontoni i katamarani subsection */}
               <div
                 id="pontoniKatamarani"
@@ -3298,11 +3295,13 @@ export default function ProductPageClient() {
               />
             </div>
           </figure>
+          <figcaption className="text-sm font-medium text-center" itemProp="caption">
+              POSUDE ZA VINO
+          </figcaption>
         </div>
 
         {/* Text below */}
-        <div className="mt-4 text-sm text-gray-700">
-          <h3 className="text-lg font-semibold mb-2">POSUDE ZA VINO</h3>
+        <div className="mt-4 text-sm text-gray-700">          
           <table className="table-auto w-full text-left text-sm">
             <thead>
               <tr>
@@ -3469,7 +3468,7 @@ export default function ProductPageClient() {
           {/* ŠAHTE ZA VODOMJERE subsection */}
           <div
             id="sahte-za-vodomjere"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            className="mt-8 mb-6 scroll-mt-24 pt-4"
           >
             <div className="flex flex-wrap p-4">
               <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -3513,7 +3512,7 @@ export default function ProductPageClient() {
           {/* ŠAHTE / PJESKOLOVI / MASTOLOVI subsection */}
           <div
             id="sahte-pjeskolovi-mastolovi"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            className="mt-8 mb-6 scroll-mt-24 pt-4"
           >
             <div className="flex flex-wrap p-4">
               <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -3557,7 +3556,7 @@ export default function ProductPageClient() {
           {/* ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME subsection */}
           <div
             id="sahte-kanalizacija-septicke-jame"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            className="mt-8 mb-6 scroll-mt-24 pt-4"
           >
             <div className="flex flex-wrap p-4">
               <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -3598,98 +3597,105 @@ export default function ProductPageClient() {
               </figcaption>
           </div>
 
-            {/* REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L subsection */}
-            <div
-              id="rezervoari-prskalice-atomizere"
-              className="mt-8 mb-6 scroll-mt-24 pl-9 "
-            >
-              <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[250px]">
-                    <Image
-                      src="https://i.postimg.cc/dVFXzQRM/15.jpg"
-                      fill
-                      alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(250, 0)}
-                      sizes="(max-width: 250px) 100vw, 250px"
-                      itemProp="image"
-                    />
-                  </div>
-                </figure>
+          {/* REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L subsection */}
+          <div
+            id="rezervoari-prskalice-atomizere"
+            className="mt-8 mb-6 scroll-mt-24"
+          >
+            <div className="flex flex-wrap p-4">
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <Image
+                    src="https://i.postimg.cc/dVFXzQRM/15.jpg"
+                    fill
+                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(250, 0)}
+                    sizes="(max-width: 250px) 100vw, 250px"
+                    itemProp="image"
+                  />
+                </div>
+              </figure>
 
-                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[250px]">
-                    <Image
-                      src="https://i.postimg.cc/YqYZnLWf/14.jpg"
-                      fill
-                      alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(250, 0)}
-                      sizes="(max-width: 250px) 100vw, 250px"
-                      itemProp="image"
-                    />
-                  </div>
-                </figure>
-              </div>
-
-              <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                  REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L
-                </figcaption>
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[250px]">
+                  <Image
+                    src="https://i.postimg.cc/YqYZnLWf/14.jpg"
+                    fill
+                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(250, 0)}
+                    sizes="(max-width: 250px) 100vw, 250px"
+                    itemProp="image"
+                  />
+                </div>
+              </figure>
             </div>
 
-              </div>
+            <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L
+              </figcaption>
+          </div>
+
+          {/* SPREMNIK */}
+          <div
+            id="spremnik1000L"
+            className="mt-8 mb-6 scroll-mt-24"
+          >
+            <div className="flex flex-wrap p-4">
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[500px]">
+                  <Image
+                    src="https://i.postimg.cc/PxCFmCHD/21.jpg"
+                    fill
+                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(500, 0)}
+                    sizes="(max-width: 250px) 100vw, 500px"
+                    itemProp="image"
+                  />
+                </div>
+              </figure>
+
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[500px]">
+                  <Image
+                    src="https://i.postimg.cc/3NpSczdJ/22.jpg"
+                    fill
+                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(500, 0)}
+                    sizes="(max-width: 250px) 100vw, 500px"
+                    itemProp="image"
+                  />
+                </div>
+              </figure>
             </div>
+
+            <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                SPREMNIK 1000L SA PUMPOM I MJERAČEM PROTOKA
+              </figcaption>
+          </div>
+
+          </div>
+          </div>
 
               
               {/* Prskalice 400600L subsection */}
               <div
                 id="prskalice400600L"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="mt-8 mb-6 scroll-mt-24"
               >
-              <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/PxCFmCHD/21.jpg"
-                        fill
-                        alt="REZERVOAR 1000 LITARA SA PUMPOM"
-                        className="object-cover object-[50%_0%] hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 400px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Spremnik 1000L s pumpom i mjeračem protoka
-                    </figcaption>
-                  </figure>                  
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/3NpSczdJ/22.jpg"
-                        fill
-                        alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 400px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
-                    </figcaption>
-                  </figure>
-
+              <div className="flex flex-wrap p-4 mt-4">
+                                    
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image
@@ -3709,7 +3715,7 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
 
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
@@ -3728,7 +3734,7 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
@@ -3747,7 +3753,7 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
 
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <figure className=" mt-4 p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image
                         src="https://i.postimg.cc/RCj2LLNZ/16.jpg"

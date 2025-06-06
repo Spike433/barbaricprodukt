@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         alt: "Barbarić Produkt - Proizvodnja industrijskih rješenja",
       },
       {
-        url: "https://i.postimg.cc/L5CRB7ZC/1.jpg",
+        url: "https://i.postimg.cc/43QSNPhF/1.png",
         width: 1200,
         height: 630,
         alt: "Montažne čelične hale proizvodnje Barbarić Produkt",
