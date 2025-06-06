@@ -22,7 +22,7 @@ export default function HomePage() {
   />
   <div className="absolute inset-0">
     <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-      <div className="bg-opacity-60 rounded-3xl shadow-lg -mt-36 ml-12 transform -rotate-3">
+      <div className="bg-opacity-60 rounded-3xl shadow-lg -mt-35 ml-12 transform -rotate-3">
         <Image
           src="https://i.postimg.cc/HsmzZWqq/logo.png"
           alt="Barbarić Produkt Logo"
