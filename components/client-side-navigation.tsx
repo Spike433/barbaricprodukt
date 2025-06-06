@@ -1,14 +1,55 @@
 "use client"
 
 import { useState } from "react"
-import { Section } from "@/app/types"
 import { ChevronRight, ChevronDown } from "lucide-react"
 
-interface ClientSideNavigationProps {
-  sections: Section[]
-}
+export default function ClientSideNavigation() {
+  const sections = [
+    {
+      id: "celicneKonstrukcije",
+      title: "ČELIČNE KONSTRUKCIJE",
+      subheaders: [
+        { id: "montazne-hale", title: "Montažne hale, hangari, garaže" },
+        { id: "panoramsko-dizalo", title: "Panoramsko dizalo" },
+        { id: "stakleneILimeneFasade", title: "Staklene i limene fasade" },
+        { id: "ogradeIPodovi", title: "Ograde i podovi" },
+        { id: "kuce", title: "Kuće" },
+        { id: "pontoniKatamarani", title: "Pontoni i katamarani" }
+      ]
+    },
+    {
+      id: "aluPvcStolarija",
+      title: "ALU/PVC STOLARIJA",
+      subheaders: [
+        { id: "segmentnaPodiznaVrata", title: "Dvokrilna, jednokrilna, automatska, segmentna podizna vrata" },
+        { id: "prozori", title: "Prozori, staklene stijene, fasade od panela, staklene fasade, zimski vrtovi" }
+      ]
+    },
+    {
+      id: "industrijskaOprema",
+      title: "INDUSTRIJSKA OPREMA",
+      subheaders: [
+        { id: "inoxArmature", title: "INOX armatura (ventili, spojnice, prijelazi)" },
+        { id: "ventili", title: "Leptir ventili" },
+        { id: "filteriIzmjenjivaci", title: "Filteri i izmjenjivači" },
+        { id: "spojkeAktuatori", title: "Spojke i aktuatori" },
+        { id: "generalniPopravak", title: "Generalni popravak opreme" },
+        { id: "cijevniSustavi", title: "Cijevni sustavi i zatvarači" },
+        { id: "parkiralistaKugli", title: "Parkirališta kugli i oprema" },
+        { id: "rezervoari", title: "Rezervoari (benzin, kiseline, lužine)" },
+        { id: "rezervoari2", title: "Gumirani rezervoari" },
+        { id: "rezervoari4", title: "Podne rešetke i stubišta" },
+        { id: "postrojenja3", title: "Postrojenja za preradu" },
+        { id: "postrojenja2", title: "Gumirani čelični rezervoari" },
+        { id: "zastitaZupcanika", title: "Zaštita zupčanika" },
+        { id: "rashladnaJedinica", title: "Rashladna jedinica" },
+        { id: "transporteri1", title: "Transporteri materijala" },
+        { id: "kranskeSine", title: "Kranske šine i oprema" },
+        { id: "dijeloviMackeKrana", title: "Dijelovi mačke krana" },
+      ]
+    }
+  ]
 
-export default function ClientSideNavigation({ sections }: ClientSideNavigationProps) {
   const [collapsedSections, setCollapsedSections] = useState<{ [key: string]: boolean }>(() => {
     return sections.reduce((acc, section) => {
       if (section.subheaders && section.subheaders.length > 0) acc[section.id] = true
@@ -20,7 +61,7 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
     const element = document.getElementById(subId || id)
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 100,
+        top: element.offsetTop - 200,
         behavior: "smooth",
       })
     }
@@ -31,7 +72,7 @@ export default function ClientSideNavigation({ sections }: ClientSideNavigationP
   }
 
   return (
-    <div className="w-full sticky top-20 z-10 h-fit"> {/* Changed to sticky with proper z-index */}
+    <div className="w-full sticky top-20 z-10 h-fit">
       <div className="p-6 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md max-h-[80vh] overflow-y-auto">
         <h3 className="text-lg font-medium mb-6 pb-2 border-b border-industrial-steel/20 text-left">Sadržaj</h3>
         <nav className="space-y-1 text-left" aria-label="Page navigation">

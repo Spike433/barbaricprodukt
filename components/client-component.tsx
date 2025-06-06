@@ -4,7 +4,6 @@
 //import ImageGallery from "@/components/image-gallery";
 import ClientSideNavigation from "@/components/client-side-navigation";
 
-import { sections } from "@/lib/constants";
 import Image from "next/image";
 import { generateBlurPlaceholder } from "@/lib/utils";
 
@@ -14,7 +13,7 @@ export default function ProductPageClient() {
       <div className="flex flex-col lg:flex-row">
         {/* Navigation */}
         <nav className="order-1 lg:order-2 w-full lg:w-[30%] mb-6 lg:mb-0 lg:pl-4" aria-label="Sekcije proizvoda">
-          <ClientSideNavigation sections={sections} />
+          <ClientSideNavigation />
         </nav>
         
         {/* Main content */}
@@ -212,7 +211,7 @@ export default function ProductPageClient() {
               {/* Staklene i limene fasade subsection */}
               <div
                 id="stakleneILimeneFasade"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="mb-6 scroll-mt-0 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
@@ -335,7 +334,7 @@ export default function ProductPageClient() {
               <div className="w-full space-y-8">
   {/* Industrijska vrata section */}
   <div className="mt-8 mb-6 pl-9 pt-4 text-center">
-    <h2 className="text-2xl font-bold mb-4">Industrijaska vrata klizna podizna automatska</h2>
+    <h2 className="text-2xl font-bold mb-4">Industrijska vrata klizna podizna automatska</h2>
     <h2 className="text-2xl font-bold mb-4">Ulazna automatska dvokrilna i klizna vrata automatska</h2>    
   </div>
 
@@ -686,15 +685,15 @@ export default function ProductPageClient() {
 
     {/* Text content on the right */}
     <div className="w-full md:w-1/3 space-y-3 pl-0 md:pl-5 font-medium flex flex-col justify-center">
-      <div className="text-xs">IGLIČASTI VENTILI 700 bara</div>
-      <div className="text-xs">KUGLASTE SLAVINE</div>
-      <div className="text-xs">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
-      <div className="text-xs">HOLENDERI</div>
-      <div className="text-xs">SPOJNICE</div>
-      <div className="text-xs">PRIJELAZI</div>
-      <div className="text-xs">MAZALICE 700 bara</div>
-      <div className="text-xs">BOCE ZA UZORKOVANJE 700 bara</div>
-      <div className="text-xs">NEPOVRATNI VENTILI</div>
+      <div className="text-md">IGLIČASTI VENTILI 700 bara</div>
+      <div className="text-md">KUGLASTE SLAVINE</div>
+      <div className="text-md">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
+      <div className="text-md">HOLENDERI</div>
+      <div className="text-md">SPOJNICE</div>
+      <div className="text-md">PRIJELAZI</div>
+      <div className="text-md">MAZALICE 700 bara</div>
+      <div className="text-md">BOCE ZA UZORKOVANJE 700 bara</div>
+      <div className="text-md">NEPOVRATNI VENTILI</div>
     </div>
   </div>
 </div>
