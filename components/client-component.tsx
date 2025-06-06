@@ -1567,6 +1567,9 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      DVOKOMORNE
+                    </figcaption>
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
@@ -1583,6 +1586,9 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      TROKOMORNE
+                    </figcaption>
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
