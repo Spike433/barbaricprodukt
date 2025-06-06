@@ -1629,7 +1629,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/MTyq4Yvx/25.jpg"
                         fill
                         alt="Rezervoari za otpadno ulje 20m³"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[50%_20%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1667,7 +1667,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/d1MJ4fQ4/23.jpg"
                         fill
                         alt="REZERVOAR ZA OTPADNO ULJE SA TANKVANOM OD 1000 DO 20000 LIT."
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[37%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
