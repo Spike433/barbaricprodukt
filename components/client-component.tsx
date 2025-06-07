@@ -934,11 +934,11 @@ export default function ProductPageClient() {
   <div className="flex flex-wrap p-4">
     {/* First Image - 985x294 (approx 3.35:1 ratio) */}
     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '985/294' }}> {/* Adjusted ratio */}
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '985/296' }}> {/* Adjusted ratio */}
         <Image
           src="https://i.postimg.cc/T1pLXgxw/11.jpg"
           width={985}
-          height={294}
+          height={296}
           alt="PARKIRALIŠTE KUGLI"
           className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
@@ -955,13 +955,14 @@ export default function ProductPageClient() {
     
     {/* Second Image - 1094x394 (approx 2.77:1 ratio) */}
     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/350' }}>
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/330' }}>
         <Image
           src="https://i.postimg.cc/1X2gRXRK/13.jpg"
           width={1094}
-          height={350}
+          height={330}
           alt="HVATAČ I ODAŠILJAČ KUGLI"
           className="object-contain hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: '10% 10%' }}
           loading="lazy"
           placeholder="blur"
           blurDataURL={generateBlurPlaceholder(1094, 394)}
