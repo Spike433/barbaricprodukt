@@ -1842,7 +1842,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/5NfNhDBr/18.jpg"
                         fill
                         alt="FILTERSKE JEDINICE ZA OTEŽANU VODU"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1861,7 +1861,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/qqxBtGTQ/17.jpg"
                         fill
                         alt="REZERVOARKSO SPREMIŠTE KISELINA I LUŽINA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1888,7 +1888,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/T1ffXWDb/24.jpg"
                         fill
                         alt="POSUDE ZA AKUMULATORE,ZAULJENE KRPE I PIJESAK"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1907,7 +1907,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/dVZVZksY/2.png"
                         fill
                         alt="PLINSKI ORMARI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1969,7 +1969,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/FHBrJRMt/19.jpg"
                         fill
                         alt="BARIJERE YA CESTE, PREGADE ZA CESTE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
