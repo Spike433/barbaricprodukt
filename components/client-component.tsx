@@ -2122,7 +2122,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/hGbTLwqq/5.jpg"
                         fill
                         alt="GUMIRANI MEMBRANSKI VENTILI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(600, 0)}
@@ -2141,7 +2141,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/NFLXwj2g/6.jpg"
                         fill
                         alt="GUMIRANI NEPOVRATI VENTILI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(600, 0)}
@@ -2158,31 +2158,31 @@ export default function ProductPageClient() {
 
               {/* Gumirane cijevi subsection */}
               <div className="flex flex-col md:flex-row w-full items-center">
-  {/* Text content on the left */}
-  <div className="w-full md:w-1/2 space-y-4 p-8 md:p-20 font-medium">
-    <div className="text-lg">GUMIRANE CIJEVI</div>
-    <div className="text-lg">GUMIRANA KOLJENA 90;45</div>
-    <div className="text-lg">GUMIRANI REDUKCIONI ELEMENTI</div>                    
-  </div>
-  
-  {/* Image on the right */}
-  <figure className="p-4 w-full md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-    <div className="relative overflow-hidden rounded-lg" style={{ aspectRatio: '640/482' }}>
-      <Image                        
-        src="https://i.postimg.cc/zf1TRN6j/2.jpg"
-        width={640}
-        height={482}
-        alt="Gumirani proizvodi"
-        className="object-cover hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-        placeholder="blur"
-        blurDataURL={generateBlurPlaceholder(640, 482)}
-        sizes="(max-width: 768px) 100vw, 50vw"
-        itemProp="image"
-      />
-    </div>
-  </figure>                  
-</div>
+              {/* Text content on the left */}
+              <div className="w-full md:w-1/2 space-y-4 p-8 md:p-20 font-medium">
+                <div className="text-lg">GUMIRANE CIJEVI</div>
+                <div className="text-lg">GUMIRANA KOLJENA 90;45</div>
+                <div className="text-lg">GUMIRANI REDUKCIONI ELEMENTI</div>                    
+              </div>
+              
+              {/* Image on the right */}
+              <figure className="p-4 w-full md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg" style={{ aspectRatio: '640/482' }}>
+                  <Image                        
+                    src="https://i.postimg.cc/zf1TRN6j/2.jpg"
+                    width={640}
+                    height={482}
+                    alt="Gumirani proizvodi"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(640, 482)}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    itemProp="image"
+                  />
+                </div>
+              </figure>                  
+            </div>
 
               {/* Gumirani čelični spremnici subsection */}
               <div
