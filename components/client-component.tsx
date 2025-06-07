@@ -2039,7 +2039,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                         fill
                         alt="REZERVOAR 1000 LITARA SA PUMPOM I BROJILOM ZA ISTAKANJE SA JEDNOM I DVIJE STIJENKE OTVORENI I ZATVORENI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2058,7 +2058,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/3RhPyQx5/10.jpg"
                         fill
                         alt="REŠETKE PODNE U INDUSTRIJI ZA STUBIŠTA ZA OGRADE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
