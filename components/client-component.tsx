@@ -1320,7 +1320,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/sXJ92pb4/23.jpg"
                         fill
                         alt="KRANSKE ŠINE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1339,7 +1339,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/zBNF5d2f/20.jpg"
                         fill
                         alt="MAČKA KRANA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1366,7 +1366,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/L8rVQ4zL/21.jpg"
                         fill
                         alt="DIJELOVI MAČKE KRANA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1385,7 +1385,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/wBLQCKVP/22.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1444,7 +1444,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/k4FPwXpg/1.jpg"
                         fill
                         alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI za papir 5,7 i 10 m³"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1463,7 +1463,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
                         fill
                         alt="Plastične kante za smeće, 60, 100, 200 i 300 lit"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1482,7 +1482,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/CxX0x28S/31.jpg"
                         fill
                         alt="KONTEINER 7 M3 ZA ELEKTRONSKI OTPAD I KRPE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1501,7 +1501,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/d0CYk9Rd/32.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1517,7 +1517,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
                         fill
                         alt="ROLO KONTEINER 32 m³"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1544,7 +1544,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/XqL3N7fz/26.jpg"
                         fill
                         alt="SEPTIČKE JAME ,SEPARATORI ULJA I MASTI 800 LIT JEDNOKOMORNA DVOKOMORNE I TROKOMORNE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1563,7 +1563,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/v8tGtXJt/27.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1582,7 +1582,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/WbpTWgjL/28.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1601,7 +1601,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/VvLpR9tK/12.jpg"
                         fill
                         alt="Rezervoari sa duplom stijenkom za otpadno ulje"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1620,7 +1620,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/5NP1ZyNH/29.jpg"
                         fill
                         alt="Plastične posude za otpadno ulje"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1704,7 +1704,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/Kj0SSpFX/3.jpg"
                         fill
                         alt="TANKVANE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(150, 0)}
@@ -1723,7 +1723,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/2SbpMxKJ/5.jpg"
                         fill
                         alt="TANKVANE SA KOTAČIMA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(150, 0)}
@@ -1742,7 +1742,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/5NkdsrnL/8.jpg"
                         fill
                         alt="REGALI BAČVI SA TANKVANOM DO 9 BAČVI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1761,7 +1761,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/L6sFBSBm/6.jpg"
                         fill
                         alt="REGALI BAČVI SA PUMPOM"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(150, 0)}
