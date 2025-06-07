@@ -1214,50 +1214,51 @@ export default function ProductPageClient() {
               </div>
 
               {/* Rashladna jedinica subsection */}
-              <div
-                id="rashladnaJedinica"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/Zn788Jb9/25.jpg"
-                        fill
-                        alt="INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/brN0SZhc/24.jpg"
-                        fill
-                        alt="RASHLADNA JEDINICA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      RASHLADNA JEDINICA
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+<div id="rashladnaJedinica" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+  <div className="flex flex-wrap p-4">
+    {/* First Image - Focused right */}
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg h-[400px]">
+        <Image
+          src="https://i.postimg.cc/Zn788Jb9/25.jpg"
+          fill
+          alt="INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
+          className="object-cover hover:scale-105 transition-transform duration-500"          
+          style={{ objectPosition: '39% 40%' }}
+          loading="lazy"
+          placeholder="blur"          
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 250px) 100vw, 400px"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
+      </figcaption>
+    </figure>
+    
+    {/* Second Image - Focused right */}
+    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg h-[400px]">
+        <Image
+          src="https://i.postimg.cc/brN0SZhc/24.jpg"
+          fill
+          alt="RASHLADNA JEDINICA"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: '39% 50%' }}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(400, 0)}
+          sizes="(max-width: 250px) 100vw, 400px"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        RASHLADNA JEDINICA
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
               {/* Transporteri 1 subsection */}
               <div
