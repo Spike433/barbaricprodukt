@@ -2705,7 +2705,7 @@ export default function ProductPageClient() {
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
                       KLUPA A
                     </figcaption>
-                    <div className="mt-2 text-sm text-left text-gray-600">
+                    <div className="mt-2 text-left">
                       Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, <br/>
                       obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.
                     </div>
@@ -2752,7 +2752,7 @@ export default function ProductPageClient() {
                       />
                     </div>                    
                   </figure>
-                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                  <div className="mt-2 text-left px-4">
                     <p>Izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca,</p>
                     <p>obložena drvenim platicama zaštićena lazurom za drvo.</p>
                     <p>Posuda korpe se prazni nagibom u oba smijera bez skidanja.</p>
@@ -2784,7 +2784,7 @@ export default function ProductPageClient() {
                       KLUPA C
                     </figcaption>
                   </figure>
-                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                  <div className="mt-2 text-left px-4">
                     <strong>Klupa dužine 2 m</strong>
                     <p>Nosači klupe su izrađeni od aluminija zaštičeni bojom po želji obloženi drvenim platicama</p>
                     <p>zaštićene lazurom za drvo ili u boji po želji.</p>
@@ -2816,7 +2816,7 @@ export default function ProductPageClient() {
                       <strong>KOŠ ZA OTPADKE C1 50 litara</strong>
                     </figcaption>
                   </figure>
-                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                  <div className="mt-2 text-left px-4">
                     <p>Izrađena od aluminija i čelika zaštićena temeljnom i završnom bojom po želji.</p>
                     <p>Posuda se prazni nagibom u obe strane.</p>
                   </div>
@@ -3004,7 +3004,7 @@ export default function ProductPageClient() {
                       CJEVI ZA ŠUTU
                     </figcaption>
                   </figure>
-                  <div className="mt-2 text-sm text-left text-gray-600 px-4">
+                  <div className="mt-2 text-left px-4">
                     <p>Elementi su izrađeni tehnologijom roto ljeva od polietilena velike čvrstoće,</p>
                     <p>a međusobno se povezuju preko lanaca.</p>
                     <p>Preporučuje se svakih 10 elemenata dodatno učvrstiti.</p>
@@ -3029,10 +3029,10 @@ export default function ProductPageClient() {
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    <figcaption className="mt-2 font-medium text-center" itemProp="caption">
                       SEPTIČKA JAMA, SEPARATOR ULJA I MASTI, VODOMJER NEPROPUSNI
                     </figcaption>
-                    <div className="mt-3 text-sm text-gray-700 bg-gray-50 p-4 rounded-lg">
+                    <div className="mt-3 bg-gray-50 p-4 rounded-lg">
                         <div>
                           <p className="font-semibold"><strong>A</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPTIČKA JAM. 1000 / 800 / 500 LITARA</p>                          
                           <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEDNOKOMORNA</p>
@@ -3142,7 +3142,7 @@ export default function ProductPageClient() {
     Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom,
     te umjesto plastičnog poklopca ugraditi čelični poklopac.
   </p>
-
+  <br/>
   <h3 className="text-lg font-bold mb-3 text-gray-800">Tehničke karakteristike:</h3>
   <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
     <li>Visina kučišta: 990 mm</li>
@@ -3150,7 +3150,7 @@ export default function ProductPageClient() {
     <li>Širina: 450 mm</li>
     <li>Boja kučišta: bijela, plava ili crna</li>
   </ul>
-
+  <br/>
   <h3 className="text-lg font-bold mb-3 text-gray-800">Unutarnja instalacija se sastoji od:</h3>
   <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
     <li>Noseće plastične ploče za cijevi</li>
