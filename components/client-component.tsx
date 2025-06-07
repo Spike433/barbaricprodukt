@@ -1114,16 +1114,17 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <div className="relative overflow-hidden rounded-lg aspect-video"> {/* Changed from aspect-square to aspect-video */}
                       <Image
                         src="https://i.postimg.cc/Y09gqT6t/33.jpg"
-                        fill
+                        width={2644}
+                        height={1490}
                         alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(2644, 1490)}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                         itemProp="image"
                       />
                     </div>
