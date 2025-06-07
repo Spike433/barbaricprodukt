@@ -868,7 +868,7 @@ export default function ProductPageClient() {
                 </div>
               </div>
 
-              <div className="w-full space-y-8">
+            <div className="w-full space-y-8">
   {/* Generalni popravak section */}
   <div className="mt-8 mb-6 pl-9 pt-4">
     <h2 className="text-2xl font-bold mb-4 pl-8">GENERALNI POPRAVAK</h2>
@@ -927,21 +927,23 @@ export default function ProductPageClient() {
       </figure>
     </div>
   </div>
-</div>
+            </div>
 
-              {/* Parkiralista kugli subsection */}
+            {/* Parkiralista kugli subsection */}
 <div id="parkiralistaKugli" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
   <div className="flex flex-wrap p-4">
+    {/* First Image - 985x294 (approx 3.35:1 ratio) */}
     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '985/294' }}> {/* Adjusted ratio */}
         <Image
           src="https://i.postimg.cc/T1pLXgxw/11.jpg"
-          fill
+          width={985}
+          height={294}
           alt="PARKIRALIŠTE KUGLI"
-          className="object-cover hover:scale-105 transition-transform duration-500"
+          className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
           placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 0)}
+          blurDataURL={generateBlurPlaceholder(985, 394)} 
           sizes="(max-width: 800px) 100vw, 50vw"
           itemProp="image"
         />
@@ -951,16 +953,18 @@ export default function ProductPageClient() {
       </figcaption>
     </figure>
     
+    {/* Second Image - 1094x394 (approx 2.77:1 ratio) */}
     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/350' }}>
         <Image
           src="https://i.postimg.cc/1X2gRXRK/13.jpg"
-          fill
+          width={1094}
+          height={350}
           alt="HVATAČ I ODAŠILJAČ KUGLI"
-          className="object-cover hover:scale-105 transition-transform duration-500"
+          className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
           placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 0)}
+          blurDataURL={generateBlurPlaceholder(1094, 394)}
           sizes="(max-width: 800px) 100vw, 50vw"
           itemProp="image"
         />
@@ -971,50 +975,48 @@ export default function ProductPageClient() {
     </figure>
   </div>
 </div>
-
-{/* Rezervoari subsection */}
-<div id="rezervoari" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
-        <Image
-          src="https://i.postimg.cc/3wTvDkXS/9.jpg"
-          fill
-          alt="REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 0)}
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
-      </figcaption>
-    </figure>
-    
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
-        <Image
-          src="https://i.postimg.cc/wxV0xppY/15.jpg"
-          fill
-          alt="REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 0)}
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
-      </figcaption>
-    </figure>
-  </div>
-</div>
-
+            {/* Rezervoari subsection */}
+            <div id="rezervoari" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+                    <Image
+                      src="https://i.postimg.cc/3wTvDkXS/9.jpg"
+                      fill
+                      alt="REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 800px) 100vw, 50vw"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '4/3' }}> {/* Adjust ratio as needed */}
+                    <Image
+                      src="https://i.postimg.cc/wxV0xppY/15.jpg"
+                      fill
+                      alt="REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 800px) 100vw, 50vw"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
               {/* Rezervoari 2 subsection */}
               <div
                 id="rezervoari2"
