@@ -13,7 +13,7 @@ export default function HomePage() {
     src="https://i.postimg.cc/4dXgCZ62/9.jpg"
     alt="Čelične konstrukcije"
     fill
-    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
     placeholder="blur"
     blurDataURL={generateBlurPlaceholder(400, 400)}
@@ -54,7 +54,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                     alt="Čelične konstrukcije 1"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     style={{ objectPosition: '40% 32%' }}
                     placeholder="blur"
@@ -67,7 +67,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -93,7 +93,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                     alt="Alu i PVC stolarija"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     style={{ objectPosition: '40% 20%' }}
                     placeholder="blur"
@@ -122,7 +122,7 @@ export default function HomePage() {
                   src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
                   alt="Komunalna eko oprema 1"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
                   blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -134,7 +134,7 @@ export default function HomePage() {
                   src="https://i.postimg.cc/vTsHHNpc/15.jpg"
                   alt="Komunalna eko oprema 2"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
                   blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -160,7 +160,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
                     alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -187,7 +187,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/j5vNB6pB/4.jpg"
                     alt="Čelične konstrukcije 1"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -199,7 +199,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/0N1Nqkp0/1.png"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -211,7 +211,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/WpWgnn6k/7.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -237,7 +237,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/L4yjXF9r/0.jpg"
                     alt="Čelične konstrukcije 1"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -249,7 +249,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -261,7 +261,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/yYqfvb3w/urbana2.png"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -287,7 +287,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                     alt="Čelične konstrukcije 1"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -299,7 +299,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/ncmKjf8L/4.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -311,7 +311,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/mDrNtcRx/6.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -336,7 +336,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/nLC1WNWb/4.jpg"
                     alt="Čelične konstrukcije 1"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -348,7 +348,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/cJHDSvrz/32.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -360,7 +360,7 @@ export default function HomePage() {
                     src="https://i.postimg.cc/PfLBDRf7/13.jpg"
                     alt="Čelične konstrukcije 2"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className=" group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
