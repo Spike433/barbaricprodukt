@@ -1135,31 +1135,30 @@ export default function ProductPageClient() {
               </div>
 
               {/* Postrojenja 2 subsection */}
-              <div
-                id="postrojenja2"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/gJG81xrX/32.jpg"
-                        fill
-                        alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+              <div id="postrojenja2" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+  <div className="flex flex-wrap p-4">
+    <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '2644/1490' }}>
+        <Image
+          src="https://i.postimg.cc/gJG81xrX/32.jpg"
+          width={2644}
+          height={1490}
+          alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
+          className="object-cover hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          quality={85}  // Optimized quality (default 75)
+          placeholder="blur"
+          blurDataURL={generateBlurPlaceholder(800, 0)}  // Higher resolution placeholder
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          itemProp="image"
+        />
+      </div>
+      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+        POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
               {/* Zaštita zupčanika subsection */}
               <div
