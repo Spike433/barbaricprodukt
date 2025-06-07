@@ -78,7 +78,7 @@ export default function ContactForm() {
     if (!validateForm()) return
 
     const recaptchaValue = recaptchaRef.current?.getValue();
-    if (!recaptchaValue) {
+    if (recaptchaValue) {
       toast.error("Molimo potvrdite da niste robot.");
       return;
     }
@@ -190,11 +190,11 @@ export default function ContactForm() {
                     {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
                   </div>
                   
-                  <ReCAPTCHA
+                  {/* <ReCAPTCHA
                     sitekey={qoretech}
                     ref={recaptchaRef}
                     size={"normal"}
-                  />
+                  /> */}
 
                   <Button
                     type="submit"

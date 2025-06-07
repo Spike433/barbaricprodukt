@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import ServiceCard from "@/components/service-card"
+import type { Locale } from "@/lib/i18n/dictionary"
+import { getDictionary } from "@/lib/i18n/get-dictionary"
 
 export const metadata: Metadata = {
   title: "Barbarić Produkt | Usluge",
@@ -108,7 +110,14 @@ const services = [
   },    
 ];
 
-export default function ServicesPage() {
+export default async function ServicesPage({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>
+}) {
+  const { lang } = await params
+  const dict = await getDictionary(lang)
+  console.log("Dictionary for services page:", dict.about.description)
   return (
     <main className="min-h-screen">
       {/* Background pattern */}
