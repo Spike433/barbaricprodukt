@@ -661,7 +661,7 @@ export default function ProductPageClient() {
               <h2 className="text-2xl font-bold mb-4">INOX ARMATURE</h2>              
             </div>
             <div className="space-y-4">
-            <div id="inoxArmature" className="mt-8 mb-6 scroll-mt-24 pl-9">
+            <div id="inoxArmature" className="scroll-mt-24 pl-9">
   <div className="flex flex-col md:flex-row">
     {/* Image on the left */}
     <figure className="w-full md:w-1/1" itemScope itemType="https://schema.org/ImageObject">
@@ -698,7 +698,7 @@ export default function ProductPageClient() {
               {/* Ventili subsection */}
               <div
                 id="ventili"
-                className=" scroll-mt-24 pl-9"
+                className="scroll-mt-24 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -1095,11 +1095,12 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
-                        src="https://i.postimg.cc/90WbPxyk/14.jpg"
+                        src="https://i.postimg.cc/rpGBs82N/14.jpg"
                         fill
                         alt="FILTERSKA JEDINICA ZA OTEŽANU VODU"
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
+                        style={{ objectPosition: '2% 50%' }}
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
                         sizes="(max-width: 250px) 100vw, 400px"
