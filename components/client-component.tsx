@@ -358,7 +358,7 @@ export default function ProductPageClient() {
               {/* Ograde i podovi subsection */}
               <div
                 id="ogradeIPodovi"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="scroll-mt-24 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
@@ -450,7 +450,7 @@ export default function ProductPageClient() {
               </div>
 
               {/* Kuće subsection */}
-            <div id="kuce" className="mt-8 scroll-mt-24 pl-9 pt-4">
+            <div id="kuce" className="mt-8 scroll-mt-24 pl-9">
               <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                   <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
@@ -467,7 +467,7 @@ export default function ProductPageClient() {
                       itemProp="image"
                     />
                   </div>
-                  <figcaption className="ml-10 mt-2 text-xl font-medium text-left" itemProp="caption">
+                  <figcaption className="mt-2 text-xl font-medium text-left" itemProp="caption">
                     <strong>MODULARNE -MOBILNE KUĆE</strong>
                   </figcaption>
                 </figure>
@@ -476,7 +476,7 @@ export default function ProductPageClient() {
               {/* Pontoni i katamarani subsection */}
               <div
                 id="pontoniKatamarani"
-                className="mt-2 mb-6 scroll-mt-24 pl-9 pt-4"
+                className="scroll-mt-24 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
