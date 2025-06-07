@@ -130,7 +130,24 @@ export default function ClientSideNavigation() {
         { id: "septickaJama2", title: "Vodomjerno okno plastično" },
         { id: "vodomjernoOkno", title: "Vodomjerno okno (tehničke karakteristike)" },
       ],
-    },  
+    },
+    {
+      id: "strojeviZaPoljoprivreduIVocarstvo",
+      title: "PLASTIČNI PROIZVODI / ROTO LJEV",
+      subheaders: [
+        { id: "kace", title: "Kace" },
+        { id: "posude-za-vino", title: "Posude za vino" }, // This section doesn't have an explicit ID in HTML, but follows the "kace" section
+        { id: "rezervoari-roto", title: "Rezervoari 1000L" }, // Changed from "rezervoariroto" to match HTML id
+        { id: "posude-roto-ljev", title: "Posude Roto Ljev" }, // This section doesn't have an explicit ID but is identifiable by content
+        { id: "sahte-za-vodomjere", title: "Šahte za vodomjere" },
+        { id: "sahte-pjeskolovi-mastolovi", title: "Šahte / Pjeskolovi / Mastolovi" },
+        { id: "sahte-kanalizacija-septicke-jame", title: "Šahte za kanalizaciju / Septičke jame" },
+        { id: "rezervoari-prskalice-atomizere", title: "Rezervoari za prskalice / Atomizere" },
+        { id: "spremnik1000L", title: "Spremnik 1000L sa pumpom" },
+        { id: "prskalice400600L", title: "Cijevi za šutu" }, // Changed from "cijevi-za-sutu" to match HTML section id
+        { id: "plasticne-barijere", title: "Plastične barijere" } // This is part of the prskalice400600L section
+      ]
+    }
   ]
 
   const [collapsedSections, setCollapsedSections] = useState<{ [key: string]: boolean }>(() => {

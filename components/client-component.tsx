@@ -3159,7 +3159,7 @@ export default function ProductPageClient() {
     <li>Vodomjer</li>
     <li>Termo poklopac</li>
   </ul>
-</div>
+              </div>
             </div>
           </section>
 
@@ -3198,524 +3198,22 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                 </div>
-              {/* Kače subsection */}
-<div
-  id="kace"
-  className="mb-6 scroll-mt-24"
->
-  <div className="space-y-4">
+          {/* Kače subsection */}
+            <div
+              id="kace"
+              className="mb-6 scroll-mt-24"
+            >
+              <div className="space-y-4">
 
-    {/* 1) KACE image on left, formatted text (table) on right */}
-    <div className="flex flex-wrap p-4 items-start">
-      {/* Left: KACE image */}
-      <figure className="p-2 w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[250px]">
-          <Image
-            src="https://i.postimg.cc/wT8bmxGt/29.jpg"
-            fill
-            alt="KACE"
-            className="object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(250, 0)}
-            sizes="(max-width: 250px) 100vw, 250px"
-            itemProp="image"
-          />
-        </div>
-        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-          KACE
-        </figcaption>
-      </figure>
-
-      {/* Right: formatted text/table */}
-      <div className="mt-2 w-full sm:w-1/2 md:w-2/3 text-sm text-gray-700">
-        <h3 className="text-lg font-semibold mb-2">VOLUMEN (L)</h3>
-        <table className="table-auto w-full text-left text-sm">
-          <thead>
-            <tr>
-              <th className="px-2 py-1">VOLUMEN</th>
-              <th className="px-2 py-1">A (mm)</th>
-              <th className="px-2 py-1">B (mm)</th>
-              <th className="px-2 py-1">C (mm)</th>
-              <th className="px-2 py-1">D (kom)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-t">
-              <td className="px-2 py-1">60</td>
-              <td className="px-2 py-1">324</td>
-              <td className="px-2 py-1">630</td>
-              <td className="px-2 py-1">714</td>
-              <td className="px-2 py-1">466</td>
-            </tr>
-            <tr className="border-t">
-              <td className="px-2 py-1">100</td>
-              <td className="px-2 py-1">420</td>
-              <td className="px-2 py-1">670</td>
-              <td className="px-2 py-1">770</td>
-              <td className="px-2 py-1">520</td>
-            </tr>
-            <tr className="border-t">
-              <td className="px-2 py-1">200</td>
-              <td className="px-2 py-1">580</td>
-              <td className="px-2 py-1">676</td>
-              <td className="px-2 py-1">776</td>
-              <td className="px-2 py-1">720</td>
-            </tr>
-            <tr className="border-t">
-              <td className="px-2 py-1">300</td>
-              <td className="px-2 py-1">580</td>
-              <td className="px-2 py-1">995</td>
-              <td className="px-2 py-1">1100</td>
-              <td className="px-2 py-1">720</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-      {/* 2) Two images side by side, text (table) below with title “POSUDE ZA VINO” */}
-      <div className="p-4">
-        <div className="flex flex-wrap">
-          {/* First image */}
-          <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-            <div className="relative overflow-hidden rounded-lg h-[600px]">
-              <Image
-                src="https://i.postimg.cc/0yZtFY2m/30.jpg"
-                fill
-                alt="POSUDE ZA VINO"
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL={generateBlurPlaceholder(250, 0)}
-                sizes="(max-width: 250px) 100vw, 250px"
-                itemProp="image"
-              />
-            </div>
-          </figure>
-          {/* Second image */}
-          <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-            <div className="relative overflow-hidden rounded-lg h-[600px]">
-              <Image
-                src="https://i.postimg.cc/hPTKry8W/1.jpg"
-                fill
-                alt="POSUDE ZA VINO"
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL={generateBlurPlaceholder(250, 0)}
-                sizes="(max-width: 250px) 100vw, 250px"
-                itemProp="image"
-              />
-            </div>
-          </figure>
-          <figcaption className="text-sm font-medium text-center" itemProp="caption">
-              POSUDE ZA VINO
-          </figcaption>
-        </div>
-
-        {/* Text below */}
-        <div className="mt-4 text-sm text-gray-700">          
-          <table className="table-auto w-full text-left text-sm">
-            <thead>
-              <tr>
-                <th className="px-2 py-1">VOLUMEN</th>
-                <th className="px-2 py-1">A (mm)</th>
-                <th className="px-2 py-1">B (mm)</th>
-                <th className="px-2 py-1">C (mm)</th>
-                <th className="px-2 py-1">D (kom)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-t">
-                <td className="px-2 py-1">60</td>
-                <td className="px-2 py-1">324</td>
-                <td className="px-2 py-1">630</td>
-                <td className="px-2 py-1">714</td>
-                <td className="px-2 py-1">466</td>
-              </tr>
-              <tr className="border-t">
-                <td className="px-2 py-1">100</td>
-                <td className="px-2 py-1">420</td>
-                <td className="px-2 py-1">670</td>
-                <td className="px-2 py-1">770</td>
-                <td className="px-2 py-1">520</td>
-              </tr>
-              <tr className="border-t">
-                <td className="px-2 py-1">200</td>
-                <td className="px-2 py-1">580</td>
-                <td className="px-2 py-1">676</td>
-                <td className="px-2 py-1">776</td>
-                <td className="px-2 py-1">720</td>
-              </tr>
-              <tr className="border-t">
-                <td className="px-2 py-1">300</td>
-                <td className="px-2 py-1">580</td>
-                <td className="px-2 py-1">995</td>
-                <td className="px-2 py-1">1100</td>
-                <td className="px-2 py-1">720</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* 3) Single image left, text on right (Volumen, Dužina, Širina, Visina, Otvor, Ispust) */}
-      <div className="flex flex-wrap p-4 items-start">
-        {/* Left: image */}
-        <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-          <div className="relative overflow-hidden rounded-lg h-[250px]">
-            <Image
-              src="https://i.postimg.cc/7ZqsKsDw/31.jpg"
-              fill
-              alt="REZERVOARI"
-              className="object-cover hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL={generateBlurPlaceholder(250, 0)}
-              sizes="(max-width: 250px) 100vw, 250px"
-              itemProp="image"
-            />
-          </div>
-          <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-            REZERVOARI 1000 L
-          </figcaption>
-        </figure>
-
-        {/* Right: text/table */}
-        <div className="mt-2 w-full sm:w-2/3 md:w-3/4 text-sm text-gray-700">
-          <h3 className="text-lg font-semibold mb-2">TEHNIČKE KARAKTERISTIKE</h3>
-          <table className="table-auto w-full text-left text-sm">
-            <thead>
-              <tr>
-                <th className="px-2 py-1">Volumen (L)</th>
-                <th className="px-2 py-1">Dužina (mm)</th>
-                <th className="px-2 py-1">Širina (mm)</th>
-                <th className="px-2 py-1">Visina (mm)</th>
-                <th className="px-2 py-1">Otvor (mm)</th>
-                <th className="px-2 py-1">Ispust</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-t">
-                <td className="px-2 py-1">1000</td>
-                <td className="px-2 py-1">1150</td>
-                <td className="px-2 py-1">950</td>
-                <td className="px-2 py-1">1000</td>
-                <td className="px-2 py-1">fi 160</td>
-                <td className="px-2 py-1">2"</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-        {/* 4) Image left and text (table) right for URL CKPQBj3Y */}
-        <div className="flex flex-wrap  items-start">
-          {/* Left: image */}
-          <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-            <div className="relative overflow-hidden rounded-lg h-[250px]">
-              <Image
-                src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
-                fill
-                alt="POSUDE ROTO LJEV"
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL={generateBlurPlaceholder(250, 0)}
-                sizes="(max-width: 250px) 100vw, 250px"
-                itemProp="image"
-              />
-            </div>
-            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-              POSUDE ROTO LJEV
-            </figcaption>
-          </figure>
-
-          {/* Right: text/table */}
-          <div className="mt-2 w-full sm:w-2/3 md:w-3/4 text-sm text-gray-700">
-            <h3 className="text-lg font-semibold mb-2">VOLUMEN – DIMENZIJE</h3>
-            <table className="table-auto w-full text-left text-sm">
-              <thead>
-                <tr>
-                  <th className="px-2 py-1">VOLUMEN (L)</th>
-                  <th className="px-2 py-1">A (mm)</th>
-                  <th className="px-2 py-1">B (mm)</th>
-                  <th className="px-2 py-1">C (mm)</th>
-                  <th className="px-2 py-1">D (kom)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t">
-                  <td className="px-2 py-1">60</td>
-                  <td className="px-2 py-1">324</td>
-                  <td className="px-2 py-1">630</td>
-                  <td className="px-2 py-1">714</td>
-                  <td className="px-2 py-1">466</td>
-                </tr>
-                <tr className="border-t">
-                  <td className="px-2 py-1">100</td>
-                  <td className="px-2 py-1">420</td>
-                  <td className="px-2 py-1">670</td>
-                  <td className="px-2 py-1">770</td>
-                  <td className="px-2 py-1">520</td>
-                </tr>
-                <tr className="border-t">
-                  <td className="px-2 py-1">200</td>
-                  <td className="px-2 py-1">580</td>
-                  <td className="px-2 py-1">676</td>
-                  <td className="px-2 py-1">776</td>
-                  <td className="px-2 py-1">720</td>
-                </tr>
-                <tr className="border-t">
-                  <td className="px-2 py-1">300</td>
-                  <td className="px-2 py-1">580</td>
-                  <td className="px-2 py-1">995</td>
-                  <td className="px-2 py-1">1100</td>
-                  <td className="px-2 py-1">720</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-          {/* ŠAHTE ZA VODOMJERE subsection */}
-          <div
-            id="sahte-za-vodomjere"
-            className="mt-8 mb-6 scroll-mt-24 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                    fill
-                    alt="ŠAHTE ZA VODOMJERE – slika 1"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/vm3v2bhv/8.jpg"
-                    fill
-                    alt="ŠAHTE ZA VODOMJERE – slika 2"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                ŠAHTE ZA VODOMJERE
-              </figcaption>
-          </div>
-
-          {/* ŠAHTE / PJESKOLOVI / MASTOLOVI subsection */}
-          <div
-            id="sahte-pjeskolovi-mastolovi"
-            className="mt-8 mb-6 scroll-mt-24 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                    fill
-                    alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 1"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
-                    fill
-                    alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 2"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                ŠAHTE, PJESKOLOVI, MASTOLOVI
-              </figcaption>
-          </div>
-
-          {/* ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME subsection */}
-          <div
-            id="sahte-kanalizacija-septicke-jame"
-            className="mt-8 mb-6 scroll-mt-24 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                    fill
-                    alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 1"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[470px]">
-                  <Image
-                    src="https://i.postimg.cc/qMyjvyrx/10.jpg"
-                    fill
-                    alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 2"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                ŠAHTE ZA KANALIZACIJU, SEPTIČKE JAME
-              </figcaption>
-          </div>
-
-          {/* REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L subsection */}
-          <div
-            id="rezervoari-prskalice-atomizere"
-            className="mt-8 mb-6 scroll-mt-24"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[250px]">
-                  <Image
-                    src="https://i.postimg.cc/dVFXzQRM/15.jpg"
-                    fill
-                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[250px]">
-                  <Image
-                    src="https://i.postimg.cc/YqYZnLWf/14.jpg"
-                    fill
-                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L
-              </figcaption>
-          </div>
-
-          {/* SPREMNIK */}
-          <div
-            id="spremnik1000L"
-            className="mt-8 mb-6 scroll-mt-24"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[500px]">
-                  <Image
-                    src="https://i.postimg.cc/PxCFmCHD/21.jpg"
-                    fill
-                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(500, 0)}
-                    sizes="(max-width: 250px) 100vw, 500px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-
-              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                <div className="relative overflow-hidden rounded-lg h-[500px]">
-                  <Image
-                    src="https://i.postimg.cc/3NpSczdJ/22.jpg"
-                    fill
-                    alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(500, 0)}
-                    sizes="(max-width: 250px) 100vw, 500px"
-                    itemProp="image"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                SPREMNIK 1000L SA PUMPOM I MJERAČEM PROTOKA
-              </figcaption>
-          </div>
-
-          </div>
-          </div>
-
-              
-              {/* Prskalice 400600L subsection */}
-              <div
-                id="prskalice400600L"
-                className="mt-8 mb-6 scroll-mt-24"
-              >
-              <div className="flex flex-wrap p-4 mt-4">
-                                    
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
+                {/* 1) KACE image on left, formatted text (table) on right */}
+                <div className="flex flex-wrap p-4 items-start">
+                  {/* Left: KACE image */}
+                  <figure className="p-2 w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
+                        src="https://i.postimg.cc/wT8bmxGt/29.jpg"
                         fill
-                        alt="Poljoprivredni atomizer"
+                        alt="KACE"
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -3725,68 +3223,568 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      CIJEVI ZA ŠUTU
+                      KACE
                     </figcaption>
                   </figure>
 
-                  <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/fLg7XwTV/0.jpg"
-                        fill
-                        alt="POLAZNI -USIPNI DIO"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 500px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      VITLO ZA DIZANJE CIJEVI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                        fill
-                        alt="NOSAČ USIPNOG ELEMENTA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ULAZNI ELEMENAT
-                    </figcaption>
-                  </figure>
-
-                  <figure className=" mt-4 p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/RCj2LLNZ/16.jpg"
-                        fill
-                        alt="Poljoprivredni atomizer"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PLASTIČNE BARIJERE 
-                    </figcaption>
-                  </figure>
+                  {/* Right: formatted text/table */}
+                  <div className="mt-2 w-full sm:w-1/2 md:w-2/3 text-sm text-gray-700">
+                    <h3 className="text-lg font-semibold mb-2">VOLUMEN (L)</h3>
+                    <table className="table-auto w-full text-left text-sm">
+                      <thead>
+                        <tr>
+                          <th className="px-2 py-1">VOLUMEN</th>
+                          <th className="px-2 py-1">A (mm)</th>
+                          <th className="px-2 py-1">B (mm)</th>
+                          <th className="px-2 py-1">C (mm)</th>
+                          <th className="px-2 py-1">D (kom)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-t">
+                          <td className="px-2 py-1">60</td>
+                          <td className="px-2 py-1">324</td>
+                          <td className="px-2 py-1">630</td>
+                          <td className="px-2 py-1">714</td>
+                          <td className="px-2 py-1">466</td>
+                        </tr>
+                        <tr className="border-t">
+                          <td className="px-2 py-1">100</td>
+                          <td className="px-2 py-1">420</td>
+                          <td className="px-2 py-1">670</td>
+                          <td className="px-2 py-1">770</td>
+                          <td className="px-2 py-1">520</td>
+                        </tr>
+                        <tr className="border-t">
+                          <td className="px-2 py-1">200</td>
+                          <td className="px-2 py-1">580</td>
+                          <td className="px-2 py-1">676</td>
+                          <td className="px-2 py-1">776</td>
+                          <td className="px-2 py-1">720</td>
+                        </tr>
+                        <tr className="border-t">
+                          <td className="px-2 py-1">300</td>
+                          <td className="px-2 py-1">580</td>
+                          <td className="px-2 py-1">995</td>
+                          <td className="px-2 py-1">1100</td>
+                          <td className="px-2 py-1">720</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+
+                  {/* 2) Two images side by side, text (table) below with title “POSUDE ZA VINO” */}
+                  <div id="posude-za-vino" className="p-4">
+                    <div className="flex flex-wrap">
+                      {/* First image */}
+                      <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                        <div className="relative overflow-hidden rounded-lg h-[600px]">
+                          <Image
+                            src="https://i.postimg.cc/0yZtFY2m/30.jpg"
+                            fill
+                            alt="POSUDE ZA VINO"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={generateBlurPlaceholder(250, 0)}
+                            sizes="(max-width: 250px) 100vw, 250px"
+                            itemProp="image"
+                          />
+                        </div>
+                      </figure>
+                      {/* Second image */}
+                      <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                        <div className="relative overflow-hidden rounded-lg h-[600px]">
+                          <Image
+                            src="https://i.postimg.cc/hPTKry8W/1.jpg"
+                            fill
+                            alt="POSUDE ZA VINO"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={generateBlurPlaceholder(250, 0)}
+                            sizes="(max-width: 250px) 100vw, 250px"
+                            itemProp="image"
+                          />
+                        </div>
+                      </figure>
+                      <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                          POSUDE ZA VINO
+                      </figcaption>
+                    </div>
+
+                    {/* Text below */}
+                    <div className="mt-4 text-sm text-gray-700">          
+                      <table className="table-auto w-full text-left text-sm">
+                        <thead>
+                          <tr>
+                            <th className="px-2 py-1">VOLUMEN</th>
+                            <th className="px-2 py-1">A (mm)</th>
+                            <th className="px-2 py-1">B (mm)</th>
+                            <th className="px-2 py-1">C (mm)</th>
+                            <th className="px-2 py-1">D (kom)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-t">
+                            <td className="px-2 py-1">60</td>
+                            <td className="px-2 py-1">324</td>
+                            <td className="px-2 py-1">630</td>
+                            <td className="px-2 py-1">714</td>
+                            <td className="px-2 py-1">466</td>
+                          </tr>
+                          <tr className="border-t">
+                            <td className="px-2 py-1">100</td>
+                            <td className="px-2 py-1">420</td>
+                            <td className="px-2 py-1">670</td>
+                            <td className="px-2 py-1">770</td>
+                            <td className="px-2 py-1">520</td>
+                          </tr>
+                          <tr className="border-t">
+                            <td className="px-2 py-1">200</td>
+                            <td className="px-2 py-1">580</td>
+                            <td className="px-2 py-1">676</td>
+                            <td className="px-2 py-1">776</td>
+                            <td className="px-2 py-1">720</td>
+                          </tr>
+                          <tr className="border-t">
+                            <td className="px-2 py-1">300</td>
+                            <td className="px-2 py-1">580</td>
+                            <td className="px-2 py-1">995</td>
+                            <td className="px-2 py-1">1100</td>
+                            <td className="px-2 py-1">720</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  {/* 3) Single image left, text on right (Volumen, Dužina, Širina, Visina, Otvor, Ispust) */}
+                  <div id="rezervoari-roto" className="flex flex-wrap p-4 items-start">
+                    {/* Left: image */}
+                    <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
+                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                        <Image
+                          src="https://i.postimg.cc/7ZqsKsDw/31.jpg"
+                          fill
+                          alt="REZERVOARI"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                          placeholder="blur"
+                          blurDataURL={generateBlurPlaceholder(250, 0)}
+                          sizes="(max-width: 250px) 100vw, 250px"
+                          itemProp="image"
+                        />
+                      </div>
+                      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                        REZERVOARI 1000 L
+                      </figcaption>
+                    </figure>
+
+                    {/* Right: text/table */}
+                    <div className="mt-2 w-full sm:w-2/3 md:w-3/4 text-sm text-gray-700">
+                      <h3 className="text-lg font-semibold mb-2">TEHNIČKE KARAKTERISTIKE</h3>
+                      <table className="table-auto w-full text-left text-sm">
+                        <thead>
+                          <tr>
+                            <th className="px-2 py-1">Volumen (L)</th>
+                            <th className="px-2 py-1">Dužina (mm)</th>
+                            <th className="px-2 py-1">Širina (mm)</th>
+                            <th className="px-2 py-1">Visina (mm)</th>
+                            <th className="px-2 py-1">Otvor (mm)</th>
+                            <th className="px-2 py-1">Ispust</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-t">
+                            <td className="px-2 py-1">1000</td>
+                            <td className="px-2 py-1">1150</td>
+                            <td className="px-2 py-1">950</td>
+                            <td className="px-2 py-1">1000</td>
+                            <td className="px-2 py-1">fi 160</td>
+                            <td className="px-2 py-1">2"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                    {/* 4) Image left and text (table) right for URL CKPQBj3Y */}
+                    <div id="posude-roto-ljev" className="flex flex-wrap  items-start">
+                      {/* Left: image */}
+                      <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
+                        <div className="relative overflow-hidden rounded-lg h-[250px]">
+                          <Image
+                            src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
+                            fill
+                            alt="POSUDE ROTO LJEV"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={generateBlurPlaceholder(250, 0)}
+                            sizes="(max-width: 250px) 100vw, 250px"
+                            itemProp="image"
+                          />
+                        </div>
+                        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                          POSUDE ROTO LJEV
+                        </figcaption>
+                      </figure>
+
+                      {/* Right: text/table */}
+                      <div className="mt-2 w-full sm:w-2/3 md:w-3/4 text-sm text-gray-700">
+                        <h3 className="text-lg font-semibold mb-2">VOLUMEN – DIMENZIJE</h3>
+                        <table className="table-auto w-full text-left text-sm">
+                          <thead>
+                            <tr>
+                              <th className="px-2 py-1">VOLUMEN (L)</th>
+                              <th className="px-2 py-1">A (mm)</th>
+                              <th className="px-2 py-1">B (mm)</th>
+                              <th className="px-2 py-1">C (mm)</th>
+                              <th className="px-2 py-1">D (kom)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="border-t">
+                              <td className="px-2 py-1">60</td>
+                              <td className="px-2 py-1">324</td>
+                              <td className="px-2 py-1">630</td>
+                              <td className="px-2 py-1">714</td>
+                              <td className="px-2 py-1">466</td>
+                            </tr>
+                            <tr className="border-t">
+                              <td className="px-2 py-1">100</td>
+                              <td className="px-2 py-1">420</td>
+                              <td className="px-2 py-1">670</td>
+                              <td className="px-2 py-1">770</td>
+                              <td className="px-2 py-1">520</td>
+                            </tr>
+                            <tr className="border-t">
+                              <td className="px-2 py-1">200</td>
+                              <td className="px-2 py-1">580</td>
+                              <td className="px-2 py-1">676</td>
+                              <td className="px-2 py-1">776</td>
+                              <td className="px-2 py-1">720</td>
+                            </tr>
+                            <tr className="border-t">
+                              <td className="px-2 py-1">300</td>
+                              <td className="px-2 py-1">580</td>
+                              <td className="px-2 py-1">995</td>
+                              <td className="px-2 py-1">1100</td>
+                              <td className="px-2 py-1">720</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                      {/* ŠAHTE ZA VODOMJERE subsection */}
+                      <div
+                        id="sahte-za-vodomjere"
+                        className="mt-8 mb-6 scroll-mt-24 pt-4"
+                      >
+                        <div className="flex flex-wrap p-4">
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/MGKLpsrd/18.jpg"
+                                fill
+                                alt="ŠAHTE ZA VODOMJERE – slika 1"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/vm3v2bhv/8.jpg"
+                                fill
+                                alt="ŠAHTE ZA VODOMJERE – slika 2"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+                        </div>
+
+                        <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                            ŠAHTE ZA VODOMJERE
+                          </figcaption>
+                      </div>
+
+                      {/* ŠAHTE / PJESKOLOVI / MASTOLOVI subsection */}
+                      <div
+                        id="sahte-pjeskolovi-mastolovi"
+                        className="mt-8 mb-6 scroll-mt-24 pt-4"
+                      >
+                        <div className="flex flex-wrap p-4">
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/MGKLpsrd/18.jpg"
+                                fill
+                                alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 1"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
+                                fill
+                                alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 2"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+                        </div>
+
+                        <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                            ŠAHTE, PJESKOLOVI, MASTOLOVI
+                          </figcaption>
+                      </div>
+
+                      {/* ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME subsection */}
+                      <div
+                        id="sahte-kanalizacija-septicke-jame"
+                        className="mt-8 mb-6 scroll-mt-24 pt-4"
+                      >
+                        <div className="flex flex-wrap p-4">
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/MGKLpsrd/18.jpg"
+                                fill
+                                alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 1"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[470px]">
+                              <Image
+                                src="https://i.postimg.cc/qMyjvyrx/10.jpg"
+                                fill
+                                alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 2"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+                        </div>
+
+                        <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                            ŠAHTE ZA KANALIZACIJU, SEPTIČKE JAME
+                          </figcaption>
+                      </div>
+
+                      {/* REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L subsection */}
+                      <div
+                        id="rezervoari-prskalice-atomizere"
+                        className="mt-8 mb-6 scroll-mt-24"
+                      >
+                        <div className="flex flex-wrap p-4">
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[250px]">
+                              <Image
+                                src="https://i.postimg.cc/dVFXzQRM/15.jpg"
+                                fill
+                                alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[250px]">
+                              <Image
+                                src="https://i.postimg.cc/YqYZnLWf/14.jpg"
+                                fill
+                                alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(250, 0)}
+                                sizes="(max-width: 250px) 100vw, 250px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+                        </div>
+
+                        <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                            REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L
+                          </figcaption>
+                      </div>
+
+                      {/* SPREMNIK */}
+                      <div
+                        id="spremnik1000L"
+                        className="mt-8 mb-6 scroll-mt-24"
+                      >
+                        <div className="flex flex-wrap p-4">
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[500px]">
+                              <Image
+                                src="https://i.postimg.cc/PxCFmCHD/21.jpg"
+                                fill
+                                alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(500, 0)}
+                                sizes="(max-width: 250px) 100vw, 500px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+
+                          <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                            <div className="relative overflow-hidden rounded-lg h-[500px]">
+                              <Image
+                                src="https://i.postimg.cc/3NpSczdJ/22.jpg"
+                                fill
+                                alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
+                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={generateBlurPlaceholder(500, 0)}
+                                sizes="(max-width: 250px) 100vw, 500px"
+                                itemProp="image"
+                              />
+                            </div>
+                          </figure>
+                        </div>
+
+                        <figcaption className="text-sm font-medium text-center" itemProp="caption">
+                            SPREMNIK 1000L SA PUMPOM I MJERAČEM PROTOKA
+                          </figcaption>
+                      </div>
+
               </div>
+              </div>                          
+            {/* Prskalice 400600L subsection */}
+            <div
+              id="prskalice400600L"
+              className="mt-8 mb-6 scroll-mt-24"
+            >
+            <div className="flex flex-wrap p-4 mt-4">
+                                  
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
+                      fill
+                      alt="Poljoprivredni atomizer"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    CIJEVI ZA ŠUTU
+                  </figcaption>
+                </figure>
+
+                <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/fLg7XwTV/0.jpg"
+                      fill
+                      alt="POLAZNI -USIPNI DIO"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 500px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    VITLO ZA DIZANJE CIJEVI
+                  </figcaption>
+                </figure>
+                
+                <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/8c2hKtvD/1.jpg"
+                      fill
+                      alt="NOSAČ USIPNOG ELEMENTA"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    ULAZNI ELEMENAT
+                  </figcaption>
+                </figure>
+
+                <figure id="plasticne-barijere" className=" mt-4 p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/RCj2LLNZ/16.jpg"
+                      fill
+                      alt="Poljoprivredni atomizer"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    PLASTIČNE BARIJERE 
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
             </div>
           </section>
         </article>          

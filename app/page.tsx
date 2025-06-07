@@ -56,6 +56,7 @@ export default function HomePage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    style={{ objectPosition: '40% 32%' }}
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
@@ -94,6 +95,7 @@ export default function HomePage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    style={{ objectPosition: '40% 20%' }}
                     placeholder="blur"
                     blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                     loading="lazy"
