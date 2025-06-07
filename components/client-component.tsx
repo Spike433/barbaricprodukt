@@ -1273,6 +1273,7 @@ export default function ProductPageClient() {
                         fill
                         alt="TRAKA ZA TRANSPORT MATERIJALA"
                         className="object-cover hover:scale-105 transition-transform duration-500"
+                        style={{ objectPosition: '40% 54%' }}
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
