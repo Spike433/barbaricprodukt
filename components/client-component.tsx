@@ -2173,7 +2173,7 @@ export default function ProductPageClient() {
                     width={640}
                     height={482}
                     alt="Gumirani proizvodi"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(640, 482)}
@@ -2191,12 +2191,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/B6mFyK6Y/4.jpg"
                         fill
                         alt="GUMIRANI ČELIČNI SPREMNICI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2210,12 +2210,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
                         src="https://i.postimg.cc/hjDxprSQ/3.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2237,12 +2237,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[700px]">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/4yM94Rpp/1.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2256,12 +2256,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[700px]">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
                         fill
                         alt="GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(700, 0)}
