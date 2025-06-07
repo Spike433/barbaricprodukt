@@ -60,7 +60,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pTktR7kW/12.jpg"
                         fill
                         alt="AVIONSKI HANGAR"
-                        className="object-cover object-[38%_50%] hover:scale-105 transition-transform duration-500"
+                        className="object-[38%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -98,7 +98,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                         fill
                         alt="ČELINČNE KONSTRUKCIJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -117,7 +117,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/YS6HyjWm/11.jpg"
                         fill
                         alt="ČELIČNE KONSTRUKCIJE"
-                        className="object-cover object-[10%_50%] hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -136,7 +136,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/vTHbnMDx/4.jpg"
                         fill
                         alt="PANORAMSKO DIZALO"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -155,7 +155,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/FK5vZ074/10.jpg"
                         fill
                         alt="ČELIČNE KONSTRUKCIJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -174,7 +174,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                         fill
                         alt="ČELIČNE KONSTRUKCIJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -193,7 +193,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/XqzSyCTt/15.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -220,7 +220,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/Bb6f6gwx/13.jpg"
                     fill
                     alt="FASADE STAKLENE LIMENE"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -240,7 +240,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/NfnBK3tL/7.jpg"
                         fill
                         alt=""
-                        className="object-cover object-[20%_50%] hover:scale-105 transition-transform duration-500"
+                        className=" object-[20%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -259,7 +259,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/qMqpMk99/6.jpg"
                         fill
                         alt="KROVIŠTA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -278,7 +278,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/44LT0Dmw/14.jpg"
                         fill
                         alt="KROVNI PROZORI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -297,7 +297,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pTv22KHZ/2.jpg"
                         fill
                         alt="KROVNE KUPOLE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -316,7 +316,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/wvk933xd/3.jpg"
                         fill
                         alt="SVJETLARNICI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -367,7 +367,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/8PxgpLd6/18.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -386,7 +386,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/WbdPc5ZV/17.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -405,7 +405,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/QM3L5syN/19.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
