@@ -1780,7 +1780,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/K86X2MXY/7.jpg"
                         fill
                         alt="REGALI BAČVI SA PUMPOM ZA PUNJENJE I ISPUNJENJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1799,7 +1799,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/vTsHHNpc/15.jpg"
                         fill
                         alt="REGALI BAČVI SA TANKVANOM OTVORENI I ZATVORENIZATVORENI ZA PUNJENJE ,PRAŽNJENJE I DOZIRANJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1818,7 +1818,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/1RG3Yyq6/16.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
