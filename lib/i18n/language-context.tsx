@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 import { useRouter } from "next/router"
-import type { Locale, dictionaries } from "./dictionariy"
+import type { Locale, dictionaries } from "./dictionary"
 import { getDictionary } from "./get-dictionary"
 
 type LanguageContextType = {
