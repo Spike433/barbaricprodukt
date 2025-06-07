@@ -2153,29 +2153,32 @@ export default function ProductPageClient() {
               </div>
 
               {/* Gumirane cijevi subsection */}
-              <div
-                id="gumirane-cijevi"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/zf1TRN6j/2.jpg"
-                        fill
-                        alt="GUMIRANI NEPOVRATI VENTILI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                   
-                  </figure>                  
-                </div>
-              </div>
+              <div className="flex flex-col md:flex-row w-full items-center">
+  {/* Text content on the left */}
+  <div className="w-full md:w-1/2 space-y-4 p-8 md:p-20 font-medium">
+    <div className="text-lg">GUMIRANE CIJEVI</div>
+    <div className="text-lg">GUMIRANA KOLJENA 90;45</div>
+    <div className="text-lg">GUMIRANI REDUKCIONI ELEMENTI</div>                    
+  </div>
+  
+  {/* Image on the right */}
+  <figure className="p-4 w-full md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+    <div className="relative overflow-hidden rounded-lg" style={{ aspectRatio: '640/482' }}>
+      <Image                        
+        src="https://i.postimg.cc/zf1TRN6j/2.jpg"
+        width={640}
+        height={482}
+        alt="Gumirani proizvodi"
+        className="object-cover hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+        placeholder="blur"
+        blurDataURL={generateBlurPlaceholder(640, 482)}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        itemProp="image"
+      />
+    </div>
+  </figure>                  
+</div>
 
               {/* Gumirani čelični spremnici subsection */}
               <div
