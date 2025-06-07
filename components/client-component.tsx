@@ -459,7 +459,7 @@ export default function ProductPageClient() {
                       width={1200}
                       height={593}
                       alt="MODULARNE -MOBILNE KUĆE"
-                      className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-auto  hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -527,7 +527,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/MTykZYJG/2.jpg"
                         fill
                         alt="DVOKRINAI JEDNOKRILNA KLIZNA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -546,7 +546,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/FzmMYJhV/4.jpg"
                         fill
                         alt="AUTOMATSKA VRATA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -565,7 +565,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/m2ZxRMXb/6.jpg"
                         fill
                         alt="PODIZNE RAMPE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -592,7 +592,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                         fill
                         alt="PROZORI STAKLENE STIJENE FASADE OD PANELA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -611,7 +611,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/WpwRQS7W/5.jpg"
                         fill
                         alt="STAKLENE FASADE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -630,7 +630,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/brTKkNJc/1.jpg"
                         fill
                         alt="ZIMSKI VRTOVI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -707,7 +707,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/CL9DSPzV/5.jpg"
                         fill
                         alt="LEPTIR VENTIL"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -726,7 +726,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/RZftF7HJ/6.jpg"
                         fill
                         alt="LEPTIR VENTIL"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -894,7 +894,7 @@ export default function ProductPageClient() {
             src="https://i.postimg.cc/nzdj5T6g/10.jpg"
             fill
             alt="CIJEVNI ZATVARAČI"
-            className="object-cover hover:scale-105 transition-transform duration-500"
+            className=" hover:scale-105 transition-transform duration-500"
             loading="lazy"
             placeholder="blur"
             blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -913,7 +913,7 @@ export default function ProductPageClient() {
             src="https://i.postimg.cc/T245J7jW/12.jpg"
             fill
             alt="POSUDA ZA VAĐENJE ČISTAČA PČ"
-            className="object-cover hover:scale-105 transition-transform duration-500"
+            className=" hover:scale-105 transition-transform duration-500"
             loading="lazy"
             placeholder="blur"
             blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1034,7 +1034,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
                         fill
                         alt="ANIONSKI I KATIONSKI I REZERVOARI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1053,7 +1053,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/vZ1zvx6G/18.jpg"
                         fill
                         alt="GUMIRANI REZERVOARI ZA KISELINE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1080,7 +1080,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/D0Bgxqgw/16.jpg"
                         fill
                         alt="PODNE REŠETKE REŠETKASTA STUBIŠTA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1099,7 +1099,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/rpGBs82N/14.jpg"
                         fill
                         alt="FILTERSKA JEDINICA ZA OTEŽANU VODU"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         style={{ objectPosition: '2% 50%' }}
                         placeholder="blur"
@@ -1128,7 +1128,7 @@ export default function ProductPageClient() {
                         width={2644}
                         height={1490}
                         alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(2644, 1490)}
@@ -1153,7 +1153,7 @@ export default function ProductPageClient() {
           width={2644}
           height={1490}
           alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
-          className="object-cover hover:scale-105 transition-transform duration-500"
+          className=" hover:scale-105 transition-transform duration-500"
           loading="lazy"
           quality={85}  // Optimized quality (default 75)
           placeholder="blur"
@@ -1181,7 +1181,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/RVhQMJdw/28.jpg"
                         fill
                         alt="ZAŠTITA ZUPČANIKA -*INOX"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
