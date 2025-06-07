@@ -2342,7 +2342,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/5yL4djZ3/12.png"
                     fill
                     alt="MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2368,7 +2368,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
                     fill
                     alt="Plovci 970×620×340 mm"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2620,7 +2620,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/s2rhX0yt/11.jpg"
                     fill
                     alt="VODOMJERNA OKNA"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2646,7 +2646,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/jdBNVS1q/10.jpg"
                     fill
                     alt="ŠAHTE"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2720,7 +2720,7 @@ export default function ProductPageClient() {
                       src="https://i.postimg.cc/GhVYFPsK/1.jpg"
                       fill
                       alt="KOŠ ZA OTPADKE A1 60 litara"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className=" hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2738,7 +2738,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/fTJmSqkk/2.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
