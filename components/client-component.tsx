@@ -60,7 +60,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pTktR7kW/12.jpg"
                         fill
                         alt="AVIONSKI HANGAR"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[38%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -79,9 +79,9 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/CMmFgZ6G/5.jpg"
                         fill
                         alt="GARAŽA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[20%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
-                        placeholder="blur"
+                        placeholder="blur"                        
                         blurDataURL={generateBlurPlaceholder(250, 0)}
                         sizes="(max-width: 250px) 100vw, 250px"
                         itemProp="image"
@@ -117,7 +117,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/YS6HyjWm/11.jpg"
                         fill
                         alt="ČELIČNE KONSTRUKCIJE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[10%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -211,7 +211,7 @@ export default function ProductPageClient() {
               {/* Staklene i limene fasade subsection */}
               <div
                 id="stakleneILimeneFasade"
-                className=" mb-6 scroll-mt-0 pl-9"
+                className="scroll-mt-0 pl-9"
               >
                 <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
@@ -240,7 +240,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/NfnBK3tL/7.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[20%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -485,7 +485,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/j5vNB6pB/4.jpg"
                         fill
                         alt="PONTONI I KATAMARANI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[50%_35%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -750,7 +750,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/xjxMFTQ8/3.jpg"
                         fill
                         alt="FILTERI INDUSTRIJSKI (INOX)"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -769,7 +769,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/hG178KMS/7.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -788,7 +788,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/KzQBbmg9/1.jpg"
                         fill
                         alt="IZMJENJIVAČI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -815,7 +815,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/fLWSB1gY/8.jpg"
                         fill
                         alt="PERIFLEX SPOJKE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -834,7 +834,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/gkx89FcD/4.jpg"
                         fill
                         alt="AKTUATOR"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -853,7 +853,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/65bcRfqH/19.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -955,17 +955,17 @@ export default function ProductPageClient() {
     
     {/* Second Image - 1094x394 (approx 2.77:1 ratio) */}
     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/330' }}>
+      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/400' }}>
         <Image
           src="https://i.postimg.cc/1X2gRXRK/13.jpg"
           width={1094}
-          height={330}
+          height={400}
           alt="HVATAČ I ODAŠILJAČ KUGLI"
           className="object-contain hover:scale-105 transition-transform duration-500"
           style={{ objectPosition: '10% 10%' }}
           loading="lazy"
           placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(1094, 394)}
+          blurDataURL={generateBlurPlaceholder(1094, 400)}
           sizes="(max-width: 800px) 100vw, 50vw"
           itemProp="image"
         />
@@ -1216,52 +1216,52 @@ export default function ProductPageClient() {
               </div>
 
               {/* Rashladna jedinica subsection */}
-<div id="rashladnaJedinica" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    {/* First Image - Focused right */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg h-[400px]">
-        <Image
-          src="https://i.postimg.cc/Zn788Jb9/25.jpg"
-          fill
-          alt="INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
-          className="object-cover hover:scale-105 transition-transform duration-500"          
-          style={{ objectPosition: '39% 40%' }}
-          loading="lazy"
-          placeholder="blur"          
-          blurDataURL={generateBlurPlaceholder(400, 0)}
-          sizes="(max-width: 250px) 100vw, 400px"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
-      </figcaption>
-    </figure>
-    
-    {/* Second Image - Focused right */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg h-[400px]">
-        <Image
-          src="https://i.postimg.cc/brN0SZhc/24.jpg"
-          fill
-          alt="RASHLADNA JEDINICA"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-          style={{ objectPosition: '39% 50%' }}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(400, 0)}
-          sizes="(max-width: 250px) 100vw, 400px"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        RASHLADNA JEDINICA
-      </figcaption>
-    </figure>
-  </div>
-</div>
-
+              <div id="rashladnaJedinica" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+                <div className="flex flex-wrap p-4">
+                  {/* First Image - Focused right */}
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <Image
+                        src="https://i.postimg.cc/Zn788Jb9/25.jpg"
+                        fill
+                        alt="INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
+                        className="object-cover hover:scale-105 transition-transform duration-500"          
+                        style={{ objectPosition: '39% 40%' }}
+                        loading="lazy"
+                        placeholder="blur"          
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
+                    </figcaption>
+                  </figure>
+                  
+                  {/* Second Image - Focused right */}
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <Image
+                        src="https://i.postimg.cc/brN0SZhc/24.jpg"
+                        fill
+                        alt="RASHLADNA JEDINICA"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        style={{ objectPosition: '39% 50%' }}
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      RASHLADNA JEDINICA
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              
               {/* Transporteri 1 subsection */}
               <div
                 id="transporteri1"
@@ -1293,7 +1293,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/sgZYWFtX/30.jpg"
                         fill
                         alt="ČELIČNO GUMENI TRANSPORTER"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1425,7 +1425,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/GpGWhmrx/9.jpg"
                         fill
                         alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI 5,7 i 10 m³"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1658,7 +1658,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pVCtFrj0/4.jpg"
                         fill
                         alt="REZERVOARI TEHNOLOŠKE KANALIZACIJE 35m³"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(40, 0)}
@@ -1934,7 +1934,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/13tRt6Yc/21.jpg"
                         fill
                         alt="ŠAHTE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1953,7 +1953,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/SNVNkVVx/20.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1996,7 +1996,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
                         fill
                         alt="MOBILNA SPREMIŠTA SPREMIŠTA ZAPALJIVIH TEKUĆINA SPREMIŠTA BOJA I LAKOVA SPREMIŠTE BOCA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[25%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2015,7 +2015,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pd52Qvvm/22.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[35%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2496,7 +2496,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/0N1Nqkp0/1.png"
                     fill
                     alt="KAJAK DVOSJED"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2565,7 +2565,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/2SvWCfpQ/8.jpg"
                     fill
                     alt="SEPTIČKE JAME 800 lit jednokomorna, dvokomorna i trokomorna"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className="hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2591,7 +2591,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/wT1Jbm0b/9.jpg"
                     fill
                     alt=""
-                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    className="hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2599,12 +2599,7 @@ export default function ProductPageClient() {
                     itemProp="image"
                   />
                 </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  {/* (empty caption) */}
-                </figcaption>
+               
               </figure>
             </div>
           </div>
@@ -2772,7 +2767,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/RFrsNFWy/3.jpg"
                         fill
                         alt="Klupa C"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2804,7 +2799,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/0yM0Dv1s/4.jpg"
                         fill
                         alt="KOŠ ZA OTPADKE C1 50 litara"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2835,7 +2830,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/8CV6314r/5.jpg"
                         fill
                         alt="KANDABLERI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2862,7 +2857,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/LsfZHWs1/211.jpg"
                         fill
                         alt="PAVILJON"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2895,7 +2890,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/MT6j6dh6/7.jpg"
                         fill
                         alt="STALCI ZA BICIKLE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2935,7 +2930,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
                         fill
                         alt="POLAZNI -USIPNI DIO"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2954,7 +2949,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                         fill
                         alt="NOSAČ USIPNOG ELEMENTA"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2973,7 +2968,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
                         fill
                         alt="NOSAČ DIZALICE ZA CIJEVI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2992,7 +2987,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/t4H3FvyN/3.jpg"
                         fill
                         alt="CIJEVI ZA ŠUTU"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -3021,7 +3016,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/ncmKjf8L/4.jpg"
                         fill
                         alt="SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI ,VODOMJER NEPROPUSNI"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3070,7 +3065,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/bwQRMcL5/5.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3097,7 +3092,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/mDrNtcRx/6.jpg"
                         fill
                         alt="VODOMJERNO OKNO PLASTIČNO"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3116,7 +3111,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/J0DN59GP/7.jpg"
                         fill
                         alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3131,34 +3126,34 @@ export default function ProductPageClient() {
                 </div>
               </div>
               <div className="mt-4 p-4 bg-gray-50 rounded-lg text-left">
-  <h3 className="text-lg font-bold mb-3 text-gray-800">Namjena:</h3>
-  <p className="mb-4 text-gray-700 ml-10">
-    Vodomjerno okno je namjenjeno za ugradnju kod manjih objekata.
-    Konstrukcija vodomjernog okna zaštičuje vodomjer od zamrzavanja.
-    Nakon montaže instalacije sa armaturom (cijevi, koljena, ventila i vodomjera),
-    sve se pokrije sa termo poklopcem te konačno sa poklopcem samog vodomjera.
-    Kučište i poklopac vodomjernog okna je izrađen od polietilena sa rebrima za ojačanje,
-    te nije potrebno dodatno betoniranje oko njega.
-    Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom,
-    te umjesto plastičnog poklopca ugraditi čelični poklopac.
-  </p>
-  <br/>
-  <h3 className="text-lg font-bold mb-3 text-gray-800">Tehničke karakteristike:</h3>
-  <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
-    <li>Visina kučišta: 990 mm</li>
-    <li>Dužina: 660 mm</li>
-    <li>Širina: 450 mm</li>
-    <li>Boja kučišta: bijela, plava ili crna</li>
-  </ul>
-  <br/>
-  <h3 className="text-lg font-bold mb-3 text-gray-800">Unutarnja instalacija se sastoji od:</h3>
-  <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
-    <li>Noseće plastične ploče za cijevi</li>
-    <li>Brze spojnice za cijevi</li>
-    <li>Ventili sa holenderima za vodomjer</li>
-    <li>Vodomjer</li>
-    <li>Termo poklopac</li>
-  </ul>
+                <h3 className="text-lg font-bold mb-3 text-gray-800">Namjena:</h3>
+                <p className="mb-4 text-gray-700 ml-10">
+                  Vodomjerno okno je namjenjeno za ugradnju kod manjih objekata.
+                  Konstrukcija vodomjernog okna zaštičuje vodomjer od zamrzavanja.
+                  Nakon montaže instalacije sa armaturom (cijevi, koljena, ventila i vodomjera),
+                  sve se pokrije sa termo poklopcem te konačno sa poklopcem samog vodomjera.
+                  Kučište i poklopac vodomjernog okna je izrađen od polietilena sa rebrima za ojačanje,
+                  te nije potrebno dodatno betoniranje oko njega.
+                  Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom,
+                  te umjesto plastičnog poklopca ugraditi čelični poklopac.
+                </p>
+                <br/>
+                <h3 className="text-lg font-bold mb-3 text-gray-800">Tehničke karakteristike:</h3>
+                <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
+                  <li>Visina kučišta: 990 mm</li>
+                  <li>Dužina: 660 mm</li>
+                  <li>Širina: 450 mm</li>
+                  <li>Boja kučišta: bijela, plava ili crna</li>
+                </ul>
+                <br/>
+                <h3 className="text-lg font-bold mb-3 text-gray-800">Unutarnja instalacija se sastoji od:</h3>
+                <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
+                  <li>Noseće plastične ploče za cijevi</li>
+                  <li>Brze spojnice za cijevi</li>
+                  <li>Ventili sa holenderima za vodomjer</li>
+                  <li>Vodomjer</li>
+                  <li>Termo poklopac</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -3178,26 +3173,26 @@ export default function ProductPageClient() {
             </h2>
             <div className="space-y-4">
             <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/nLC1WNWb/4.jpg"
-                        fill
-                        alt=""
-                        className="object-cover hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    PLASTIČNI PROIZVODI SU IZRAĐENI OD POLIETILENA VISOKE GUSTOĆE, INERTNOG MATERIJALA ZA PRIMJENU U <br/> PREHRANBENOJ INDUSTRIJI. POSUDE SU GLATKIH I LAKO PERIVIH POVRŠINA. MATERIJAL JE OTPORAN NA TEMPERATURE OD -20 DO + 50°C.
+            <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+              <div className="relative overflow-hidden rounded-lg aspect-square">
+                <Image
+                  src="https://i.postimg.cc/nLC1WNWb/4.jpg"
+                  fill
+                  alt=""
+                  className="hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={generateBlurPlaceholder(250, 0)}
+                  sizes="(max-width: 250px) 100vw, 250px"
+                  itemProp="image"
+                />
+              </div>
+              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              PLASTIČNI PROIZVODI SU IZRAĐENI OD POLIETILENA VISOKE GUSTOĆE, INERTNOG MATERIJALA ZA PRIMJENU U <br/> PREHRANBENOJ INDUSTRIJI. POSUDE SU GLATKIH I LAKO PERIVIH POVRŠINA. MATERIJAL JE OTPORAN NA TEMPERATURE OD -20 DO + 50°C.
 
-                    </figcaption>
-                  </figure>
-                </div>
+              </figcaption>
+            </figure>
+          </div>
           {/* Kače subsection */}
             <div
               id="kace"
@@ -3211,10 +3206,10 @@ export default function ProductPageClient() {
                   <figure className="p-2 w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/wT8bmxGt/29.jpg"
+                        src="https://i.postimg.cc/R0ysTY7D/0.png"
                         fill
                         alt="KACE"
-                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3279,12 +3274,12 @@ export default function ProductPageClient() {
                     <div className="flex flex-wrap">
                       {/* First image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[600px]">
+                        <div className="relative overflow-hidden rounded-lg h-[400px]">
                           <Image
                             src="https://i.postimg.cc/0yZtFY2m/30.jpg"
                             fill
                             alt="POSUDE ZA VINO"
-                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            className="hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3295,12 +3290,12 @@ export default function ProductPageClient() {
                       </figure>
                       {/* Second image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[600px]">
+                        <div className="relative overflow-hidden rounded-lg h-[400px]">
                           <Image
                             src="https://i.postimg.cc/hPTKry8W/1.jpg"
                             fill
                             alt="POSUDE ZA VINO"
-                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            className="hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3369,7 +3364,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/7ZqsKsDw/31.jpg"
                           fill
                           alt="REZERVOARI"
-                          className="object-cover hover:scale-105 transition-transform duration-500"
+                          className="hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3419,7 +3414,7 @@ export default function ProductPageClient() {
                             src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
                             fill
                             alt="POSUDE ROTO LJEV"
-                            className="object-cover hover:scale-105 transition-transform duration-500"
+                            className="hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3491,7 +3486,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                                 fill
                                 alt="ŠAHTE ZA VODOMJERE – slika 1"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3507,7 +3502,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/vm3v2bhv/8.jpg"
                                 fill
                                 alt="ŠAHTE ZA VODOMJERE – slika 2"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3535,7 +3530,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                                 fill
                                 alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 1"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3551,7 +3546,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
                                 fill
                                 alt="ŠAHTE / PJESKOLOVI / MASTOLOVI – slika 2"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3579,7 +3574,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                                 fill
                                 alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 1"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3595,7 +3590,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/qMyjvyrx/10.jpg"
                                 fill
                                 alt="ŠAHTE ZA KANALIZACIJU / SEPTIČKE JAME – slika 2"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3639,7 +3634,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/YqYZnLWf/14.jpg"
                                 fill
                                 alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className=" hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3667,7 +3662,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                                 fill
                                 alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 1"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -3683,7 +3678,7 @@ export default function ProductPageClient() {
                                 src="https://i.postimg.cc/3NpSczdJ/22.jpg"
                                 fill
                                 alt="REZERVOARI ZA PRSKALICE / ATOMIZERE – slika 2"
-                                className="object-cover hover:scale-105 transition-transform duration-500"
+                                className="hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
                                 placeholder="blur"
                                 blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -3714,7 +3709,7 @@ export default function ProductPageClient() {
                       src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
                       fill
                       alt="Poljoprivredni atomizer"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className="hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3733,7 +3728,7 @@ export default function ProductPageClient() {
                       src="https://i.postimg.cc/fLg7XwTV/0.jpg"
                       fill
                       alt="POLAZNI -USIPNI DIO"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className="hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -3752,7 +3747,7 @@ export default function ProductPageClient() {
                       src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                       fill
                       alt="NOSAČ USIPNOG ELEMENTA"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className="hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(400, 0)}
