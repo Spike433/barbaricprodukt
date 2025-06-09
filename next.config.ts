@@ -8,7 +8,13 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: false,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+        pathname: '/**', // Match all paths under this hostname
+      },
+    ],
   },
   experimental: {
     webpackBuildWorker: true,
