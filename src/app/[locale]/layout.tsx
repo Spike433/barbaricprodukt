@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-//import Header from "@/"
+import Header from "@/components/header"
 import "./globals.css"
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
@@ -74,11 +74,14 @@ export default async function LocaleLayout({
   }
  
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-      </body>
-    </html>
+    <html lang={locale} className="scroll-smooth">      
+      <body className={inter.className}>
+        <NextIntlClientProvider>
+           <Header />
+         <div className="pt-16">{children}</div>
+        </NextIntlClientProvider>
+       </body>
+    </html>    
   );
 }
 

@@ -110,14 +110,7 @@ const services = [
   },    
 ];
 
-export default async function ServicesPage({
-  params,
-}: {
-  params: Promise<{ lang: Locale }>
-}) {
-  const { lang } = await params
-  const dict = await getDictionary(lang)
-  console.log("Dictionary for services page:", dict.about.description)
+export default async function ServicesPage() {  
   return (
     <main className="min-h-screen">
       {/* Background pattern */}
