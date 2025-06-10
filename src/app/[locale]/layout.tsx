@@ -1,8 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import Header from "@/components/header"
+//import Header from "@/"
 import "./globals.css"
+import {NextIntlClientProvider, hasLocale} from 'next-intl';
+import {notFound} from 'next/navigation';
+import {routing} from '@/i18n/routing';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -42,19 +45,41 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
-export default function RootLayout({
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode
+// }>) {
+//   return (
+//     <html lang="en" className="scroll-smooth">
+//       <body className={inter.className}>
+//         <Header />
+//         <div className="pt-16">{children}</div>
+//       </body>
+//     </html>
+//   )
+// }
+
+export default async function LocaleLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{locale: string}>;
+}) {
+  // Ensure that the incoming `locale` is valid
+  const {locale} = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+ 
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
-        <Header />
-        <div className="pt-16">{children}</div>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
-  )
+  );
 }
 
 
