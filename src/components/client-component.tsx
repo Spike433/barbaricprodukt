@@ -3089,7 +3089,7 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/mDrNtcRx/6.jpg"
+                        src="https://i.postimg.cc/FFf8MYKB/6logo.png"
                         fill
                         alt="VODOMJERNO OKNO PLASTIČNO"
                         className="hover:scale-105 transition-transform duration-500"
