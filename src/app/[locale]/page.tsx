@@ -182,56 +182,56 @@ export default function HomePage() {
             </section>
             
             {/* Oprema za more */}
-            <section className="mb-8">
-              <Link 
-                href="/products#opremaZaMore" 
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/j5vNB6pB/4.jpg"
-                      alt="Oprema za more 1"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/0N1Nqkp0/1.png"
-                      alt="Oprema za more 2"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/WpWgnn6k/7.jpg"
-                      alt="Oprema za more 3"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('marineEquipment')}
-                  </h3>                
-                </div>
-              </Link>
-            </section>
+        <section className="mb-8">
+          <Link 
+            href="/products#opremaZaMore" 
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          >
+            <div className="flex gap-3 p-3">
+              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <Image
+                  src="https://i.postimg.cc/XJBBbfmJ/4logo.png"
+                  alt="Oprema za more 1"
+                  fill
+                  className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <Image
+                  src="https://i.postimg.cc/0N1Nqkp0/1.png"
+                  alt="Oprema za more 2"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <Image
+                  src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                  alt="Oprema za more 3"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('marineEquipment')}
+              </h3>                
+            </div>
+          </Link>
+        </section>
           
             {/* Urbana oprema */}
             <section className="mb-8">
@@ -266,7 +266,7 @@ export default function HomePage() {
                   </div>
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/yYqfvb3w/urbana2.png"
+                      src="https://i.postimg.cc/Px03XMqF/urbana2logo.png"
                       alt="Urbana oprema 3"
                       fill
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -318,7 +318,7 @@ export default function HomePage() {
                   </div>
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/mDrNtcRx/6.jpg"
+                      src="https://i.postimg.cc/FFf8MYKB/6logo.png"
                       alt="Građevinska oprema 3"
                       fill
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
