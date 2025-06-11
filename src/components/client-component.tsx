@@ -3406,7 +3406,7 @@ export default function ProductPageClient() {
                   </div>
 
                     {/* 4) Image left and text (table) right for URL CKPQBj3Y */}
-                    <div id="posude-roto-ljev" className="flex flex-wrap  items-start">
+                    <div id="posude-roto-ljev" className="flex flex-wrap  items-start p-4">
                       {/* Left: image */}
                       <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
                         <div className="relative overflow-hidden rounded-lg h-[250px]">
@@ -3477,7 +3477,7 @@ export default function ProductPageClient() {
                       {/* ŠAHTE ZA VODOMJERE subsection */}
                       <div
                         id="sahte-za-vodomjere"
-                        className="mt-8 mb-6 scroll-mt-24 pt-4"
+                        className="mb-6 scroll-mt-24"
                       >
                         <div className="flex flex-wrap p-4">
                           <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
