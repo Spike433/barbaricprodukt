@@ -169,5 +169,62 @@
         "title": "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA"
       }
     }
+  },
+  "ContactForm": {
+    "title": "Kontaktirajte nas",
+    "subtitle": "Slobodno nas kontaktirajte s bilo kojim pitanjima ili upitima. Naš tim će vam odgovoriti u najkraćem mogućem roku.",
+    "form": {
+      "title": "Pošaljite nam poruku",
+      "description": "Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.",
+      "labels": {
+        "name": "Vaše ime",
+        "email": "Email adresa",
+        "message": "Poruka"
+      },
+      "placeholders": {
+        "name": "Unesite vaše ime",
+        "email": "Unesite vaš email",
+        "message": "Unesite vašu poruku"
+      },
+      "errors": {
+        "name": "Ime je obavezno",
+        "email": {
+          "required": "Email je obavezan",
+          "invalid": "Unesite valjanu email adresu"
+        },
+        "message": "Poruka je obavezna",
+        "recaptcha": "Molimo potvrdite da niste robot."
+      },
+      "submit": {
+        "sending": "Šaljem...",
+        "send": "Pošalji poruku"
+      },
+      "success": "Vaša poruka je uspješno poslana!",
+      "error": "Došlo je do greške pri slanju poruke."
+    },
+    "contactInfo": {
+      "title": "Kontakt informacije",
+      "description": "Možete nas kontaktirati i direktno putem sljedećih kanala",
+      "address": {
+        "title": "Adresa:",
+        "line1": "Žutička ulica 30",
+        "line2": "Ivanić-Grad 10310",
+        "line3": "HRVATSKA"
+      },
+      "phone": {
+        "title": "Telefon:",
+        "number1": "+385 91 282-3375",
+        "number2": "+385 91 200-8801"
+      },
+      "email": {
+        "title": "Email:",
+        "address": "barbaric.produkt@barbaricprodukt.com"
+      },
+      "website": {
+        "title": "Web stranica:",
+        "url": "barbaricprodukt.com"
+      },
+      "hours": "Radno vrijeme: Ponedjeljak - Petak, 7:00 - 15:00"
+    }
   }
 }

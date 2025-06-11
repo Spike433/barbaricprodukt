@@ -12,6 +12,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Mail, Phone, MapPin, Globe, CheckCircle, Loader2, Send } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ToastContainer, toast } from "react-toastify";
+import {useTranslations} from 'next-intl';
 
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -23,6 +24,7 @@ type FormData = {
 }
 
 export default function ContactForm() {
+  const t = useTranslations('ContactForm');
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",    
@@ -36,7 +38,6 @@ export default function ContactForm() {
   const recaptchaRef = useRef<ReCAPTCHA>(null)
   const endpoint = "https://jlhyggvfdklnoxzzhxbh.supabase.co/functions/v1/send-qoretech-email-barbaricprodukt";
 
-  // Load map after component mounts to avoid SSR issues
   useEffect(() => {
     setIsMapLoaded(true)
   }, [])
@@ -49,14 +50,14 @@ export default function ContactForm() {
   const validateForm = (): boolean => {
     const errors: Partial<FormData> = {}
 
-    if (!formData.name.trim()) errors.name = "Ime je obavezno"
+    if (!formData.name.trim()) errors.name = t('form.errors.name')
     if (!formData.email.trim()) {
-      errors.email = "Email je obavezan"
+      errors.email = t('form.errors.email.required')
     } else if (!validateEmail(formData.email)) {
-      errors.email = "Unesite valjanu email adresu"
+      errors.email = t('form.errors.email.invalid')
     }
     
-    if (!formData.message.trim()) errors.message = "Poruka je obavezna"
+    if (!formData.message.trim()) errors.message = t('form.errors.message')
 
     setFormErrors(errors)
     return Object.keys(errors).length === 0
@@ -66,7 +67,6 @@ export default function ContactForm() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
-    // Clear error when user types
     if (formErrors[name as keyof FormData]) {
       setFormErrors((prev) => ({ ...prev, [name]: undefined }))
     }
@@ -78,8 +78,8 @@ export default function ContactForm() {
     if (!validateForm()) return
 
     const recaptchaValue = recaptchaRef.current?.getValue();
-    if (recaptchaValue) {
-      toast.error("Molimo potvrdite da niste robot.");
+    if (!recaptchaValue) {
+      toast.error(t('form.errors.recaptcha'));
       return;
     }
 
@@ -101,14 +101,14 @@ export default function ContactForm() {
       );
 
       if (response.status === 200) {
-        toast.success("Vaša poruka je uspješno poslana!");
+        toast.success(t('form.success'));
         setFormData({ name: "", email: "", message: "" });
         recaptchaRef.current?.reset();
       } else {
-        toast.error("Došlo je do greške pri slanju poruke.");
+        toast.error(t('form.error'));
       }
     } catch (error: any) {
-      toast.error(error.response?.data?.error || "Došlo je do greške pri slanju poruke.");
+      toast.error(error.response?.data?.error || t('form.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -119,41 +119,37 @@ export default function ContactForm() {
 
   return (
     <main className="min-h-screen py-16">
-      {/* Background pattern */}
       <div className="absolute inset-0 bg-blueprint opacity-30 pointer-events-none"></div>
 
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
-            Kontaktirajte nas
+            {t('title')}
           </h1>
 
           <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Slobodno nas kontaktirajte s bilo kojim pitanjima ili upitima. Naš tim će vam odgovoriti u najkraćem mogućem
-            roku.
+            {t('subtitle')}
           </p>
 
-          {/* Two cards with equal height */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Contact Form */}
             <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
               <div className="h-2 bg-industrial-blue"></div>
               <CardHeader className="pb-2">
-                <CardTitle className="text-industrial-blue">Pošaljite nam poruku</CardTitle>
-                <CardDescription>Ispunite obrazac ispod i javit ćemo vam se što je prije moguće.</CardDescription>
+                <CardTitle className="text-industrial-blue">{t('form.title')}</CardTitle>
+                <CardDescription>{t('form.description')}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-1">
                     <Label htmlFor="name" className={cn(formErrors.name && "text-destructive")}>
-                      Vaše ime
+                      {t('form.labels.name')}
                     </Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Unesite vaše ime"
+                      placeholder={t('form.placeholders.name')}
                       className={cn("bg-white", formErrors.name && "border-destructive")}
                     />
                     {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
@@ -161,7 +157,7 @@ export default function ContactForm() {
 
                   <div className="space-y-1">
                     <Label htmlFor="email" className={cn(formErrors.email && "text-destructive")}>
-                      Email adresa
+                      {t('form.labels.email')}
                     </Label>
                     <Input
                       id="email"
@@ -169,7 +165,7 @@ export default function ContactForm() {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="Unesite vaš email"
+                      placeholder={t('form.placeholders.email')}
                       className={cn("bg-white", formErrors.email && "border-destructive")}
                     />
                     {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
@@ -177,24 +173,24 @@ export default function ContactForm() {
                   
                   <div className="space-y-1">
                     <Label htmlFor="message" className={cn(formErrors.message && "text-destructive")}>
-                      Poruka
+                      {t('form.labels.message')}
                     </Label>
                     <Textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Unesite vašu poruku"
+                      placeholder={t('form.placeholders.message')}
                       className={cn("min-h-[150px] bg-white", formErrors.message && "border-destructive")}
                     />
                     {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
                   </div>
                   
-                  {/* <ReCAPTCHA
+                  <ReCAPTCHA
                     sitekey={qoretech}
                     ref={recaptchaRef}
                     size={"normal"}
-                  /> */}
+                  />
 
                   <Button
                     type="submit"
@@ -204,12 +200,12 @@ export default function ContactForm() {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Šaljem...
+                        {t('form.submit.sending')}
                       </>
                     ) : (
                       <>
                         <Send className="mr-2 h-4 w-4" />
-                        Pošalji poruku
+                        {t('form.submit.send')}
                       </>
                     )}
                   </Button>
@@ -217,15 +213,13 @@ export default function ContactForm() {
               </CardContent>
             </Card>
 
-            {/* Company Information */}
             <Card className="bg-white/90 backdrop-blur-sm border-industrial-blue/10 shadow-md overflow-hidden h-full flex flex-col">
               <div className="h-2 bg-industrial-blue"></div>
               <CardHeader className="pb-2">
-                <CardTitle className="text-industrial-blue">Kontakt informacije</CardTitle>
-                <CardDescription>Možete nas kontaktirati i direktno putem sljedećih kanala</CardDescription>
+                <CardTitle className="text-industrial-blue">{t('contactInfo.title')}</CardTitle>
+                <CardDescription>{t('contactInfo.description')}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 flex-grow">
-                {/* Company Image */}
                 <div className="rounded-lg overflow-hidden shadow-sm h-[120px] relative mb-2 flex items-center justify-center">
                   <Image
                     src="https://i.postimg.cc/HsmzZWqq/logo.png"
@@ -240,36 +234,36 @@ export default function ContactForm() {
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 mr-3 text-industrial-blue mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-medium">Adresa:</p>
-                    <p className="text-muted-foreground">Žutička ulica 30</p>
-                    <p className="text-muted-foreground">Ivanić-Grad 10310</p>
-                    <p className="text-muted-foreground">HRVATSKA</p>
+                    <p className="font-medium">{t('contactInfo.address.title')}</p>
+                    <p className="text-muted-foreground">{t('contactInfo.address.line1')}</p>
+                    <p className="text-muted-foreground">{t('contactInfo.address.line2')}</p>
+                    <p className="text-muted-foreground">{t('contactInfo.address.line3')}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <Phone className="h-5 w-5 mr-3 text-industrial-blue mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-medium">Telefon:</p>
+                    <p className="font-medium">{t('contactInfo.phone.title')}</p>
                     <a
                       href="tel:+385912823375"
                       className="text-muted-foreground hover:text-industrial-blue transition-colors"
                     >
-                      +385 91 282-3375
+                      {t('contactInfo.phone.number1')}
                     </a>
-                    <p className="text-muted-foreground mt-1">+385 91 200-8801</p>
+                    <p className="text-muted-foreground mt-1">{t('contactInfo.phone.number2')}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <Mail className="h-5 w-5 mr-3 text-industrial-blue mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-medium">Email:</p>
+                    <p className="font-medium">{t('contactInfo.email.title')}</p>
                     <a
                       href="mailto:barbaric.produkt@barbaricprodukt.com"
                       className="text-industrial-blue hover:underline"
                     >
-                      barbaric.produkt@barbaricprodukt.com
+                      {t('contactInfo.email.address')}
                     </a>
                   </div>
                 </div>
@@ -277,25 +271,24 @@ export default function ContactForm() {
                 <div className="flex items-start">
                   <Globe className="h-5 w-5 mr-3 text-industrial-blue mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-medium">Web stranica:</p>
+                    <p className="font-medium">{t('contactInfo.website.title')}</p>
                     <a
                       href="http://barbaricprodukt.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-industrial-blue hover:underline"
                     >
-                      barbaricprodukt.com
+                      {t('contactInfo.website.url')}
                     </a>
                   </div>
                 </div>
               </CardContent>
               <CardFooter className="bg-gray-50 border-t border-gray-100 px-6 py-4 mt-auto">
-                <p className="text-sm text-muted-foreground">Radno vrijeme: Ponedjeljak - Petak, 7:00 - 15:00</p>
+                <p className="text-sm text-muted-foreground">{t('contactInfo.hours')}</p>
               </CardFooter>
             </Card>
           </div>
 
-          {/* Map - Full Width */}
           <div className="mt-8 rounded-xl overflow-hidden shadow-md border border-gray-200 h-[400px] relative bg-gray-100 w-full">
             {isMapLoading && (
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 z-10">
