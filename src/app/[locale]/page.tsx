@@ -178,7 +178,8 @@ export default function HomePage() {
               </div>
             </Link>
           </section>
-
+          
+          <section className="mb-8">
           {/* Oprema za more */}
             <Link 
               href="/products#opremaZaMore" 
@@ -228,7 +229,9 @@ export default function HomePage() {
                 </h3>                
               </div>
             </Link>
+          </section>
         
+          <section className="mb-8">
              {/* Urbana oprema */}
              <Link                
               href="/products#urbanaOprema"
@@ -278,7 +281,9 @@ export default function HomePage() {
                 </h3>                
               </div>
             </Link>
-             
+          </section>
+
+          <section className="mb-8">   
              {/* Oprema za građevinarstvo */}
              <Link                
               href="/products#opremaZaGradevinarstvo"
@@ -328,7 +333,9 @@ export default function HomePage() {
                 </h3>                
               </div>
             </Link>
+          </section>
 
+          {/* Roto ljep plasticni prozivodi */}
             <Link                              
               href="/products#strojeviZaPoljoprivreduIVocarstvo"
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
