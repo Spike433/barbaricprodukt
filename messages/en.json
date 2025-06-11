@@ -1,0 +1,52 @@
+{
+    "AboutPage": {
+      "title": "About Us",
+      "subtitle": "Meet Barbarić Produkt - a family business with a tradition of excellence in manufacturing and processing of metal, plastic and rubber.",
+      "ourStory": {
+        "title": "Our Story",
+        "content1": "<span class='font-semibold text-foreground'>Barbarić Produkt d.o.o.</span> is a family business focused on manufacturing and processing of metal, plastic and rubber products, services of manufacturing and assembly of metal structures, anti-corrosion protection, rubber lining and plastic coating of pipelines, valves, tanks and industrial plants.",
+        "content2": "We employ a dozen workers, from qualified workers to graduate engineers, and we are able to perform even the most complex tasks. We have our own production hall and warehouse space of over 800 m² and mechanization for performing all types of work.",
+        "content3": "Over more than 16 years of business, we have built a reputation as a reliable partner that delivers high-quality products and services. Our expertise in working with different materials allows us to offer comprehensive solutions tailored to the specific needs of our clients."
+      },
+      "advantages": {
+        "title": "Our Advantages",
+        "items": [
+          {
+            "title": "16+ years of experience",
+            "description": "Long-term experience in the industry ensures the quality and reliability of our services."
+          },
+          {
+            "title": "Family tradition and values",
+            "description": "We operate on the basis of family values based on trust and integrity."
+          },
+          {
+            "title": "Production from various materials",
+            "description": "We specialize in working with metal, plastic and rubber, which enables us to provide comprehensive service."
+          },
+          {
+            "title": "Own premises of 800 m²",
+            "description": "We have our own production hall and warehouse space for efficient production."
+          },
+          {
+            "title": "Modernized mechanization and tools",
+            "description": "We continuously invest in the latest technology and tools to achieve the best results."
+          },
+          {
+            "title": "Focus on innovation and sustainability",
+            "description": "We are committed to developing innovative solutions with care for the environment and sustainability."
+          }
+        ]
+      },
+      "facilities": {
+        "title": "Our Facilities",
+        "content1": "We have our own production hall and warehouse space of over 800 m², which enables efficient production and fast delivery. Our machinery and tools are regularly modernized to keep up with the latest technological achievements in the industry.",
+        "content2": "Thanks to our capacities, we are able to perform even the most complex tasks, from manufacturing individual components to complete industrial plants. Our equipment includes the most modern machines for processing metal, plastic and rubber, which enables precision and quality in every project."
+      },
+      "cta": {
+        "title": "Interested in cooperation?",
+        "content": "Contact us for more information about our services or to arrange potential cooperation. Our team is at your disposal for all questions.",
+        "email": "Contact us via email",
+        "services": "View our services"
+      }
+    }
+  }
