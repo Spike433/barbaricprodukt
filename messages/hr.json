@@ -327,5 +327,58 @@
         "plasticBarriers": "Plastične barijere"
       }
     }
+  },
+  "ProductPageClient": {
+    "celicneKonstrukcije": {
+      "title": "ČELIČNE KONSTRUKCIJE",
+      "montazneHale": {
+        "title": "MONTAŽNE HALE",
+        "hangari": "HANGARI",
+        "garaze": "GARAŽE",
+        "celicneKonstrukcije": "ČELIČNE KONSTRUKCIJE",
+        "panoramskoDizalo": "PANORAMSKO DIZALO",
+        "krovista": "KROVIŠTA"
+      },
+      "stakleneLimeneFasade": {
+        "title": "STAKLENE I LIMENE FASADE",
+        "fasadeStakleneLimene": "FASADE STAKLENE LIMENE",
+        "krovniProzori": "KROVNI PROZORI",
+        "krovneKupole": "KROVNE KUPOLE",
+        "svjetlarnici": "SVJETLARNICI"
+      },
+      "industrijskaVrata": {
+        "title1": "Industrijska vrata klizna podizna automatska",
+        "title2": "Ulazna automatska dvokrilna i klizna vrata automatska"
+      },
+      "ogradeIPodovi": {
+        "ograde": {
+          "title": "OGRADE",
+          "balkonske": "Balkonske",
+          "kucne": "Kućne",
+          "industrijske": "Industrijske",
+          "resetkasteZastite": "Rešetkaste zaštite za prozore i vrata"
+        },
+        "ostalo": {
+          "rasvjetnaTijela": "RASVIJETNA TIJELA",
+          "kandelaberi": "KANDELABERI",
+          "klupe": "KLUPE ZA PARKOVE",
+          "kosevi": "KOŠEVI ZA SMEĆE",
+          "reklamniPanoi": "REKLAMNI PANOI",
+          "stupovi": "STUPOVI ZA ZASTAVE",
+          "kontejneri": {
+            "title": "KONTEINERI",
+            "stambeni": "STAMBENI",
+            "industrijski": "INDUSTRIJSKI"
+          },
+          "kiosci": "KIOSCI"
+        }
+      },
+      "modularneKuce": {
+        "title": "MODULARNE - MOBILNE KUĆE"
+      },
+      "pontoniKatamarani": {
+        "title": "PONTONI I KATAMARANI"
+      }
+    }
   }
 }
