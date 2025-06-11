@@ -3,8 +3,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import { generateBlurPlaceholder } from "../../lib/utils"
+import {useTranslations} from 'next-intl';
 
 export default function HomePage() {
+  const t = useTranslations('IndexPage');
+  console.log('Test', t('title'));
   return (
     <main className="min-h-screen">
       {/* Hero Section - Full Width */}
