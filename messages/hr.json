@@ -226,5 +226,106 @@
       },
       "hours": "Radno vrijeme: Ponedjeljak - Petak, 7:00 - 15:00"
     }
+  },
+  "Navigation": {
+    "content": "Sadržaj",
+    "steelStructures": {
+      "title": "ČELIČNE KONSTRUKCIJE",
+      "subheaders": {
+        "assemblyHalls": "Montažne hale, hangari, garaže",
+        "panoramicLift": "Panoramsko dizalo",
+        "glassMetalFacades": "Staklene i limene fasade",
+        "fencesFloors": "Ograde i podovi",
+        "houses": "Kuće",
+        "pontoonsCatamarans": "Pontoni i katamarani"
+      }
+    },
+    "aluminumPvcJoinery": {
+      "title": "ALU/PVC STOLARIJA",
+      "subheaders": {
+        "doors": "Dvokrilna, jednokrilna, automatska, segmentna podizna vrata",
+        "windows": "Prozori, staklene stijene, fasade od panela, staklene fasade, zimski vrtovi"
+      }
+    },
+    "industrialEquipment": {
+      "title": "INDUSTRIJSKA OPREMA",
+      "subheaders": {
+        "inoxValves": "INOX armatura (ventili, spojnice, prijelazi)",
+        "butterflyValves": "Leptir ventili",
+        "filtersExchangers": "Filteri i izmjenjivači",
+        "couplingsActuators": "Spojke i aktuatori",
+        "equipmentRepair": "Generalni popravak opreme",
+        "pipeSystems": "Cijevni sustavi i zatvarači",
+        "ballParking": "Parkirališta kugli i oprema",
+        "tanks": "Rezervoari (benzin, kiseline, lužine)",
+        "rubberizedTanks": "Gumirani rezervoari",
+        "gratingStairs": "Podne rešetke i stubišta",
+        "processingPlants": "Postrojenja za preradu",
+        "steelRubberTanks": "Gumirani čelični rezervoari",
+        "gearProtection": "Zaštita zupčanika",
+        "coolingUnit": "Rashladna jedinica",
+        "materialConveyors": "Transporteri materijala",
+        "craneRails": "Kranske šine i oprema",
+        "craneParts": "Dijelovi mačke krana"
+      }
+    },
+    "rubberizedPlasticizedProducts": {
+      "title": "GUMIRANI I PLASTIFICIRANI PROIZVODI",
+      "subheaders": {
+        "rubberValves": "Gumirani membranski ventili i nepovratni ventili",
+        "rubberPipes": "Gumirane cijevi i cjevni elementi",
+        "steelTanks": "Gumirani čelični spremnici",
+        "exchangers": "Gumirani anionski i kationski izmjenjivači"
+      }
+    },
+    "marineEquipment": {
+      "title": "OPREMA ZA MORA JEZERA RIJEKA – KAMPOVE",
+      "subheaders": {
+        "pontoonSize": "Osnovna veličina pontona 2 × 4 m",
+        "sunbathingModules": "Moduli sunčališta sa pristupnim stazama + plovci",
+        "pontoonsDescription": "Pontoni i plutajuće platforme - opis",
+        "kayaksEquipment": "Kajaci i rekreativna oprema",
+        "modularCabins": "Modularne mobilne kućice",
+        "waterGauges": "Vodomjerna okna",
+        "manholes": "Šahte"
+      }
+    },
+    "urbanEquipment": {
+      "title": "URBANA OPREMA",
+      "subheaders": {
+        "parkBenches": "Klupe i koševi za parkove",
+        "wasteBinA1": "Koš za otpadke A1 (60 litara)",
+        "benchC": "Klupa C (2 m)",
+        "wasteBinC1": "Koš za otpadke C1 (50 litara)",
+        "bollards": "Kandableri",
+        "pavilion": "Paviljon",
+        "bikeStands": "Stalci za bicikle / Stanice za stajališta / Jarboli za zastave / Reklamni panoi"
+      }
+    },
+    "constructionEquipment": {
+      "title": "OPREMA ZA GRAĐEVINARSTVO",
+      "subheaders": {
+        "concreteTunnels": "Tuneli za šutu",
+        "septicTanks": "Septička jama / separator ulja i masti / vodomjerne šahte",
+        "plasticWaterGauge": "Vodomjerno okno plastično",
+        "waterGaugeSpecs": "Vodomjerno okno (tehničke karakteristike)"
+      }
+    },
+    "plasticProducts": {
+      "title": "PLASTIČNI PROIZVODI / ROTO LJEV",
+      "subheaders": {
+        "barrels": "Kace",
+        "wineContainers": "Posude za vino",
+        "tanks1000L": "Rezervoari 1000L",
+        "rotoMoldContainers": "Posude Roto Ljev",
+        "waterMeterManholes": "Šahte za vodomjere",
+        "sandOilTraps": "Šahte / Pjeskolovi / Mastolovi",
+        "sewerManholes": "Šahte za kanalizaciju / Septičke jame",
+        "sprayerTanks": "Rezervoari za prskalice / Atomizere",
+        "tankWithPump": "Spremnik 1000L sa pumpom",
+        "concretePipes": "Cijevi za šutu",
+        "plasticBarriers": "Plastične barijere"
+      }
+    }
   }
 }

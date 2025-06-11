@@ -2,150 +2,152 @@
 
 import { useState } from "react"
 import { ChevronRight, ChevronDown } from "lucide-react"
+import {useTranslations} from 'next-intl';
 
 export default function ClientSideNavigation() {
+  const t = useTranslations('Navigation');
+  
   const sections = [
     {
       id: "celicneKonstrukcije",
-      title: "ČELIČNE KONSTRUKCIJE",
+      title: t('steelStructures.title'),
       subheaders: [
-        { id: "montazne-hale", title: "Montažne hale, hangari, garaže" },
-        { id: "panoramsko-dizalo", title: "Panoramsko dizalo" },
-        { id: "stakleneILimeneFasade", title: "Staklene i limene fasade" },
-        { id: "ogradeIPodovi", title: "Ograde i podovi" },
-        { id: "kuce", title: "Kuće" },
-        { id: "pontoniKatamarani", title: "Pontoni i katamarani" }
+        { id: "montazne-hale", title: t('steelStructures.subheaders.assemblyHalls') },
+        { id: "panoramsko-dizalo", title: t('steelStructures.subheaders.panoramicLift') },
+        { id: "stakleneILimeneFasade", title: t('steelStructures.subheaders.glassMetalFacades') },
+        { id: "ogradeIPodovi", title: t('steelStructures.subheaders.fencesFloors') },
+        { id: "kuce", title: t('steelStructures.subheaders.houses') },
+        { id: "pontoniKatamarani", title: t('steelStructures.subheaders.pontoonsCatamarans') }
       ]
     },
     {
       id: "aluPvcStolarija",
-      title: "ALU/PVC STOLARIJA",
+      title: t('aluminumPvcJoinery.title'),
       subheaders: [
-        { id: "segmentnaPodiznaVrata", title: "Dvokrilna, jednokrilna, automatska, segmentna podizna vrata" },
-        { id: "prozori", title: "Prozori, staklene stijene, fasade od panela, staklene fasade, zimski vrtovi" }
+        { id: "segmentnaPodiznaVrata", title: t('aluminumPvcJoinery.subheaders.doors') },
+        { id: "prozori", title: t('aluminumPvcJoinery.subheaders.windows') }
       ]
     },
     {
       id: "industrijskaOprema",
-      title: "INDUSTRIJSKA OPREMA",
+      title: t('industrialEquipment.title'),
       subheaders: [
-        { id: "inoxArmature", title: "INOX armatura (ventili, spojnice, prijelazi)" },
-        { id: "ventili", title: "Leptir ventili" },
-        { id: "filteriIzmjenjivaci", title: "Filteri i izmjenjivači" },
-        { id: "spojkeAktuatori", title: "Spojke i aktuatori" },
-        { id: "generalniPopravak", title: "Generalni popravak opreme" },
-        { id: "cijevniSustavi", title: "Cijevni sustavi i zatvarači" },
-        { id: "parkiralistaKugli", title: "Parkirališta kugli i oprema" },
-        { id: "rezervoari", title: "Rezervoari (benzin, kiseline, lužine)" },
-        { id: "rezervoari2", title: "Gumirani rezervoari" },
-        { id: "rezervoari4", title: "Podne rešetke i stubišta" },
-        { id: "postrojenja3", title: "Postrojenja za preradu" },
-        { id: "postrojenja2", title: "Gumirani čelični rezervoari" },
-        { id: "zastitaZupcanika", title: "Zaštita zupčanika" },
-        { id: "rashladnaJedinica", title: "Rashladna jedinica" },
-        { id: "transporteri1", title: "Transporteri materijala" },
-        { id: "kranskeSine", title: "Kranske šine i oprema" },
-        { id: "dijeloviMackeKrana", title: "Dijelovi mačke krana" },
+        { id: "inoxArmature", title: t('industrialEquipment.subheaders.inoxValves') },
+        { id: "ventili", title: t('industrialEquipment.subheaders.butterflyValves') },
+        { id: "filteriIzmjenjivaci", title: t('industrialEquipment.subheaders.filtersExchangers') },
+        { id: "spojkeAktuatori", title: t('industrialEquipment.subheaders.couplingsActuators') },
+        { id: "generalniPopravak", title: t('industrialEquipment.subheaders.equipmentRepair') },
+        { id: "cijevniSustavi", title: t('industrialEquipment.subheaders.pipeSystems') },
+        { id: "parkiralistaKugli", title: t('industrialEquipment.subheaders.ballParking') },
+        { id: "rezervoari", title: t('industrialEquipment.subheaders.tanks') },
+        { id: "rezervoari2", title: t('industrialEquipment.subheaders.rubberizedTanks') },
+        { id: "rezervoari4", title: t('industrialEquipment.subheaders.gratingStairs') },
+        { id: "postrojenja3", title: t('industrialEquipment.subheaders.processingPlants') },
+        { id: "postrojenja2", title: t('industrialEquipment.subheaders.steelRubberTanks') },
+        { id: "zastitaZupcanika", title: t('industrialEquipment.subheaders.gearProtection') },
+        { id: "rashladnaJedinica", title: t('industrialEquipment.subheaders.coolingUnit') },
+        { id: "transporteri1", title: t('industrialEquipment.subheaders.materialConveyors') },
+        { id: "kranskeSine", title: t('industrialEquipment.subheaders.craneRails') },
+        { id: "dijeloviMackeKrana", title: t('industrialEquipment.subheaders.craneParts') },
       ]
     },
     {
       id: "gumiraniIplastificiraniProizvodi",
-      title: "GUMIRANI I PLASTIFICIRANI PROIZVODI",
+      title: t('rubberizedPlasticizedProducts.title'),
       subheaders: [
-        { id: "gumirani-membranski-ventili", title: "Gumirani membranski ventili i nepovratni ventili" },
-        { id: "gumirane-cijevi", title: "Gumirane cijevi i cjevni elementi" },
-        { id: "gumirani-celikni-spremnici", title: "Gumirani čelični spremnici" },
-        { id: "gumirani-celikni-anionski-i-kationski-izmjenjivaci", title: "Gumirani anionski i kationski izmjenjivači" }
+        { id: "gumirani-membranski-ventili", title: t('rubberizedPlasticizedProducts.subheaders.rubberValves') },
+        { id: "gumirane-cijevi", title: t('rubberizedPlasticizedProducts.subheaders.rubberPipes') },
+        { id: "gumirani-celikni-spremnici", title: t('rubberizedPlasticizedProducts.subheaders.steelTanks') },
+        { id: "gumirani-celikni-anionski-i-kationski-izmjenjivaci", title: t('rubberizedPlasticizedProducts.subheaders.exchangers') }
       ]
     }, 
     {
       id: "opremaZaMore",
-      title: "OPREMA ZA MORA JEZERA RIJEKA – KAMPOVE",
+      title: t('marineEquipment.title'),
       subheaders: [
         {
           id: "pontoni-i-plutajuće-platforme-1",
-          title: "Osnovna veličina pontona 2 × 4 m"
+          title: t('marineEquipment.subheaders.pontoonSize')
         },
         {
           id: "pontoni-i-plutajuće-platforme-2",
-          title: "Moduli sunčališta sa pristupnim stazama + plovci"
+          title: t('marineEquipment.subheaders.sunbathingModules')
         },
         {
           id: "pontoni-i-plutajuće-platforme",
-          title: "Pontoni i plutajuće platforme - opis"
+          title: t('marineEquipment.subheaders.pontoonsDescription')
         },
         {
           id: "kajaci-i-rekreativna-oprema",
-          title: "Kajaci i rekreativna oprema"
+          title: t('marineEquipment.subheaders.kayaksEquipment')
         },
         {
           id: "pontoni-i-plutajuće-2",
-          title: "Modularne mobilne kućice"
+          title: t('marineEquipment.subheaders.modularCabins')
         },
         {
           id: "vodomjerna-okna",
-          title: "Vodomjerna okna"
+          title: t('marineEquipment.subheaders.waterGauges')
         },
         {
           id: "sahte",
-          title: "Šahte"
+          title: t('marineEquipment.subheaders.manholes')
         }
       ]
     },
     {
       id: "urbanaOprema",
-      title: "URBANA OPREMA",
+      title: t('urbanEquipment.title'),
       subheaders: [
         {
           id: "urbana-oprema-klupe-i-kosevi-za-parkove",
-          title: "Klupe i koševi za parkove",
+          title: t('urbanEquipment.subheaders.parkBenches'),
         },
         {
           id: "urbana-oprema2",
-          title: "Koš za otpadke A1 (60 litara)",
+          title: t('urbanEquipment.subheaders.wasteBinA1'),
         },
-        { id: "urbana-oprema3", title: "Klupa C (2 m)" },
+        { id: "urbana-oprema3", title: t('urbanEquipment.subheaders.benchC') },
         {
           id: "urbana-oprema4",
-          title: "Koš za otpadke C1 (50 litara)",
+          title: t('urbanEquipment.subheaders.wasteBinC1'),
         },
-        { id: "urbana-oprema-5", title: "Kandableri" },
-        { id: "urbana-5", title: "Paviljon" },
+        { id: "urbana-oprema-5", title: t('urbanEquipment.subheaders.bollards') },
+        { id: "urbana-5", title: t('urbanEquipment.subheaders.pavilion') },
         {
           id: "urbana5",
-          title:
-            "Stalci za bicikle / Stanice za stajališta / Jarboli za zastave / Reklamni panoi",
+          title: t('urbanEquipment.subheaders.bikeStands'),
         },
       ],
     }, 
     {
       id: "opremaZaGradevinarstvo",
-      title: "OPREMA ZA GRAĐEVINARSTVO",
+      title: t('constructionEquipment.title'),
       subheaders: [
-        { id: "tuneliZaSutu", title: "Tuneli za šutu" },
+        { id: "tuneliZaSutu", title: t('constructionEquipment.subheaders.concreteTunnels') },
         {
           id: "septickaJama",
-          title: "Septička jama / separator ulja i masti / vodomjerne šahte",
+          title: t('constructionEquipment.subheaders.septicTanks'),
         },
-        { id: "septickaJama2", title: "Vodomjerno okno plastično" },
-        { id: "vodomjernoOkno", title: "Vodomjerno okno (tehničke karakteristike)" },
+        { id: "septickaJama2", title: t('constructionEquipment.subheaders.plasticWaterGauge') },
+        { id: "vodomjernoOkno", title: t('constructionEquipment.subheaders.waterGaugeSpecs') },
       ],
     },
     {
       id: "strojeviZaPoljoprivreduIVocarstvo",
-      title: "PLASTIČNI PROIZVODI / ROTO LJEV",
+      title: t('plasticProducts.title'),
       subheaders: [
-        { id: "kace", title: "Kace" },
-        { id: "posude-za-vino", title: "Posude za vino" }, // This section doesn't have an explicit ID in HTML, but follows the "kace" section
-        { id: "rezervoari-roto", title: "Rezervoari 1000L" }, // Changed from "rezervoariroto" to match HTML id
-        { id: "posude-roto-ljev", title: "Posude Roto Ljev" }, // This section doesn't have an explicit ID but is identifiable by content
-        { id: "sahte-za-vodomjere", title: "Šahte za vodomjere" },
-        { id: "sahte-pjeskolovi-mastolovi", title: "Šahte / Pjeskolovi / Mastolovi" },
-        { id: "sahte-kanalizacija-septicke-jame", title: "Šahte za kanalizaciju / Septičke jame" },
-        { id: "rezervoari-prskalice-atomizere", title: "Rezervoari za prskalice / Atomizere" },
-        { id: "spremnik1000L", title: "Spremnik 1000L sa pumpom" },
-        { id: "prskalice400600L", title: "Cijevi za šutu" }, // Changed from "cijevi-za-sutu" to match HTML section id
-        { id: "plasticne-barijere", title: "Plastične barijere" } // This is part of the prskalice400600L section
+        { id: "kace", title: t('plasticProducts.subheaders.barrels') },
+        { id: "posude-za-vino", title: t('plasticProducts.subheaders.wineContainers') },
+        { id: "rezervoari-roto", title: t('plasticProducts.subheaders.tanks1000L') },
+        { id: "posude-roto-ljev", title: t('plasticProducts.subheaders.rotoMoldContainers') },
+        { id: "sahte-za-vodomjere", title: t('plasticProducts.subheaders.waterMeterManholes') },
+        { id: "sahte-pjeskolovi-mastolovi", title: t('plasticProducts.subheaders.sandOilTraps') },
+        { id: "sahte-kanalizacija-septicke-jame", title: t('plasticProducts.subheaders.sewerManholes') },
+        { id: "rezervoari-prskalice-atomizere", title: t('plasticProducts.subheaders.sprayerTanks') },
+        { id: "spremnik1000L", title: t('plasticProducts.subheaders.tankWithPump') },
+        { id: "prskalice400600L", title: t('plasticProducts.subheaders.concretePipes') },
+        { id: "plasticne-barijere", title: t('plasticProducts.subheaders.plasticBarriers') }
       ]
     }
   ]
@@ -174,7 +176,7 @@ export default function ClientSideNavigation() {
   return (
     <div className="w-full sticky top-20 z-10 h-fit">
       <div className="p-6 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md max-h-[80vh] overflow-y-auto">
-        <h3 className="text-lg font-medium mb-6 pb-2 border-b border-industrial-steel/20 text-left">Sadržaj</h3>
+        <h3 className="text-lg font-medium mb-6 pb-2 border-b border-industrial-steel/20 text-left">{t('content')}</h3>
         <nav className="space-y-1 text-left" aria-label="Page navigation">
           {sections.map((section) => (
             <div key={section.id} className="mb-2">
