@@ -76,5 +76,98 @@
       "email": "Kontaktirajte nas putem maila",
       "services": "Pregledajte naše usluge"
     }
+  }, 
+  "ServicesPage": {
+    "title": "Usluge",
+    "subtitle": "Barbarić Produkt d.o.o. pruža širok spektar usluga u metalnoj industriji, od bravarije i zavarivanja do strojne obrade i održavanja industrijskih postrojenja.",
+    "quote": {
+      "title": "Zatražite ponudu",
+      "description": "Za više informacija o našim uslugama ili za dobivanje ponude, molimo vas da nas kontaktirate putem našeg obrasca za kontakt ili direktno putem telefona.",
+      "contactForm": "Kontaktirajte nas putem obrasca"
+    },
+    "services": {
+      "metalwork": {
+        "title": "BRAVARIJA",
+        "cutting": {
+          "title": "REZANJE",
+          "subitems": {
+            "cnc": "CNC",
+            "gas": "PLINSKO",
+            "plasma": "PLAZMA"
+          }
+        },
+        "bending": {
+          "title": "SAVIJANJE",
+          "subitems": {
+            "angular": "KUTNO",
+            "circular": "KRUŽNO"
+          }
+        },
+        "welding": {
+          "title": "ZAVARIVANJE",
+          "subitems": {
+            "rel": "REL",
+            "migMag": "MIG MAG",
+            "tig": "TIG",
+            "gas": "PLINSKO"
+          }
+        },
+        "sandblasting": {
+          "title": "PJESKARENJE"
+        }
+      },
+      "machining": {
+        "title": "STROJNA OBRADA METALA I NEMETALA",
+        "subitems": {
+          "turning": "TOKARENJE",
+          "milling": "GLODANJE",
+          "drilling": "BUŠENJE",
+          "grinding": "BRUŠENJE",
+          "stamping": "ŠTANCANJE"
+        }
+      },
+      "software": {
+        "title": "SOFTVERSKA RJEŠENJA",
+        "subitems": {
+          "web": "WEB APLIKACIJE",
+          "mobile": "MOBILNE APLIKACIJE",
+          "industrial": "INDUSTRIJSKI SOFTVER",
+          "automation": "AUTOMATIZACIJA POSTROJENJA",
+          "smartHomes": "PAMETNE KUĆE"
+        }
+      },
+      "antiCorrosion": {
+        "title": "ANTIKOROZIVNA ZAŠTITA",
+        "subitems": {
+          "painting": "BOJANJE",
+          "rubberizing": "GUMIRANJE",
+          "plasticizing": "PLASTIFICIRANJE"
+        }
+      },
+      "sheetMetal": {
+        "title": "LIMARSKI RADOVI",
+        "subitems": {
+          "construction": {
+            "title": "GRAĐEVINSKA LIMARIJA",
+            "subitems": {
+              "roofing": "POKROVI",
+              "facades": "FASADE"
+            }
+          },
+          "insulation": "IZOLATERSKA LIMARIJA"
+        }
+      },
+      "plastics": {
+        "title": "PRERADA PLASTIČNIH MASA",
+        "subitems": {
+          "rotationalMolding": "ROTO LIJEV",
+          "welding": "ZAVARIVANJE",
+          "laminating": "LAMINIRANJE"
+        }
+      },
+      "maintenance": {
+        "title": "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA"
+      }
+    }
   }
 }
