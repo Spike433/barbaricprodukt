@@ -1422,7 +1422,7 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/GpGWhmrx/9.jpg"
+                        src="https://i.postimg.cc/02YWvD1c/9.png"
                         fill
                         alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI 5,7 i 10 m³"
                         className="hover:scale-105 transition-transform duration-500"
@@ -1441,7 +1441,7 @@ export default function ProductPageClient() {
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
-                        src="https://i.postimg.cc/k4FPwXpg/1.jpg"
+                        src="https://i.postimg.cc/ZnLCJ4P7/1.png"
                         fill
                         alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI za papir 5,7 i 10 m³"
                         className=" hover:scale-105 transition-transform duration-500"
