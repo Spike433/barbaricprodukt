@@ -1295,7 +1295,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/sgZYWFtX/30.jpg"
                         fill
-                        alt="ČELIČNO GUMENI TRANSPORTER"
+                        alt={t('industrijskaOprema.transporteri1.celicnoGumeni')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1305,7 +1305,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ČELIČNO GUMENI TRANSPORTER
+                    {t('industrijskaOprema.transporteri1.celicnoGumeni')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1322,7 +1322,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/sXJ92pb4/23.jpg"
                         fill
-                        alt="KRANSKE ŠINE"
+                        alt={t('industrijskaOprema.kranskeSine.title')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1332,7 +1332,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KRANSKE ŠINE
+                    {t('industrijskaOprema.kranskeSine.title')}
                     </figcaption>
                   </figure>
                   
@@ -1341,7 +1341,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/zBNF5d2f/20.jpg"
                         fill
-                        alt="MAČKA KRANA"
+                        alt={t('industrijskaOprema.kranskeSine.mackaKrana')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1351,7 +1351,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      MAČKA KRANA
+                      {t('industrijskaOprema.kranskeSine.mackaKrana')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1368,7 +1368,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/L8rVQ4zL/21.jpg"
                         fill
-                        alt="DIJELOVI MAČKE KRANA"
+                        alt={t('industrijskaOprema.dijeloviMackeKrana.title')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1378,7 +1378,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      DIJELOVI MAČKE KRANA
+                      {t('industrijskaOprema.dijeloviMackeKrana.title')}
                     </figcaption>
                   </figure>
                   
