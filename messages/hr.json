@@ -423,15 +423,15 @@
       },
       "generalniPopravak": {
         "title": "GENERALNI POPRAVAK",
-        "items": [
-          "BUŠOTINSKIH ZASUNA",
-          "DVOPUTIH I TROPUTIH SLAVINA",
-          "NEPOVRATNIH VENTILA",
-          "VATROZAŠTITA SPREMNIKA NAFTE",
-          "IZMJENJIVAČI TOPLINE",
-          "BRTVE",
-          "REHABILITACIJA CIJEVOVODA UVLAČENJEM PE CIJEVI"
-        ]
+        "items": {
+          "0": "BUŠOTINSKIH ZASUNA",
+          "1": "DVOPUTIH I TROPUTIH SLAVINA",
+          "2": "NEPOVRATNIH VENTILA",
+          "3": "VATROZAŠTITA SPREMNIKA NAFTE",
+          "4": "IZMJENJIVAČI TOPLINE",
+          "5": "BRTVE",
+          "6": "REHABILITACIJA CIJEVOVODA UVLAČENJEM PE CIJEVI"
+        }
       },
       "cijevniSustavi": {
         "title": "CIJEVNI SUSTAVI",
@@ -447,7 +447,8 @@
         "title": "REZERVOARI",
         "zaBenzinskePostaje": "REZERVOARI ZA BENZINSKE POSTAJE",
         "tehnoloskeKanalizacije": "REZERVOAR TEHNOLOŠKE KANALIZACIJE",
-        "gumiraniZaKiseline": "REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
+        "gumirani": "REZERVOAR GUMIRANI",
+        "zaKiseline": "ZA KISELINE I LUŽINE"
       },
       "rezervoari2": {
         "anionskiKationski": "ANIONSKI I KATIONSKI REZERVOARI",

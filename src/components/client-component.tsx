@@ -827,7 +827,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PERIFLEX SPOJKE
+                      {t('industrijskaOprema.spojkeAktuatori.periflexSpojke')}
                     </figcaption>
                   </figure>
                   
@@ -846,7 +846,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      AKTUATOR
+                      {t('industrijskaOprema.spojkeAktuatori.aktuator')}
                     </figcaption>
                   </figure>
                   
@@ -872,21 +872,21 @@ export default function ProductPageClient() {
               </div>
 
             <div className="w-full space-y-8">
-  {/* Generalni popravak section */}
-  <div className="mt-8 mb-6 pl-9 pt-4">
-    <h2 className="text-2xl font-bold mb-4 pl-8">GENERALNI POPRAVAK</h2>
-    <div className="flex flex-wrap ">
-      <div className="w-full md:w-1/2 space-y-2 pl-24 font-medium">
-        <div className="ml-4 text-md">BUŠOTINSKIH ZASUNA</div>
-        <div className="ml-4 text-md">DVOPUTIH I TROPUTIH SLAVINA</div>
-        <div className="ml-4 text-md">NEPOVRATNIH VENTILA</div>
-        <div className="ml-4 text-md">VATROZAŠTITA SPREMNIKA NAFTE</div>
-        <div className="ml-4 text-md">IZMJENJIVAČI TOPLINE</div>
-        <div className="ml-4 text-md">BRTVE</div>
-        <div className="ml-4 text-md">REHABILITACIJA CIJEVOVODA UVLAČENJEM PE CIJEVI</div>
-      </div>
-    </div>
-  </div>
+          {/* Generalni popravak section */}
+          <div className="mt-8 mb-6 pl-9 pt-4">
+            <h2 className="text-2xl font-bold mb-4 pl-8">{t('industrijskaOprema.generalniPopravak.title')}</h2>
+            <div className="flex flex-wrap ">
+            <div className="w-full md:w-1/2 space-y-2 pl-24 font-medium">
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.0')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.1')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.2')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.3')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.4')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.5')}</div>
+          <div className="ml-4 text-md">{t('industrijskaOprema.generalniPopravak.items.6')}</div>
+        </div>
+            </div>
+          </div>
 
   {/* Cijevni sustavi subsection */}
   <div id="cijevniSustavi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
@@ -896,7 +896,7 @@ export default function ProductPageClient() {
           <Image
             src="https://i.postimg.cc/nzdj5T6g/10.jpg"
             fill
-            alt="CIJEVNI ZATVARAČI"
+            alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
             className=" hover:scale-105 transition-transform duration-500"
             loading="lazy"
             placeholder="blur"
@@ -906,7 +906,7 @@ export default function ProductPageClient() {
           />
         </div>
         <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-          CIJEVNI ZATVARAČI
+          {t('industrijskaOprema.cijevniSustavi.cijevniZatvaraci')}
         </figcaption>
       </figure>
       
@@ -915,7 +915,7 @@ export default function ProductPageClient() {
           <Image
             src="https://i.postimg.cc/T245J7jW/12.jpg"
             fill
-            alt="POSUDA ZA VAĐENJE ČISTAČA PČ"
+            alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
             className=" hover:scale-105 transition-transform duration-500"
             loading="lazy"
             placeholder="blur"
@@ -925,7 +925,7 @@ export default function ProductPageClient() {
           />
         </div>
         <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-          POSUDA ZA VAĐENJE ČISTAČA PČ
+            {t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
         </figcaption>
       </figure>
     </div>
@@ -942,7 +942,7 @@ export default function ProductPageClient() {
           src="https://i.postimg.cc/T1pLXgxw/11.jpg"
           width={985}
           height={296}
-          alt="PARKIRALIŠTE KUGLI"
+          alt={t('industrijskaOprema.parkiralistaKugli.title')}
           className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
           placeholder="blur"
@@ -952,7 +952,7 @@ export default function ProductPageClient() {
         />
       </div>
       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        PARKIRALIŠTE KUGLI
+        {t('industrijskaOprema.parkiralistaKugli.title')}
       </figcaption>
     </figure>
     
@@ -963,7 +963,7 @@ export default function ProductPageClient() {
           src="https://i.postimg.cc/1X2gRXRK/13.jpg"
           width={1094}
           height={400}
-          alt="HVATAČ I ODAŠILJAČ KUGLI"
+          alt={t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
           className="object-contain hover:scale-105 transition-transform duration-500"
           style={{ objectPosition: '10% 10%' }}
           loading="lazy"
@@ -974,7 +974,7 @@ export default function ProductPageClient() {
         />
       </div>
       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        HVATAČ I ODAŠILJAČ KUGLI
+        {t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
       </figcaption>
     </figure>
   </div>
@@ -989,7 +989,7 @@ export default function ProductPageClient() {
           src="https://i.postimg.cc/3wTvDkXS/9.jpg"
           width={518}
           height={281}
-          alt="REZERVOARI ZA BENZINSKE POSTAJE REZERVOAR TEHNOLOŠKE KANALIZACIJE"
+          alt={t('industrijskaOprema.rezervoari.zaBenzinskePostaje')}
           className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
           placeholder="blur"
@@ -999,7 +999,7 @@ export default function ProductPageClient() {
         />
       </div>
       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        REZERVOARI ZA BENZINSKE POSTAJE <br/> REZERVOAR TEHNOLOŠKE KANALIZACIJE
+        {t('industrijskaOprema.rezervoari.zaBenzinskePostaje')} <br/> {t('industrijskaOprema.rezervoari.tehnoloskeKanalizacije')}
       </figcaption>
     </figure>
     
@@ -1010,7 +1010,7 @@ export default function ProductPageClient() {
           src="https://i.postimg.cc/wxV0xppY/15.jpg"
           width={1280}
           height={720}
-          alt="REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
+          alt={t('industrijskaOprema.rezervoari.zaKiseline')}
           className="object-contain hover:scale-105 transition-transform duration-500"
           loading="lazy"
           placeholder="blur"
@@ -1020,7 +1020,7 @@ export default function ProductPageClient() {
         />
       </div>
       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        REZERVOAR GUMIRANI <br/>ZA KISELINE I LUŽINE
+        {t('industrijskaOprema.rezervoari.gumirani')} <br/>{t('industrijskaOprema.rezervoari.zaKiseline')}
       </figcaption>
     </figure>
   </div>
@@ -1036,7 +1036,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
                         fill
-                        alt="ANIONSKI I KATIONSKI I REZERVOARI"
+                        alt={t('industrijskaOprema.rezervoari2.anionskiKationski')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1046,7 +1046,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ANIONSKI I KATIONSKI I REZERVOARI
+                      {t('industrijskaOprema.rezervoari2.anionskiKationski')}
                     </figcaption>
                   </figure>
                   
@@ -1055,7 +1055,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/vZ1zvx6G/18.jpg"
                         fill
-                        alt="GUMIRANI REZERVOARI ZA KISELINE"
+                        alt={t('industrijskaOprema.rezervoari2.gumiraniZaKiseline')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1065,7 +1065,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      GUMIRANI REZERVOARI ZA KISELINE
+                      {t('industrijskaOprema.rezervoari2.gumiraniZaKiseline')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1082,7 +1082,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/D0Bgxqgw/16.jpg"
                         fill
-                        alt="PODNE REŠETKE REŠETKASTA STUBIŠTA"
+                        alt={t('industrijskaOprema.rezervoari4.resetkastaStubista')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1092,7 +1092,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PODNE REŠETKE <br/> REŠETKASTA STUBIŠTA
+                    {t('industrijskaOprema.rezervoari4.podneResetke')} <br/> {t('industrijskaOprema.rezervoari4.resetkastaStubista')}
                     </figcaption>
                   </figure>
                   
@@ -1101,7 +1101,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/rpGBs82N/14.jpg"
                         fill
-                        alt="FILTERSKA JEDINICA ZA OTEŽANU VODU"
+                        alt={t('industrijskaOprema.rezervoari4.filterskaJedinica')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         style={{ objectPosition: '2% 50%' }}
@@ -1112,7 +1112,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      FILTERSKA JEDINICA ZA OTEŽANU VODU
+                    {t('industrijskaOprema.rezervoari4.filterskaJedinica')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1130,7 +1130,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/Y09gqT6t/33.jpg"
                         width={2644}
                         height={1490}
-                        alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
+                        alt={t('industrijskaOprema.postrojenja3.gumiraniCelicki')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1140,7 +1140,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">                      
-                      GUMIRANI ČELIČNI REZERVOAR SA RAZVODOM ZA KISELINE I LUŽINE 35 m³
+                    {t('industrijskaOprema.postrojenja3.gumiraniCelicki')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1148,29 +1148,29 @@ export default function ProductPageClient() {
 
               {/* Postrojenja 2 subsection */}
               <div id="postrojenja2" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '2644/1490' }}>
-        <Image
-          src="https://i.postimg.cc/gJG81xrX/32.jpg"
-          width={2644}
-          height={1490}
-          alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
-          className=" hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          quality={85}  // Optimized quality (default 75)
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(800, 0)}  // Higher resolution placeholder
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
-      </figcaption>
-    </figure>
-  </div>
-</div>
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '2644/1490' }}>
+                    <Image
+                      src="https://i.postimg.cc/gJG81xrX/32.jpg"
+                      width={2644}
+                      height={1490}
+                      alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      quality={85}  // Optimized quality (default 75)
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(800, 0)}  // Higher resolution placeholder
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
 
               {/* Zaštita zupčanika subsection */}
               <div
