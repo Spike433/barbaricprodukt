@@ -709,8 +709,8 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/CL9DSPzV/5.jpg"
                         fill
-                        alt="LEPTIR VENTIL"
-                        className=" hover:scale-105 transition-transform duration-500"
+                        alt={t('industrijskaOprema.ventili.leptirVentil')}
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -719,7 +719,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="text-sm font-medium text-center" itemProp="caption">
-                      LEPTIR VENTIL
+                      {t('industrijskaOprema.ventili.leptirVentil')}
                     </figcaption>
                   </figure>
                   
@@ -728,8 +728,8 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/RZftF7HJ/6.jpg"
                         fill
-                        alt="LEPTIR VENTIL"
-                        className=" hover:scale-105 transition-transform duration-500"
+                        alt={t('industrijskaOprema.ventili.leptirVentil')}
+                        className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -752,7 +752,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/xjxMFTQ8/3.jpg"
                         fill
-                        alt="FILTERI INDUSTRIJSKI (INOX)"
+                        alt={`${t('industrijskaOprema.filteriIzmjenjivaci.filteri')} ${t('industrijskaOprema.filteriIzmjenjivaci.industrijskiInox')}`}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -762,7 +762,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      FILTERI 
+                      {t('industrijskaOprema.filteriIzmjenjivaci.filteri')} 
                     </figcaption>
                   </figure>
                   
@@ -781,7 +781,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center -ml-15" itemProp="caption">
-                    INDUSTRIJSKI (INOX)
+                      {t('industrijskaOprema.filteriIzmjenjivaci.industrijskiInox')}
                     </figcaption>
                   </figure>
                   
@@ -790,7 +790,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/KzQBbmg9/1.jpg"
                         fill
-                        alt="IZMJENJIVAČI"
+                        alt={t('industrijskaOprema.filteriIzmjenjivaci.izmjenjivaci')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -800,7 +800,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center -ml-20" itemProp="caption">
-                      IZMJENJIVAČI
+                      {t('industrijskaOprema.filteriIzmjenjivaci.izmjenjivaci')}
                     </figcaption>
                   </figure>
                 </div>
