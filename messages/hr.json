@@ -394,17 +394,17 @@
       "title": "INDUSTRIJSKA OPREMA",
       "inoxArmature": {
         "title": "INOX ARMATURE",
-        "items": [
-          "IGLIČASTI VENTILI 700 bara",
-          "KUGLASTE SLAVINE",
-          "UBLAŽIVAČI UDARA ZA MANOMETRE",
-          "HOLENDERI",
-          "SPOJNICE",
-          "PRIJELAZI",
-          "MAZALICE 700 bara",
-          "BOCE ZA UZORKOVANJE 700 bara",
-          "NEPOVRATNI VENTILI"
-        ]
+        "items": {
+          "0": "IGLIČASTI VENTILI 700 bara",
+          "1": "KUGLASTE SLAVINE", 
+          "2": "UBLAŽIVAČI UDARA ZA MANOMETRE",
+          "3": "HOLENDERI",
+          "4": "SPOJNICE",
+          "5": "PRIJELAZI",
+          "6": "MAZALICE 700 bara",
+          "7": "BOCE ZA UZORKOVANJE 700 bara",
+          "8": "NEPOVRATNI VENTILI"
+        }
       },
       "ventili": {
         "title": "VENTILI",

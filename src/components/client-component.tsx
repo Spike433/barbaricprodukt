@@ -656,45 +656,47 @@ export default function ProductPageClient() {
             itemType="https://schema.org/Product"
           >
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              INDUSTRIJSKA OPREMA
+              {t('industrijskaOprema.title')}
             </h2>
             <div className="mt-8 pl-9 pt-4 text-left ml-20">
-              <h2 className="text-2xl font-bold mb-4">INOX ARMATURE</h2>              
+              <h2 className="text-2xl font-bold mb-4">
+              {t('industrijskaOprema.inoxArmature.title')}
+              </h2>              
             </div>
             <div className="space-y-4">
             <div id="inoxArmature" className="scroll-mt-24 pl-9">
-  <div className="flex flex-col md:flex-row">
-    {/* Image on the left */}
-    <figure className="w-full md:w-1/1" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg h-[500px]">
-        <Image
-          src="https://i.postimg.cc/L5bPqvDL/2.jpg"
-          fill
-          alt="INOX ARMATURE"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(500, 0)}
-          sizes="(max-width: 250px) 100vw, 500px"
-          itemProp="image"
-        />
-      </div>                   
-    </figure>
+            <div className="flex flex-col md:flex-row">
+              {/* Image on the left */}
+              <figure className="w-full md:w-1/1" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[500px]">
+                  <Image
+                    src="https://i.postimg.cc/L5bPqvDL/2.jpg"
+                    fill
+                    alt="INOX ARMATURE"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(500, 0)}
+                    sizes="(max-width: 250px) 100vw, 500px"
+                    itemProp="image"
+                  />
+                </div>                   
+              </figure>
 
-    {/* Text content on the right */}
-    <div className="w-full md:w-1/3 space-y-3 pl-0 md:pl-5 font-medium flex flex-col justify-center">
-      <div className="text-xs">IGLIČASTI VENTILI 700 bara</div>
-      <div className="text-xs">KUGLASTE SLAVINE</div>
-      <div className="text-xs">UBLAŽIVAČI UDARA ZA MANOMETRE</div>
-      <div className="text-xs">HOLENDERI</div>
-      <div className="text-xs">SPOJNICE</div>
-      <div className="text-xs">PRIJELAZI</div>
-      <div className="text-xs">MAZALICE 700 bara</div>
-      <div className="text-xs">BOCE ZA UZORKOVANJE 700 bara</div>
-      <div className="text-xs">NEPOVRATNI VENTILI</div>
-    </div>
-  </div>
-</div>
+              {/* Text content on the right */}
+              <div className="w-full md:w-1/3 space-y-3 pl-0 md:pl-5 font-medium flex flex-col justify-center">
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.0')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.1')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.2')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.3')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.4')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.5')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.6')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.7')}</div>
+                <div className="text-xs">{t('industrijskaOprema.inoxArmature.items.8')}</div>
+              </div>
+            </div>
+          </div>
 
               {/* Ventili subsection */}
               <div
