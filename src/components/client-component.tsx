@@ -1155,7 +1155,7 @@ export default function ProductPageClient() {
                       src="https://i.postimg.cc/gJG81xrX/32.jpg"
                       width={2644}
                       height={1490}
-                      alt="POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
+                      alt={t('industrijskaOprema.postrojenja2.zaPreraduBesavnihCijevi')}
                       className=" hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       quality={85}  // Optimized quality (default 75)
@@ -1166,7 +1166,7 @@ export default function ProductPageClient() {
                     />
                   </div>
                   <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI
+                    {t('industrijskaOprema.postrojenja2.zaPreraduBesavnihCijevi')}
                   </figcaption>
                 </figure>
               </div>
@@ -1183,7 +1183,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/RVhQMJdw/28.jpg"
                         fill
-                        alt="ZAŠTITA ZUPČANIKA -*INOX"
+                        alt={t('industrijskaOprema.zastitaZupcanika.inox')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1193,7 +1193,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ZAŠTITA ZUPČANIKA -*INOX
+                      {t('industrijskaOprema.zastitaZupcanika.inox')}
                     </figcaption>
                   </figure>
                   
@@ -1202,7 +1202,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/0NY7tY51/29.jpg"
                         fill
-                        alt="SEGMENTI ZAŠTITE ZUPČANIKA"
+                        alt={t('industrijskaOprema.zastitaZupcanika.inox')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1212,7 +1212,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      SEGMENTI ZAŠTITE ZUPČANIKA
+                      {t('industrijskaOprema.zastitaZupcanika.segmenti')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1227,7 +1227,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/Zn788Jb9/25.jpg"
                         fill
-                        alt="INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
+                        alt={t('industrijskaOprema.rashladnaJedinica.inoxLeptirVentil')}
                         className="object-cover hover:scale-105 transition-transform duration-500"          
                         style={{ objectPosition: '39% 40%' }}
                         loading="lazy"
@@ -1238,7 +1238,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      INOX LEPTIR VENTIL No 1500 mm <br/> AUTOMATSKI UPRAVLJAN
+                      {t('industrijskaOprema.rashladnaJedinica.inoxLeptirVentil')} <br/> {t('industrijskaOprema.rashladnaJedinica.automatskiUpravlja')}
                     </figcaption>
                   </figure>
                   
@@ -1248,7 +1248,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/brN0SZhc/24.jpg"
                         fill
-                        alt="RASHLADNA JEDINICA"
+                        alt={t('industrijskaOprema.rashladnaJedinica.title')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         style={{ objectPosition: '39% 50%' }}
                         loading="lazy"
@@ -1259,7 +1259,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      RASHLADNA JEDINICA
+                      {t('industrijskaOprema.rashladnaJedinica.title')}
                     </figcaption>
                   </figure>
                 </div>

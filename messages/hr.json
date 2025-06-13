@@ -472,7 +472,8 @@
       },
       "rashladnaJedinica": {
         "title": "RASHLADNA JEDINICA",
-        "inoxLeptirVentil": "INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
+        "inoxLeptirVentil": "INOX LEPTIR VENTIL No 1500 mm",
+        "automatskiUpravlja": "AUTOMATSKI UPRAVLJAN"
       },
       "transporteri1": {
         "title": "TRANSPORTERI",
