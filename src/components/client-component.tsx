@@ -20,176 +20,176 @@ export default function ProductPageClient() {
         
         {/* Main content */}
         <article className="order-2 lg:order-1 w-full lg:w-[70%] lg:pr-2">
-          {/* ČELIČNE KONSTRUKCIJE Section */}
+         {/* ČELIČNE KONSTRUKCIJE Section */}
           <section
-      id="celicneKonstrukcije"
-      className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-      itemScope
-      itemType="https://schema.org/Product"
-    >
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-        {t('celicneKonstrukcije.title')}
-      </h2>
-      <div className="space-y-4">
-        {/* Montažne hale subsection */}
-        <div
-          id="montazne-hale"
-          className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-        >
-          <div className="flex flex-wrap p-4">
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/nL3NGTc9/1.png"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.title')}
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.title')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/pTktR7kW/12.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.hangari')}
-                  className="object-[38%_50%] hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.hangari')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/CMmFgZ6G/5.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.garaze')}
-                  className="object-cover object-[20%_50%] hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"                        
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.garaze')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-                  className="hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/YS6HyjWm/11.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-                  className="hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/vTHbnMDx/4.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.panoramskoDizalo')}
-                  className="hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.panoramskoDizalo')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/FK5vZ074/10.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-                  className=" hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/DwbFLxf6/8.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.montazneHale.krovista')}
-                  className=" hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
-              </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.montazneHale.krovista')}
-              </figcaption>
-            </figure>
-            
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+            id="celicneKonstrukcije"
+            className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+            itemScope
+            itemType="https://schema.org/Product"
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+              {t('celicneKonstrukcije.title')}
+            </h2>
+            <div className="space-y-4">
+              {/* Montažne hale subsection */}
+              <div
+                id="montazne-hale"
+                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+              >
+                <div className="flex flex-wrap p-4">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/nL3NGTc9/1.png"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.title')}
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.title')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/pTktR7kW/12.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.hangari')}
+                        className="object-[38%_50%] hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.hangari')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/CMmFgZ6G/5.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.garaze')}
+                        className="object-cover object-[20%_50%] hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"                        
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.garaze')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                        className="hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/YS6HyjWm/11.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                        className="hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/vTHbnMDx/4.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.panoramskoDizalo')}
+                        className="hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.panoramskoDizalo')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/FK5vZ074/10.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                        className=" hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
+                    </figcaption>
+                  </figure>
+                  
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/DwbFLxf6/8.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.montazneHale.krovista')}
+                        className=" hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.montazneHale.krovista')}
+                    </figcaption>
+                  </figure>
+
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
               <div className="relative overflow-hidden rounded-lg h-[250px]">
                 <Image
                   src="https://i.postimg.cc/XqzSyCTt/15.jpg"
@@ -206,34 +206,34 @@ export default function ProductPageClient() {
               <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
               </figcaption>
             </figure>
-          </div>
-        </div>
-
-        {/* Staklene i limene fasade subsection */}
-        <div
-          id="stakleneILimeneFasade"
-          className="scroll-mt-0 pl-9"
-        >
-          <div className="flex flex-wrap p-4">
-            <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[250px]">
-                <Image
-                  src="https://i.postimg.cc/Bb6f6gwx/13.jpg"
-                  fill
-                  alt={t('celicneKonstrukcije.stakleneLimeneFasade.fasadeStakleneLimene')}
-                  className=" hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 250px) 100vw, 250px"
-                  itemProp="image"
-                />
+                </div>
               </div>
-              <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                {t('celicneKonstrukcije.stakleneLimeneFasade.fasadeStakleneLimene')}
-              </figcaption>
-            </figure>
-                  
+
+              {/* Staklene i limene fasade subsection */}
+              <div
+                id="stakleneILimeneFasade"
+                className="scroll-mt-0 pl-9"
+              >
+                <div className="flex flex-wrap p-4">
+                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <Image
+                        src="https://i.postimg.cc/Bb6f6gwx/13.jpg"
+                        fill
+                        alt={t('celicneKonstrukcije.stakleneLimeneFasade.fasadeStakleneLimene')}
+                        className=" hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                      {t('celicneKonstrukcije.stakleneLimeneFasade.fasadeStakleneLimene')}
+                    </figcaption>
+                  </figure>
+                        
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
@@ -249,16 +249,16 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
+                      {t('celicneKonstrukcije.stakleneLimeneFasade.krovniProzori')}
                     </figcaption>
                   </figure>
-                  
+                        
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
                         src="https://i.postimg.cc/qMqpMk99/6.jpg"
                         fill
-                        alt="KROVIŠTA"
+                        alt={t('celicneKonstrukcije.montazneHale.krovista')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -268,16 +268,16 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KROVIŠTA
+                      {t('celicneKonstrukcije.montazneHale.krovista')}
                     </figcaption>
                   </figure>
-                  
+                        
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
                         src="https://i.postimg.cc/44LT0Dmw/14.jpg"
                         fill
-                        alt="KROVNI PROZORI"
+                        alt={t('celicneKonstrukcije.stakleneLimeneFasade.krovniProzori')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -287,16 +287,16 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KROVNI PROZORI
+                      {t('celicneKonstrukcije.stakleneLimeneFasade.krovniProzori')}
                     </figcaption>
                   </figure>
-                  
+                        
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
                         src="https://i.postimg.cc/pTv22KHZ/2.jpg"
                         fill
-                        alt="KROVNE KUPOLE"
+                        alt={t('celicneKonstrukcije.stakleneLimeneFasade.krovneKupole')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -306,16 +306,16 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KROVNE KUPOLE
+                      {t('celicneKonstrukcije.stakleneLimeneFasade.krovneKupole')}
                     </figcaption>
                   </figure>
-                  
+                        
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[250px]">
                       <Image
                         src="https://i.postimg.cc/wvk933xd/3.jpg"
                         fill
-                        alt="SVJETLARNICI"
+                        alt={t('celicneKonstrukcije.stakleneLimeneFasade.svjetlarnici')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -325,35 +325,37 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      SVJETLARNICI
+                      {t('celicneKonstrukcije.stakleneLimeneFasade.svjetlarnici')}
                     </figcaption>
                   </figure>
                 </div>
               </div>
 
               <div className="w-full space-y-8">
-  {/* Industrijska vrata section */}
-  <div className="mt-8 mb-6 pl-9 pt-4 text-center">
-    <h2 className="text-2xl font-bold mb-4">Industrijska vrata klizna podizna automatska</h2>
-    <h2 className="text-2xl font-bold mb-4">Ulazna automatska dvokrilna i klizna vrata automatska</h2>    
-  </div>
+                {/* Industrijska vrata section */}
+                <div className="mt-8 mb-6 pl-9 pt-4 text-center">
+                  <h2 className="text-2xl font-bold mb-4">
+                    {t('celicneKonstrukcije.industrijskaVrata.title1')}
+                  </h2>
+                  <h2 className="text-2xl font-bold mb-4">
+                    {t('celicneKonstrukcije.industrijskaVrata.title2')}
+                  </h2>    
+                </div>
 
-  {/* Ograde i podovi subsection */}
-  <div id="ogradeIPodovi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
-    <div className="flex flex-wrap">
-      {/* Ograde content */}
-      <div className="w-full md:w-1/2 space-y-2 p-4 font-medium">
-        <div className="text-lg font-semibold">OGRADE</div>
-        <div className="ml-4 text-lg">Balkonske</div>
-        <div className="ml-4 text-lg">Kućne</div>
-        <div className="ml-4 text-lg">Industrijske</div>
-        <div className="ml-4 text-lg">Rešetkaste zaštite za prozore i vrata</div>
-      </div>
-
-     
-      </div>
-  </div>
-</div>
+            {/* Ograde i podovi subsection */}
+              <div id="ogradeIPodovi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
+                <div className="flex flex-wrap">
+                  {/* Ograde content */}
+                  <div className="w-full md:w-1/2 space-y-2 p-4 font-medium">
+                    <div className="text-lg font-semibold">OGRADE</div>
+                    <div className="ml-4 text-lg">Balkonske</div>
+                    <div className="ml-4 text-lg">Kućne</div>
+                    <div className="ml-4 text-lg">Industrijske</div>
+                    <div className="ml-4 text-lg">Rešetkaste zaštite za prozore i vrata</div>
+                  </div>
+              </div>
+            </div>
+              </div>
 
               {/* Ograde i podovi subsection */}
               <div
@@ -418,19 +420,22 @@ export default function ProductPageClient() {
                     </figcaption>
                   </figure>
                   <div className="w-full md:w-1/2 space-y-2 p-20 font-medium">
-                    <div className="text-lg">RASVIJETNA TIJELA</div>
-                    <div className="text-lg">KANDELABERI</div>
-                    <div className="text-lg">KLUPE ZA PARKOVE</div>
-                    <div className="text-lg">KOŠEVI ZA SMEĆE</div>
-                    <div className="text-lg">REKLAMNI PANOI</div>
-                    <div className="text-lg">STUPOVI ZA ZASTAVE</div>
-                    
-                    <div className="mt-4 text-lg">KONTEINERI</div>
-                    <div className="ml-8 text-lg">STAMBENI</div>
-                    <div className="ml-8 text-lg">INDUSTRIJSKI</div>
-                    
-                    <div className="mt-8 text-lg">KIOSCI</div>
-                  </div>
+                    <div className="text-lg font-semibold">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.title')}
+                        </div>
+                        <div className="ml-4 text-lg">
+                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.balkonske')}
+                        </div>
+                        <div className="ml-4 text-lg">
+                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.kucne')}
+                        </div>
+                        <div className="ml-4 text-lg">
+                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.industrijske')}
+                        </div>
+                        <div className="ml-4 text-lg">
+                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.resetkasteZastite')}
+                        </div>
+                    </div>
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
@@ -450,41 +455,39 @@ export default function ProductPageClient() {
               </div>
 
               {/* Kuće subsection */}
-            <div id="kuce" className="mt-8 scroll-mt-24 pl-9">
-              <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
-                    <Image
-                      src="https://i.postimg.cc/136hf4MY/21.jpg"
-                      width={1200}
-                      height={593}
-                      alt="MODULARNE -MOBILNE KUĆE"
-                      className="w-full h-auto  hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(250, 0)}
-                      sizes="(max-width: 1200px) 100vw, 1200px"
-                      itemProp="image"
-                    />
-                  </div>
-                  <figcaption className="mt-2 text-xl font-medium text-left" itemProp="caption">
-                    <strong>MODULARNE -MOBILNE KUĆE</strong>
-                  </figcaption>
-                </figure>
+              <div id="kuce" className="mt-8 scroll-mt-24 pl-9">
+                <div className="flex flex-wrap p-4">
+                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
+                      <Image
+                        src="https://i.postimg.cc/136hf4MY/21.jpg"
+                        width={1200}
+                        height={593}
+                        alt={t('celicneKonstrukcije.modularneKuce.title')}
+                        className="w-full h-auto  hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 1200px) 100vw, 1200px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-xl font-medium text-left" itemProp="caption">
+                      <strong>{t('celicneKonstrukcije.modularneKuce.title')}</strong>
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
-            </div>
+
               {/* Pontoni i katamarani subsection */}
-              <div
-                id="pontoniKatamarani"
-                className="scroll-mt-24 pl-9"
-              >
+              <div id="pontoniKatamarani" className="scroll-mt-24 pl-9">
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image
                         src="https://i.postimg.cc/j5vNB6pB/4.jpg"
                         fill
-                        alt="PONTONI I KATAMARANI"
+                        alt={t('celicneKonstrukcije.pontoniKatamarani.title')}
                         className="object-cover object-[50%_35%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -494,12 +497,11 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="ml-1 mt-2 text-xl font-medium text-left" itemProp="caption">
-                      <strong>PONTONI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KATAMARANI</strong>
+                      <strong>{t('celicneKonstrukcije.pontoniKatamarani.title')}</strong>
                     </figcaption>
                   </figure>
                 </div>
               </div>
-
             </div>
           </section>
 
@@ -511,8 +513,7 @@ export default function ProductPageClient() {
             itemType="https://schema.org/Product"
           >
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-            ALU STOLARIJA <br/> PVC STOLARIJA
-
+              {t('aluPvcStolarija.title')}
             </h2>
             <div className="space-y-4">
               {/* Segmentna podizna vrata subsection */}
@@ -526,7 +527,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/MTykZYJG/2.jpg"
                         fill
-                        alt="DVOKRINAI JEDNOKRILNA KLIZNA"
+                        alt={t('aluPvcStolarija.segmentnaPodiznaVrata.dvokrilnaJednokrilnaKlizna')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -536,7 +537,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      DVOKRILNA JEDNOKRILNA KLIZNA
+                      {t('aluPvcStolarija.segmentnaPodiznaVrata.dvokrilnaJednokrilnaKlizna')}
                     </figcaption>
                   </figure>
                   
@@ -545,7 +546,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/FzmMYJhV/4.jpg"
                         fill
-                        alt="AUTOMATSKA VRATA"
+                        alt={t('aluPvcStolarija.segmentnaPodiznaVrata.automatskaVrata')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -555,7 +556,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      AUTOMATSKA VRATA
+                      {t('aluPvcStolarija.segmentnaPodiznaVrata.automatskaVrata')}
                     </figcaption>
                   </figure>
                   
@@ -564,7 +565,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/m2ZxRMXb/6.jpg"
                         fill
-                        alt="PODIZNE RAMPE"
+                        alt={t('aluPvcStolarija.segmentnaPodiznaVrata.podizneRampe')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -574,8 +575,8 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    SEGMENTNA PODIZNA VRATA   PODIZNE RAMPE
-                     </figcaption>
+                      {t('aluPvcStolarija.segmentnaPodiznaVrata.podizneRampe')}
+                    </figcaption>
                   </figure>
                 </div>
               </div>
@@ -591,7 +592,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                         fill
-                        alt="PROZORI STAKLENE STIJENE FASADE OD PANELA"
+                        alt={t('aluPvcStolarija.prozori.prozoriStakleneStijene')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -601,7 +602,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PROZORI <br/> STAKLENE STIJENE <br/> FASADE OD PANELA
+                      {t('aluPvcStolarija.prozori.prozoriStakleneStijene')}
                     </figcaption>
                   </figure>
                   
@@ -610,7 +611,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/WpwRQS7W/5.jpg"
                         fill
-                        alt="STAKLENE FASADE"
+                        alt={t('aluPvcStolarija.prozori.stakleneFasade')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -620,7 +621,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      STAKLENE FASADE
+                      {t('aluPvcStolarija.prozori.stakleneFasade')}
                     </figcaption>
                   </figure>
                   
@@ -629,7 +630,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/brTKkNJc/1.jpg"
                         fill
-                        alt="ZIMSKI VRTOVI"
+                        alt={t('aluPvcStolarija.prozori.zimskiVrtovi')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -639,7 +640,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ZIMSKI VRTOVI
+                      {t('aluPvcStolarija.prozori.zimskiVrtovi')}
                     </figcaption>
                   </figure>
                 </div>

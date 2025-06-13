@@ -1,7 +1,4 @@
 { 
-  "Navigation": {
-    "home": "Početna"
-  },
   "NotFoundPage": {
     "description": "Molimo provjerite adresnu traku preglednika ili koristite navigaciju za odlazak na poznatu stranicu.",
     "title": "Stranica nije pronađena"
@@ -378,6 +375,175 @@
       },
       "pontoniKatamarani": {
         "title": "PONTONI I KATAMARANI"
+      }
+    },
+    "aluPvcStolarija": {
+      "title": "ALU STOLARIJA <br/> PVC STOLARIJA",
+      "segmentnaPodiznaVrata": {
+        "dvokrilnaJednokrilnaKlizna": "DVOKRILNA JEDNOKRILNA KLIZNA",
+        "automatskaVrata": "AUTOMATSKA VRATA",
+        "podizneRampe": "PODIZNE RAMPE"
+      },
+      "prozori": {
+        "prozoriStakleneStijene": "PROZORI <br/> STAKLENE STIJENE <br/> FASADE OD PANELA",
+        "stakleneFasade": "STAKLENE FASADE",
+        "zimskiVrtovi": "ZIMSKI VRTOVI"
+      }
+    },
+    "industrijskaOprema": {
+      "title": "INDUSTRIJSKA OPREMA",
+      "inoxArmature": {
+        "title": "INOX ARMATURE",
+        "items": [
+          "IGLIČASTI VENTILI 700 bara",
+          "KUGLASTE SLAVINE",
+          "UBLAŽIVAČI UDARA ZA MANOMETRE",
+          "HOLENDERI",
+          "SPOJNICE",
+          "PRIJELAZI",
+          "MAZALICE 700 bara",
+          "BOCE ZA UZORKOVANJE 700 bara",
+          "NEPOVRATNI VENTILI"
+        ]
+      },
+      "ventili": {
+        "title": "VENTILI",
+        "leptirVentil": "LEPTIR VENTIL"
+      },
+      "filteriIzmjenjivaci": {
+        "title": "FILTERI I IZMJENJIVAČI",
+        "filteri": "FILTERI",
+        "industrijskiInox": "INDUSTRIJSKI (INOX)",
+        "izmjenjivaci": "IZMJENJIVAČI"
+      },
+      "spojkeAktuatori": {
+        "title": "SPOJKE I AKTUATORI",
+        "periflexSpojke": "PERIFLEX SPOJKE",
+        "aktuator": "AKTUATOR"
+      },
+      "generalniPopravak": {
+        "title": "GENERALNI POPRAVAK",
+        "items": [
+          "BUŠOTINSKIH ZASUNA",
+          "DVOPUTIH I TROPUTIH SLAVINA",
+          "NEPOVRATNIH VENTILA",
+          "VATROZAŠTITA SPREMNIKA NAFTE",
+          "IZMJENJIVAČI TOPLINE",
+          "BRTVE",
+          "REHABILITACIJA CIJEVOVODA UVLAČENJEM PE CIJEVI"
+        ]
+      },
+      "cijevniSustavi": {
+        "title": "CIJEVNI SUSTAVI",
+        "cijevniZatvaraci": "CIJEVNI ZATVARAČI",
+        "posudaZaVadjenje": "POSUDA ZA VAĐENJE ČISTAČA PČ"
+      },
+      "parkiralistaKugli": {
+        "title": "PARKIRALIŠTA KUGLI",
+        "parkiraliste": "PARKIRALIŠTE KUGLI",
+        "hvatacOdasiljac": "HVATAČ I ODAŠILJAČ KUGLI"
+      },
+      "rezervoari": {
+        "title": "REZERVOARI",
+        "zaBenzinskePostaje": "REZERVOARI ZA BENZINSKE POSTAJE",
+        "tehnoloskeKanalizacije": "REZERVOAR TEHNOLOŠKE KANALIZACIJE",
+        "gumiraniZaKiseline": "REZERVOAR GUMIRANI ZA KISELINE I LUŽINE"
+      },
+      "rezervoari2": {
+        "anionskiKationski": "ANIONSKI I KATIONSKI REZERVOARI",
+        "gumiraniZaKiseline": "GUMIRANI REZERVOARI ZA KISELINE"
+      },
+      "rezervoari4": {
+        "podneResetke": "PODNE REŠETKE",
+        "resetkastaStubista": "REŠETKASTA STUBIŠTA",
+        "filterskaJedinica": "FILTERSKA JEDINICA ZA OTEŽANU VODU"
+      },
+      "postrojenja3": {
+        "gumiraniCelicki": "GUMIRANI ČELIČNI REZERVOAR SA RAZVODOM ZA KISELINE I LUŽINE 35 m³"
+      },
+      "postrojenja2": {
+        "zaPreraduBesavnihCijevi": "POSTROJENJE ZA PRERADU BEŠAVNIH CIJEVI"
+      },
+      "zastitaZupcanika": {
+        "title": "ZAŠTITA ZUPČANIKA",
+        "inox": "ZAŠTITA ZUPČANIKA - INOX",
+        "segmenti": "SEGMENTI ZAŠTITE ZUPČANIKA"
+      },
+      "rashladnaJedinica": {
+        "title": "RASHLADNA JEDINICA",
+        "inoxLeptirVentil": "INOX LEPTIR VENTIL No 1500 mm AUTOMATSKI UPRAVLJAN"
+      },
+      "transporteri1": {
+        "title": "TRANSPORTERI",
+        "celicnoGumeni": "ČELIČNO GUMENI TRANSPORTER",
+        "trakaZaTransport": "TRAKA ZA TRANSPORT MATERIJALA"
+      },
+      "kranskeSine": {
+        "title": "KRANSKE ŠINE",
+        "mackaKrana": "MAČKA KRANA"
+      },
+      "dijeloviMackeKrana": {
+        "title": "DIJELOVI MAČKE KRANA"
+      }
+    },
+    "komunalnaEkoOprema": {
+      "title": "KOMUNALNA EKO OPREMA",
+      "kontejneri": {
+        "title": "KONTEJNERI",
+        "komunalni": "KOMUNALNI KONTEINERI OTVORENI, ZATVORENI 5,7 i 10 m³",
+        "zaPapir": "KOMUNALNI KONTEINERI OTVORENI, ZATVORENI za papir 5,7 i 10 m³",
+        "plasticneKante": "Plastične kante za smeće, 60, 100, 200 i 300 lit",
+        "zaElektronskiOtpad": "KONTEINER 7 M3 ZA ELEKTRONSKI OTPAD I KRPE",
+        "roloKontejner": "ROLO KONTEINER 32 m³"
+      },
+      "septicTankSeparatori": {
+        "title": "SEPTIČKE JAME I SEPARATORI",
+        "jednokomorne": "SEPTIČKE JAME, SEPARATORI ULJA I MASTI 800 LIT JEDNOKOMORNE",
+        "dvokomorne": "DVOKOMORNE",
+        "trokomorne": "TROKOMORNE",
+        "rezervoariUlje": "Rezervoari sa duplom stijenkom za otpadno ulje",
+        "plasticnePosude": "Plastične posude za otpadno ulje",
+        "rezervoari20m3": "Rezervoari za otpadno ulje 20m³",
+        "tehnoloskeKanalizacije": "REZERVOARI TEHNOLOŠKE KANALIZACIJE 35m³",
+        "saTankvanom": "REZERVOAR ZA OTPADNO ULJE SA TANKVANOM OD 1000 DO 20000 LIT."
+      },
+      "tankvaneRegali": {
+        "title": "TANKVANE I REGALI",
+        "tankvane": "TANKVANE",
+        "saKotacima": "TANKVANE SA KOTAČIMA",
+        "regaliBacvi": "REGALI BAČVI SA TANKVANOM DO 9 BAČVI",
+        "saPumpom": "REGALI BAČVI SA PUMPOM",
+        "zaPunjenje": "REGALI BAČVI SA PUMPOM ZA PUNJENJE I ISPUNJENJE",
+        "otvoreniZatvoreni": "REGALI BAČVI SA TANKVANOM OTVORENI I ZATVORENI ZA PUNJENJE, PRAŽNJENJE I DOZIRANJE"
+      },
+      "postrojenja": {
+        "title": "POSTROJENJA",
+        "filterskeJedinice": "FILTERSKE JEDINICE ZA OTEŽANU VODU",
+        "rezervoarKiseline": "REZERVOAR SPREMIŠTE KISELINA I LUŽINA"
+      },
+      "posudeZaAkumulatore": {
+        "title": "POSUDE ZA AKUMULATORE I OTPAD",
+        "akumulatori": "POSUDE ZA AKUMULATORE, ZAULJENE KRPE I PIJESAK",
+        "plinskiOrmari": "PLINSKI ORMARI"
+      },
+      "posude2": {
+        "sahte": "ŠAHTE",
+        "barijere": "BARIJERE ZA CESTE",
+        "pregrade": "PREGGRADE ZA CESTE"
+      },
+      "spremista": {
+        "title": "SPREMIŠTA",
+        "mobilna": "MOBILNA SPREMIŠTA",
+        "zapaljivihTecnosti": "SPREMIŠTA ZAPALJIVIH TEKUĆINA",
+        "bojaILakova": "SPREMIŠTA BOJA I LAKOVA",
+        "boca": "SPREMIŠTE BOCA"
+      },
+      "spremista1": {
+        "rezervoar1000": "REZERVOAR 1000 LITARA SA PUMPOM I BROJILOM ZA ISTAKANJE SA JEDNOM I DVIJE STIJENKE OTVORENI I ZATVORENI",
+        "resetke": "REŠETKE PODNE U INDUSTRIJI ZA STUBIŠTA ZA OGRADE"
+      },
+      "spremista2": {
+        "mobilnoSpremiste": "MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM ZA OPASNI OTPAD"
       }
     }
   }
