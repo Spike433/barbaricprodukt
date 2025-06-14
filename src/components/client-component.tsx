@@ -3551,7 +3551,7 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[650px]">
+                        <div className="relative overflow-hidden rounded-lg h-[690px]">
                           <Image
                             src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
                             fill
