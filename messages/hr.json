@@ -20,7 +20,7 @@
   },
   "LocaleSwitcher": {
     "label": "Promijeni jezik",
-    "locale": "{locale, select, en {EN} hr {HR} de {DE} fr {FR} it {IT} ch {CH} other {Nepoznato}}"
+    "locale": "{locale, select, en {EN} hr {HR} other {Nepoznato}}"
   },
   "HomePage": {
     "title": "Barbarić Produkt - Industrijska rješenja",
