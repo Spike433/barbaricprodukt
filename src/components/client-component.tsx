@@ -1465,7 +1465,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
                         fill
-                        alt="Plastične kante za smeće, 60, 100, 200 i 300 lit"
+                        alt={t('komunalnaEkoOprema.kontejneri.plasticneKante')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1475,7 +1475,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Plastične kante za smeće, 60, 100, 200 i 300 lit
+                      {t('komunalnaEkoOprema.kontejneri.plasticneKante')}
                     </figcaption>
                   </figure>
                   
@@ -1484,7 +1484,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/CxX0x28S/31.jpg"
                         fill
-                        alt="KONTEINER 7 M3 ZA ELEKTRONSKI OTPAD I KRPE"
+                        alt={t('komunalnaEkoOprema.kontejneri.zaElektronskiOtpad')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1494,7 +1494,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KONTEINER 7 M3 ZA ELEKTRONSKI OTPAD I KRPE
+                      {t('komunalnaEkoOprema.kontejneri.zaElektronskiOtpad')}
                     </figcaption>
                   </figure>
                   
@@ -1519,7 +1519,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
                         fill
-                        alt="ROLO KONTEINER 32 m³"
+                        alt={t('komunalnaEkoOprema.kontejneri.roloKontejner')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1529,7 +1529,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ROLO KONTEINER 32 m³
+                      {t('komunalnaEkoOprema.kontejneri.roloKontejner')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1546,7 +1546,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/XqL3N7fz/26.jpg"
                         fill
-                        alt="SEPTIČKE JAME ,SEPARATORI ULJA I MASTI 800 LIT JEDNOKOMORNA DVOKOMORNE I TROKOMORNE"
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.jednokomorne')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1556,7 +1556,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      SEPTČKE JAME ,SEPARATORI ULJA I MASTI 800 LIT JEDNOKOMORNA DVOKOMORNE I TROKOMORNE
+                      {t('komunalnaEkoOprema.septicTankSeparatori.jednokomorne')}
                     </figcaption>
                   </figure>
                   
@@ -1565,7 +1565,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/v8tGtXJt/27.jpg"
                         fill
-                        alt=""
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.dvokomorne')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1575,7 +1575,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      DVOKOMORNE
+                      {t('komunalnaEkoOprema.septicTankSeparatori.dvokomorne')}
                     </figcaption>
                   </figure>
                   
@@ -1584,7 +1584,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/WbpTWgjL/28.jpg"
                         fill
-                        alt=""
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.trokomorne')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1594,7 +1594,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      TROKOMORNE
+                      {t('komunalnaEkoOprema.septicTankSeparatori.trokomorne')}
                     </figcaption>
                   </figure>
                   
@@ -1603,7 +1603,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/VvLpR9tK/12.jpg"
                         fill
-                        alt="Rezervoari sa duplom stijenkom za otpadno ulje"
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.rezervoariUlje')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1613,7 +1613,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Rezervoari sa duplom stijenkom za otpadno ulje
+                      {t('komunalnaEkoOprema.septicTankSeparatori.rezervoariUlje')}
                     </figcaption>
                   </figure>
                   
@@ -1622,7 +1622,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/5NP1ZyNH/29.jpg"
                         fill
-                        alt="Plastične posude za otpadno ulje"
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.plasticnePosude')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1632,7 +1632,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Plastične posude za otpadno ulje
+                      {t('komunalnaEkoOprema.septicTankSeparatori.plasticnePosude')}
                     </figcaption>
                   </figure>
                   
@@ -1641,7 +1641,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/MTyq4Yvx/25.jpg"
                         fill
-                        alt="Rezervoari za otpadno ulje 20m³"
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.rezervoari20m3')}
                         className="object-cover object-[50%_20%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1651,7 +1651,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      Rezervoari za otpadno ulje 20m³
+                      {t('komunalnaEkoOprema.septicTankSeparatori.rezervoari20m3')}
                     </figcaption>
                   </figure>
                   
@@ -1660,7 +1660,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/pVCtFrj0/4.jpg"
                         fill
-                        alt="REZERVOARI TEHNOLOŠKE KANALIZACIJE 35m³"
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.tehnoloskeKanalizacije')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1670,7 +1670,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOARI TEHNOLOŠKE KANALIZACIJE 35m³
+                      {t('komunalnaEkoOprema.septicTankSeparatori.tehnoloskeKanalizacije')}
                     </figcaption>
                   </figure>
                   
@@ -1679,7 +1679,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/d1MJ4fQ4/23.jpg"
                         fill
-                        alt="REZERVOAR ZA OTPADNO ULJE SA TANKVANOM OD 1000 DO 20000 LIT."
+                        alt={t('komunalnaEkoOprema.septicTankSeparatori.saTankvanom')}
                         className="object-cover object-[37%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1689,7 +1689,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOAR ZA OTPADNO ULJE <br/>SA TANKVANOM OD 1000 DO 20000 LIT.
+                      {t('komunalnaEkoOprema.septicTankSeparatori.saTankvanom')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1706,7 +1706,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/Kj0SSpFX/3.jpg"
                         fill
-                        alt="TANKVANE"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.tankvane')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1716,7 +1716,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      TANKVANE
+                      {t('komunalnaEkoOprema.tankvaneRegali.tankvane')}
                     </figcaption>
                   </figure>
                   
@@ -1725,7 +1725,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/2SbpMxKJ/5.jpg"
                         fill
-                        alt="TANKVANE SA KOTAČIMA"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.saKotacima')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1735,7 +1735,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      TANKVANE SA KOTAČIMA
+                      {t('komunalnaEkoOprema.tankvaneRegali.saKotacima')}
                     </figcaption>
                   </figure>
                   
@@ -1744,7 +1744,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/5NkdsrnL/8.jpg"
                         fill
-                        alt="REGALI BAČVI SA TANKVANOM DO 9 BAČVI"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.regaliBacvi')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1754,7 +1754,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REGALI BAČVI SA TANKVANOM DO 9 BAČVI
+                      {t('komunalnaEkoOprema.tankvaneRegali.regaliBacvi')}
                     </figcaption>
                   </figure>
                   
@@ -1763,7 +1763,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/L6sFBSBm/6.jpg"
                         fill
-                        alt="REGALI BAČVI SA PUMPOM"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.saPumpom')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1773,7 +1773,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REGALI BAČVI SA PUMPOM
+                      {t('komunalnaEkoOprema.tankvaneRegali.saPumpom')}
                     </figcaption>
                   </figure>
                   
@@ -1782,7 +1782,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/K86X2MXY/7.jpg"
                         fill
-                        alt="REGALI BAČVI SA PUMPOM ZA PUNJENJE I ISPUNJENJE"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.zaPunjenje')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1792,7 +1792,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REGALI BAČVI SA PUMPOM ZA PUNJENJE I ISPUNJENJE
+                      {t('komunalnaEkoOprema.tankvaneRegali.zaPunjenje')}
                     </figcaption>
                   </figure>
                   
@@ -1801,7 +1801,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/vTsHHNpc/15.jpg"
                         fill
-                        alt="REGALI BAČVI SA TANKVANOM OTVORENI I ZATVORENIZATVORENI ZA PUNJENJE ,PRAŽNJENJE I DOZIRANJE"
+                        alt={t('komunalnaEkoOprema.tankvaneRegali.otvoreniZatvoreni')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1811,7 +1811,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REGALI BAČVI SA TANKVANOM OTVORENI I ZATVORENIZATVORENI ZA PUNJENJE ,PRAŽNJENJE I DOZIRANJE
+                      {t('komunalnaEkoOprema.tankvaneRegali.otvoreniZatvoreni')}
                     </figcaption>
                   </figure>
                   
@@ -1844,7 +1844,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/5NfNhDBr/18.jpg"
                         fill
-                        alt="FILTERSKE JEDINICE ZA OTEŽANU VODU"
+                        alt={t('komunalnaEkoOprema.postrojenja.filterskeJedinice')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1854,7 +1854,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      FILTERSKE JEDINICE ZA OTEŽANU VODU
+                      {t('komunalnaEkoOprema.postrojenja.filterskeJedinice')}
                     </figcaption>
                   </figure>
                   
@@ -1863,7 +1863,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/qqxBtGTQ/17.jpg"
                         fill
-                        alt="REZERVOARKSO SPREMIŠTE KISELINA I LUŽINA"
+                        alt={t('komunalnaEkoOprema.postrojenja.rezervoarKiseline')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1873,7 +1873,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      REZERVOARKSO SPREMIŠTE KISELINA I LUŽINA
+                      {t('komunalnaEkoOprema.postrojenja.rezervoarKiseline')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1890,7 +1890,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/T1ffXWDb/24.jpg"
                         fill
-                        alt="POSUDE ZA AKUMULATORE,ZAULJENE KRPE I PIJESAK"
+                        alt={t('komunalnaEkoOprema.posudeZaAkumulatore.akumulatori')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1900,7 +1900,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      POSUDE ZA AKUMULATORE, ZAULJENE KRPE I PIJESAK
+                      {t('komunalnaEkoOprema.posudeZaAkumulatore.akumulatori')}
                     </figcaption>
                   </figure>
                   
@@ -1909,7 +1909,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/dVZVZksY/2.png"
                         fill
-                        alt="PLINSKI ORMARI"
+                        alt={t('komunalnaEkoOprema.posudeZaAkumulatore.plinskiOrmari')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1919,7 +1919,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PLINSKI ORMARI
+                      {t('komunalnaEkoOprema.posudeZaAkumulatore.plinskiOrmari')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1936,7 +1936,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/13tRt6Yc/21.jpg"
                         fill
-                        alt="ŠAHTE"
+                        alt={t('komunalnaEkoOprema.posude2.sahte')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1946,7 +1946,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      ŠAHTE
+                      {t('komunalnaEkoOprema.posude2.sahte')}
                     </figcaption>
                   </figure>
                   
@@ -1971,7 +1971,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/FHBrJRMt/19.jpg"
                         fill
-                        alt="BARIJERE YA CESTE, PREGADE ZA CESTE"
+                        alt={`${t('komunalnaEkoOprema.posude2.barijere')} ${t('komunalnaEkoOprema.posude2.pregrade')}`}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1981,7 +1981,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                        BARIJERE ZA CESTE <br/> PREGRADE ZA CESTE
+                      {t('komunalnaEkoOprema.posude2.barijere')} <br/> {t('komunalnaEkoOprema.posude2.pregrade')}
                     </figcaption>
                   </figure>
                 </div>
@@ -1998,7 +1998,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
                         fill
-                        alt="MOBILNA SPREMIŠTA SPREMIŠTA ZAPALJIVIH TEKUĆINA SPREMIŠTA BOJA I LAKOVA SPREMIŠTE BOCA"
+                        alt={`${t('komunalnaEkoOprema.spremista.mobilna')} ${t('komunalnaEkoOprema.spremista.zapaljivihTecnosti')} ${t('komunalnaEkoOprema.spremista.bojaILakova')} ${t('komunalnaEkoOprema.spremista.boca')}`}
                         className="object-cover object-[25%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2008,7 +2008,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
-                      MOBILNA SPREMIŠTA <br/> SPREMIŠTA ZAPALJIVIH TEKUĆINA <br/> SPREMIŠTA BOJA I LAKOVA <br/> SPREMIŠTE BOCA
+                      {t('komunalnaEkoOprema.spremista.mobilna')} <br/> {t('komunalnaEkoOprema.spremista.zapaljivihTecnosti')} <br/> {t('komunalnaEkoOprema.spremista.bojaILakova')} <br/> {t('komunalnaEkoOprema.spremista.boca')}
                     </figcaption>
                   </figure>
                   
@@ -2041,7 +2041,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                         fill
-                        alt="REZERVOAR 1000 LITARA SA PUMPOM I BROJILOM ZA ISTAKANJE SA JEDNOM I DVIJE STIJENKE OTVORENI I ZATVORENI"
+                        alt={t('komunalnaEkoOprema.spremista1.rezervoar1000')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2051,7 +2051,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
-                      REZERVOAR 1000 LITARA SA PUMPOM <br/> I BROJILOM ZA ISTAKANJE <br/> SA JEDNOM I DVIJE STIJENKE <br/>OTVORENI I ZATVORENI
+                      {t('komunalnaEkoOprema.spremista1.rezervoar1000')}
                     </figcaption>
                   </figure>
                   
@@ -2060,7 +2060,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/3RhPyQx5/10.jpg"
                         fill
-                        alt="REŠETKE PODNE U INDUSTRIJI ZA STUBIŠTA ZA OGRADE"
+                        alt={t('komunalnaEkoOprema.spremista1.resetke')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2070,7 +2070,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
-                      REŠETKE PODNE U INDUSTRIJI <br/> ZA STUBIŠTA <br/> ZA OGRADE
+                      {t('komunalnaEkoOprema.spremista1.resetke')}
                     </figcaption>
                   </figure>
                 </div>
@@ -2078,27 +2078,27 @@ export default function ProductPageClient() {
 
               {/* Spremista 2 subsection */}
               <div id="spremista2" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-              <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg aspect-square">
-                    <Image
-                      src="https://i.postimg.cc/SxJqq4Jg/33.jpg"
-                      fill
-                      alt="MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM ZA OPASNI OTPAD"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(250, 0)}
-                      sizes="(max-width: 250px) 100vw, 250px"
-                      itemProp="image"
-                    />
-                  </div>
-                  <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
-                    MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM <br/> ZA OPASNI OTPAD
-                  </figcaption>
-                </figure>
+                <div className="flex flex-wrap p-4">
+                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                    <div className="relative overflow-hidden rounded-lg aspect-square">
+                      <Image
+                        src="https://i.postimg.cc/SxJqq4Jg/33.jpg"
+                        fill
+                        alt={t('komunalnaEkoOprema.spremista2.mobilnoSpremiste')}
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(250, 0)}
+                        sizes="(max-width: 250px) 100vw, 250px"
+                        itemProp="image"
+                      />
+                    </div>
+                    <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
+                      {t('komunalnaEkoOprema.spremista2.mobilnoSpremiste')}
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
-            </div>
             </div>
           </section>
 
