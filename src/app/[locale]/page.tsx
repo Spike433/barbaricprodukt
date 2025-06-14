@@ -78,8 +78,7 @@ export default function HomePage() {
                       {t('steelStructures')}
                     </h3>
                   </div>
-            </Link>
-              
+            </Link>              
               <Link
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
@@ -110,34 +109,34 @@ export default function HomePage() {
                 href="/products#industrijskaOprema" 
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                <div className="flex gap-3 p-3 min-h-[300px]"> {/* Increased minimum height */}
+                  <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
                     <Image
                       src="https://i.postimg.cc/1zhpcCQK/31.jpg"
                       alt="Oprema za more 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                       loading="lazy"
                     />
                   </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Consistent ratio */}
                     <Image
                       src="https://i.postimg.cc/RVhQMJdw/28.jpg"
                       alt="Oprema za more 2"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                       loading="lazy"
                     />
                   </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                  <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Same ratio */}
                     <Image
-                      src="https://i.postimg.cc/yNgzQVx4/25logo.png"
+                      src="https://i.postimg.cc/7LqSY7nN/25-5.jpg"
                       alt="Oprema za more 3"
                       fill
                       className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -145,6 +144,7 @@ export default function HomePage() {
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                       loading="lazy"
+                      style={{ objectPosition: "40% 43%" }} 
                     />
                   </div>
                 </div>
