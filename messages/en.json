@@ -180,6 +180,9 @@
       },
       "maintenance": {
         "title": "INDUSTRIAL PLANT MAINTENANCE"
+      },
+      "generalServices":{
+        "title": "GENERAL SERVICES"
       }
     }
   },

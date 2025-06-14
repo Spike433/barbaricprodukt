@@ -1,4 +1,5 @@
 import { Circle } from "lucide-react" // If available, otherwise use HTML
+import { useTranslations } from 'next-intl';
 
 type SubItem = {
   id: string
@@ -17,6 +18,8 @@ type ServiceCardProps = {
 }
 
 export default function ServiceCard({ title, items }: ServiceCardProps) {
+  const t = useTranslations('ServicesPage');
+
   return (
     <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
       <h2 className="text-xl font-bold text-industrial-blue mb-4 border-b pb-2 border-industrial-blue/20">{title}</h2>
@@ -48,7 +51,7 @@ export default function ServiceCard({ title, items }: ServiceCardProps) {
       ) : (
         <div className="flex items-center text-muted-foreground">
           <Circle className="h-3 w-3 text-industrial-blue shrink-0 mr-2" />
-          <span>Opće usluge</span>
+          <span>{t('services.generalServices.title')}</span>
         </div>
       )}
     </div>

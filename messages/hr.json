@@ -180,6 +180,9 @@
       },
       "maintenance": {
         "title": "ODRŽAVANJE INDUSTRIJSKIH POSTROJENJA"
+      },
+      "generalServices":{
+        "title": "OPĆE USLUGE"
       }
     }
   },
