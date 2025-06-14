@@ -300,6 +300,7 @@ export default function HomePage() {
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                       loading="lazy"
+                      style={{ objectPosition: '40% 60%' }}
                     />
                   </div>
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
@@ -324,6 +325,7 @@ export default function HomePage() {
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
                       loading="lazy"
+                      
                     />
                   </div>
                 </div>
