@@ -9,7 +9,7 @@ export default function HomePage() {
   const t = useTranslations('HomePage');
   
   return (
-    <main className="min-h-screen">
+    <main  className="m-0 p-0 w-full max-w-full overflow-x-hidden">
       {/* Hero Section - Full Width */}
       <section className="relative w-full h-[90vh] min-h-[500px]">
         <Image
@@ -41,7 +41,7 @@ export default function HomePage() {
 
       {/* Service Categories Grid */}
       <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-5">
           <h2 className="text-3xl font-bold text-center mb-12 text-industrial-blue md:text-4xl">
             {t('productCategories')}
           </h2>
@@ -54,21 +54,27 @@ export default function HomePage() {
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
               >
                 <div className="flex gap-3 p-3 min-h-[400px]"> {/* Increased height */}
-                  <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Custom height */}
+                  <div className="w-1/2 relative min-h-[380px] rounded-md overflow-hidden"> {/* Custom height */}
                     <Image
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
-                      alt="Čelične konstrukcije 1"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      alt="Čelične konstrukcije 1" 
+                      width={500}  // Fixed width
+                      height={500} // Fixed height                     
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      style={{ objectPosition: '40% 32%' }}
+                      style=
+                      {{ 
+                        objectPosition: '40% 32%',
+                        minHeight: '380px' // Ensures consistent height across images
+                      }}
                     />
                   </div>
                   <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Matching height */}
                     <Image
                       src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                       alt="Čelične konstrukcije 2"
-                      fill
+                      width={500}  // Fixed width
+                      height={500} // Fixed height   
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
@@ -86,12 +92,13 @@ export default function HomePage() {
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex p-3 min-h-[450px]"> {/* Taller container */}
+                <div className="flex p-3 min-h-[150px]"> {/* Taller container */}
                   <div className="w-full relative h-[430px] rounded-md overflow-hidden"> {/* Portrait height */}
                     <Image
                       src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
-                      fill
+                      width={500}  // Fixed width
+                      height={500} // Fixed height   
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       style={{ objectPosition: '40% 20%' }}
@@ -118,7 +125,8 @@ export default function HomePage() {
               <Image
               src="https://i.postimg.cc/1zhpcCQK/31.jpg"
               alt="Oprema za more 1"
-              fill
+              width={500}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -132,7 +140,8 @@ export default function HomePage() {
               <Image
               src="https://i.postimg.cc/RVhQMJdw/28.jpg"
               alt="Oprema za more 2"
-              fill
+              width={500}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -142,17 +151,18 @@ export default function HomePage() {
               </div>
 
               {/* Image 3 */}
-              <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Consistent height */}
+              <div className="w-1/2 relative h-[480px] rounded-md overflow-hidden"> {/* Consistent height */}
               <Image
               src="https://i.postimg.cc/7LqSY7nN/25-5.jpg"
               alt="Oprema za more 3"
-              fill
+              width={500}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
               blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
               loading="lazy"
-              style={{ objectPosition: '40% 43%' }}
+              style={{ objectPosition: '40% 3%' }}
               />
               </div>
               </div>
@@ -177,7 +187,8 @@ export default function HomePage() {
               <Image
               src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
               alt="Komunalna eko oprema 1"
-              fill
+              width={550}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -191,7 +202,8 @@ export default function HomePage() {
               <Image
               src="https://i.postimg.cc/vTsHHNpc/15.jpg"
               alt="Komunalna eko oprema 2"
-              fill
+              width={550}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -217,7 +229,8 @@ export default function HomePage() {
               <Image
               src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
               alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
-              fill
+              width={500}  // Fixed width
+                      height={500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -240,14 +253,15 @@ export default function HomePage() {
             href="/products#opremaZaMore" 
             className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
             >
-            <div className="flex gap-3 p-3 min-h-[450px]"> {/* Increased container height */}
+            <div className="flex gap-3 p-3 min-h-[250px]"> {/* Increased container height */}
             {/* Image 1 */}
             <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Fixed height */}
             <Image
             src="https://i.postimg.cc/qv1Zrk8g/4-1.jpg"
             alt="Oprema za more 1"
-            fill
-            className="object-cover object-[20%_43%] group-hover:scale-105 transition-transform duration-500 ease-out"
+            width={500}  // Fixed width
+              height={500} // Fixed height   
+            className="object-cover object-[20%_63%] group-hover:scale-105 transition-transform duration-500 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -260,7 +274,8 @@ export default function HomePage() {
             <Image
             src="https://i.postimg.cc/0N1Nqkp0/1.png"
             alt="Oprema za more 2"
-            fill
+            width={500}  // Fixed width
+                      height={500} // Fixed height   
             className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             placeholder="blur"
@@ -274,7 +289,8 @@ export default function HomePage() {
             <Image
             src="https://i.postimg.cc/WpWgnn6k/7.jpg"
             alt="Oprema za more 3"
-            fill
+            width={500}  // Fixed width
+                      height={500} // Fixed height   
             className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             placeholder="blur"
@@ -297,7 +313,7 @@ export default function HomePage() {
             href="/products#urbanaOprema"
             className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
             >
-            <div className="flex gap-3 p-3 min-h-[450px]"> {/* Consistent container height */}
+            <div className="flex gap-3 p-3 min-h-[250px]"> {/* Consistent container height */}
             {/* Image 1 */}
             <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Fixed height */}
             <Image
@@ -318,7 +334,8 @@ export default function HomePage() {
             <Image
             src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
             alt="Urbana oprema 2"
-            fill
+            width={500}  // Fixed width
+                      height={500} // Fixed height   
             className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             placeholder="blur"
@@ -328,11 +345,12 @@ export default function HomePage() {
             </div>
 
             {/* Image 3 */}
-            <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Consistent height */}
+            <div className="w-1/2 relative h-[550px] rounded-md overflow-hidden"> {/* Consistent height */}
             <Image
             src="https://i.postimg.cc/Px03XMqF/urbana2logo.png"
             alt="Urbana oprema 3"
-            fill
+            width={500}  // Fixed width
+                      height={400} // Fixed height   
             className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             placeholder="blur"
@@ -357,11 +375,12 @@ export default function HomePage() {
           >
             <div className="flex gap-3 p-3 min-h-[450px]"> {/* Consistent container height */}
               {/* Image 1 */}
-              <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Fixed height */}
+              <div className="w-1/2 relative h-[700px] rounded-md overflow-hidden"> {/* Fixed height */}
                 <Image
                   src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                   alt="Građevinska oprema 1"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
@@ -375,7 +394,8 @@ export default function HomePage() {
                 <Image
                   src="https://i.postimg.cc/ncmKjf8L/4.jpg"
                   alt="Građevinska oprema 2"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
@@ -385,11 +405,12 @@ export default function HomePage() {
               </div>
               
               {/* Image 3 */}
-              <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Consistent height */}
+              <div className="w-1/2 relative h-[700px] rounded-md overflow-hidden"> {/* Consistent height */}
                 <Image
                   src="https://i.postimg.cc/s2rhX0yt/11.jpg"
                   alt="Građevinska oprema 3"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
@@ -418,7 +439,8 @@ export default function HomePage() {
                 <Image
                   src="https://i.postimg.cc/nLC1WNWb/4.jpg"
                   alt="Roto ljevi proizvodi 1"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
@@ -432,7 +454,8 @@ export default function HomePage() {
                 <Image
                   src="https://i.postimg.cc/cJHDSvrz/32.jpg"
                   alt="Roto ljevi proizvodi 2"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
@@ -446,7 +469,8 @@ export default function HomePage() {
                 <Image
                   src="https://i.postimg.cc/PfLBDRf7/13.jpg"
                   alt="Roto ljevi proizvodi 3"
-                  fill
+                  width={500}  // Fixed width
+                      height={500} // Fixed height   
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   placeholder="blur"
