@@ -54,7 +54,7 @@ export default function HomePage() {
               >
                 <div className="flex gap-3 p-3">
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
+                    <Image                      
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1"
                       fill
@@ -68,7 +68,7 @@ export default function HomePage() {
                   </div>
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                      src="https://i.postimg.cc/mk0QJPc9/8ex.png"
                       alt="Čelične konstrukcije 2"
                       fill
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -93,7 +93,7 @@ export default function HomePage() {
                 <div className="flex p-3">
                   <div className="w-full relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/JnwVW2gg/3.jpg"
+                      src="https://i.postimg.cc/GpsXp1Rd/8logo.png"
                       alt="Alu i PVC stolarija"
                       fill
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -115,54 +115,55 @@ export default function HomePage() {
 
                 {/* Industrijski proizovdi */}
                 <section className="mb-8">
-              <Link 
-                href="/products#industrijskaOprema" 
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/1zhpcCQK/31.jpg"
-                      alt="Oprema za more 1"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/RVhQMJdw/28.jpg"
-                      alt="Oprema za more 2"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/yNgzQVx4/25logo.png"
-                      alt="Oprema za more 3"
-                      fill
-                      className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('industrialEquipment')}
-                  </h3>                
-                </div>
-              </Link>
+                <Link 
+  href="/products#industrijskaOprema" 
+  className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+>
+  <div className="flex gap-3 p-3">
+    <div className="w-1/3 relative rounded-md overflow-hidden">
+      <Image                      
+        src="https://i.postimg.cc/DwbFLxf6/8.jpg"
+        alt="Čelične konstrukcije 1"
+        width={400}  // Set width (can be any number, Next.js will optimize)
+        height={300} // Set height (adjust to match your desired aspect ratio)
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        style={{ objectPosition: '40% 32%' }}
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+      />
+    </div>
+    <div className="w-1/3 relative rounded-md overflow-hidden">
+      <Image
+        src="https://i.postimg.cc/RVhQMJdw/28.jpg"
+        alt="Oprema za more 2"
+        width={400}
+        height={500} // Different height for this image
+        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+      />
+    </div>
+    <div className="w-1/3 relative rounded-md overflow-hidden">
+      <Image
+        src="https://i.postimg.cc/yNgzQVx4/25logo.png"
+        alt="Oprema za more 3"
+        width={400}
+        height={400} // Different height for this image
+        className="w-full h-auto object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div className="p-4 flex-1 flex flex-col">
+    <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+      {t('industrialEquipment')}
+    </h3>                
+  </div>
+</Link>
             </section>
 
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
