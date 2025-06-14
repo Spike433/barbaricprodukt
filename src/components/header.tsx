@@ -8,7 +8,6 @@ import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useLocale, useTranslations } from 'next-intl'
 import LocaleSwitcher from './locale-switcher'
-import ReactCountryFlag from "react-country-flag"
 
 export default function Header() {
   const pathname = usePathname()
@@ -24,15 +23,6 @@ export default function Header() {
     { href: "/services", label: t('navItems.services') },
     { href: "/contact", label: t('navItems.contact') },
   ]
-
-  // Flag component for the current locale
-  const CurrentLocaleFlag = () => {
-    return locale === 'en' ? (
-      <ReactCountryFlag countryCode="GB" svg style={{ width: '1.2em', height: '1.2em' }} />
-    ) : (
-      <ReactCountryFlag countryCode="HR" svg style={{ width: '1.2em', height: '1.2em' }} />
-    )
-  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
@@ -71,8 +61,7 @@ export default function Header() {
 
             {/* Language selector - Desktop */}
             <div className="relative ml-4">
-              <div className="inline-flex items-center">
-                <CurrentLocaleFlag />
+              <div className="inline-flex items-center">                
                 <LocaleSwitcher />
               </div>
             </div>
@@ -113,8 +102,7 @@ export default function Header() {
           {/* Language selector - Mobile */}
           <div className="border-t pt-4 mt-2">            
             <div className="flex">
-              <div className="inline-flex items-center gap-2 border rounded-md px-3 py-1 w-full">
-                <CurrentLocaleFlag />
+              <div className="inline-flex items-center gap-2 border rounded-md px-3 py-1 w-full">                
                 <LocaleSwitcher />
               </div>
             </div>

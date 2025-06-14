@@ -1,3 +1,4 @@
+// locale-switcher-select.tsx
 'use client';
 
 import clsx from 'clsx';
@@ -10,12 +11,14 @@ type Props = {
   children: ReactNode;
   defaultValue: string;
   label: string;
+  className?: string; // Add className to props
 };
 
 export default function LocaleSwitcherSelect({
   children,
   defaultValue,
-  label
+  label,
+  className // Destructure className
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -44,7 +47,11 @@ export default function LocaleSwitcherSelect({
     >
       <p className="sr-only">{label}</p>
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+        className={clsx(
+          'inline-flex appearance-none bg-transparent pl-2 pr-2',
+          'border-b border-gray-600 hover:border-industrial-blue focus:border-industrial-blue', // Add underline
+          className // Apply passed className
+        )}
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
