@@ -562,6 +562,72 @@
       "spremista2": {
         "mobilnoSpremiste": "MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM ZA OPASNI OTPAD"
       }
+    },
+    "gumiraniPlastificiraniProizvodi": {
+      "title": "GUMIRANI ČELIČNI MEMBRANSKI VENTILI, NEPOVRATNI VENTILI, CIJEVNI ELEMENTI I REZERVOARI",
+      "membranskiVentili": "GUMIRANI MEMBRANSKI VENTILI",
+      "nepovratniVentili": "GUMIRANI NEPOVRATI VENTILI",
+      "gumiraneCijevi": "GUMIRANE CIJEVI",
+      "gumiranaKoljena": "GUMIRANA KOLJENA 90;45",
+      "redukcioniElementi": "GUMIRANI REDUKCIONI ELEMENTI",
+      "gumiraniProizvodi": "Gumirani proizvodi",
+      "gumiraniCelicniSpremnici": "GUMIRANI ČELIČNI SPREMNICI",
+      "izmjenjivaci": "GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI"
+    },
+    "opremaZaMora": {
+      "title": "OPREMA ZA MORA JEZERA RIJEKA – KAMPOVE",
+      "pontoni": {
+        "osnovnaVelicina": "OSNOVNA VELIĆINA PONTONA 2 × 4 M",
+        "moduliSuncanista": "MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA",
+        "plovci": "Plovci 970×620×340 mm",
+        "pontoniZaCamce": "Pontoni za čamce",
+        "pontoniDescription1": "Pontoni su izrađeni od osnovne čelične konstrukcije, vruće cinčani i završno obojeni.",
+        "pontoniDescription2": "Na osnovnu čeličnu konstrukciju se montiraju plastični plovci veličine dužina 970 mm, širina 340 mm i visina 620 mm, punjeni zrakom ili pjenom otpornom na upijanje vode.",
+        "modularniPontoni": "Modularni pontoni",
+        "modularniDescription1": "Formiranje veličine pontona se vrši po želji namjene i veličine tako da se po dužini nižu plovci dužine 970 mm te broj redova širine plovka 340 mm, čineći tako cijelinu željenog pontona.",
+        "modularniDescription2": "Osnovni model je izrađen u dva reda po 4 plovka koji čine veličinu 3,9×2 m. Tako formirani plovci mogu činiti željeni oblik prema skici ili želji.",
+        "vezaSaKopnom": "Veza sa kopnom i međusobno se povezuju gibljivom stazom širine 1,2 m.",
+        "ugradnja": "Na pontone ugrađujemo:",
+        "ugradnjaItems": [
+          "mehanizme za bicikliranje",
+          "jedra",
+          "motore za kombinaciju katamarana",
+          "komoru pod vodom"
+        ],
+        "ribogojilista": "Ovom kombinacijom mogu se formirati ribogojilišta. Ukoliko dođe do oštećenja plovka, lako se zamijeni novim."
+      },
+      "kajaci": {
+        "dvosjed": "KAJAK DVOSJED"
+      },
+      "modularneKucice": {
+        "title": "MODULARNE MOBILNE KUĆICE"
+      },
+      "septickeJame": {
+        "title": "SEPTIČKE JAME 800 lit jednokomorna, dvokomorna i trokomorna"
+      },
+      "vodomjernaOkna": {
+        "title": "VODOMJERNA OKNA"
+      },
+      "sahte": {
+        "title": "ŠAHTE"
+      }
+    },
+    "urbanaOprema": {
+      "title": "URBANA OPREMA",
+      "klupeIKosevi": {
+        "title": "KLUPE I KOŠEVI",
+        "klupe": "KLUPE ZA PARKOVE",
+        "kosevi": "KOŠEVI ZA SMEĆE"
+      },
+      "kandableri": {
+        "title": "KANDEBLERI"
+      },
+      "paviljon": {
+        "title": "PAVILJON"
+      },
+      "stalciZaBicikle": {
+        "title": "STALCI ZA BICIKLE / STANICE ZA STAJALIŠTA / JARBOLI ZA ZASTAVE / REKLAMNI PANOI"
+      }
     }
   }
 }

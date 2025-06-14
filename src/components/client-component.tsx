@@ -2103,69 +2103,69 @@ export default function ProductPageClient() {
           </section>
 
           {/* GUMIRANI I PLASTIFICIRANI PROIZVODI Section */}
-          <section
-            id="gumiraniIplastificiraniProizvodi"
-            className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-            itemScope
-            itemType="https://schema.org/Product"
-          >
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              GUMIRANI ČELIČNI MEMBRANSKI VENTILI, NEPOVRATNI VENTILI, CIJEVNI ELEMENTI I REZERVOARI
-            </h2>
-            <div className="space-y-4">
-              {/* Gumirani membranski ventili subsection */}
-              <div
-                id="gumirani-membranski-ventili"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
-                      <Image
-                        src="https://i.postimg.cc/hGbTLwqq/5.jpg"
-                        fill
-                        alt="GUMIRANI MEMBRANSKI VENTILI"
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(600, 0)}
-                        sizes="(max-width: 250px) 100vw, 600px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      GUMIRANI MEMBRANSKI VENTILI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
-                      <Image
-                        src="https://i.postimg.cc/NFLXwj2g/6.jpg"
-                        fill
-                        alt="GUMIRANI NEPOVRATI VENTILI"
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(600, 0)}
-                        sizes="(max-width: 250px) 100vw, 600px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      GUMIRANI NEPOVRATI VENTILI
-                    </figcaption>
-                  </figure>
-                </div>
+        <section
+          id="gumiraniIplastificiraniProizvodi"
+          className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+          itemScope
+          itemType="https://schema.org/Product"
+        >
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+            {t('gumiraniPlastificiraniProizvodi.title')}
+          </h2>
+          <div className="space-y-4">
+            {/* Gumirani membranski ventili subsection */}
+            <div
+              id="gumirani-membranski-ventili"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <Image
+                      src="https://i.postimg.cc/hGbTLwqq/5.jpg"
+                      fill
+                      alt={t('gumiraniPlastificiraniProizvodi.membranskiVentili')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(600, 0)}
+                      sizes="(max-width: 250px) 100vw, 600px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('gumiraniPlastificiraniProizvodi.membranskiVentili')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <Image
+                      src="https://i.postimg.cc/NFLXwj2g/6.jpg"
+                      fill
+                      alt={t('gumiraniPlastificiraniProizvodi.nepovratniVentili')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(600, 0)}
+                      sizes="(max-width: 250px) 100vw, 600px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('gumiraniPlastificiraniProizvodi.nepovratniVentili')}
+                  </figcaption>
+                </figure>
               </div>
+            </div>
 
-              {/* Gumirane cijevi subsection */}
-              <div className="flex flex-col md:flex-row w-full items-center">
+            {/* Gumirane cijevi subsection */}
+            <div className="flex flex-col md:flex-row w-full items-center">
               {/* Text content on the left */}
               <div className="w-full md:w-1/2 space-y-4 p-8 md:p-20 font-medium">
-                <div className="text-lg">GUMIRANE CIJEVI</div>
-                <div className="text-lg">GUMIRANA KOLJENA 90;45</div>
-                <div className="text-lg">GUMIRANI REDUKCIONI ELEMENTI</div>                    
+                <div className="text-lg">{t('gumiraniPlastificiraniProizvodi.gumiraneCijevi')}</div>
+                <div className="text-lg">{t('gumiraniPlastificiraniProizvodi.gumiranaKoljena')}</div>
+                <div className="text-lg">{t('gumiraniPlastificiraniProizvodi.redukcioniElementi')}</div>                    
               </div>
               
               {/* Image on the right */}
@@ -2175,7 +2175,7 @@ export default function ProductPageClient() {
                     src="https://i.postimg.cc/zf1TRN6j/2.jpg"
                     width={640}
                     height={482}
-                    alt="Gumirani proizvodi"
+                    alt={t('gumiraniPlastificiraniProizvodi.gumiraniProizvodi')}
                     className=" hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     placeholder="blur"
@@ -2187,542 +2187,518 @@ export default function ProductPageClient() {
               </figure>                  
             </div>
 
-              {/* Gumirani čelični spremnici subsection */}
-              <div
-                id="gumirani-celikni-spremnici"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/B6mFyK6Y/4.jpg"
-                        fill
-                        alt="GUMIRANI ČELIČNI SPREMNICI"
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(500, 0)}
-                        sizes="(max-width: 250px) 100vw, 500px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      GUMIRANI ČELIČNI SPREMNICI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/hjDxprSQ/3.jpg"
-                        fill
-                        alt=""
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(500, 0)}
-                        sizes="(max-width: 250px) 100vw, 500px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              {/* Gumirani čelični anionski i kationski izmjenjivači subsection */}
-              <div
-                id="gumirani-celikni-anionski-i-kationski-izmjenjivaci"
-                className="mb-6 scroll-mt-24 pl-9"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
-                      <Image
-                        src="https://i.postimg.cc/4yM94Rpp/1.jpg"
-                        fill
-                        alt=""
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
-                      <Image
-                        src="https://i.postimg.cc/KcsLDBC4/7.jpg"
-                        fill
-                        alt="GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI"
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(700, 0)}
-                        sizes="(max-width: 250px) 100vw, 700px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      GUMIRANI ČELIČNI ANIONSKI I KATIONSKI IZMJENJIVAČI
-                    </figcaption>
-                  </figure>
-                </div>
+            {/* Gumirani čelični spremnici subsection */}
+            <div
+              id="gumirani-celikni-spremnici"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/B6mFyK6Y/4.jpg"
+                      fill
+                      alt={t('gumiraniPlastificiraniProizvodi.gumiraniCelicniSpremnici')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(500, 0)}
+                      sizes="(max-width: 250px) 100vw, 500px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('gumiraniPlastificiraniProizvodi.gumiraniCelicniSpremnici')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/hjDxprSQ/3.jpg"
+                      fill
+                      alt=""
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(500, 0)}
+                      sizes="(max-width: 250px) 100vw, 500px"
+                      itemProp="image"
+                    />
+                  </div>
+                </figure>
               </div>
             </div>
-          </section>
+
+            {/* Gumirani čelični anionski i kationski izmjenjivači subsection */}
+            <div
+              id="gumirani-celikni-anionski-i-kationski-izmjenjivaci"
+              className="mb-6 scroll-mt-24 pl-9"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <Image
+                      src="https://i.postimg.cc/4yM94Rpp/1.jpg"
+                      fill
+                      alt=""
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <Image
+                      src="https://i.postimg.cc/KcsLDBC4/7.jpg"
+                      fill
+                      alt={t('gumiraniPlastificiraniProizvodi.izmjenjivaci')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(700, 0)}
+                      sizes="(max-width: 250px) 100vw, 700px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('gumiraniPlastificiraniProizvodi.izmjenjivaci')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
 
           {/* OPREMA ZA MORA JEZERA RIJEKA - KAMPOVE Section */}
-          <section
-        id="opremaZaMore"
-        className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-        itemScope
-        itemType="https://schema.org/Product"
-      >
-        <h2
-          className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue"
-          itemProp="name"
+        <section
+          id="opremaZaMore"
+          className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+          itemScope
+          itemType="https://schema.org/Product"
         >
-          OPREMA ZA MORA JEZERA RIJEKA – KAMPOVE
-        </h2>
-        <div className="space-y-4">
-          {/* Pontoni i plutajuće platforme 1 subsection */}
-          <div
-            id="pontoni-i-plutajuće-platforme-1"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+          <h2
+            className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue"
+            itemProp="name"
           >
-            <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg aspect-square">
-                  <Image
-                    src="https://i.postimg.cc/j5vNB6pB/4.jpg"
-                    fill
-                    alt="OSNOVNA VELIĆINA PONTONA 2 × 4 M"
-                    className="object-cover hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  OSNOVNA VELIĆINA PONTONA 2 × 4 M
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          {/* Pontoni i plutajuće platforme 2 subsection */}
-          <div
-            id="pontoni-i-plutajuće-platforme-2"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[500px]">
-                  <Image
-                    src="https://i.postimg.cc/5yL4djZ3/12.png"
-                    fill
-                    alt="MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA"
-                    className=" hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(500, 0)}
-                    sizes="(max-width: 250px) 100vw, 500px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-4 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  MODULI SUNČALIŠTA SA PRISTUPNIM STAZAMA
-                </figcaption>
-              </figure>
-
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[500px]">
-                  <Image
-                    src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
-                    fill
-                    alt="Plovci 970×620×340 mm"
-                    className=" hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(500, 0)}
-                    sizes="(max-width: 250px) 100vw, 500px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-4 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  Plovci 970×620×340 mm
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          {/* Pontoni i plutajuće platforme subsection */}
-          <div
-            id="pontoni-i-plutajuće-platforme"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              {/* First image + text */}
-              <div className="p-2 w-full sm:w-1/2 md:w-1/2">
-                <figure
-                  className="cursor-pointer"
-                  itemScope
-                  itemType="https://schema.org/ImageObject"
-                >
-                  <div className="relative overflow-hidden rounded-lg h-[400px]">
-                    <Image
-                      src="https://i.postimg.cc/d02Gjc4s/3.jpg"
-                      fill
-                      alt="Pontoni za čamce"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(400, 0)}
-                      sizes="(max-width: 250px) 100vw, 400px"
-                      itemProp="image"
-                    />
-                  </div>
-                </figure>
-                <div className="mt-4 p-2">
-                  <p>
-                    Pontoni su izrađeni od osnovne čelične konstrukcije, vruće cinčani i
-                    završno obojeni.
-                  </p>
-                  <p>
-                    Na osnovnu čeličnu konstrukciju se montiraju plastični plovci veličine
-                    dužina 970 mm, širina 340 mm i visina 620 mm, punjeni zrakom ili pjenom
-                    otpornom na upijanje vode.
-                  </p>
-                </div>
-              </div>
-
-              {/* Second image + text */}
-              <div className="p-2 w-full sm:w-1/2 md:w-1/2">
-                <figure
-                  className="cursor-pointer"
-                  itemScope
-                  itemType="https://schema.org/ImageObject"
-                >
-                  <div className="relative overflow-hidden rounded-lg h-[400px]">
-                    <Image
-                      src="https://i.postimg.cc/C1wkvrQj/2.jpg"
-                      fill
-                      alt="Modularni pontoni"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(400, 0)}
-                      sizes="(max-width: 250px) 100vw, 400px"
-                      itemProp="image"
-                    />
-                  </div>
-                </figure>
-                <div className="mt-4 p-2">
-                  <p>
-                    Formiranje veličine pontona se vrši po želji namjene i veličine tako da
-                    se po dužini nižu plovci dužine 970 mm te broj redova širine plovka 340 mm,
-                    čineći tako cijelinu željenog pontona.
-                  </p>
-                  <p>
-                    Osnovni model je izrađen u dva reda po 4 plovka koji čine veličinu 3,9×2 m.
-                    Tako formirani plovci mogu činiti željeni oblik prema skici ili želji.
-                  </p>
-                </div>
-              </div>
-
-              {/* Shared text under both images */}
-              <div className="w-full p-4">
-                <p>Veza sa kopnom i međusobno se povezuju gibljivom stazom širine 1,2 m.</p>
-                <br />
-                <p>Na pontone ugrađujemo:</p>
-                <ul className="list-disc ml-5">
-                  <li>mehanizme za bicikliranje</li>
-                  <li>jedra</li>
-                  <li>motore za kombinaciju katamarana</li>
-                  <li>komoru pod vodom</li>
-                </ul>
-                <br />
-                <p>
-                  Ovom kombinacijom mogu se formirati ribogojilišta. Ukoliko dođe do oštećenja
-                  plovka, lako se zamijeni novim.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Kajaci i rekreativna oprema subsection */}
-          <div
-            id="kajaci-i-rekreativna-oprema"
-            className="mb-6 scroll-mt-24 pl-9"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg aspect-square">
-                  <Image                    
-                    src="https://i.postimg.cc/0N1Nqkp0/1.png"
-                    fill
-                    alt="KAJAK DVOSJED"
-                    className=" hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(250, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  KAJAK DVOSJED
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          {/* Pontoni i plutajuće 2 subsection */}
-          <div
-            id="pontoni-i-plutajuće-2"
-            className="mb-6 scroll-mt-24 pl-9"
-          >
-            <div className="flex flex-wrap p-4">
-            <figure
-              className="p-2 cursor-pointer w-full"
-              itemScope
-              itemType="https://schema.org/ImageObject"
+            {t('opremaZaMora.title')}
+          </h2>
+          <div className="space-y-4">
+            {/* Pontoni i plutajuće platforme 1 subsection */}
+            <div
+              id="pontoni-i-plutajuće-platforme-1"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
             >
-              <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
-                <Image
-                  src="https://i.postimg.cc/WpWgnn6k/7.jpg"
-                  width={1200}  // Replace with your image's actual width
-                  height={800}  // Replace with your image's actual height
-                  alt="MODULARNE MOBILNE KUĆICE"
-                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL={generateBlurPlaceholder(250, 0)}
-                  sizes="(max-width: 1200px) 100vw, 1200px"  // Adjusted to match image width
-                  itemProp="image"
-                />
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/j5vNB6pB/4.jpg"
+                      fill
+                      alt={t('opremaZaMora.pontoni.osnovnaVelicina')}
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.pontoni.osnovnaVelicina')}
+                  </figcaption>
+                </figure>
               </div>
-              <figcaption
-                className="mt-2 text-sm font-medium text-center"
-                itemProp="caption"
-              >
-                MODULARNE MOBILNE KUĆICE
-              </figcaption>
-            </figure>
             </div>
-          </div>
 
-          {/* Vodomjerna okna subsection */}
-          <div
-            id="vodomjerna-okna"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
-                  <Image
-                    src="https://i.postimg.cc/2SvWCfpQ/8.jpg"
-                    fill
-                    alt="SEPTIČKE JAME 800 lit jednokomorna, dvokomorna i trokomorna"
-                    className="hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 400px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
+            {/* Pontoni i plutajuće platforme 2 subsection */}
+            <div
+              id="pontoni-i-plutajuće-platforme-2"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
                 >
-                  SEPTIČKE JAME 800 lit jednokomorna, dvokomorna i trokomorna
-                </figcaption>
-              </figure>
+                  <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <Image
+                      src="https://i.postimg.cc/5yL4djZ3/12.png"
+                      fill
+                      alt={t('opremaZaMora.pontoni.moduliSuncanista')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(500, 0)}
+                      sizes="(max-width: 250px) 100vw, 500px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-4 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.pontoni.moduliSuncanista')}
+                  </figcaption>
+                </figure>
 
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
-                  <Image
-                    src="https://i.postimg.cc/wT1Jbm0b/9.jpg"
-                    fill
-                    alt=""
-                    className="hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 400px"
-                    itemProp="image"
-                  />
-                </div>
-               
-              </figure>
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <Image
+                      src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
+                      fill
+                      alt={t('opremaZaMora.pontoni.plovci')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(500, 0)}
+                      sizes="(max-width: 250px) 100vw, 500px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-4 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.pontoni.plovci')}
+                  </figcaption>
+                </figure>
+              </div>
             </div>
-          </div>
 
-          {/* Šahte subsection */}
-          <div
-            id="sahte"
-            className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-          >
-            <div className="flex flex-wrap p-4">
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
-                  <Image
-                    src="https://i.postimg.cc/s2rhX0yt/11.jpg"
-                    fill
-                    alt="VODOMJERNA OKNA"
-                    className=" hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 400px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  VODOMJERNA OKNA
-                </figcaption>
-              </figure>
-
-              <figure
-                className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
-                itemScope
-                itemType="https://schema.org/ImageObject"
-              >
-                <div className="relative overflow-hidden rounded-lg h-[400px]">
-                  <Image
-                    src="https://i.postimg.cc/jdBNVS1q/10.jpg"
-                    fill
-                    alt="ŠAHTE"
-                    className=" hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL={generateBlurPlaceholder(400, 0)}
-                    sizes="(max-width: 250px) 100vw, 250px"
-                    itemProp="image"
-                  />
-                </div>
-                <figcaption
-                  className="mt-2 text-sm font-medium text-center"
-                  itemProp="caption"
-                >
-                  ŠAHTE
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-          {/* URABANA OPREMA Section */}
-          <section
-            id="urbanaOprema"
-            className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-            itemScope
-            itemType="https://schema.org/Product"
-          >
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              URBANA OPREMA
-            </h2>
-            <div className="space-y-4">
-              {/* Klupe i kosevi za parkove subsection */}
-              <div
-                id="urbana-oprema-klupe-i-kosevi-za-parkove"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
+            {/* Pontoni i plutajuće platforme subsection */}
+            <div
+              id="pontoni-i-plutajuće-platforme"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                {/* First image + text */}
+                <div className="p-2 w-full sm:w-1/2 md:w-1/2">
+                  <figure
+                    className="cursor-pointer"
+                    itemScope
+                    itemType="https://schema.org/ImageObject"
+                  >
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
                       <Image
-                        src="https://i.postimg.cc/L4yjXF9r/0.jpg"
+                        src="https://i.postimg.cc/d02Gjc4s/3.jpg"
                         fill
-                        alt="KLUPA A"
+                        alt={t('opremaZaMora.pontoni.pontoniZaCamce')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
                         itemProp="image"
                       />
                     </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KLUPA A
-                    </figcaption>
-                    <div className="mt-2 text-left">
-                      Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, <br/>
-                      obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.
+                  </figure>
+                  <div className="mt-4 p-2">
+                    <p>{t('opremaZaMora.pontoni.pontoniDescription1')}</p>
+                    <p>{t('opremaZaMora.pontoni.pontoniDescription2')}</p>
+                  </div>
+                </div>
+
+                {/* Second image + text */}
+                <div className="p-2 w-full sm:w-1/2 md:w-1/2">
+                  <figure
+                    className="cursor-pointer"
+                    itemScope
+                    itemType="https://schema.org/ImageObject"
+                  >
+                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <Image
+                        src="https://i.postimg.cc/C1wkvrQj/2.jpg"
+                        fill
+                        alt={t('opremaZaMora.pontoni.modularniPontoni')}
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL={generateBlurPlaceholder(400, 0)}
+                        sizes="(max-width: 250px) 100vw, 400px"
+                        itemProp="image"
+                      />
                     </div>
                   </figure>
+                  <div className="mt-4 p-2">
+                    <p>{t('opremaZaMora.pontoni.modularniDescription1')}</p>
+                    <p>{t('opremaZaMora.pontoni.modularniDescription2')}</p>
+                  </div>
+                </div>
+
+                {/* Shared text under both images */}
+                <div className="w-full p-4">
+                  <p>{t('opremaZaMora.pontoni.vezaSaKopnom')}</p>
+                  <br />
+                  <p>{t('opremaZaMora.pontoni.ugradnja')}</p>
+                  <ul className="list-disc ml-5">
+                    {/* TODO {t('opremaZaMora.pontoni.ugradnjaItems').map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))} */}
+                  </ul>
+                  <br />
+                  <p>{t('opremaZaMora.pontoni.ribogojilista')}</p>
                 </div>
               </div>
+            </div>
 
-              {/* Urbana oprema 2 subsection */}
-              <div
-                id="urbana-oprema2"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
+            {/* Kajaci i rekreativna oprema subsection */}
+            <div
+              id="kajaci-i-rekreativna-oprema"
+              className="mb-6 scroll-mt-24 pl-9"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image                    
+                      src="https://i.postimg.cc/0N1Nqkp0/1.png"
+                      fill
+                      alt={t('opremaZaMora.kajaci.dvosjed')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.kajaci.dvosjed')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            {/* Pontoni i plutajuće 2 subsection */}
+            <div
+              id="pontoni-i-plutajuće-2"
+              className="mb-6 scroll-mt-24 pl-9"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
+                    <Image
+                      src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                      width={1200}
+                      height={800}
+                      alt={t('opremaZaMora.modularneKucice.title')}
+                      className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 1200px) 100vw, 1200px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.modularneKucice.title')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            {/* Vodomjerna okna subsection */}
+            <div
+              id="vodomjerna-okna"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/2SvWCfpQ/8.jpg"
+                      fill
+                      alt={t('opremaZaMora.septickeJame.title')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.septickeJame.title')}
+                  </figcaption>
+                </figure>
+
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/wT1Jbm0b/9.jpg"
+                      fill
+                      alt=""
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </div>
+
+            {/* Šahte subsection */}
+            <div
+              id="sahte"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/s2rhX0yt/11.jpg"
+                      fill
+                      alt={t('opremaZaMora.vodomjernaOkna.title')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.vodomjernaOkna.title')}
+                  </figcaption>
+                </figure>
+
+                <figure
+                  className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2"
+                  itemScope
+                  itemType="https://schema.org/ImageObject"
+                >
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/jdBNVS1q/10.jpg"
+                      fill
+                      alt={t('opremaZaMora.sahte.title')}
+                      className=" hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-2 text-sm font-medium text-center"
+                    itemProp="caption"
+                  >
+                    {t('opremaZaMora.sahte.title')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          {/* URABANA OPREMA Section */}
+        <section
+          id="urbanaOprema"
+          className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+          itemScope
+          itemType="https://schema.org/Product"
+        >
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+            {t('urbanaOprema.title')}
+          </h2>
+          <div className="space-y-4">
+            {/* Klupe i kosevi za parkove subsection */}
+            <div
+              id="urbana-oprema-klupe-i-kosevi-za-parkove"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <h3 className="text-xl font-semibold mb-4">{t('urbanaOprema.klupeIKosevi.title')}</h3>
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/L4yjXF9r/0.jpg"
+                      fill
+                      alt={t('urbanaOprema.klupeIKosevi.klupe')}
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('urbanaOprema.klupeIKosevi.klupe')}
+                  </figcaption>
+                  <div className="mt-2 text-left">
+                    Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, <br/>
+                    obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.
+                  </div>
+                </figure>
+              </div>
+            </div>
+
+            {/* Urbana oprema 2 subsection */}
+            <div
+              id="urbana-oprema2"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                   <div className="relative overflow-hidden rounded-lg h-[400px]">
                     <Image
                       src="https://i.postimg.cc/GhVYFPsK/1.jpg"
                       fill
-                      alt="KOŠ ZA OTPADKE A1 60 litara"
+                      alt={t('urbanaOprema.klupeIKosevi.kosevi')}
                       className=" hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
@@ -2732,7 +2708,7 @@ export default function ProductPageClient() {
                     />
                   </div>
                   <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    KOŠ ZA OTPADKE A1 60 litara
+                    {t('urbanaOprema.klupeIKosevi.kosevi')}
                   </figcaption>
                 </figure>
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
@@ -2769,7 +2745,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/RFrsNFWy/3.jpg"
                         fill
-                        alt="Klupa C"
+                        alt={t('urbanaOprema.klupeIKosevi.klupe')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2779,7 +2755,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KLUPA C
+                      {t('urbanaOprema.klupeIKosevi.klupe')}
                     </figcaption>
                   </figure>
                   <div className="mt-2 text-left px-4">
@@ -2801,7 +2777,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/0yM0Dv1s/4.jpg"
                         fill
-                        alt="KOŠ ZA OTPADKE C1 50 litara"
+                        alt={t('urbanaOprema.klupeIKosevi.kosevi')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2811,7 +2787,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      <strong>KOŠ ZA OTPADKE C1 50 litara</strong>
+                      <strong>{t('urbanaOprema.klupeIKosevi.kosevi')}</strong>
                     </figcaption>
                   </figure>
                   <div className="mt-2 text-left px-4">
@@ -2832,7 +2808,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/8CV6314r/5.jpg"
                         fill
-                        alt="KANDABLERI"
+                        alt={t('urbanaOprema.kandableri.title')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2842,7 +2818,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KANDABLERI
+                      {t('urbanaOprema.kandableri.title')}
                     </figcaption>
                   </figure>
                 </div>
@@ -2859,7 +2835,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/LsfZHWs1/211.jpg"
                         fill
-                        alt="PAVILJON"
+                        alt={t('urbanaOprema.paviljon.title')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2869,30 +2845,24 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      PAVILJON
+                      {t('urbanaOprema.paviljon.title')}
                     </figcaption>
                   </figure>
                 </div>
               </div>
 
               {/* Stalci za bicikle subsection */}
-              
               <div
                 id="urbana5"
                 className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="mt-4 text-left">
-                  <h3 className="text-lg font-semibold">STANICE ZA STAJALIŠTA</h3>
-                  <h3 className="text-lg font-semibold">JARBOLI ZA ZASTAVE - inox</h3>
-                  <h3 className="text-lg font-semibold">REKLAMNI PANOI</h3>
-                </div>
+              >              
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image
                         src="https://i.postimg.cc/MT6j6dh6/7.jpg"
                         fill
-                        alt="STALCI ZA BICIKLE"
+                        alt={t('urbanaOprema.stalciZaBicikle.title')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -2902,13 +2872,13 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      STALCI ZA BICIKLE
+                      {t('urbanaOprema.stalciZaBicikle.title')}
                     </figcaption>
                   </figure>
                 </div>                
               </div>
-            </div>
-          </section>
+            </div>  
+        </section>
 
           {/* OPREMA ZA GRAĐEVINARSTVO Section */}
           <section
