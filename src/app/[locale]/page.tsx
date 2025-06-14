@@ -16,7 +16,7 @@ export default function HomePage() {
           src="https://i.postimg.cc/4dXgCZ62/9.jpg"
           alt="Čelične konstrukcije"
           fill
-          className="group-hover:scale-105 transition-transform duration-500 ease-out"
+          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
           placeholder="blur"
           blurDataURL={generateBlurPlaceholder(400, 400)}
@@ -54,7 +54,7 @@ export default function HomePage() {
               >
                 <div className="flex gap-3 p-3">
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image                      
+                    <Image
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1"
                       fill
@@ -68,10 +68,10 @@ export default function HomePage() {
                   </div>
                   <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/mk0QJPc9/8ex.png"
+                      src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                       alt="Čelične konstrukcije 2"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -93,10 +93,10 @@ export default function HomePage() {
                 <div className="flex p-3">
                   <div className="w-full relative aspect-video rounded-md overflow-hidden">
                     <Image
-                      src="https://i.postimg.cc/GpsXp1Rd/8logo.png"
+                      src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       style={{ objectPosition: '40% 20%' }}
                       placeholder="blur"
@@ -116,54 +116,53 @@ export default function HomePage() {
                 {/* Industrijski proizovdi */}
                 <section className="mb-8">
               <Link 
-  href="/products#industrijskaOprema" 
-  className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
->
-  <div className="flex gap-3 p-3">
-    <div className="w-1/3 relative rounded-md overflow-hidden">
-      <Image                      
-        src="https://i.postimg.cc/DwbFLxf6/8.jpg"
-        alt="Čelične konstrukcije 1"
-        width={400}  // Set width (can be any number, Next.js will optimize)
-        height={300} // Set height (adjust to match your desired aspect ratio)
-        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-        style={{ objectPosition: '40% 32%' }}
-        placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-        loading="lazy"
-      />
-    </div>
-    <div className="w-1/3 relative rounded-md overflow-hidden">
-      <Image
-        src="https://i.postimg.cc/RVhQMJdw/28.jpg"
-        alt="Oprema za more 2"
-        width={400}
-        height={500} // Different height for this image
-        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-        placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-        loading="lazy"
-      />
-    </div>
-    <div className="w-1/3 relative rounded-md overflow-hidden">
-      <Image
-        src="https://i.postimg.cc/yNgzQVx4/25logo.png"
-        alt="Oprema za more 3"
-        width={400}
-        height={400} // Different height for this image
-        className="w-full h-auto object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
-        placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-        loading="lazy"
-      />
-    </div>
-  </div>
-  <div className="p-4 flex-1 flex flex-col">
-    <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-      {t('industrialEquipment')}
-    </h3>                
-  </div>
-</Link>
+                href="/products#industrijskaOprema" 
+                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              >
+                <div className="flex gap-3 p-3">
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/1zhpcCQK/31.jpg"
+                      alt="Oprema za more 1"
+                      fill
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/RVhQMJdw/28.jpg"
+                      alt="Oprema za more 2"
+                      fill
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/yNgzQVx4/25logo.png"
+                      alt="Oprema za more 3"
+                      fill
+                      className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                    {t('industrialEquipment')}
+                  </h3>                
+                </div>
+              </Link>
             </section>
 
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -178,7 +177,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
                       alt="Komunalna eko oprema 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -190,7 +189,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/vTsHHNpc/15.jpg"
                       alt="Komunalna eko oprema 2"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -216,7 +215,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
                       alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -268,7 +267,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/WpWgnn6k/7.jpg"
                       alt="Oprema za more 3"
                       fill
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -296,7 +295,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/L4yjXF9r/0.jpg"
                       alt="Urbana oprema 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -308,7 +307,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
                       alt="Urbana oprema 2"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -320,7 +319,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/Px03XMqF/urbana2logo.png"
                       alt="Urbana oprema 3"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -348,7 +347,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                       alt="Građevinska oprema 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -372,7 +371,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/FFf8MYKB/6logo.png"
                       alt="Građevinska oprema 3"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -400,7 +399,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/nLC1WNWb/4.jpg"
                       alt="Roto ljevi proizvodi 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -412,7 +411,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/cJHDSvrz/32.jpg"
                       alt="Roto ljevi proizvodi 2"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
@@ -424,7 +423,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/PfLBDRf7/13.jpg"
                       alt="Roto ljevi proizvodi 3"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
