@@ -157,69 +157,69 @@ export default function HomePage() {
             </section>
 
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-              {/* Komunalna eko oprema */}
-              <Link 
-                href="/products#ekoOpremaKomunalna" 
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
-                      alt="Komunalna eko oprema 1"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/vTsHHNpc/15.jpg"
-                      alt="Komunalna eko oprema 2"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('communalEcoEquipment')}
-                  </h3>
-                </div>
-              </Link>
+          {/* Komunalna eko oprema */}
+          <Link 
+            href="/products#ekoOpremaKomunalna" 
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
+          >
+            <div className="flex gap-3 p-3 min-h-[400px]"> {/* Added min-height */}
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Changed aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
+                  alt="Komunalna eko oprema 1"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Changed aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/vTsHHNpc/15.jpg"
+                  alt="Komunalna eko oprema 2"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('communalEcoEquipment')}
+              </h3>
+            </div>
+          </Link>
 
-              {/* Gumirani čelični ventili */}
-              <Link
-                href="/products#gumiraniCelici"
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex p-3">
-                  <div className="w-full relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
-                      alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('rubberizedSteelValves')}
-                  </h3>                
-                </div>
-              </Link>
+          {/* Gumirani čelični ventili */}
+          <Link
+            href="/products#gumiraniCelici"
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          >
+            <div className="flex p-3 min-h-[400px]"> {/* Added min-height */}
+              <div className="w-full relative aspect-[4/3] rounded-md overflow-hidden"> {/* Changed aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
+                  alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('rubberizedSteelValves')}
+              </h3>                
+            </div>
+          </Link>
             </section>
             
             {/* Oprema za more */}
