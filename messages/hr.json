@@ -270,15 +270,15 @@
     "communalEcoEquipment": {
       "title": "KOMUNALNA EKO OPREMA",
       "subheaders": {
-        "containers": "Kontejneri",
-        "septicTanksSeparators": "Septičke jame i separator",
-        "tankShelving": "Tankvane i regali",
-        "facilities": "Postrojenja",
-        "accumulatorContainers": "Posude za akumulatore",
-        "containers2": "Posude 2",
-        "storage": "Spremišta",
-        "storage1": "Spremišta 1",
-        "storage2": "Spremišta 2"
+        "containers": "Kontejneri za odvajani otpad",
+        "septicTanksSeparators": "Septičke jame i separatori ulja",
+        "tankShelving": "Spremnici i regali za boce",
+        "facilities": "Tehnološka postrojenja",
+        "accumulatorContainers": "Posude za akumulatore i opasni otpad", 
+        "containers2": "Šahte i barijere",
+        "storage": "Spremnici za tekućine",
+        "storage1": "Rezervoari i rešetke",
+        "storage2": "Mobilna spremišta"
       }
     },
     "rubberizedPlasticizedProducts": {
