@@ -62,7 +62,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/pTktR7kW/12.jpg"
                         fill
                         alt={t('celicneKonstrukcije.montazneHale.hangari')}
-                        className="object-[38%_50%] hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-[38%_50%] hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
