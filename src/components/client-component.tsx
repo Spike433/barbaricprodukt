@@ -1466,7 +1466,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/02YWvD1c/9.png"
                           fill
                           alt={t('komunalnaEkoOprema.kontejneri.komunalni')}
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1485,7 +1485,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/ZnLCJ4P7/1.png"
                           fill
                           alt={t('komunalnaEkoOprema.kontejneri.zaPapir')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1504,7 +1504,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.kontejneri.plasticneKante')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1518,12 +1518,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[600px]">
                         <Image
                           src="https://i.postimg.cc/CxX0x28S/31.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.kontejneri.zaElektronskiOtpad')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1537,12 +1537,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[600px]">
                         <Image
                           src="https://i.postimg.cc/d0CYk9Rd/32.jpg"
                           fill
                           alt=""
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1553,12 +1553,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[400px]">
                         <Image
                           src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.kontejneri.roloKontejner')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1580,12 +1580,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[550px]">
                         <Image
                           src="https://i.postimg.cc/XqL3N7fz/26.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.jednokomorne')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1599,12 +1599,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[550px]">
                         <Image
                           src="https://i.postimg.cc/v8tGtXJt/27.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.dvokomorne')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1623,7 +1623,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/WbpTWgjL/28.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.trokomorne')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1637,12 +1637,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[450px]">
                         <Image
                           src="https://i.postimg.cc/VvLpR9tK/12.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.rezervoariUlje')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1656,17 +1656,18 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[520px]">
                         <Image
                           src="https://i.postimg.cc/5NP1ZyNH/29.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.plasticnePosude')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
                           sizes="(max-width: 250px) 100vw, 250px"
                           itemProp="image"
+                          style={{ objectPosition: "40% 0%" }} 
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1675,7 +1676,7 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[520px]">
                         <Image
                           src="https://i.postimg.cc/MTyq4Yvx/25.jpg"
                           fill
@@ -1686,6 +1687,7 @@ export default function ProductPageClient() {
                           blurDataURL={generateBlurPlaceholder(250, 0)}
                           sizes="(max-width: 250px) 100vw, 250px"
                           itemProp="image"
+                          style={{ objectPosition: "40% 3%" }} 
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1740,12 +1742,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[150px]">
+                      <div className="relative overflow-hidden rounded-lg h-[250px]">
                         <Image
                           src="https://i.postimg.cc/Kj0SSpFX/3.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.tankvane')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(150, 0)}
@@ -1759,12 +1761,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[150px]">
+                      <div className="relative overflow-hidden rounded-lg h-[250px]">
                         <Image
                           src="https://i.postimg.cc/2SbpMxKJ/5.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.saKotacima')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(150, 0)}
@@ -1778,12 +1780,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[150px]">
+                      <div className="relative overflow-hidden rounded-lg h-[250px]">
                         <Image
                           src="https://i.postimg.cc/5NkdsrnL/8.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.regaliBacvi')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1797,12 +1799,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[150px]">
+                      <div className="relative overflow-hidden rounded-lg h-[250px]">
                         <Image
                           src="https://i.postimg.cc/L6sFBSBm/6.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.saPumpom')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(150, 0)}
@@ -1816,12 +1818,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[350px]">
                         <Image
                           src="https://i.postimg.cc/K86X2MXY/7.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.zaPunjenje')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1835,12 +1837,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/vTsHHNpc/15.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.tankvaneRegali.otvoreniZatvoreni')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1854,12 +1856,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/1RG3Yyq6/16.jpg"
                           fill
                           alt=""
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1878,12 +1880,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/5NfNhDBr/18.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.postrojenja.filterskeJedinice')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1897,12 +1899,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/qqxBtGTQ/17.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.postrojenja.rezervoarKiseline')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1924,12 +1926,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[195px]">
+                      <div className="relative overflow-hidden rounded-lg h-[400px]">
                         <Image
                           src="https://i.postimg.cc/T1ffXWDb/24.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.posudeZaAkumulatore.akumulatori')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -1970,12 +1972,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[600px]">
                         <Image
                           src="https://i.postimg.cc/13tRt6Yc/21.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.posude2.sahte')}
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -1989,12 +1991,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[600px]">
                         <Image
                           src="https://i.postimg.cc/SNVNkVVx/20.jpg"
                           fill
                           alt=""
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2005,12 +2007,12 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[200px]">
                         <Image
                           src="https://i.postimg.cc/FHBrJRMt/19.jpg"
                           fill
                           alt={`${t('komunalnaEkoOprema.posude2.barijere')} ${t('komunalnaEkoOprema.posude2.pregrade')}`}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2032,7 +2034,7 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
                           fill
@@ -2051,7 +2053,7 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg h-[500px]">
                         <Image
                           src="https://i.postimg.cc/pd52Qvvm/22.jpg"
                           fill
@@ -2075,12 +2077,12 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg h-[900px]">
                         <Image
                           src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.spremista1.rezervoar1000')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2099,7 +2101,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/3RhPyQx5/10.jpg"
                           fill
                           alt={t('komunalnaEkoOprema.spremista1.resetke')}
-                          className=" hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2163,7 +2165,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/hGbTLwqq/5.jpg"
                         fill
                         alt={t('gumiraniPlastificiraniProizvodi.membranskiVentili')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(600, 0)}
@@ -2177,12 +2179,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/NFLXwj2g/6.jpg"
                         fill
                         alt={t('gumiraniPlastificiraniProizvodi.nepovratniVentili')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(600, 0)}
@@ -2214,7 +2216,7 @@ export default function ProductPageClient() {
                       width={640}
                       height={482}
                       alt={t('gumiraniPlastificiraniProizvodi.gumiraniProizvodi')}
-                      className=" hover:scale-105 transition-transform duration-500"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={generateBlurPlaceholder(640, 482)}
@@ -2232,12 +2234,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[600px]">
                       <Image
                         src="https://i.postimg.cc/B6mFyK6Y/4.jpg"
                         fill
                         alt={t('gumiraniPlastificiraniProizvodi.gumiraniCelicniSpremnici')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2251,12 +2253,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[600px]">
                       <Image
                         src="https://i.postimg.cc/hjDxprSQ/3.jpg"
                         fill
                         alt=""
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2275,12 +2277,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg h-[1500px]">
                       <Image
                         src="https://i.postimg.cc/4yM94Rpp/1.jpg"
                         fill
                         alt=""
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -2296,7 +2298,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
                         fill
                         alt={t('gumiraniPlastificiraniProizvodi.izmjenjivaci')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(700, 0)}
