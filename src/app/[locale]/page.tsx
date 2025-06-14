@@ -115,7 +115,7 @@ export default function HomePage() {
 
                 {/* Industrijski proizovdi */}
                 <section className="mb-8">
-                <Link 
+              <Link 
   href="/products#industrijskaOprema" 
   className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
 >
