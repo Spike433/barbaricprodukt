@@ -109,7 +109,7 @@ export default function HomePage() {
                 href="/products#industrijskaOprema" 
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex gap-3 p-3 min-h-[300px]"> {/* Increased minimum height */}
+                <div className="flex gap-3 p-3 min-h-[380px]"> {/* Increased minimum height */}
                   <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
                     <Image
                       src="https://i.postimg.cc/1zhpcCQK/31.jpg"
