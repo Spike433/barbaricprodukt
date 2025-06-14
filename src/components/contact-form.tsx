@@ -186,11 +186,11 @@ export default function ContactForm() {
                     {formErrors.message && <p className="text-xs text-destructive mt-1">{formErrors.message}</p>}
                   </div>
                   
-                  <ReCAPTCHA
+                  {/* <ReCAPTCHA
                     sitekey={qoretech}
                     ref={recaptchaRef}
                     size={"normal"}
-                  />
+                  /> */}
 
                   <Button
                     type="submit"
