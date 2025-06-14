@@ -76,7 +76,7 @@ export default function ProductPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container relative mx-auto px-4">
+      <div className="w-full">
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
