@@ -224,212 +224,212 @@ export default function HomePage() {
             
             {/* Oprema za more */}
             <section className="mb-8">
-              <Link 
-                href="/products#opremaZaMore" 
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/XJBBbfmJ/4logo.png"
-                      alt="Oprema za more 1"
-                      fill
-                      className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/0N1Nqkp0/1.png"
-                      alt="Oprema za more 2"
-                      fill
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/WpWgnn6k/7.jpg"
-                      alt="Oprema za more 3"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('marineEquipment')}
-                  </h3>                
-                </div>
-              </Link>
+          <Link 
+            href="/products#opremaZaMore" 
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          >
+            <div className="flex gap-3 p-3 min-h-[330px]"> {/* Added minimum height */}
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/qv1Zrk8g/4-1.jpg"
+                  alt="Oprema za more 1"
+                  fill
+                  className="object-cover object-[20%_43%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Consistent ratio */}
+                <Image
+                  src="https://i.postimg.cc/0N1Nqkp0/1.png"
+                  alt="Oprema za more 2"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Added object-cover */}
+                <Image
+                  src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                  alt="Oprema za more 3"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('marineEquipment')}
+              </h3>                
+            </div>
+          </Link>
             </section>
           
-            {/* Urbana oprema */}
-            <section className="mb-8">
-            <Link                
-              href="/products#urbanaOprema"
-              className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-            >
-              <div className="flex gap-3 p-3 h-80"> {/* Increased height here */}
-                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                  <Image
-                    src="https://i.postimg.cc/L4yjXF9r/0.jpg"
-                    alt="Urbana oprema 1"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 33vw"
-                    placeholder="blur"
-                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                    loading="lazy"
-                    style={{ objectPosition: '40% 60%' }}
-                  />
-                </div>
-                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                  <Image
-                    src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
-                    alt="Urbana oprema 2"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    placeholder="blur"
-                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                  <Image
-                    src="https://i.postimg.cc/Px03XMqF/urbana2logo.png"
-                    alt="Urbana oprema 3"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    placeholder="blur"
-                    blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                  {t('urbanEquipment')}
-                </h3>                
-              </div>
-            </Link>
+          {/* Urbana oprema */}
+          <section className="mb-8">
+          <Link                
+  href="/products#urbanaOprema"
+  className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+>
+  <div className="flex gap-3 p-3 h-80 min-h-[450px]"> {/* Fixed and minimum height */}
+    <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
+      <Image
+        src="https://i.postimg.cc/L4yjXF9r/0.jpg"
+        alt="Urbana oprema 1"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 33vw"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+        style={{ objectPosition: '40% 60%' }}
+      />
+    </div>
+    <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Consistent ratio */}
+      <Image
+        src="https://i.postimg.cc/tRnSdjJ3/urbana1.png"
+        alt="Urbana oprema 2"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+      />
+    </div>
+    <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Same ratio */}
+      <Image
+        src="https://i.postimg.cc/Px03XMqF/urbana2logo.png"
+        alt="Urbana oprema 3"
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div className="p-4 flex-1 flex flex-col">
+    <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+      {t('urbanEquipment')}
+    </h3>                
+  </div>
+          </Link>
           </section>
 
             {/* Oprema za građevinarstvo */}
             <section className="mb-8">   
-              <Link                
-                href="/products#opremaZaGradevinarstvo"
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                      alt="Građevinska oprema 1"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/ncmKjf8L/4.jpg"
-                      alt="Građevinska oprema 2"
-                      fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/FFf8MYKB/6logo.png"
-                      alt="Građevinska oprema 3"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('constructionEquipment')}
-                  </h3>                
-                </div>
-              </Link>
-            </section>
+          <Link                
+            href="/products#opremaZaGradevinarstvo"
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          >
+            <div className="flex gap-3 p-3 h-80 min-h-[500px]"> {/* Fixed and minimum height */}
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/8c2hKtvD/1.jpg"
+                  alt="Građevinska oprema 1"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Added object-cover */}
+                <Image
+                  src="https://i.postimg.cc/ncmKjf8L/4.jpg"
+                  alt="Građevinska oprema 2"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Consistent ratio */}
+                <Image
+                  src="https://i.postimg.cc/s2rhX0yt/11.jpg"
+                  alt="Građevinska oprema 3"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('constructionEquipment')}
+              </h3>                
+            </div>
+          </Link>
+        </section>
 
-            {/* Roto ljevi plastični proizvodi */}
-            <section className="mb-8">
-              <Link                              
-                href="/products#strojeviZaPoljoprivreduIVocarstvo"
-                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-              >
-                <div className="flex gap-3 p-3">
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/nLC1WNWb/4.jpg"
-                      alt="Roto ljevi proizvodi 1"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/cJHDSvrz/32.jpg"
-                      alt="Roto ljevi proizvodi 2"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                    <Image
-                      src="https://i.postimg.cc/PfLBDRf7/13.jpg"
-                      alt="Roto ljevi proizvodi 3"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      placeholder="blur"
-                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    {t('rotationalMolding')}
-                  </h3>                
-                </div>
-              </Link>
-            </section>
+           {/* Roto ljevi plastični proizvodi */}
+        <section className="mb-8">
+          <Link                              
+            href="/products#strojeviZaPoljoprivreduIVocarstvo"
+            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+          >
+            <div className="flex gap-3 p-3 h-80 min-h-[400px]"> {/* Fixed and minimum height */}
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
+                <Image
+                  src="https://i.postimg.cc/nLC1WNWb/4.jpg"
+                  alt="Roto ljevi proizvodi 1"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Consistent ratio */}
+                <Image
+                  src="https://i.postimg.cc/cJHDSvrz/32.jpg"
+                  alt="Roto ljevi proizvodi 2"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Same ratio */}
+                <Image
+                  src="https://i.postimg.cc/PfLBDRf7/13.jpg"
+                  alt="Roto ljevi proizvodi 3"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                {t('rotationalMolding')}
+              </h3>                
+            </div>
+          </Link>
+        </section>
           </div>
         </div>
       </section>
