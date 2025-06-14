@@ -135,7 +135,7 @@ export default function HomePage() {
     </div>
     <div className="w-1/3 relative rounded-md overflow-hidden">
       <Image
-        src="https://i.postimg.cc/RVhQMJdw/28.jpg"
+        src="https://i.postimg.cc/pTXcHVxT/25test.png"
         alt="Oprema za more 2"
         width={400}
         height={500} // Different height for this image
