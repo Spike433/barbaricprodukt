@@ -513,7 +513,8 @@ export default function ProductPageClient() {
             itemType="https://schema.org/Product"
           >
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              {t('aluPvcStolarija.title')}
+              {t('aluPvcStolarija.title')} <br/>
+              {t('aluPvcStolarija.title2')}
             </h2>
             <div className="space-y-4">
               {/* Segmentna podizna vrata subsection */}
@@ -602,7 +603,9 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      {t('aluPvcStolarija.prozori.prozoriStakleneStijene')}
+                      {t('aluPvcStolarija.prozori.prozoriStakleneStijene')} <br/>
+                      {t('aluPvcStolarija.prozori.prozoriStakleneStijene2')} <br/>
+                      {t('aluPvcStolarija.prozori.prozoriStakleneStijene3')}
                     </figcaption>
                   </figure>
                   

@@ -393,14 +393,17 @@
       }
     },
     "aluPvcStolarija": {
-      "title": "ALU STOLARIJA <br/> PVC STOLARIJA",
+      "title": "ALU STOLARIJA",
+      "title2": "PVC STOLARIJA",
       "segmentnaPodiznaVrata": {
         "dvokrilnaJednokrilnaKlizna": "DVOKRILNA JEDNOKRILNA KLIZNA",
         "automatskaVrata": "AUTOMATSKA VRATA",
         "podizneRampe": "PODIZNE RAMPE"
       },
       "prozori": {
-        "prozoriStakleneStijene": "PROZORI <br/> STAKLENE STIJENE <br/> FASADE OD PANELA",
+        "prozoriStakleneStijene": "PROZORI",
+        "prozoriStakleneStijene2": "STAKLENE STIJENE",
+        "prozoriStakleneStijene3": "FASADE OD PANELA",
         "stakleneFasade": "STAKLENE FASADE",
         "zimskiVrtovi": "ZIMSKI VRTOVI"
       }
