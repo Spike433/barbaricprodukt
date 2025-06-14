@@ -2660,7 +2660,6 @@ export default function ProductPageClient() {
               id="urbana-oprema-klupe-i-kosevi-za-parkove"
               className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
             >
-              <h3 className="text-xl font-semibold mb-4">{t('urbanaOprema.klupeIKosevi.title')}</h3>
               <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
                   <div className="relative overflow-hidden rounded-lg aspect-square">
