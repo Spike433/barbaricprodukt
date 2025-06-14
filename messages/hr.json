@@ -680,6 +680,46 @@
           "termoPoklopac": "Termo poklopac"
         }
       }
-    }
+    },
+    "rotoLjev": {
+      "title": "ROTO LJEV",
+      "plasticProducts": "PLASTIČNI PROIZVODI",
+      "productDescription": "PLASTIČNI PROIZVODI SU IZRAĐENI OD POLIETILENA VISOKE GUSTOĆE, INERTNOG MATERIJALA ZA PRIMJENU U PREHRANBENOJ INDUSTRIJI. POSUDE SU GLATKIH I LAKO PERIVIH POVRŠINA. MATERIJAL JE OTPORAN NA TEMPERATURE OD -20 DO + 50°C.",
+      "kace": {
+        "title": "KACE",
+        "volume": "VOLUMEN (L)",
+        "dimensions": "VOLUMEN – DIMENZIJE",
+        "tableHeaders": {
+          "volume": "VOLUMEN",
+          "a": "A (mm)",
+          "b": "B (mm)",
+          "c": "C (mm)",
+          "d": "D (kom)"
+        }
+      },
+      "wineContainers": "POSUDE ZA VINO",
+      "reservoirs": {
+        "1000L": "REZERVOARI 1000 L",
+        "technicalSpecs": "TEHNIČKE KARAKTERISTIKE",
+        "tableHeaders": {
+          "volume": "Volumen (L)",
+          "length": "Dužina (mm)",
+          "width": "Širina (mm)",
+          "height": "Visina (mm)",
+          "opening": "Otvor (mm)",
+          "outlet": "Ispust"
+        }
+      },
+      "rotoCastContainers": "POSUDE ROTO LJEV",
+      "waterMeterChambers": "ŠAHTE ZA VODOMJERE",
+      "chambersSandGreaseTraps": "ŠAHTE, PJESKOLOVI, MASTOLOVI",
+      "sewageSepticChambers": "ŠAHTE ZA KANALIZACIJU, SEPTIČKE JAME",
+      "sprayerTanks": "REZERVOARI ZA PRSKALICE 400 i 600 L / ATOMIZERE 400 i 600 L",
+      "storageTank": "SPREMNIK 1000L SA PUMPOM I MJERAČEM PROTOKA",
+      "irrigationPipes": "CIJEVI ZA ŠUTU",
+      "pipeLiftingWinch": "VITLO ZA DIZANJE CIJEVI",
+      "inletElement": "ULAZNI ELEMENAT",
+      "plasticBarriers": "PLASTIČNE BARIJERE"
+    }   
   }
 }
