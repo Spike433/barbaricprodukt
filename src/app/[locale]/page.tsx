@@ -159,7 +159,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-4 flex-1 flex flex-col">
                   <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                    INDUSTRIJSKI PROIZVODI
+                    {t('industrialEquipment')}
                   </h3>                
                 </div>
               </Link>
