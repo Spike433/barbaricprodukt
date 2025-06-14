@@ -58,7 +58,7 @@ export default function HomePage() {
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1"
                       fill
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       style={{ objectPosition: '40% 32%' }}
                       placeholder="blur"
