@@ -634,17 +634,27 @@
       "title": "URBANA OPREMA",
       "klupeIKosevi": {
         "title": "KLUPE I KOŠEVI",
-        "klupe": "KLUPE ZA PARKOVE",
-        "kosevi": "KOŠEVI ZA SMEĆE"
+        "klupe": "PARKOVNE KLUPE",
+        "kosevi": "KOŠEVI ZA SMEĆE",
+        "description1": "Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom prema želji naručioca, obložena drvenim letvicama zaštićenim lakom za drvo ili bojom po želji.",
+        "description2": "Izrađeno od čeličnih profila zaštićenih temeljnom i završnom bojom prema želji naručioca, obloženo drvenim letvicama zaštićenim lakom za drvo.",
+        "description3": "Kontejner za smeće se može isprazniti naginjanjem u oba smjera bez skidanja.",
+        "description4": "Klupa duljine 2 metra",
+        "description5": "Nosači klupe izrađeni su od aluminija zaštićenog bojom po želji, obloženi drvenim letvicama zaštićenim lakom za drvo ili bojom po izboru.",
+        "description6": "Izrađeno od aluminija i čelika zaštićenog temeljnom i završnom bojom po želji.",
+        "description7": "Kontejner se može isprazniti naginjanjem na obje strane."
       },
       "kandableri": {
-        "title": "KANDEBLERI"
+        "title": "KANDEBLERI",
+        "description": "Čvrsti zaštitni stupovi za pješačke zone i zaštitu zgrada."
       },
       "paviljon": {
-        "title": "PAVILJON"
+        "title": "PAVILJON",
+        "description": "Vanjske strukture za zaklon u javnim prostorima."
       },
       "stalciZaBicikle": {
-        "title": "STALCI ZA BICIKLE / STANICE ZA STAJALIŠTA / JARBOLI ZA ZASTAVE / REKLAMNI PANOI"
+        "title": "STALCI ZA BICIKLE / STANICE ZA STAJALIŠTA / JARBOLI ZA ZASTAVE / REKLAMNI PANELI",
+        "description": "Izdržljivi urbani elementi za parkiranje bicikala, informativne ploče, zastave i reklame."
       }
     },
     "opremaZaGradevinarstvo": {

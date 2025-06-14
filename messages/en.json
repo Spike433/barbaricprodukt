@@ -633,18 +633,28 @@
     "urbanaOprema": {
       "title": "URBAN EQUIPMENT",
       "klupeIKosevi": {
-        "title": "BENCHES AND BINS",
+        "title": "BENCHES AND TRASH BINS",
         "klupe": "PARK BENCHES",
-        "kosevi": "WASTE BINS"
+        "kosevi": "TRASH BINS",
+        "description1": "Bench made of steel profiles protected with primer and finish paint according to customer's preference, covered with wooden slats protected with wood stain or paint as desired.",
+        "description2": "Made of steel profiles protected with primer and finish paint according to customer's preference, covered with wooden slats protected with wood stain.",
+        "description3": "The trash container can be emptied by tilting in both directions without removal.",
+        "description4": "2-meter long bench",
+        "description5": "Bench supports are made of aluminum protected with paint as desired, covered with wooden slats protected with wood stain or paint of choice.",
+        "description6": "Made of aluminum and steel protected with primer and finish paint as desired.",
+        "description7": "The container can be emptied by tilting to both sides."
       },
       "kandableri": {
-        "title": "BOLLARDS"
+        "title": "BOLLARDS",
+        "description": "Sturdy protective posts for pedestrian areas and building protection."
       },
       "paviljon": {
-        "title": "PAVILION"
+        "title": "PAVILION",
+        "description": "Outdoor shelter structures for public spaces."
       },
       "stalciZaBicikle": {
-        "title": "BIKE STANDS / PARKING STATIONS / FLAG POLES / ADVERTISING PANELS"
+        "title": "BIKE RACKS / STATION STANDS / FLAGPOLES / ADVERTISING PANELS",
+        "description": "Durable urban fixtures for bicycle parking, information displays, flags, and advertisements."
       }
     },
     "opremaZaGradevinarstvo": {

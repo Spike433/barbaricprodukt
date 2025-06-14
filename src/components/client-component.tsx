@@ -2648,239 +2648,245 @@ export default function ProductPageClient() {
         </section>
 
           {/* URABANA OPREMA Section */}
-        <section
-          id="urbanaOprema"
-          className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-          itemScope
-          itemType="https://schema.org/Product"
-        >
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-            {t('urbanaOprema.title')}
-          </h2>
-          <div className="space-y-4">
-            {/* Klupe i kosevi za parkove subsection */}
-            <div
-              id="urbana-oprema-klupe-i-kosevi-za-parkove"
-              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-            >
-              <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg aspect-square">
-                    <Image
-                      src="https://i.postimg.cc/L4yjXF9r/0.jpg"
-                      fill
-                      alt={t('urbanaOprema.klupeIKosevi.klupe')}
-                      className="object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(250, 0)}
-                      sizes="(max-width: 250px) 100vw, 250px"
-                      itemProp="image"
-                    />
-                  </div>
-                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    {t('urbanaOprema.klupeIKosevi.klupe')}
-                  </figcaption>
-                  <div className="mt-2 text-left">
-                    Klupa izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca, <br/>
-                    obložena drvenim platicama zaštićenim lazurom za drvo ili boji po želji.
-                  </div>
-                </figure>
-              </div>
+<section
+  id="urbanaOprema"
+  className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+  itemScope
+  itemType="https://schema.org/Product"
+>
+  <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+    {t('urbanaOprema.title')}
+  </h2>
+  <div className="space-y-4">
+    {/* Klupe i kosevi za parkove subsection */}
+    <div
+      id="urbana-oprema-klupe-i-kosevi-za-parkove"
+      className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+    >
+      <div className="flex flex-wrap p-4">
+        <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+          <div className="relative overflow-hidden rounded-lg aspect-square">
+            <Image
+              src="https://i.postimg.cc/L4yjXF9r/0.jpg"
+              fill
+              alt={t('urbanaOprema.klupeIKosevi.klupe')}
+              className="object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={generateBlurPlaceholder(250, 0)}
+              sizes="(max-width: 250px) 100vw, 250px"
+              itemProp="image"
+            />
+          </div>
+          <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+            {t('urbanaOprema.klupeIKosevi.klupe')}
+          </figcaption>
+          <div className="mt-2 text-left">
+            {t('urbanaOprema.klupeIKosevi.description1')}
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    {/* Urbana oprema 2 subsection */}
+    <div
+      id="urbana-oprema2"
+      className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+    >
+      <div className="flex flex-wrap p-4">
+        <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+          <div className="relative overflow-hidden rounded-lg h-[400px]">
+            <Image
+              src="https://i.postimg.cc/GhVYFPsK/1.jpg"
+              fill
+              alt={t('urbanaOprema.klupeIKosevi.kosevi')}
+              className=" hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={generateBlurPlaceholder(400, 0)}
+              sizes="(max-width: 400px) 100vw, 400px"
+              itemProp="image"
+            />
+          </div>
+          <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+            {t('urbanaOprema.klupeIKosevi.kosevi')}
+          </figcaption>
+        </figure>
+        <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg h-[400px]">
+              <Image
+                src="https://i.postimg.cc/fTJmSqkk/2.jpg"
+                fill
+                alt={t('urbanaOprema.klupeIKosevi.kosevi')}
+                className=" hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(400, 0)}
+                sizes="(max-width: 400px) 100vw, 400px"
+                itemProp="image"
+              />
+            </div>                    
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <p>{t('urbanaOprema.klupeIKosevi.description2')}</p>
+            <p>{t('urbanaOprema.klupeIKosevi.description3')}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Urbana oprema 3 subsection */}
+      <div
+        id="urbana-oprema3"
+        className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+      >
+        <div className="flex flex-wrap p-4">
+          <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg aspect-square">
+              <Image
+                src="https://i.postimg.cc/RFrsNFWy/3.jpg"
+                fill
+                alt={t('urbanaOprema.klupeIKosevi.klupe')}
+                className="hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(250, 0)}
+                sizes="(max-width: 250px) 100vw, 250px"
+                itemProp="image"
+              />
             </div>
+            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              {t('urbanaOprema.klupeIKosevi.klupe')}
+            </figcaption>
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <strong>{t('urbanaOprema.klupeIKosevi.description4')}</strong>
+            <p>{t('urbanaOprema.klupeIKosevi.description5')}</p>
+          </div>
+        </div>
+      </div>
 
-            {/* Urbana oprema 2 subsection */}
-            <div
-              id="urbana-oprema2"
-              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-            >
-              <div className="flex flex-wrap p-4">
-                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[400px]">
-                    <Image
-                      src="https://i.postimg.cc/GhVYFPsK/1.jpg"
-                      fill
-                      alt={t('urbanaOprema.klupeIKosevi.kosevi')}
-                      className=" hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL={generateBlurPlaceholder(400, 0)}
-                      sizes="(max-width: 400px) 100vw, 400px"
-                      itemProp="image"
-                    />
-                  </div>
-                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                    {t('urbanaOprema.klupeIKosevi.kosevi')}
-                  </figcaption>
-                </figure>
-                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/fTJmSqkk/2.jpg"
-                        fill
-                        alt=""
-                        className=" hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 400px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>                    
-                  </figure>
-                  <div className="mt-2 text-left px-4">
-                    <p>Izrađena od čeličnih profila zaštićena temeljnom i završnom bojom po želji naručioca,</p>
-                    <p>obložena drvenim platicama zaštićena lazurom za drvo.</p>
-                    <p>Posuda korpe se prazni nagibom u oba smijera bez skidanja.</p>
-                  </div>
-                </div>
-              </div>
+      {/* Urbana oprema 4 subsection */}
+      <div
+        id="urbana-oprema4"
+        className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+      >
+        <div className="flex flex-wrap p-4">
+          <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg aspect-square">
+              <Image
+                src="https://i.postimg.cc/0yM0Dv1s/4.jpg"
+                fill
+                alt={t('urbanaOprema.klupeIKosevi.kosevi')}
+                className="hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(250, 0)}
+                sizes="(max-width: 250px) 100vw, 250px"
+                itemProp="image"
+              />
+            </div>
+            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              <strong>{t('urbanaOprema.klupeIKosevi.kosevi')}</strong>
+            </figcaption>
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <p>{t('urbanaOprema.klupeIKosevi.description6')}</p>
+            <p>{t('urbanaOprema.klupeIKosevi.description7')}</p>
+          </div>
+        </div>
+      </div>
 
-              {/* Urbana oprema 3 subsection */}
-              <div
-                id="urbana-oprema3"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/RFrsNFWy/3.jpg"
-                        fill
-                        alt={t('urbanaOprema.klupeIKosevi.klupe')}
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      {t('urbanaOprema.klupeIKosevi.klupe')}
-                    </figcaption>
-                  </figure>
-                  <div className="mt-2 text-left px-4">
-                    <strong>Klupa dužine 2 m</strong>
-                    <p>Nosači klupe su izrađeni od aluminija zaštičeni bojom po želji obloženi drvenim platicama</p>
-                    <p>zaštićene lazurom za drvo ili u boji po želji.</p>
-                  </div>
-                </div>
-              </div>
+      {/* Kandableri subsection */}
+      <div
+        id="urbana-oprema-5"
+        className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+      >        
+        <div className="flex flex-wrap p-4">
+          <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg aspect-square">
+              <Image
+                src="https://i.postimg.cc/8CV6314r/5.jpg"
+                fill
+                alt={t('urbanaOprema.kandableri.title')}
+                className="hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(250, 0)}
+                sizes="(max-width: 250px) 100vw, 250px"
+                itemProp="image"
+              />
+            </div>
+            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              {t('urbanaOprema.kandableri.title')}
+            </figcaption>
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <p>{t('urbanaOprema.kandableri.description')}</p>
+          </div>
+        </div>
+      </div>
 
-              {/* Urbana oprema 4 subsection */}
-              <div
-                id="urbana-oprema4"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/0yM0Dv1s/4.jpg"
-                        fill
-                        alt={t('urbanaOprema.klupeIKosevi.kosevi')}
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      <strong>{t('urbanaOprema.klupeIKosevi.kosevi')}</strong>
-                    </figcaption>
-                  </figure>
-                  <div className="mt-2 text-left px-4">
-                    <p>Izrađena od aluminija i čelika zaštićena temeljnom i završnom bojom po želji.</p>
-                    <p>Posuda se prazni nagibom u obe strane.</p>
-                  </div>
-                </div>
-              </div>
+      {/* Paviljon subsection */}
+      <div
+        id="urbana-5"
+        className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+      >
+        <div className="flex flex-wrap p-4">
+          <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg aspect-square">
+              <Image
+                src="https://i.postimg.cc/LsfZHWs1/211.jpg"
+                fill
+                alt={t('urbanaOprema.paviljon.title')}
+                className="hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(250, 0)}
+                sizes="(max-width: 250px) 100vw, 250px"
+                itemProp="image"
+              />
+            </div>
+            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              {t('urbanaOprema.paviljon.title')}
+            </figcaption>
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <p>{t('urbanaOprema.paviljon.description')}</p>
+          </div>
+        </div>
+      </div>
 
-              {/* Kandableri subsection */}
-              <div
-                id="urbana-oprema-5"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/8CV6314r/5.jpg"
-                        fill
-                        alt={t('urbanaOprema.kandableri.title')}
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      {t('urbanaOprema.kandableri.title')}
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              {/* Paviljon subsection */}
-              <div
-                id="urbana-5"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/LsfZHWs1/211.jpg"
-                        fill
-                        alt={t('urbanaOprema.paviljon.title')}
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      {t('urbanaOprema.paviljon.title')}
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              {/* Stalci za bicikle subsection */}
-              <div
-                id="urbana5"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >              
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/MT6j6dh6/7.jpg"
-                        fill
-                        alt={t('urbanaOprema.stalciZaBicikle.title')}
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      {t('urbanaOprema.stalciZaBicikle.title')}
-                    </figcaption>
-                  </figure>
-                </div>                
-              </div>
-            </div>  
-        </section>
+      {/* Stalci za bicikle subsection */}
+      <div
+        id="urbana5"
+        className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+      >
+        <div className="flex flex-wrap p-4">
+          <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+            <div className="relative overflow-hidden rounded-lg aspect-square">
+              <Image
+                src="https://i.postimg.cc/MT6j6dh6/7.jpg"
+                fill
+                alt={t('urbanaOprema.stalciZaBicikle.title')}
+                className="hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={generateBlurPlaceholder(250, 0)}
+                sizes="(max-width: 250px) 100vw, 250px"
+                itemProp="image"
+              />
+            </div>
+            <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+              {t('urbanaOprema.stalciZaBicikle.title')}
+            </figcaption>
+          </figure>
+          <div className="mt-2 text-left px-4">
+            <p>{t('urbanaOprema.stalciZaBicikle.description')}</p>
+          </div>
+        </div>                
+      </div>
+    </div>  
+</section>
 
          {/* OPREMA ZA GRAĐEVINARSTVO Section */}
         <section
