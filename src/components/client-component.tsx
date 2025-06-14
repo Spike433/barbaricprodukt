@@ -1413,7 +1413,7 @@ export default function ProductPageClient() {
             itemType="https://schema.org/Product"
           >
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-green-700" itemProp="name">
-              KOMUNALNA EKO OPREMA
+              {t('komunalnaEkoOprema.title')}
             </h2>
             <div className="space-y-2">
               {/* Kontejneri subsection */}
@@ -1427,7 +1427,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/02YWvD1c/9.png"
                         fill
-                        alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI 5,7 i 10 m³"
+                        alt={t('komunalnaEkoOprema.kontejneri.komunalni')}
                         className="hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1437,7 +1437,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI 5,7 i 10 m³
+                      {t('komunalnaEkoOprema.kontejneri.komunalni')}
                     </figcaption>
                   </figure>
                   
@@ -1446,7 +1446,7 @@ export default function ProductPageClient() {
                       <Image
                         src="https://i.postimg.cc/ZnLCJ4P7/1.png"
                         fill
-                        alt="KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI za papir 5,7 i 10 m³"
+                        alt={t('komunalnaEkoOprema.kontejneri.zaPapir')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
@@ -1456,7 +1456,7 @@ export default function ProductPageClient() {
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      KOMUNALNI KONTEINERI OTVORENI ,ZATVORENI za papir 5,7 i 10 m³
+                      {t('komunalnaEkoOprema.kontejneri.zaPapir')}
                     </figcaption>
                   </figure>
                   
