@@ -342,19 +342,29 @@ export default function ProductPageClient() {
                   </h2>    
                 </div>
 
-            {/* Ograde i podovi subsection */}
+             {/* Ograde i podovi subsection */}
               <div id="ogradeIPodovi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
                 <div className="flex flex-wrap">
                   {/* Ograde content */}
                   <div className="w-full md:w-1/2 space-y-2 p-4 font-medium">
-                    <div className="text-lg font-semibold">OGRADE</div>
-                    <div className="ml-4 text-lg">Balkonske</div>
-                    <div className="ml-4 text-lg">Kućne</div>
-                    <div className="ml-4 text-lg">Industrijske</div>
-                    <div className="ml-4 text-lg">Rešetkaste zaštite za prozore i vrata</div>
+                    <div className="text-lg font-semibold">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.title')}
+                    </div>
+                    <div className="ml-4 text-lg">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.balkonske')}
+                    </div>
+                    <div className="ml-4 text-lg">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.kucne')}
+                    </div>
+                    <div className="ml-4 text-lg">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.industrijske')}
+                    </div>
+                    <div className="ml-4 text-lg">
+                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.resetkasteZastite')}
+                    </div>
                   </div>
+                </div>
               </div>
-            </div>
               </div>
 
               {/* Ograde i podovi subsection */}
