@@ -48,43 +48,46 @@ export default function HomePage() {
           <div>
             {/* Čelične konstrukcije */}
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Link 
-            href="/products#celicneKonstrukcije" 
-            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
-            >
-            <div className="flex gap-3 p-3 min-h-[300px]"> {/* Increased minimum height */}
-            <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Taller aspect ratio */}
-            <Image
-            src="https://i.postimg.cc/DwbFLxf6/8.jpg"
-            alt="Čelične konstrukcije 1"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            style={{ objectPosition: '40% 32%' }}
-            />
-            </div>
-            <div className="w-1/2 relative aspect-[4/3] rounded-md overflow-hidden"> {/* Matching ratio */}
-            <Image
-            src="https://i.postimg.cc/4dXgCZ62/9.jpg"
-            alt="Čelične konstrukcije 2"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
-            </div>
-            </div>
-            <div className="p-4 flex-1 flex flex-col">
-                    <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                      {t('steelStructures')}
-                    </h3>
+              {/* Steel Structures - Double Column */}
+              <Link 
+                href="/products#celicneKonstrukcije" 
+                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
+              >
+                <div className="flex gap-3 p-3 min-h-[400px]"> {/* Increased height */}
+                  <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Custom height */}
+                    <Image
+                      src="https://i.postimg.cc/DwbFLxf6/8.jpg"
+                      alt="Čelične konstrukcije 1"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      style={{ objectPosition: '40% 32%' }}
+                    />
                   </div>
-            </Link>              
+                  <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Matching height */}
+                    <Image
+                      src="https://i.postimg.cc/4dXgCZ62/9.jpg"
+                      alt="Čelične konstrukcije 2"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                </div>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                    {t('steelStructures')}
+                  </h3>
+                </div>
+              </Link>              
+                
+              {/* Aluminum Joinery - Single Column */}
               <Link
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex p-3 min-h-[336px]"> {/* Increased height container */}
-                  <div className="w-full relative  rounded-md overflow-hidden"> {/* Portrait ratio */}
+                <div className="flex p-3 min-h-[450px]"> {/* Taller container */}
+                  <div className="w-full relative h-[430px] rounded-md overflow-hidden"> {/* Portrait height */}
                     <Image
                       src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
@@ -96,15 +99,15 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="p-4 flex-1 flex flex-col">
-                      <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                        {t('aluminumJoinery')}
-                      </h3>                
-                    </div>
-                </Link>
-                </section>
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                    {t('aluminumJoinery')}
+                  </h3>                
+                </div>
+              </Link>
+            </section>
 
                 {/* Industrijski proizovdi */}
-                <section className="mb-8">
+              <section className="mb-8">
               <Link 
                 href="/products#industrijskaOprema" 
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
