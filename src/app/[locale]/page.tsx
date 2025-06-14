@@ -85,8 +85,7 @@ export default function HomePage() {
                   </h3>
                 </div>
               </Link>
-
-              {/* Aluminijska stolarija */}
+              
               <Link
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
@@ -114,7 +113,58 @@ export default function HomePage() {
               </Link>
             </section>
 
-            {/* Industrijska oprema */}
+                {/* Industrijski proizovdi */}
+                <section className="mb-8">
+              <Link 
+                href="/products#industrijskaOprema" 
+                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              >
+                <div className="flex gap-3 p-3">
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/1zhpcCQK/31.jpg"
+                      alt="Oprema za more 1"
+                      fill
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/RVhQMJdw/28.jpg"
+                      alt="Oprema za more 2"
+                      fill
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/yNgzQVx4/25logo.png"
+                      alt="Oprema za more 3"
+                      fill
+                      className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                    INDUSTRIJSKI PROIZVODI
+                  </h3>                
+                </div>
+              </Link>
+            </section>
+
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Komunalna eko oprema */}
               <Link 
@@ -182,56 +232,56 @@ export default function HomePage() {
             </section>
             
             {/* Oprema za more */}
-        <section className="mb-8">
-          <Link 
-            href="/products#opremaZaMore" 
-            className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
-          >
-            <div className="flex gap-3 p-3">
-              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                <Image
-                  src="https://i.postimg.cc/XJBBbfmJ/4logo.png"
-                  alt="Oprema za more 1"
-                  fill
-                  className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                <Image
-                  src="https://i.postimg.cc/0N1Nqkp0/1.png"
-                  alt="Oprema za more 2"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
-                <Image
-                  src="https://i.postimg.cc/WpWgnn6k/7.jpg"
-                  alt="Oprema za more 3"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="p-4 flex-1 flex flex-col">
-              <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
-                {t('marineEquipment')}
-              </h3>                
-            </div>
-          </Link>
-        </section>
+            <section className="mb-8">
+              <Link 
+                href="/products#opremaZaMore" 
+                className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+              >
+                <div className="flex gap-3 p-3">
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/XJBBbfmJ/4logo.png"
+                      alt="Oprema za more 1"
+                      fill
+                      className="object-cover object-[20%_40%] group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/0N1Nqkp0/1.png"
+                      alt="Oprema za more 2"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="w-1/2 relative aspect-video rounded-md overflow-hidden">
+                    <Image
+                      src="https://i.postimg.cc/WpWgnn6k/7.jpg"
+                      alt="Oprema za more 3"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      placeholder="blur"
+                      blurDataURL="data:image/svg+xml;base64,[YOUR_BASE64_BLUR_HASH]"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                    {t('marineEquipment')}
+                  </h3>                
+                </div>
+              </Link>
+            </section>
           
             {/* Urbana oprema */}
             <section className="mb-8">

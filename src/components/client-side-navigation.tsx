@@ -19,7 +19,7 @@ export default function ClientSideNavigation() {
         { id: "kuce", title: t('steelStructures.subheaders.houses') },
         { id: "pontoniKatamarani", title: t('steelStructures.subheaders.pontoonsCatamarans') }
       ]
-    },
+    },    
     {
       id: "aluPvcStolarija",
       title: t('aluminumPvcJoinery.title'),
@@ -27,7 +27,7 @@ export default function ClientSideNavigation() {
         { id: "segmentnaPodiznaVrata", title: t('aluminumPvcJoinery.subheaders.doors') },
         { id: "prozori", title: t('aluminumPvcJoinery.subheaders.windows') }
       ]
-    },
+    },    
     {
       id: "industrijskaOprema",
       title: t('industrialEquipment.title'),
@@ -65,7 +65,7 @@ export default function ClientSideNavigation() {
         { id: "spremista1", title: t('communalEcoEquipment.subheaders.storage1') },
         { id: "spremista2", title: t('communalEcoEquipment.subheaders.storage2') }
       ]
-    },
+    },   
     {
       id: "gumiraniIplastificiraniProizvodi",
       title: t('rubberizedPlasticizedProducts.title'),

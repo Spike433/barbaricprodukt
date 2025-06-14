@@ -888,143 +888,143 @@ export default function ProductPageClient() {
             </div>
           </div>
 
-  {/* Cijevni sustavi subsection */}
-  <div id="cijevniSustavi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
-    <div className="flex flex-wrap p-4">
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[400px]">
-          <Image
-            src="https://i.postimg.cc/nzdj5T6g/10.jpg"
-            fill
-            alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
-            className=" hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(400, 0)}
-            sizes="(max-width: 250px) 100vw, 400px"
-            itemProp="image"
-          />
-        </div>
-        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-          {t('industrijskaOprema.cijevniSustavi.cijevniZatvaraci')}
-        </figcaption>
-      </figure>
-      
-      <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-        <div className="relative overflow-hidden rounded-lg h-[400px]">
-          <Image
-            src="https://i.postimg.cc/T245J7jW/12.jpg"
-            fill
-            alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
-            className=" hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={generateBlurPlaceholder(400, 0)}
-            sizes="(max-width: 250px) 100vw, 400px"
-            itemProp="image"
-          />
-        </div>
-        <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-            {t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
-        </figcaption>
-      </figure>
-    </div>
-  </div>
+          {/* Cijevni sustavi subsection */}
+          <div id="cijevniSustavi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
+            <div className="flex flex-wrap p-4">
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[400px]">
+                  <Image
+                    src="https://i.postimg.cc/nzdj5T6g/10.jpg"
+                    fill
+                    alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
+                    className=" hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 0)}
+                    sizes="(max-width: 250px) 100vw, 400px"
+                    itemProp="image"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                  {t('industrijskaOprema.cijevniSustavi.cijevniZatvaraci')}
+                </figcaption>
+              </figure>
+              
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg h-[400px]">
+                  <Image
+                    src="https://i.postimg.cc/T245J7jW/12.jpg"
+                    fill
+                    alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
+                    className=" hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(400, 0)}
+                    sizes="(max-width: 250px) 100vw, 400px"
+                    itemProp="image"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
+                </figcaption>
+              </figure>
+            </div>
+          </div>
             </div>
 
             {/* Parkiralista kugli subsection */}
-<div id="parkiralistaKugli" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    {/* First Image - 985x294 (approx 3.35:1 ratio) */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '985/296' }}> {/* Adjusted ratio */}
-        <Image
-          src="https://i.postimg.cc/T1pLXgxw/11.jpg"
-          width={985}
-          height={296}
-          alt={t('industrijskaOprema.parkiralistaKugli.title')}
-          className="object-contain hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(985, 394)} 
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        {t('industrijskaOprema.parkiralistaKugli.title')}
-      </figcaption>
-    </figure>
-    
-    {/* Second Image - 1094x394 (approx 2.77:1 ratio) */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/400' }}>
-        <Image
-          src="https://i.postimg.cc/1X2gRXRK/13.jpg"
-          width={1094}
-          height={400}
-          alt={t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
-          className="object-contain hover:scale-105 transition-transform duration-500"
-          style={{ objectPosition: '10% 10%' }}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(1094, 400)}
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        {t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
-      </figcaption>
-    </figure>
-  </div>
-</div>
+          <div id="parkiralistaKugli" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+            <div className="flex flex-wrap p-4">
+              {/* First Image - 985x294 (approx 3.35:1 ratio) */}
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '985/296' }}> {/* Adjusted ratio */}
+                  <Image
+                    src="https://i.postimg.cc/T1pLXgxw/11.jpg"
+                    width={985}
+                    height={296}
+                    alt={t('industrijskaOprema.parkiralistaKugli.title')}
+                    className="object-contain hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(985, 394)} 
+                    sizes="(max-width: 800px) 100vw, 50vw"
+                    itemProp="image"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                  {t('industrijskaOprema.parkiralistaKugli.title')}
+                </figcaption>
+              </figure>
+              
+              {/* Second Image - 1094x394 (approx 2.77:1 ratio) */}
+              <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1094/400' }}>
+                  <Image
+                    src="https://i.postimg.cc/1X2gRXRK/13.jpg"
+                    width={1094}
+                    height={400}
+                    alt={t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
+                    className="object-contain hover:scale-105 transition-transform duration-500"
+                    style={{ objectPosition: '10% 10%' }}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={generateBlurPlaceholder(1094, 400)}
+                    sizes="(max-width: 800px) 100vw, 50vw"
+                    itemProp="image"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                  {t('industrijskaOprema.parkiralistaKugli.hvatacOdasiljac')}
+                </figcaption>
+              </figure>
+            </div>
+          </div>
            {/* Rezervoari subsection */}
-<div id="rezervoari" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    {/* First Image - 518x281 (1.84:1 ratio) */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '518/281' }}>
-        <Image
-          src="https://i.postimg.cc/3wTvDkXS/9.jpg"
-          width={518}
-          height={281}
-          alt={t('industrijskaOprema.rezervoari.zaBenzinskePostaje')}
-          className="object-contain hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(518, 281)}
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        {t('industrijskaOprema.rezervoari.zaBenzinskePostaje')} <br/> {t('industrijskaOprema.rezervoari.tehnoloskeKanalizacije')}
-      </figcaption>
-    </figure>
-    
-    {/* Second Image - 1280x960 (1.33:1 ratio) */}
-    <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1280/720' }}>
-        <Image
-          src="https://i.postimg.cc/wxV0xppY/15.jpg"
-          width={1280}
-          height={720}
-          alt={t('industrijskaOprema.rezervoari.zaKiseline')}
-          className="object-contain hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(1280, 960)}
-          sizes="(max-width: 800px) 100vw, 50vw"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-        {t('industrijskaOprema.rezervoari.gumirani')} <br/>{t('industrijskaOprema.rezervoari.zaKiseline')}
-      </figcaption>
-    </figure>
-  </div>
-</div>
+            <div id="rezervoari" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+              <div className="flex flex-wrap p-4">
+                {/* First Image - 518x281 (1.84:1 ratio) */}
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '518/281' }}>
+                    <Image
+                      src="https://i.postimg.cc/3wTvDkXS/9.jpg"
+                      width={518}
+                      height={281}
+                      alt={t('industrijskaOprema.rezervoari.zaBenzinskePostaje')}
+                      className="object-contain hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(518, 281)}
+                      sizes="(max-width: 800px) 100vw, 50vw"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('industrijskaOprema.rezervoari.zaBenzinskePostaje')} <br/> {t('industrijskaOprema.rezervoari.tehnoloskeKanalizacije')}
+                  </figcaption>
+                </figure>
+                
+                {/* Second Image - 1280x960 (1.33:1 ratio) */}
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg w-full" style={{ aspectRatio: '1280/720' }}>
+                    <Image
+                      src="https://i.postimg.cc/wxV0xppY/15.jpg"
+                      width={1280}
+                      height={720}
+                      alt={t('industrijskaOprema.rezervoari.zaKiseline')}
+                      className="object-contain hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(1280, 960)}
+                      sizes="(max-width: 800px) 100vw, 50vw"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('industrijskaOprema.rezervoari.gumirani')} <br/>{t('industrijskaOprema.rezervoari.zaKiseline')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
               {/* Rezervoari 2 subsection */}
               <div
                 id="rezervoari2"
@@ -2078,27 +2078,27 @@ export default function ProductPageClient() {
 
               {/* Spremista 2 subsection */}
               <div id="spremista2" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-  <div className="flex flex-wrap p-4">
-    <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-      <div className="relative overflow-hidden rounded-lg aspect-square">
-        <Image
-          src="https://i.postimg.cc/SxJqq4Jg/33.jpg"
-          fill
-          alt="MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM ZA OPASNI OTPAD"
-          className="object-cover hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={generateBlurPlaceholder(250, 0)}
-          sizes="(max-width: 250px) 100vw, 250px"
-          itemProp="image"
-        />
-      </div>
-      <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
-        MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM <br/> ZA OPASNI OTPAD
-      </figcaption>
-    </figure>
-  </div>
-</div>
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/SxJqq4Jg/33.jpg"
+                      fill
+                      alt="MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM ZA OPASNI OTPAD"
+                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-left" itemProp="caption">
+                    MOBILNO SPREMIŠTE DVOETAŽNO IZOLIRANO SA POMOĆNOM PROSTORIJOM <br/> ZA OPASNI OTPAD
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
             </div>
           </section>
 
