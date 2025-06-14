@@ -52,6 +52,21 @@ export default function ClientSideNavigation() {
       ]
     },
     {
+      id: "ekoOpremaKomunalna",
+      title: t('communalEcoEquipment.title'),
+      subheaders: [
+        { id: "eko-oprema-komunalna-kontejneri", title: t('communalEcoEquipment.subheaders.containers') },
+        { id: "septic-tank-separatori", title: t('communalEcoEquipment.subheaders.septicTanksSeparators') },
+        { id: "tankvane-regali", title: t('communalEcoEquipment.subheaders.tankShelving') },
+        { id: "postrojenja", title: t('communalEcoEquipment.subheaders.facilities') },
+        { id: "posude-za-akumulatore-zauljene-krpe-i-pijesak", title: t('communalEcoEquipment.subheaders.accumulatorContainers') },
+        { id: "posude2", title: t('communalEcoEquipment.subheaders.containers2') },
+        { id: "spremista", title: t('communalEcoEquipment.subheaders.storage') },
+        { id: "spremista1", title: t('communalEcoEquipment.subheaders.storage1') },
+        { id: "spremista2", title: t('communalEcoEquipment.subheaders.storage2') }
+      ]
+    },
+    {
       id: "gumiraniIplastificiraniProizvodi",
       title: t('rubberizedPlasticizedProducts.title'),
       subheaders: [
@@ -150,7 +165,7 @@ export default function ClientSideNavigation() {
         { id: "plasticne-barijere", title: t('plasticProducts.subheaders.plasticBarriers') }
       ]
     }
-  ]
+]
 
   const [collapsedSections, setCollapsedSections] = useState<{ [key: string]: boolean }>(() => {
     return sections.reduce((acc, section) => {

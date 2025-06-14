@@ -266,6 +266,20 @@
         "craneParts": "Dijelovi mačke krana"
       }
     },
+    "communalEcoEquipment": {
+      "title": "KOMUNALNA EKO OPREMA",
+      "subheaders": {
+        "containers": "Kontejneri",
+        "septicTanksSeparators": "Septičke jame i separator",
+        "tankShelving": "Tankvane i regali",
+        "facilities": "Postrojenja",
+        "accumulatorContainers": "Posude za akumulatore",
+        "containers2": "Posude 2",
+        "storage": "Spremišta",
+        "storage1": "Spremišta 1",
+        "storage2": "Spremišta 2"
+      }
+    },
     "rubberizedPlasticizedProducts": {
       "title": "GUMIRANI I PLASTIFICIRANI PROIZVODI",
       "subheaders": {
