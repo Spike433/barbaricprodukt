@@ -1,52 +1,728 @@
 {
-    "AboutPage": {
-      "title": "About Us",
-      "subtitle": "Meet Barbarić Produkt - a family business with a tradition of excellence in manufacturing and processing of metal, plastic and rubber.",
-      "ourStory": {
-        "title": "Our Story",
-        "content1": "<span class='font-semibold text-foreground'>Barbarić Produkt d.o.o.</span> is a family business focused on manufacturing and processing of metal, plastic and rubber products, services of manufacturing and assembly of metal structures, anti-corrosion protection, rubber lining and plastic coating of pipelines, valves, tanks and industrial plants.",
-        "content2": "We employ a dozen workers, from qualified workers to graduate engineers, and we are able to perform even the most complex tasks. We have our own production hall and warehouse space of over 800 m² and mechanization for performing all types of work.",
-        "content3": "Over more than 16 years of business, we have built a reputation as a reliable partner that delivers high-quality products and services. Our expertise in working with different materials allows us to offer comprehensive solutions tailored to the specific needs of our clients."
-      },
-      "advantages": {
-        "title": "Our Advantages",
-        "items": [
-          {
-            "title": "16+ years of experience",
-            "description": "Long-term experience in the industry ensures the quality and reliability of our services."
-          },
-          {
-            "title": "Family tradition and values",
-            "description": "We operate on the basis of family values based on trust and integrity."
-          },
-          {
-            "title": "Production from various materials",
-            "description": "We specialize in working with metal, plastic and rubber, which enables us to provide comprehensive service."
-          },
-          {
-            "title": "Own premises of 800 m²",
-            "description": "We have our own production hall and warehouse space for efficient production."
-          },
-          {
-            "title": "Modernized mechanization and tools",
-            "description": "We continuously invest in the latest technology and tools to achieve the best results."
-          },
-          {
-            "title": "Focus on innovation and sustainability",
-            "description": "We are committed to developing innovative solutions with care for the environment and sustainability."
+  "NotFoundPage": {
+    "description": "Please check the browser address bar or use navigation to go to a known page.",
+    "title": "Page not found"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {EN} other {Unknown}}"
+  },
+  "HomePage": {
+    "title": "Barbarić Produkt - Industrial Solutions",
+    "productCategories": "Our product categories",
+    "steelStructures": "STEEL STRUCTURES",
+    "industrialEquipment": "INDUSTRIAL EQUIPMENT",
+    "aluminumJoinery": "ALUMINUM JOINERY",
+    "communalEcoEquipment": "COMMUNAL ECO EQUIPMENT",
+    "rubberizedSteelValves": "RUBBER-LINED STEEL DIAPHRAGM VALVES, CHECK VALVES, PIPE ELEMENTS AND TANKS",
+    "marineEquipment": "EQUIPMENT FOR SEAS LAKES RIVERS - CAMPS PONTOONS, SUNBATHING AREAS, BOAT MOORINGS, CATAMARANS",
+    "urbanEquipment": "URBAN EQUIPMENT",
+    "constructionEquipment": "CONSTRUCTION EQUIPMENT",
+    "rotationalMolding": "ROTO-MOLDED PLASTIC PRODUCTS",
+    "ctaTitle": "We're ready for your vision",
+    "ctaText": "Regardless of the size or complexity of your project, our team of experts is ready to help you realize it.",
+    "requestQuote": "Request a quote",
+    "learnMore": "Learn more about us"
+  },
+  "AboutPage": {
+    "title": "About us",
+    "subtitle": "Meet Barbarić Produkt - a family company with a tradition of excellence in manufacturing and processing metal, plastic and rubber products.",
+    "ourStory": {
+      "title": "Our story",
+      "companyName": "Barbarić Produkt d.o.o.",
+      "content1": "is a family-owned company focused on manufacturing and processing products from metal, plastic and rubber, metal structure fabrication and assembly services, anti-corrosion protection, rubberizing and plasticizing pipelines, valves, tanks and industrial plants.",
+      "content2": "We employ about a dozen workers, from qualified workers to graduate engineers, and are capable of performing even the most complex tasks. We have our own production hall and warehouse space of over 800 m² and machinery for performing all types of work.",
+      "content3": "Over more than 16 years of business, we have built a reputation as a reliable partner that delivers high-quality products and services. Our expertise in working with different materials allows us to offer comprehensive solutions tailored to the specific needs of our clients."
+    },
+    "advantages": {
+      "title": "Our advantages",
+      "items": [
+        {
+          "title": "16+ years of experience",
+          "description": "Long-term experience in the industry ensures the quality and reliability of our services."
+        },
+        {
+          "title": "Family tradition and values",
+          "description": "We operate based on family values that are founded on trust and integrity."
+        },
+        {
+          "title": "Manufacturing from various materials",
+          "description": "We specialize in working with metal, plastic and rubber, which allows us to provide comprehensive service."
+        },
+        {
+          "title": "Own 800 m² facility",
+          "description": "We have our own production hall and warehouse space for efficient production."
+        },
+        {
+          "title": "Modernized machinery and tools",
+          "description": "We continuously invest in the latest technology and tools to achieve the best results."
+        },
+        {
+          "title": "Focus on innovation and sustainability",
+          "description": "We are committed to developing innovative solutions with care for the environment and sustainability."
+        }
+      ]
+    },
+    "facilities": {
+      "title": "Our facilities",
+      "content1": "We have our own production hall and warehouse space of over 800 m², which enables efficient production and fast delivery. Our machinery and tools are regularly modernized to keep up with the latest technological achievements in the industry.",
+      "content2": "Thanks to our capacities, we are able to perform even the most complex tasks, from manufacturing individual components to complete industrial plants. Our equipment includes state-of-the-art machines for processing metal, plastic and rubber, which enables precision and quality in every project."
+    },
+    "cta": {
+      "title": "Interested in cooperation?",
+      "content": "Contact us for more information about our services or to arrange potential cooperation. Our team is at your disposal for any questions.",
+      "email": "Contact us via email",
+      "services": "View our services"
+    }
+  },
+  "ServicesPage": {
+    "title": "Services",
+    "subtitle": "Barbarić Produkt d.o.o. provides a wide range of services in the metal industry, from metalwork and welding to machining and maintenance of industrial plants.",
+    "quote": {
+      "title": "Request a quote",
+      "description": "For more information about our services or to get a quote, please contact us via our contact form or directly by phone.",
+      "contactForm": "Contact us via form"
+    },
+    "services": {
+      "metalwork": {
+        "title": "METALWORK",
+        "cutting": {
+          "title": "CUTTING",
+          "subitems": {
+            "cnc": "CNC",
+            "gas": "GAS",
+            "plasma": "PLASMA"
           }
-        ]
+        },
+        "bending": {
+          "title": "BENDING",
+          "subitems": {
+            "angular": "ANGULAR",
+            "circular": "CIRCULAR"
+          }
+        },
+        "welding": {
+          "title": "WELDING",
+          "subitems": {
+            "rel": "REL",
+            "migMag": "MIG MAG",
+            "tig": "TIG",
+            "gas": "GAS"
+          }
+        },
+        "sandblasting": {
+          "title": "SANDBLASTING"
+        }
       },
-      "facilities": {
-        "title": "Our Facilities",
-        "content1": "We have our own production hall and warehouse space of over 800 m², which enables efficient production and fast delivery. Our machinery and tools are regularly modernized to keep up with the latest technological achievements in the industry.",
-        "content2": "Thanks to our capacities, we are able to perform even the most complex tasks, from manufacturing individual components to complete industrial plants. Our equipment includes the most modern machines for processing metal, plastic and rubber, which enables precision and quality in every project."
+      "machining": {
+        "title": "METAL AND NON-METAL MACHINING",
+        "subitems": {
+          "turning": "TURNING",
+          "milling": "MILLING",
+          "drilling": "DRILLING",
+          "grinding": "GRINDING",
+          "stamping": "STAMPING"
+        }
       },
-      "cta": {
-        "title": "Interested in cooperation?",
-        "content": "Contact us for more information about our services or to arrange potential cooperation. Our team is at your disposal for all questions.",
-        "email": "Contact us via email",
-        "services": "View our services"
+      "software": {
+        "title": "SOFTWARE SOLUTIONS",
+        "subitems": {
+          "web": "WEB APPLICATIONS",
+          "mobile": "MOBILE APPLICATIONS",
+          "industrial": "INDUSTRIAL SOFTWARE",
+          "automation": "PLANT AUTOMATION",
+          "smartHomes": "SMART HOMES"
+        }
+      },
+      "antiCorrosion": {
+        "title": "ANTI-CORROSION PROTECTION",
+        "subitems": {
+          "painting": "PAINTING",
+          "rubberizing": "RUBBERIZING",
+          "plasticizing": "PLASTICIZING"
+        }
+      },
+      "sheetMetal": {
+        "title": "SHEET METAL WORK",
+        "subitems": {
+          "construction": {
+            "title": "CONSTRUCTION SHEET METAL",
+            "subitems": {
+              "roofing": "ROOFING",
+              "facades": "FACADES"
+            }
+          },
+          "insulation": "INSULATION SHEET METAL"
+        }
+      },
+      "plastics": {
+        "title": "PLASTIC PROCESSING",
+        "subitems": {
+          "rotationalMolding": "ROTO MOLDING",
+          "welding": "WELDING",
+          "laminating": "LAMINATING"
+        }
+      },
+      "maintenance": {
+        "title": "INDUSTRIAL PLANT MAINTENANCE"
       }
     }
+  },
+  "ContactForm": {
+    "title": "Contact us",
+    "subtitle": "Feel free to contact us with any questions or inquiries. Our team will respond as soon as possible.",
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we will get back to you as soon as possible.",
+      "labels": {
+        "name": "Your name",
+        "email": "Email address",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "message": "Enter your message"
+      },
+      "errors": {
+        "name": "Name is required",
+        "email": {
+          "required": "Email is required",
+          "invalid": "Enter a valid email address"
+        },
+        "message": "Message is required",
+        "recaptcha": "Please confirm you're not a robot."
+      },
+      "submit": {
+        "sending": "Sending...",
+        "send": "Send message"
+      },
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred while sending the message."
+    },
+    "contactInfo": {
+      "title": "Contact information",
+      "description": "You can also contact us directly through the following channels",
+      "address": {
+        "title": "Address:",
+        "line1": "Žutička ulica 30",
+        "line2": "Ivanić-Grad 10310",
+        "line3": "CROATIA"
+      },
+      "phone": {
+        "title": "Phone:",
+        "number1": "+385 91 282-3375",
+        "number2": "+385 91 200-8801"
+      },
+      "email": {
+        "title": "Email:",
+        "address": "barbaric.produkt@barbaricprodukt.com"
+      },
+      "website": {
+        "title": "Website:",
+        "url": "barbaricprodukt.com"
+      },
+      "hours": "Working hours: Monday - Friday, 7:00 AM - 3:00 PM"
+    }
+  },
+  "Navigation": {
+    "content": "Content",
+    "steelStructures": {
+      "title": "STEEL STRUCTURES",
+      "subheaders": {
+        "assemblyHalls": "Assembly halls, hangars, garages",
+        "panoramicLift": "Panoramic lift",
+        "glassMetalFacades": "Glass and sheet metal facades",
+        "fencesFloors": "Fences and floors",
+        "houses": "Houses",
+        "pontoonsCatamarans": "Pontoons and catamarans"
+      }
+    },
+    "aluminumPvcJoinery": {
+      "title": "ALU/PVC JOINERY",
+      "subheaders": {
+        "doors": "Double-wing, single-wing, automatic, segmental lift doors",
+        "windows": "Windows, glass walls, panel facades, glass facades, winter gardens"
+      }
+    },
+    "industrialEquipment": {
+      "title": "INDUSTRIAL EQUIPMENT",
+      "subheaders": {
+        "inoxValves": "INOX fittings (valves, couplings, transitions)",
+        "butterflyValves": "Butterfly valves",
+        "filtersExchangers": "Filters and exchangers",
+        "couplingsActuators": "Couplings and actuators",
+        "equipmentRepair": "General equipment repair",
+        "pipeSystems": "Pipe systems and closures",
+        "ballParking": "Ball parking and equipment",
+        "tanks": "Tanks (gasoline, acids, alkalis)",
+        "rubberizedTanks": "Rubber-lined tanks",
+        "gratingStairs": "Floor gratings and staircases",
+        "processingPlants": "Processing plants",
+        "steelRubberTanks": "Rubber-lined steel tanks",
+        "gearProtection": "Gear protection",
+        "coolingUnit": "Cooling unit",
+        "materialConveyors": "Material conveyors",
+        "craneRails": "Crane rails and equipment",
+        "craneParts": "Crane trolley parts"
+      }
+    },
+    "communalEcoEquipment": {
+      "title": "COMMUNAL ECO EQUIPMENT",
+      "subheaders": {
+        "containers": "Separate waste containers",
+        "septicTanksSeparators": "Septic tanks and oil separators",
+        "tankShelving": "Tanks and bottle racks",
+        "facilities": "Technological facilities",
+        "accumulatorContainers": "Accumulator containers and hazardous waste vessels", 
+        "containers2": "Manholes and barriers",
+        "storage": "Liquid storage tanks",
+        "storage1": "Tanks and gratings",
+        "storage2": "Mobile storage"
+      }
+    },
+    "rubberizedPlasticizedProducts": {
+      "title": "RUBBER-LINED AND PLASTIC-COATED PRODUCTS",
+      "subheaders": {
+        "rubberValves": "Rubber-lined diaphragm valves and check valves",
+        "rubberPipes": "Rubber-lined pipes and pipe elements",
+        "steelTanks": "Rubber-lined steel tanks",
+        "exchangers": "Rubber-lined anion and cation exchangers"
+      }
+    },
+    "marineEquipment": {
+      "title": "EQUIPMENT FOR SEAS LAKES RIVERS - CAMPS",
+      "subheaders": {
+        "pontoonSize": "Basic pontoon size 2 × 4 m",
+        "sunbathingModules": "Sunbathing modules with access paths + floats",
+        "pontoonsDescription": "Pontoons and floating platforms - description",
+        "kayaksEquipment": "Kayaks and recreational equipment",
+        "modularCabins": "Modular mobile cabins",
+        "waterGauges": "Water gauge windows",
+        "manholes": "Manholes"
+      }
+    },
+    "urbanEquipment": {
+      "title": "URBAN EQUIPMENT",
+      "subheaders": {
+        "parkBenches": "Park benches and bins",
+        "wasteBinA1": "Waste bin A1 (60 liters)",
+        "benchC": "Bench C (2 m)",
+        "wasteBinC1": "Waste bin C1 (50 liters)",
+        "bollards": "Bollards",
+        "pavilion": "Pavilion",
+        "bikeStands": "Bike stands / Parking stations / Flag poles / Advertising panels"
+      }
+    },
+    "constructionEquipment": {
+      "title": "CONSTRUCTION EQUIPMENT",
+      "subheaders": {
+        "concreteTunnels": "Concrete tunnels",
+        "septicTanks": "Septic tank / oil and grease separator / water meter manholes",
+        "plasticWaterGauge": "Plastic water gauge window",
+        "waterGaugeSpecs": "Water gauge window (technical specifications)"
+      }
+    },
+    "plasticProducts": {
+      "title": "PLASTIC PRODUCTS / ROTO MOLDING",
+      "subheaders": {
+        "barrels": "Barrels",
+        "wineContainers": "Wine containers",
+        "tanks1000L": "1000L tanks",
+        "rotoMoldContainers": "Roto Mold containers",
+        "waterMeterManholes": "Water meter manholes",
+        "sandOilTraps": "Manholes / Sand traps / Grease traps",
+        "sewerManholes": "Sewer manholes / Septic tanks",
+        "sprayerTanks": "Sprayer tanks / Atomizers",
+        "tankWithPump": "1000L tank with pump",
+        "concretePipes": "Concrete pipes",
+        "plasticBarriers": "Plastic barriers"
+      }
+    }
+  },
+  "ProductPageClient": {
+    "celicneKonstrukcije": {
+      "title": "STEEL STRUCTURES",
+      "montazneHale": {
+        "title": "ASSEMBLY HALLS",
+        "hangari": "HANGARS",
+        "garaze": "GARAGES",
+        "celicneKonstrukcije": "STEEL STRUCTURES",
+        "panoramskoDizalo": "PANORAMIC LIFT",
+        "krovista": "ROOF STRUCTURES"
+      },
+      "stakleneLimeneFasade": {
+        "title": "GLASS AND SHEET METAL FACADES",
+        "fasadeStakleneLimene": "GLASS AND SHEET METAL FACADES",
+        "krovniProzori": "SKYLIGHTS",
+        "krovneKupole": "ROOF DOMES",
+        "svjetlarnici": "GREENHOUSES"
+      },
+      "industrijskaVrata": {
+        "title1": "Industrial sliding lift automatic doors",
+        "title2": "Entrance automatic double-wing and sliding automatic doors"
+      },
+      "ogradeIPodovi": {
+        "ograde": {
+          "title": "FENCES",
+          "balkonske": "Balcony",
+          "kucne": "House",
+          "industrijske": "Industrial",
+          "resetkasteZastite": "Grille protection for windows and doors"
+        },
+        "ostalo": {
+          "rasvjetnaTijela": "LIGHTING FIXTURES",
+          "kandelaberi": "STREET LAMPS",
+          "klupe": "PARK BENCHES",
+          "kosevi": "WASTE BINS",
+          "reklamniPanoi": "ADVERTISING PANELS",
+          "stupovi": "FLAG POLES",
+          "kontejneri": {
+            "title": "CONTAINERS",
+            "stambeni": "RESIDENTIAL",
+            "industrijski": "INDUSTRIAL"
+          },
+          "kiosci": "KIOSKS"
+        }
+      },
+      "modularneKuce": {
+        "title": "MODULAR - MOBILE HOUSES"
+      },
+      "pontoniKatamarani": {
+        "title": "PONTOONS AND CATAMARANS"
+      }
+    },
+    "aluPvcStolarija": {
+      "title": "ALU JOINERY",
+      "title2": "PVC JOINERY",
+      "segmentnaPodiznaVrata": {
+        "dvokrilnaJednokrilnaKlizna": "DOUBLE-WING SINGLE-WING SLIDING",
+        "automatskaVrata": "AUTOMATIC DOORS",
+        "podizneRampe": "LIFT RAMPS"
+      },
+      "prozori": {
+        "prozoriStakleneStijene": "WINDOWS",
+        "prozoriStakleneStijene2": "GLASS WALLS",
+        "prozoriStakleneStijene3": "PANEL FACADES",
+        "stakleneFasade": "GLASS FACADES",
+        "zimskiVrtovi": "WINTER GARDENS"
+      }
+    },
+    "industrijskaOprema": {
+      "title": "INDUSTRIAL EQUIPMENT",
+      "inoxArmature": {
+        "title": "INOX FITTINGS",
+        "items": {
+          "0": "NEEDLE VALVES 700 bar",
+          "1": "BALL VALVES", 
+          "2": "PRESSURE GAUGE SNUBBERS",
+          "3": "UNIONS",
+          "4": "COUPLINGS",
+          "5": "TRANSITIONS",
+          "6": "LUBRICATORS 700 bar",
+          "7": "SAMPLING BOTTLES 700 bar",
+          "8": "CHECK VALVES"
+        }
+      },
+      "ventili": {
+        "title": "VALVES",
+        "leptirVentil": "BUTTERFLY VALVE"
+      },
+      "filteriIzmjenjivaci": {
+        "title": "FILTERS AND EXCHANGERS",
+        "filteri": "FILTERS",
+        "industrijskiInox": "INDUSTRIAL (INOX)",
+        "izmjenjivaci": "EXCHANGERS"
+      },
+      "spojkeAktuatori": {
+        "title": "COUPLINGS AND ACTUATORS",
+        "periflexSpojke": "PERIFLEX COUPLINGS",
+        "aktuator": "ACTUATOR"
+      },
+      "generalniPopravak": {
+        "title": "GENERAL REPAIR",
+        "items": {
+          "0": "WELL GATES",
+          "1": "DOUBLE AND TRIPLE VALVES",
+          "2": "CHECK VALVES",
+          "3": "OIL TANK FIRE PROTECTION",
+          "4": "HEAT EXCHANGERS",
+          "5": "SEALS",
+          "6": "PIPELINE REHABILITATION BY PULLING PE PIPES"
+        }
+      },
+      "cijevniSustavi": {
+        "title": "PIPE SYSTEMS",
+        "cijevniZatvaraci": "PIPE CLOSURES",
+        "posudaZaVadjenje": "PIG LAUNCHER VESSEL"
+      },
+      "parkiralistaKugli": {
+        "title": "BALL PARKING",
+        "parkiraliste": "BALL PARKING",
+        "hvatacOdasiljac": "BALL CATCHER AND LAUNCHER"
+      },
+      "rezervoari": {
+        "title": "TANKS",
+        "zaBenzinskePostaje": "TANKS FOR GAS STATIONS",
+        "tehnoloskeKanalizacije": "TECHNOLOGICAL SEWAGE TANK",
+        "gumirani": "RUBBER-LINED TANK",
+        "zaKiseline": "FOR ACIDS AND ALKALIS"
+      },
+      "rezervoari2": {
+        "anionskiKationski": "ANION AND CATION TANKS",
+        "gumiraniZaKiseline": "RUBBER-LINED TANKS FOR ACIDS"
+      },
+      "rezervoari4": {
+        "podneResetke": "FLOOR GRATINGS",
+        "resetkastaStubista": "GRATING STAIRCASES",
+        "filterskaJedinica": "FILTER UNIT FOR HARD WATER"
+      },
+      "postrojenja3": {
+        "gumiraniCelicki": "RUBBER-LINED STEEL TANK WITH ACID AND ALKALI DISTRIBUTION 35 m³"
+      },
+      "postrojenja2": {
+        "zaPreraduBesavnihCijevi": "PLANT FOR PROCESSING SEAMLESS PIPES"
+      },
+      "zastitaZupcanika": {
+        "title": "GEAR PROTECTION",
+        "inox": "GEAR PROTECTION - INOX",
+        "segmenti": "GEAR PROTECTION SEGMENTS"
+      },
+      "rashladnaJedinica": {
+        "title": "COOLING UNIT",
+        "inoxLeptirVentil": "INOX BUTTERFLY VALVE No 1500 mm",
+        "automatskiUpravlja": "AUTOMATICALLY CONTROLLED"
+      },
+      "transporteri1": {
+        "title": "CONVEYORS",
+        "celicnoGumeni": "STEEL-RUBBER CONVEYOR",
+        "trakaZaTransport": "MATERIAL TRANSPORT BELT"
+      },
+      "kranskeSine": {
+        "title": "CRANE RAILS",
+        "mackaKrana": "CRANE TROLLEY"
+      },
+      "dijeloviMackeKrana": {
+        "title": "CRANE TROLLEY PARTS"
+      }
+    },
+    "komunalnaEkoOprema": {
+      "title": "COMMUNAL ECO EQUIPMENT",
+      "kontejneri": {
+        "title": "CONTAINERS",
+        "komunalni": "COMMUNAL CONTAINERS OPEN, CLOSED 5,7 and 10 m³",
+        "zaPapir": "COMMUNAL CONTAINERS OPEN, CLOSED for paper 5,7 and 10 m³",
+        "plasticneKante": "Plastic waste bins, 60, 100, 200 and 300 liters",
+        "zaElektronskiOtpad": "CONTAINER 7 M3 FOR ELECTRONIC WASTE AND RAGS",
+        "roloKontejner": "ROLL CONTAINER 32 m³"
+      },
+      "septicTankSeparatori": {
+        "title": "SEPTIC TANKS AND SEPARATORS",
+        "jednokomorne": "SEPTIC TANKS, OIL AND GREASE SEPARATORS 800 LIT SINGLE-CHAMBER",
+        "dvokomorne": "DOUBLE-CHAMBER",
+        "trokomorne": "TRIPLE-CHAMBER",
+        "rezervoariUlje": "Double-walled tanks for waste oil",
+        "plasticnePosude": "Plastic containers for waste oil",
+        "rezervoari20m3": "Waste oil tanks 20m³",
+        "tehnoloskeKanalizacije": "TECHNOLOGICAL SEWAGE TANKS 35m³",
+        "saTankvanom": "WASTE OIL TANK WITH TANK WAGON FROM 1000 TO 20000 LIT."
+      },
+      "tankvaneRegali": {
+        "title": "TANK WAGONS AND RACKS",
+        "tankvane": "TANK WAGONS",
+        "saKotacima": "TANK WAGONS WITH WHEELS",
+        "regaliBacvi": "BARREL RACKS WITH TANK WAGON UP TO 9 BARRELS",
+        "saPumpom": "BARREL RACKS WITH PUMP",
+        "zaPunjenje": "BARREL RACKS WITH PUMP FOR FILLING AND EMPTYING",
+        "otvoreniZatvoreni": "BARREL RACKS WITH TANK WAGON OPEN AND CLOSED FOR FILLING, EMPTYING AND DOSING"
+      },
+      "postrojenja": {
+        "title": "PLANTS",
+        "filterskeJedinice": "FILTER UNITS FOR HARD WATER",
+        "rezervoarKiseline": "ACID AND ALKALI STORAGE TANK"
+      },
+      "posudeZaAkumulatore": {
+        "title": "ACCUMULATOR AND WASTE CONTAINERS",
+        "akumulatori": "CONTAINERS FOR ACCUMULATORS, OILY RAGS AND SAND",
+        "plinskiOrmari": "GAS CABINETS"
+      },
+      "posude2": {
+        "sahte": "MANHOLES",
+        "barijere": "ROAD BARRIERS",
+        "pregrade": "ROAD PARTITIONS"
+      },
+      "spremista": {
+        "title": "STORAGE",
+        "mobilna": "MOBILE STORAGE",
+        "zapaljivihTecnosti": "FLAMMABLE LIQUID STORAGE",
+        "bojaILakova": "PAINT AND VARNISH STORAGE",
+        "boca": "BOTTLE STORAGE"
+      },
+      "spremista1": {
+        "rezervoar1000": "1000 LITER TANK WITH PUMP AND FLOW METER FOR DISPENSING WITH ONE AND TWO WALLS OPEN AND CLOSED",
+        "resetke": "INDUSTRIAL FLOOR GRATINGS FOR STAIRCASES FOR FENCES"
+      },
+      "spremista2": {
+        "mobilnoSpremiste": "MOBILE TWO-STORY INSULATED STORAGE WITH AUXILIARY ROOM FOR HAZARDOUS WASTE"
+      }
+    },
+    "gumiraniPlastificiraniProizvodi": {
+      "title": "RUBBER-LINED STEEL DIAPHRAGM VALVES, CHECK VALVES, PIPE ELEMENTS AND TANKS",
+      "membranskiVentili": "RUBBER-LINED DIAPHRAGM VALVES",
+      "nepovratniVentili": "RUBBER-LINED CHECK VALVES",
+      "gumiraneCijevi": "RUBBER-LINED PIPES",
+      "gumiranaKoljena": "RUBBER-LINED 90;45 ELBOWS",
+      "redukcioniElementi": "RUBBER-LINED REDUCTION ELEMENTS",
+      "gumiraniProizvodi": "Rubber-lined products",
+      "gumiraniCelicniSpremnici": "RUBBER-LINED STEEL TANKS",
+      "izmjenjivaci": "RUBBER-LINED STEEL ANION AND CATION EXCHANGERS"
+    },
+    "opremaZaMora": {
+      "title": "EQUIPMENT FOR SEAS LAKES RIVERS - CAMPS",
+      "pontoni": {
+        "osnovnaVelicina": "BASIC PONTOON SIZE 2 × 4 M",
+        "moduliSuncanista": "SUNBATHING MODULES WITH ACCESS PATHS",
+        "plovci": "Floats 970×620×340 mm",
+        "pontoniZaCamce": "Boat pontoons",
+        "pontoniDescription1": "Pontoons are made of basic steel structure, hot-dip galvanized and finally painted.",
+        "pontoniDescription2": "Plastic floats sized length 970 mm, width 340 mm and height 620 mm, filled with air or water-resistant foam, are mounted on the basic steel structure.",
+        "modularniPontoni": "Modular pontoons",
+        "modularniDescription1": "The size of the pontoon is formed according to the desired purpose and size by stringing floats 970 mm long along the length and the number of rows of floats 340 mm wide, thus forming the whole of the desired pontoon.",
+        "modularniDescription2": "The basic model is made in two rows of 4 floats that make a size of 3.9×2 m. Floats thus formed can make the desired shape according to a sketch or wish.",
+        "vezaSaKopnom": "Connection with land and each other is connected by a movable path 1.2 m wide.",
+        "ugradnja": "We install on pontoons:",
+        "ugradnjaItems": [
+          "bicycle mechanisms",
+          "sails",
+          "engines for catamaran combination",
+          "underwater chamber"
+        ],
+        "ribogojilista": "With this combination, fish farms can be formed. If the float is damaged, it is easily replaced with a new one."
+      },
+      "kajaki": {
+        "dvosjed": "TWO-SEATER KAYAK"
+      },
+      "modularneKucice": {
+        "title": "MODULAR MOBILE CABINS"
+      },
+      "septickeJame": {
+        "title": "SEPTIC TANKS 800 liters single-chamber, double-chamber and triple-chamber"
+      },
+      "vodomjernaOkna": {
+        "title": "WATER GAUGE WINDOWS"
+      },
+      "sahte": {
+        "title": "MANHOLES"
+      }
+    },
+    "urbanaOprema": {
+      "title": "URBAN EQUIPMENT",
+      "klupeIKosevi": {
+        "title": "BENCHES AND BINS",
+        "klupe": "PARK BENCHES",
+        "kosevi": "WASTE BINS"
+      },
+      "kandableri": {
+        "title": "BOLLARDS"
+      },
+      "paviljon": {
+        "title": "PAVILION"
+      },
+      "stalciZaBicikle": {
+        "title": "BIKE STANDS / PARKING STATIONS / FLAG POLES / ADVERTISING PANELS"
+      }
+    },
+    "opremaZaGradevinarstvo": {
+      "title": "CONSTRUCTION EQUIPMENT",
+      "tuneliZaSutu": {
+        "title": "Concrete tunnels",
+        "polazniDio": "STARTING - FILLING PART",
+        "nosacUsipnogElementa": "FILLING ELEMENT SUPPORT",
+        "nosacDizalice": "PIPE LIFT SUPPORT",
+        "cijevi": "CONCRETE PIPES",
+        "opis1": "Elements are made using rotomolding technology from high-strength polyethylene,",
+        "opis2": "and are interconnected via chains.",
+        "opis3": "It is recommended to additionally secure every 10 elements."
+      },
+      "septickaJama": {
+        "title": "Septic tank",
+        "septickaJama": "SEPTIC TANK, OIL AND GREASE SEPARATOR, WATERPROOF WATER METER",
+        "septickaJamaOpis": {
+          "a": "A     SEPTIC TANK. 1000 / 800 / 500 LITERS",
+          "a1": "SINGLE-CHAMBER",
+          "a2": "DOUBLE-CHAMBER",
+          "a3": "TRIPLE-CHAMBER",
+          "a4": "They are connected to each other via built-in pipes Ø 110 mm.",
+          "b": "B     OIL AND GREASE SEPARATORS 1000 / 800 / 500 LIT",
+          "c": "C     WATER METER WINDOW 1000 LIT. WATERPROOF",
+          "d": "We are able to make plastic manholes with diameters of 600, 800 and 1000 mm of volume according to your wishes with connections as needed."
+        }
+      },
+      "septickaJama2": {
+        "title": "Septic tank 2",
+        "vodomjernoOkno": "PLASTIC WATER METER WINDOW"
+      },
+      "vodomjernoOkno": {
+        "title": "Water meter window",
+        "vodomjernoOkno": "PLASTIC WATER METER WINDOW",
+        "namjenaTitle": "Purpose:",
+        "namjenaOpis": "The water meter window is intended for installation in smaller buildings. The water meter window construction protects the water meter from freezing. After installation of the installation with fittings (pipes, elbows, valves and water meter), everything is covered with a thermo cover and finally with the water meter cover itself. The housing and cover of the water meter window are made of polyethylene with ribs for reinforcement, and no additional concreting around it is required. For vehicle traffic over the water meter window, the plastic housing needs to be reinforced with concrete, and instead of a plastic cover, a steel cover should be installed.",
+        "tehnickeKarakteristikeTitle": "Technical characteristics:",
+        "tehnickeKarakteristike": {
+          "visina": "Housing height: 990 mm",
+          "duzina": "Length: 660 mm",
+          "sirina": "Width: 450 mm",
+          "boja": "Housing color: white, blue or black"
+        },
+        "instalacijaTitle": "Internal installation consists of:",
+        "instalacija": {
+          "ploca": "Supporting plastic plates for pipes",
+          "spojnice": "Quick couplings for pipes",
+          "ventili": "Valves with unions for water meter",
+          "vodomjer": "Water meter",
+          "termoPoklopac": "Thermo cover"
+        }
+      }
+    },
+    "rotoLjev": {
+      "title": "ROTO MOLDING",
+      "plasticProducts": "PLASTIC PRODUCTS",
+      "productDescription": "PLASTIC PRODUCTS ARE MADE OF HIGH-DENSITY POLYETHYLENE, AN INERT MATERIAL FOR USE IN THE FOOD INDUSTRY. CONTAINERS HAVE SMOOTH AND EASILY WASHABLE SURFACES. THE MATERIAL IS RESISTANT TO TEMPERATURES FROM -20 TO +50°C.",
+      "kace": {
+        "title": "BARRELS",
+        "volume": "VOLUME (L)",
+        "dimensions": "VOLUME - DIMENSIONS",
+        "tableHeaders": {
+          "volume": "VOLUME",
+          "a": "A (mm)",
+          "b": "B (mm)",
+          "c": "C (mm)",
+          "d": "D (pcs)"
+        }
+      },
+      "wineContainers": "WINE CONTAINERS",
+      "reservoirs": {
+        "1000L": "1000 L TANKS",
+        "technicalSpecs": "TECHNICAL SPECIFICATIONS",
+        "tableHeaders": {
+          "volume": "Volume (L)",
+          "length": "Length (mm)",
+          "width": "Width (mm)",
+          "height": "Height (mm)",
+          "opening": "Opening (mm)",
+          "outlet": "Outlet"
+        }
+      },
+      "rotoCastContainers": "ROTO MOLD CONTAINERS",
+      "waterMeterChambers": "WATER METER MANHOLES",
+      "chambersSandGreaseTraps": "MANHOLES, SAND TRAPS, GREASE TRAPS",
+      "sewageSepticChambers": "SEWER MANHOLES, SEPTIC TANKS",
+      "sprayerTanks": "SPRAYER TANKS 400 AND 600 L / ATOMIZERS 400 AND 600 L",
+      "storageTank": "1000L STORAGE TANK WITH PUMP AND FLOW METER",
+      "irrigationPipes": "CONCRETE PIPES",
+      "pipeLiftingWinch": "PIPE LIFTING WINCH",
+      "inletElement": "INLET ELEMENT",
+      "plasticBarriers": "PLASTIC BARRIERS"
+    }   
   }
+}
