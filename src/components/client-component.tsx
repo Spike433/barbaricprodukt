@@ -2374,12 +2374,12 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/5yL4djZ3/12.png"
                         fill
                         alt={t('opremaZaMora.pontoni.moduliSuncanista')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2400,12 +2400,12 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
                         fill
                         alt={t('opremaZaMora.pontoni.plovci')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -2584,7 +2584,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/2SvWCfpQ/8.jpg"
                         fill
                         alt={t('opremaZaMora.septickeJame.title')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2610,7 +2610,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/wT1Jbm0b/9.jpg"
                         fill
                         alt=""
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2633,12 +2633,12 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/s2rhX0yt/11.jpg"
                         fill
                         alt={t('opremaZaMora.vodomjernaOkna.title')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2659,12 +2659,12 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/jdBNVS1q/10.jpg"
                         fill
                         alt={t('opremaZaMora.sahte.title')}
-                        className=" hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2732,12 +2732,12 @@ export default function ProductPageClient() {
       >
         <div className="flex flex-wrap p-4">
           <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-            <div className="relative overflow-hidden rounded-lg h-[400px]">
+            <div className="relative overflow-hidden rounded-lg h-[900px]">
               <Image
                 src="https://i.postimg.cc/GhVYFPsK/1.jpg"
                 fill
                 alt={t('urbanaOprema.klupeIKosevi.kosevi')}
-                className=" hover:scale-105 transition-transform duration-500"
+                className="object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 placeholder="blur"
                 blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2750,12 +2750,12 @@ export default function ProductPageClient() {
             </figcaption>
           </figure>
           <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[400px]">
+              <div className="relative overflow-hidden rounded-lg h-[900px]">
                 <Image
                   src="https://i.postimg.cc/fTJmSqkk/2.jpg"
                   fill
                   alt={t('urbanaOprema.klupeIKosevi.kosevi')}
-                  className=" hover:scale-105 transition-transform duration-500"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2875,12 +2875,13 @@ export default function ProductPageClient() {
                   src="https://i.postimg.cc/LsfZHWs1/211.jpg"
                   fill
                   alt={t('urbanaOprema.paviljon.title')}
-                  className="hover:scale-105 transition-transform duration-500"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL={generateBlurPlaceholder(250, 0)}
                   sizes="(max-width: 250px) 100vw, 250px"
                   itemProp="image"
+                  style={{ objectPosition: "60% 43%" }} 
                 />
               </div>
               <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -2911,6 +2912,8 @@ export default function ProductPageClient() {
                   blurDataURL={generateBlurPlaceholder(250, 0)}
                   sizes="(max-width: 250px) 100vw, 250px"
                   itemProp="image"
+                  style={{ objectPosition: "50% 43%" }} 
+
                 />
               </div>
               <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -2943,12 +2946,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[1000px]">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.polazniDio')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2962,12 +2965,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[1000px]">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacUsipnogElementa')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -2981,12 +2984,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[600px]">
                       <Image
                         src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacDizalice')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -3000,12 +3003,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[900px]">
                       <Image
                         src="https://i.postimg.cc/t4H3FvyN/3.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.cijevi')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -3034,7 +3037,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/ncmKjf8L/4.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.septickaJama.septickaJama')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3103,12 +3106,12 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[800px]">
                       <Image
-                        src="https://i.postimg.cc/FFf8MYKB/6logo.png"
+                        src="https://i.postimg.cc/mDrNtcRx/6.jpg"
                         fill
                         alt={t('opremaZaGradevinarstvo.vodomjernoOkno.vodomjernoOkno')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3122,12 +3125,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
                         src="https://i.postimg.cc/J0DN59GP/7.jpg"
                         fill
                         alt=""
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3216,7 +3219,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/R0ysTY7D/0.png"
                           fill
                           alt={t('rotoLjev.kace.title')}
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3281,12 +3284,12 @@ export default function ProductPageClient() {
                     <div className="flex flex-wrap">
                       {/* First image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[400px]">
+                        <div className="relative overflow-hidden rounded-lg h-[1000px]">
                           <Image
                             src="https://i.postimg.cc/0yZtFY2m/30.jpg"
                             fill
                             alt={t('rotoLjev.wineContainers')}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3297,12 +3300,12 @@ export default function ProductPageClient() {
                       </figure>
                       {/* Second image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[400px]">
+                        <div className="relative overflow-hidden rounded-lg h-[900px]">
                           <Image
                             src="https://i.postimg.cc/hPTKry8W/1.jpg"
                             fill
                             alt={t('rotoLjev.wineContainers')}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3371,7 +3374,7 @@ export default function ProductPageClient() {
                           src="https://i.postimg.cc/7ZqsKsDw/31.jpg"
                           fill
                           alt={t('rotoLjev.reservoirs.1000L')}
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3416,12 +3419,12 @@ export default function ProductPageClient() {
                   <div id="posude-roto-ljev" className="flex flex-wrap items-start p-4">
                     {/* Left: image */}
                     <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg h-[200px]">
                         <Image
                           src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
                           fill
                           alt={t('rotoLjev.rotoCastContainers')}
-                          className="hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3488,12 +3491,12 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[730px]">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                             fill
                             alt={`${t('rotoLjev.waterMeterChambers')} – slika 1`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3504,12 +3507,12 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[730px]">
                           <Image
                             src="https://i.postimg.cc/vm3v2bhv/8.jpg"
                             fill
                             alt={`${t('rotoLjev.waterMeterChambers')} – slika 2`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3532,12 +3535,12 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[730px]">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                             fill
                             alt={`${t('rotoLjev.chambersSandGreaseTraps')} – slika 1`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3548,12 +3551,12 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[650px]">
                           <Image
                             src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
                             fill
                             alt={`${t('rotoLjev.chambersSandGreaseTraps')} – slika 2`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3576,12 +3579,12 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[730px]">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
                             fill
                             alt={`${t('rotoLjev.sewageSepticChambers')} – slika 1`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3592,12 +3595,12 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[470px]">
+                        <div className="relative overflow-hidden rounded-lg h-[630px]">
                           <Image
                             src="https://i.postimg.cc/qMyjvyrx/10.jpg"
                             fill
                             alt={`${t('rotoLjev.sewageSepticChambers')} – slika 2`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3620,7 +3623,7 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[250px]">
+                        <div className="relative overflow-hidden rounded-lg h-[350px]">
                           <Image
                             src="https://i.postimg.cc/dVFXzQRM/15.jpg"
                             fill
@@ -3636,12 +3639,12 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[250px]">
+                        <div className="relative overflow-hidden rounded-lg h-[350px]">
                           <Image
                             src="https://i.postimg.cc/YqYZnLWf/14.jpg"
                             fill
                             alt={`${t('rotoLjev.sprayerTanks')} – slika 2`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3664,12 +3667,12 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[500px]">
+                        <div className="relative overflow-hidden rounded-lg h-[900px]">
                           <Image
                             src="https://i.postimg.cc/PxCFmCHD/21.jpg"
                             fill
                             alt={`${t('rotoLjev.storageTank')} – slika 1`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -3680,12 +3683,12 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[500px]">
+                        <div className="relative overflow-hidden rounded-lg h-[900px]">
                           <Image
                             src="https://i.postimg.cc/3NpSczdJ/22.jpg"
                             fill
                             alt={`${t('rotoLjev.storageTank')} – slika 2`}
-                            className="hover:scale-105 transition-transform duration-500"
+                            className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
                             placeholder="blur"
                             blurDataURL={generateBlurPlaceholder(500, 0)}
@@ -3714,7 +3717,7 @@ export default function ProductPageClient() {
                         src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
                         fill
                         alt={t('rotoLjev.irrigationPipes')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -3728,12 +3731,12 @@ export default function ProductPageClient() {
                   </figure>
 
                   <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[800px]">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
                         fill
                         alt={t('rotoLjev.pipeLiftingWinch')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
@@ -3747,12 +3750,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg h-[800px]">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
                         fill
                         alt={t('rotoLjev.inletElement')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(400, 0)}
