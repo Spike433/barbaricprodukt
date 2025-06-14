@@ -429,23 +429,43 @@ export default function ProductPageClient() {
                       
                     </figcaption>
                   </figure>
-                  <div className="w-full md:w-1/2 space-y-2 p-20 font-medium">
-                    <div className="text-lg font-semibold">
-                      {t('celicneKonstrukcije.ogradeIPodovi.ograde.title')}
-                        </div>
-                        <div className="ml-4 text-lg">
-                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.balkonske')}
-                        </div>
-                        <div className="ml-4 text-lg">
-                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.kucne')}
-                        </div>
-                        <div className="ml-4 text-lg">
-                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.industrijske')}
-                        </div>
-                        <div className="ml-4 text-lg">
-                          {t('celicneKonstrukcije.ogradeIPodovi.ograde.resetkasteZastite')}
-                        </div>
-                    </div>
+                <div className="w-full md:w-1/2 space-y-2 p-20 font-medium">
+                  {/* Lighting and urban equipment */}
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.rasvjetnaTijela')}
+                  </div>
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kandelaberi')}
+                  </div>
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.klupe')}
+                  </div>
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kosevi')}
+                  </div>
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.reklamniPanoi')}
+                  </div>
+                  <div className="text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.stupovi')}
+                  </div>
+                  
+                  {/* Containers section with nested items */}
+                  <div className="mt-4 text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kontejneri.title')}
+                  </div>
+                  <div className="ml-8 text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kontejneri.stambeni')}
+                  </div>
+                  <div className="ml-8 text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kontejneri.industrijski')}
+                  </div>
+                  
+                  {/* Kiosks */}
+                  <div className="mt-8 text-lg">
+                    {t('celicneKonstrukcije.ogradeIPodovi.ostalo.kiosci')}
+                  </div>
+                </div>
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
                     <div className="relative overflow-hidden rounded-lg h-[500px]">
                       <Image
