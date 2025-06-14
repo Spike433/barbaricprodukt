@@ -1,5 +1,6 @@
 import ProductPageClient from "@/components/client-component";
 import type { Metadata } from "next";
+import { useTranslations } from 'next-intl';
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -71,6 +72,8 @@ export const metadata: Metadata = {
 };
 
 export default function ProductPage() {
+  const t = useTranslations('Header');
+
   return (
     <main className="min-h-screen bg-background">
       <div className="container relative mx-auto px-4">
@@ -106,7 +109,7 @@ export default function ProductPage() {
         <header className="container relative mx-auto px-4 py-14">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-industrial-blue">
-              Proizvodnja
+              {t('navItems.products')}
             </h1>            
           </div>
         </header>
