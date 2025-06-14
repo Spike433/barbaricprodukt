@@ -95,17 +95,18 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[300px]">
                       <Image
                         src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                         fill
                         alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
                         sizes="(max-width: 250px) 100vw, 250px"
                         itemProp="image"
+                        style={{ objectPosition: "20% 43%" }} 
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -114,17 +115,18 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[300px]">
                       <Image
                         src="https://i.postimg.cc/YS6HyjWm/11.jpg"
                         fill
                         alt={t('celicneKonstrukcije.montazneHale.celicneKonstrukcije')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
                         sizes="(max-width: 250px) 100vw, 250px"
                         itemProp="image"
+                        style={{ objectPosition: "20% 43%" }} 
                       />
                     </div>
                     <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -133,12 +135,12 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <div className="relative overflow-hidden rounded-lg h-[300px]">
                       <Image
                         src="https://i.postimg.cc/vTHbnMDx/4.jpg"
                         fill
                         alt={t('celicneKonstrukcije.montazneHale.panoramskoDizalo')}
-                        className="hover:scale-105 transition-transform duration-500"
+                        className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL={generateBlurPlaceholder(250, 0)}
