@@ -1,4 +1,19 @@
-{ 
+{
+  "Header": {
+    "navItems": {
+      "home": "Početna",
+      "about": "O nama",
+      "products": "Proizvodnja",
+      "services": "Usluge",
+      "contact": "Kontakt"
+    },
+    "companyDescription": "d.o.o. za proizvodnju, trgovinu i usluge",
+    "languageSelector": {
+      "label": "Odaberi jezik",
+      "english": "Engleski",
+      "croatian": "Hrvatski"
+    }
+  },
   "NotFoundPage": {
     "description": "Molimo provjerite adresnu traku preglednika ili koristite navigaciju za odlazak na poznatu stranicu.",
     "title": "Stranica nije pronađena"

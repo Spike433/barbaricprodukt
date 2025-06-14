@@ -1,4 +1,19 @@
 {
+  "Header": {
+    "navItems": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Production",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "companyDescription": "LLC for production, trade and services",
+    "languageSelector": {
+      "label": "Select language",
+      "english": "English",
+      "croatian": "Croatian"
+    }
+  },
   "NotFoundPage": {
     "description": "Please check the browser address bar or use navigation to go to a known page.",
     "title": "Page not found"

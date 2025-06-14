@@ -6,22 +6,23 @@ import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useLocale } from 'next-intl'
-import LocaleSwitcher from './locale-switcher' // Adjust the import path as needed
-
-// Navigation items
-const navItems = [
-  { href: "/", label: "Početna" },              
-  { href: "/about", label: "O nama" },
-  { href: "/products", label: "Proizvodnja" },
-  { href: "/services", label: "Usluge" },
-  { href: "/contact", label: "Kontakt" },
-]
+import { useLocale, useTranslations } from 'next-intl'
+import LocaleSwitcher from './locale-switcher'
 
 export default function Header() {
   const pathname = usePathname()
   const locale = useLocale()
+  const t = useTranslations('Header')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Navigation items using translations
+  const navItems = [
+    { href: "/", label: t('navItems.home') },
+    { href: "/about", label: t('navItems.about') },
+    { href: "/products", label: t('navItems.products') },
+    { href: "/services", label: t('navItems.services') },
+    { href: "/contact", label: t('navItems.contact') },
+  ]
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
@@ -38,7 +39,7 @@ export default function Header() {
                 priority
               />
               <div className="text-left text-sm mt-6 mb-4 hidden sm:block">
-                <span>d.o.o. za proizvodnju, trgovinu i usluge</span>
+                <span>{t('companyDescription')}</span>
               </div>
             </Link>
           </div>
@@ -58,7 +59,7 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Language selector - Desktop - Styled to match original */}
+            {/* Language selector - Desktop */}
             <div className="relative ml-4">
               <div className="inline-flex items-center">
                 <LocaleSwitcher />
@@ -98,9 +99,9 @@ export default function Header() {
             </Link>
           ))}
 
-          {/* Language selector - Mobile - Styled to match original */}
+          {/* Language selector - Mobile */}
           <div className="border-t pt-4 mt-2">
-            <p className="text-xs text-muted-foreground mb-2">Odaberi jezik</p>
+            <p className="text-xs text-muted-foreground mb-2">{t('languageSelector.label')}</p>
             <div className="flex">
               <div className="inline-flex items-center border rounded-md px-3 py-1 w-full">
                 <LocaleSwitcher />
