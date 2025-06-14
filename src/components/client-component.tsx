@@ -2880,256 +2880,247 @@ export default function ProductPageClient() {
             </div>  
         </section>
 
-          {/* OPREMA ZA GRAĐEVINARSTVO Section */}
-          <section
-            id="opremaZaGradevinarstvo"
-            className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
-            itemScope
-            itemType="https://schema.org/Product"
-          >
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
-              OPREMA ZA GRAĐEVINARSTVO
-            </h2>
-            <div className="space-y-4">
-              {/* Tuneli za šutu subsection */}
-              <div
-                id="tuneliZaSutu"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/fLg7XwTV/0.jpg"
-                        fill
-                        alt="POLAZNI -USIPNI DIO"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      POLAZNI -USIPNI DIO
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                        fill
-                        alt="NOSAČ USIPNOG ELEMENTA"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      NASAČ USIPNOG ELEMENTA
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
-                        fill
-                        alt="NOSAČ DIZALICE ZA CIJEVI"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 400px) 100vw, 400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      NASAČ DIZALICE ZA CIJEVI
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
-                      <Image
-                        src="https://i.postimg.cc/t4H3FvyN/3.jpg"
-                        fill
-                        alt="CIJEVI ZA ŠUTU"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(400, 0)}
-                        sizes="(max-width: 250px) 100vw,400px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      CJEVI ZA ŠUTU
-                    </figcaption>
-                  </figure>
-                  <div className="mt-2 text-left px-4">
-                    <p>Elementi su izrađeni tehnologijom roto ljeva od polietilena velike čvrstoće,</p>
-                    <p>a međusobno se povezuju preko lanaca.</p>
-                    <p>Preporučuje se svakih 10 elemenata dodatno učvrstiti.</p>
+         {/* OPREMA ZA GRAĐEVINARSTVO Section */}
+        <section
+          id="opremaZaGradevinarstvo"
+          className="mb-6 scroll-mt-24 rounded-xl border bg-gradient-to-b from-white to-gray-50 shadow-md p-8"
+          itemScope
+          itemType="https://schema.org/Product"
+        >
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-industrial-blue" itemProp="name">
+            {t('opremaZaGradevinarstvo.title')}
+          </h2>
+          <div className="space-y-4">
+            {/* Tuneli za šutu subsection */}
+            <div
+              id="tuneliZaSutu"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/fLg7XwTV/0.jpg"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.tuneliZaSutu.polazniDio')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
                   </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.tuneliZaSutu.polazniDio')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/8c2hKtvD/1.jpg"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacUsipnogElementa')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.tuneliZaSutu.nosacUsipnogElementa')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacDizalice')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 400px) 100vw, 400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.tuneliZaSutu.nosacDizalice')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <Image
+                      src="https://i.postimg.cc/t4H3FvyN/3.jpg"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.tuneliZaSutu.cijevi')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(400, 0)}
+                      sizes="(max-width: 250px) 100vw,400px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.tuneliZaSutu.cijevi')}
+                  </figcaption>
+                </figure>
+                <div className="mt-2 text-left px-4">
+                  <p>{t('opremaZaGradevinarstvo.tuneliZaSutu.opis1')}</p>
+                  <p>{t('opremaZaGradevinarstvo.tuneliZaSutu.opis2')}</p>
+                  <p>{t('opremaZaGradevinarstvo.tuneliZaSutu.opis3')}</p>
                 </div>
-              </div>
-
-              {/* Septička jama subsection */}
-              <div id="septickaJama" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/ncmKjf8L/4.jpg"
-                        fill
-                        alt="SEPTIČKA JAMA ,SEPARAZOR ULJA I MASTI ,VODOMJER NEPROPUSNI"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 font-medium text-center" itemProp="caption">
-                      SEPTIČKA JAMA, SEPARATOR ULJA I MASTI, VODOMJER NEPROPUSNI
-                    </figcaption>
-                    <div className="mt-3 bg-gray-50 p-4 rounded-lg">
-                        <div>
-                          <p className="font-semibold"><strong>A</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPTIČKA JAM. 1000 / 800 / 500 LITARA</p>                          
-                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEDNOKOMORNA</p>
-                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DVOKOMORNA</p>
-                          <p className="ml-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TROKOMORNA</p>
-                          <p className="mt-2">Vežu se jedna u drugu preko ugrađenih cijevi fi 110 mm.</p>
-                        </div>
-                        <br/>
-                        <div>
-                          <p className="font-semibold"><strong>B</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEPARATORI ULJA I MASTI 1000 / 800 / 500 LIT</p>                                                                              
-                        </div>                      
-                        <br/>
-                        <div>
-                          <p className="font-semibold"><strong>C</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VODOMJERNO OKNO 1000 LIT. NEPROPUSNO</p>                                                    
-                        </div>
-                        <p className="mt-3">
-                          U mogućnosti smo izvesti plastične šahte promjera 600, 800 i 1000 mm
-                          volumena prema vašoj želji sa priključcima po potrebi.
-                        </p>
-
-                    </div>
-                  </figure>
-                </div>
-              </div>
-
-              {/* Septička jama 2 subsection */}
-              <div
-                id="septickaJama2"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg aspect-square">
-                      <Image
-                        src="https://i.postimg.cc/bwQRMcL5/5.jpg"
-                        fill
-                        alt=""
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      VODOMJERNO OKNO PLASTIČNO
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              {/* Vodomjerno okno subsection */}
-              <div
-                id="vodomjernoOkno"
-                className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
-              >
-                <div className="flex flex-wrap p-4">
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/FFf8MYKB/6logo.png"
-                        fill
-                        alt="VODOMJERNO OKNO PLASTIČNO"
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      VODOMJERNO OKNO PLASTIČNO
-                    </figcaption>
-                  </figure>
-                  
-                  <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[250px]">
-                      <Image
-                        src="https://i.postimg.cc/J0DN59GP/7.jpg"
-                        fill
-                        alt=""
-                        className="hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={generateBlurPlaceholder(250, 0)}
-                        sizes="(max-width: 250px) 100vw, 250px"
-                        itemProp="image"
-                      />
-                    </div>
-                    <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
-                      
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div className="mt-4 p-4 bg-gray-50 rounded-lg text-left">
-                <h3 className="text-lg font-bold mb-3 text-gray-800">Namjena:</h3>
-                <p className="mb-4 text-gray-700 ml-10">
-                  Vodomjerno okno je namjenjeno za ugradnju kod manjih objekata.
-                  Konstrukcija vodomjernog okna zaštičuje vodomjer od zamrzavanja.
-                  Nakon montaže instalacije sa armaturom (cijevi, koljena, ventila i vodomjera),
-                  sve se pokrije sa termo poklopcem te konačno sa poklopcem samog vodomjera.
-                  Kučište i poklopac vodomjernog okna je izrađen od polietilena sa rebrima za ojačanje,
-                  te nije potrebno dodatno betoniranje oko njega.
-                  Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom,
-                  te umjesto plastičnog poklopca ugraditi čelični poklopac.
-                </p>
-                <br/>
-                <h3 className="text-lg font-bold mb-3 text-gray-800">Tehničke karakteristike:</h3>
-                <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
-                  <li>Visina kučišta: 990 mm</li>
-                  <li>Dužina: 660 mm</li>
-                  <li>Širina: 450 mm</li>
-                  <li>Boja kučišta: bijela, plava ili crna</li>
-                </ul>
-                <br/>
-                <h3 className="text-lg font-bold mb-3 text-gray-800">Unutarnja instalacija se sastoji od:</h3>
-                <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
-                  <li>Noseće plastične ploče za cijevi</li>
-                  <li>Brze spojnice za cijevi</li>
-                  <li>Ventili sa holenderima za vodomjer</li>
-                  <li>Vodomjer</li>
-                  <li>Termo poklopac</li>
-                </ul>
               </div>
             </div>
-          </section>
+
+            {/* Septička jama subsection */}
+            <div id="septickaJama" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/ncmKjf8L/4.jpg"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.septickaJama.septickaJama')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.septickaJama.septickaJama')}
+                  </figcaption>
+                  <div className="mt-3 bg-gray-50 p-4 rounded-lg">
+                    <div>
+                      <p className="font-semibold">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.a')}</p>                          
+                      <p className="ml-20">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.a1')}</p>
+                      <p className="ml-20">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.a2')}</p>
+                      <p className="ml-20">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.a3')}</p>
+                      <p className="mt-2">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.a4')}</p>
+                    </div>
+                    <br/>
+                    <div>
+                      <p className="font-semibold">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.b')}</p>                                                                              
+                    </div>                      
+                    <br/>
+                    <div>
+                      <p className="font-semibold">{t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.c')}</p>                                                    
+                    </div>
+                    <p className="mt-3">
+                      {t('opremaZaGradevinarstvo.septickaJama.septickaJamaOpis.d')}
+                    </p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+
+            {/* Septička jama 2 subsection */}
+            <div
+              id="septickaJama2"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg aspect-square">
+                    <Image
+                      src="https://i.postimg.cc/bwQRMcL5/5.jpg"
+                      fill
+                      alt=""
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.septickaJama2.vodomjernoOkno')}
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            {/* Vodomjerno okno subsection */}
+            <div
+              id="vodomjernoOkno"
+              className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4"
+            >
+              <div className="flex flex-wrap p-4">
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <Image
+                      src="https://i.postimg.cc/FFf8MYKB/6logo.png"
+                      fill
+                      alt={t('opremaZaGradevinarstvo.vodomjernoOkno.vodomjernoOkno')}
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    {t('opremaZaGradevinarstvo.vodomjernoOkno.vodomjernoOkno')}
+                  </figcaption>
+                </figure>
+                
+                <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
+                  <div className="relative overflow-hidden rounded-lg h-[250px]">
+                    <Image
+                      src="https://i.postimg.cc/J0DN59GP/7.jpg"
+                      fill
+                      alt=""
+                      className="hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={generateBlurPlaceholder(250, 0)}
+                      sizes="(max-width: 250px) 100vw, 250px"
+                      itemProp="image"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
+                    
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div className="mt-4 p-4 bg-gray-50 rounded-lg text-left">
+              <h3 className="text-lg font-bold mb-3 text-gray-800">{t('opremaZaGradevinarstvo.vodomjernoOkno.namjenaTitle')}</h3>
+              <p className="mb-4 text-gray-700 ml-10">
+                {t('opremaZaGradevinarstvo.vodomjernoOkno.namjenaOpis')}
+              </p>
+              <br/>
+              <h3 className="text-lg font-bold mb-3 text-gray-800">{t('opremaZaGradevinarstvo.vodomjernoOkno.tehnickeKarakteristikeTitle')}</h3>
+              <ul className="list-disc pl-5 mb-4 text-gray-700 space-y-1 ml-10">
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.tehnickeKarakteristike.visina')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.tehnickeKarakteristike.duzina')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.tehnickeKarakteristike.sirina')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.tehnickeKarakteristike.boja')}</li>
+              </ul>
+              <br/>
+              <h3 className="text-lg font-bold mb-3 text-gray-800">{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacijaTitle')}</h3>
+              <ul className="list-disc pl-5 text-gray-700 space-y-1 ml-10">
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacija.ploca')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacija.spojnice')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacija.ventili')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacija.vodomjer')}</li>
+                <li>{t('opremaZaGradevinarstvo.vodomjernoOkno.instalacija.termoPoklopac')}</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
           {/* ROTO LJEV-PLASTIČNI PROIZVODI Section */}
           <section

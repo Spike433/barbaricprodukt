@@ -628,6 +628,58 @@
       "stalciZaBicikle": {
         "title": "STALCI ZA BICIKLE / STANICE ZA STAJALIŠTA / JARBOLI ZA ZASTAVE / REKLAMNI PANOI"
       }
+    },
+    "opremaZaGradevinarstvo": {
+      "title": "OPREMA ZA GRAĐEVINARSTVO",
+      "tuneliZaSutu": {
+        "title": "Tuneli za šutu",
+        "polazniDio": "POLAZNI -USIPNI DIO",
+        "nosacUsipnogElementa": "NASAČ USIPNOG ELEMENTA",
+        "nosacDizalice": "NASAČ DIZALICE ZA CIJEVI",
+        "cijevi": "CJEVI ZA ŠUTU",
+        "opis1": "Elementi su izrađeni tehnologijom roto ljeva od polietilena velike čvrstoće,",
+        "opis2": "a međusobno se povezuju preko lanaca.",
+        "opis3": "Preporučuje se svakih 10 elemenata dodatno učvrstiti."
+      },
+      "septickaJama": {
+        "title": "Septička jama",
+        "septickaJama": "SEPTIČKA JAMA, SEPARATOR ULJA I MASTI, VODOMJER NEPROPUSNI",
+        "septickaJamaOpis": {
+          "a": "A     SEPTIČKA JAM. 1000 / 800 / 500 LITARA",
+          "a1": "JEDNOKOMORNA",
+          "a2": "DVOKOMORNA",
+          "a3": "TROKOMORNA",
+          "a4": "Vežu se jedna u drugu preko ugrađenih cijevi fi 110 mm.",
+          "b": "B     SEPARATORI ULJA I MASTI 1000 / 800 / 500 LIT",
+          "c": "C     VODOMJERNO OKNO 1000 LIT. NEPROPUSNO",
+          "d": "U mogućnosti smo izvesti plastične šahte promjera 600, 800 i 1000 mm volumena prema vašoj želji sa priključcima po potrebi."
+        }
+      },
+      "septickaJama2": {
+        "title": "Septička jama 2",
+        "vodomjernoOkno": "VODOMJERNO OKNO PLASTIČNO"
+      },
+      "vodomjernoOkno": {
+        "title": "Vodomjerno okno",
+        "vodomjernoOkno": "VODOMJERNO OKNO PLASTIČNO",
+        "namjenaTitle": "Namjena:",
+        "namjenaOpis": "Vodomjerno okno je namjenjeno za ugradnju kod manjih objekata. Konstrukcija vodomjernog okna zaštičuje vodomjer od zamrzavanja. Nakon montaže instalacije sa armaturom (cijevi, koljena, ventila i vodomjera), sve se pokrije sa termo poklopcem te konačno sa poklopcem samog vodomjera. Kučište i poklopac vodomjernog okna je izrađen od polietilena sa rebrima za ojačanje, te nije potrebno dodatno betoniranje oko njega. Za promet vozilima preko vodomjernog okna, potrebno je plastično kučište ojačati betonom, te umjesto plastičnog poklopca ugraditi čelični poklopac.",
+        "tehnickeKarakteristikeTitle": "Tehničke karakteristike:",
+        "tehnickeKarakteristike": {
+          "visina": "Visina kučišta: 990 mm",
+          "duzina": "Dužina: 660 mm",
+          "sirina": "Širina: 450 mm",
+          "boja": "Boja kučišta: bijela, plava ili crna"
+        },
+        "instalacijaTitle": "Unutarnja instalacija se sastoji od:",
+        "instalacija": {
+          "ploca": "Noseće plastične ploče za cijevi",
+          "spojnice": "Brze spojnice za cijevi",
+          "ventili": "Ventili sa holenderima za vodomjer",
+          "vodomjer": "Vodomjer",
+          "termoPoklopac": "Termo poklopac"
+        }
+      }
     }
   }
 }
