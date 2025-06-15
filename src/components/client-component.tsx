@@ -728,10 +728,11 @@ export default function ProductPageClient() {
               <div className="flex flex-col md:flex-row">
                 {/* Image on the left */}
                 <figure className="w-full md:w-1/1" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[500px]">
+                  <div className="relative overflow-hidden rounded-lg">
                     <Image
                       src="https://i.postimg.cc/L5bPqvDL/2.jpg"
-                      fill
+                      width={1200}
+                      height={1200}
                       alt="INOX ARMATURE"
                       className="object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -765,10 +766,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/CL9DSPzV/5.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.ventili.leptirVentil')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -778,16 +780,17 @@ export default function ProductPageClient() {
                           itemProp="image"
                         />
                       </div>
-                      <figcaption className="text-sm font-medium text-center mt-5" itemProp="caption">
+                      <figcaption className="text-sm font-medium text-center" itemProp="caption">
                         {t('industrijskaOprema.ventili.leptirVentil')}
                       </figcaption>
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/tRKFjCmp/6-1.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.ventili.leptirVentil')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -808,10 +811,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/xjxMFTQ8/3.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={`${t('industrijskaOprema.filteriIzmjenjivaci.filteri')} ${t('industrijskaOprema.filteriIzmjenjivaci.industrijskiInox')}`}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -827,10 +831,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[350px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/hG178KMS/7.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -846,10 +851,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/7Lh5bNjw/1-1.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.filteriIzmjenjivaci.izmjenjivaci')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -873,10 +879,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[350px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/fLWSB1gY/8.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt="PERIFLEX SPOJKE"
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -892,10 +899,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/gkx89FcD/4.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt="AKTUATOR"
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -911,10 +919,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/GhDJ8ss4/19-1.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -952,10 +961,11 @@ export default function ProductPageClient() {
             <div id="cijevniSustavi" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">    
               <div className="flex flex-wrap p-4">
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[400px]">
+                  <div className="relative overflow-hidden rounded-lg">
                     <Image
                       src="https://i.postimg.cc/nzdj5T6g/10.jpg"
-                      fill
+                      width={1200}
+                      height={1200}
                       alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
                       className=" hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -971,10 +981,11 @@ export default function ProductPageClient() {
                 </figure>
                 
                 <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                  <div className="relative overflow-hidden rounded-lg h-[800px]">
+                  <div className="relative overflow-hidden rounded-lg">
                     <Image
                       src="https://i.postimg.cc/T245J7jW/12.jpg"
-                      fill
+                      width={1200}
+                      height={1200}
                       alt={t('industrijskaOprema.cijevniSustavi.posudaZaVadjenje')}
                       className="object-cover hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -1092,10 +1103,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/KcsLDBC4/7.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.rezervoari2.anionskiKationski')}
                           className="object-contain hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1111,10 +1123,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/vZ1zvx6G/18.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.rezervoari2.gumiraniZaKiseline')}
                           className="object-contain hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1138,10 +1151,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/D0Bgxqgw/16.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.rezervoari4.resetkastaStubista')}
                           className="object-contain hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1157,14 +1171,14 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/rpGBs82N/14.jpg"
-                          fill
+                          width={1200}
+                          height={1200}                          
                           alt={t('industrijskaOprema.rezervoari4.filterskaJedinica')}
                           className="object-contain hover:scale-105 transition-transform duration-500"
                           loading="lazy"
-                          style={{ objectPosition: '2% 50%' }}
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(400, 0)}
                           sizes="(max-width: 250px) 100vw, 400px"
@@ -1239,10 +1253,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/RVhQMJdw/28.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.zastitaZupcanika.inox')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1258,10 +1273,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/0NY7tY51/29.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.zastitaZupcanika.inox')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1304,10 +1320,11 @@ export default function ProductPageClient() {
                     
                     {/* Second Image - Focused right */}
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[550px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/brN0SZhc/24.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.rashladnaJedinica.title')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           style={{ objectPosition: '39% 50%' }}
@@ -1332,10 +1349,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[700px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
-                          src="https://i.postimg.cc/mkkm851Y/26.jpg"
-                          fill
+                          src="https://i.postimg.cc/NM6yMKtq/26-1.jpg"
+                          width={1200}
+                          height={1200}
                           alt="TRAKA ZA TRANSPORT MATERIJALA"
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           style={{ objectPosition: '40% 54%' }}
@@ -1351,10 +1369,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/sgZYWFtX/30.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.transporteri1.celicnoGumeni')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1378,10 +1397,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[700px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/sXJ92pb4/23.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.kranskeSine.title')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1389,7 +1409,6 @@ export default function ProductPageClient() {
                           blurDataURL={generateBlurPlaceholder(400, 0)}
                           sizes="(max-width: 250px) 100vw, 400px"
                           itemProp="image"
-                          style={{ objectPosition: "30% 50%" }} 
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1398,10 +1417,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[700px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/zBNF5d2f/20.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.kranskeSine.mackaKrana')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1409,7 +1429,6 @@ export default function ProductPageClient() {
                           blurDataURL={generateBlurPlaceholder(400, 0)}
                           sizes="(max-width: 400px) 100vw, 400px"
                           itemProp="image"
-                          style={{ objectPosition: "30% 50%" }} 
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1426,10 +1445,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[700px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/L8rVQ4zL/21.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('industrijskaOprema.dijeloviMackeKrana.title')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1445,10 +1465,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[700px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/wBLQCKVP/22.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1485,10 +1506,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg ">
                         <Image
-                          src="https://i.postimg.cc/02YWvD1c/9.png"
-                          fill
+                          src="https://i.postimg.cc/q7gS4K8q/9.jpg"
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.kontejneri.komunalni')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1504,10 +1526,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
-                          src="https://i.postimg.cc/ZnLCJ4P7/1.png"
-                          fill
+                          src="https://i.postimg.cc/4d90hT2T/1.jpg"
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.kontejneri.zaPapir')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1523,10 +1546,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.kontejneri.plasticneKante')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1542,10 +1566,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/CxX0x28S/31.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.kontejneri.zaElektronskiOtpad')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1561,10 +1586,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/d0CYk9Rd/32.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1577,10 +1603,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.kontejneri.roloKontejner')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1604,10 +1631,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[550px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/XqL3N7fz/26.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.jednokomorne')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1623,10 +1651,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[550px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/v8tGtXJt/27.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.dvokomorne')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1642,10 +1671,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/WbpTWgjL/28.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.trokomorne')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1661,10 +1691,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[450px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/VvLpR9tK/12.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.rezervoariUlje')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1680,18 +1711,18 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[520px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/5NP1ZyNH/29.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.plasticnePosude')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
                           sizes="(max-width: 250px) 100vw, 250px"
-                          itemProp="image"
-                          style={{ objectPosition: "40% 0%" }} 
+                          itemProp="image"                          
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1700,18 +1731,18 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[520px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
-                          src="https://i.postimg.cc/MTyq4Yvx/25.jpg"
-                          fill
+                          src="https://i.postimg.cc/fTtVtqDf/25-1.jpg"
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.rezervoari20m3')}
                           className="object-cover object-[50%_20%] hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
                           sizes="(max-width: 250px) 100vw, 250px"
-                          itemProp="image"
-                          style={{ objectPosition: "40% 3%" }} 
+                          itemProp="image"                          
                         />
                       </div>
                       <figcaption className="mt-2 text-sm font-medium text-center" itemProp="caption">
@@ -1720,10 +1751,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/pVCtFrj0/4.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.tehnoloskeKanalizacije')}
                           className="hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1739,10 +1771,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/d1MJ4fQ4/23.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.septicTankSeparatori.saTankvanom')}
                           className="object-cover object-[37%_50%] hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1766,10 +1799,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/Kj0SSpFX/3.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.tankvaneRegali.tankvane')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1785,10 +1819,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/2SbpMxKJ/5.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.tankvaneRegali.saKotacima')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1804,10 +1839,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/5NkdsrnL/8.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.tankvaneRegali.regaliBacvi')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1823,10 +1859,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/L6sFBSBm/6.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.tankvaneRegali.saPumpom')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1861,10 +1898,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/vTsHHNpc/15.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.tankvaneRegali.otvoreniZatvoreni')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1880,10 +1918,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/1RG3Yyq6/16.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1904,10 +1943,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/5NfNhDBr/18.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.postrojenja.filterskeJedinice')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1923,10 +1963,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/qqxBtGTQ/17.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.postrojenja.rezervoarKiseline')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1950,10 +1991,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/T1ffXWDb/24.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.posudeZaAkumulatore.akumulatori')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -1996,10 +2038,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/13tRt6Yc/21.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.posude2.sahte')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2015,10 +2058,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/SNVNkVVx/20.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2031,10 +2075,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[200px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/FHBrJRMt/19.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={`${t('komunalnaEkoOprema.posude2.barijere')} ${t('komunalnaEkoOprema.posude2.pregrade')}`}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2058,10 +2103,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/Pxkkm8K7/30.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={`${t('komunalnaEkoOprema.spremista.mobilna')} ${t('komunalnaEkoOprema.spremista.zapaljivihTecnosti')} ${t('komunalnaEkoOprema.spremista.bojaILakova')} ${t('komunalnaEkoOprema.spremista.boca')}`}
                           className="object-cover object-[25%_50%] hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2077,10 +2123,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/pd52Qvvm/22.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover object-[35%_50%] hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2101,10 +2148,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[900px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/PxCFmCHD/21.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.spremista1.rezervoar1000')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2120,10 +2168,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[500px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/3RhPyQx5/10.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.spremista1.resetke')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2144,10 +2193,11 @@ export default function ProductPageClient() {
                 <div id="spremista2" className="mt-8 mb-6 scroll-mt-24 pl-9 pt-4">
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg aspect-square">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/SxJqq4Jg/33.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('komunalnaEkoOprema.spremista2.mobilnoSpremiste')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2184,10 +2234,11 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/hGbTLwqq/5.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('gumiraniPlastificiraniProizvodi.membranskiVentili')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2203,10 +2254,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/NFLXwj2g/6.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('gumiraniPlastificiraniProizvodi.nepovratniVentili')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2258,10 +2310,11 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/B6mFyK6Y/4.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('gumiraniPlastificiraniProizvodi.gumiraniCelicniSpremnici')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2277,10 +2330,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/hjDxprSQ/3.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt=""
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2301,10 +2355,11 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[1500px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/4yM94Rpp/1.jpg"
-                        fill
+                        width={2000}
+                        height={2000}
                         alt=""
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2317,10 +2372,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg ">
                       <Image
                         src="https://i.postimg.cc/KcsLDBC4/7.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('gumiraniPlastificiraniProizvodi.izmjenjivaci')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
