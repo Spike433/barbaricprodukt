@@ -390,10 +390,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/8PxgpLd6/18.jpg"
-                          fill
+                          width={1200}
+                          height={1200}                          
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -409,10 +410,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/WbdPc5ZV/17.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -428,10 +430,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/QM3L5syN/19.jpg"
-                          fill
+                          width={1200}
+                          height={1200}                          
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -483,10 +486,11 @@ export default function ProductPageClient() {
                     </div>
                   </div>
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[800px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/FKgMVqMy/20.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt=""
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -529,12 +533,13 @@ export default function ProductPageClient() {
                 <div id="pontoniKatamarani" className="scroll-mt-24 pl-9">
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg aspect-square">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/j5vNB6pB/4.jpg"
-                          fill
+                          width={1200}
+                          height={800}
                           alt={t('celicneKonstrukcije.pontoniKatamarani.title')}
-                          className="object-cover object-[50%_35%] hover:scale-105 transition-transform duration-500"
+                          className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                           placeholder="blur"
                           blurDataURL={generateBlurPlaceholder(250, 0)}
@@ -570,10 +575,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/MTykZYJG/2.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('aluPvcStolarija.segmentnaPodiznaVrata.dvokrilnaJednokrilnaKlizna')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -589,10 +595,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[600px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/FzmMYJhV/4.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('aluPvcStolarija.segmentnaPodiznaVrata.automatskaVrata')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -608,10 +615,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[300px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/m2ZxRMXb/6.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('aluPvcStolarija.segmentnaPodiznaVrata.podizneRampe')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -635,10 +643,11 @@ export default function ProductPageClient() {
                 >
                   <div className="flex flex-wrap p-4">
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/JnwVW2gg/3.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('aluPvcStolarija.prozori.prozoriStakleneStijene')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -656,10 +665,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/WpwRQS7W/5.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('aluPvcStolarija.prozori.stakleneFasade')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -675,10 +685,11 @@ export default function ProductPageClient() {
                     </figure>
                     
                     <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/brTKkNJc/1.jpg"
-                          fill
+                          width={1200}
+                          height={1200}                          
                           alt={t('aluPvcStolarija.prozori.zimskiVrtovi')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
