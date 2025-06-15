@@ -442,7 +442,7 @@ export default function HomePage() {
               </div>
               
               {/* Image 2 */}
-              <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Matching height */}
+              <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Matching height */}
                 <Image
                   src="https://i.postimg.cc/cJHDSvrz/32.jpg"
                   alt="Roto ljevi proizvodi 2"
