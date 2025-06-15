@@ -77,11 +77,11 @@ export default function ContactForm() {
 
     if (!validateForm()) return
 
-    const recaptchaValue = recaptchaRef.current?.getValue();
-    if (!recaptchaValue) {
-      toast.error(t('form.errors.recaptcha'));
-      return;
-    }
+    // const recaptchaValue = recaptchaRef.current?.getValue();
+    // if (!recaptchaValue) {
+    //   toast.error(t('form.errors.recaptcha'));
+    //   return;
+    // }
 
     setIsSubmitting(true)
 
@@ -90,12 +90,12 @@ export default function ContactForm() {
         endpoint, 
         { 
           ...formData, 
-          recaptcha: recaptchaValue 
+          //recaptcha: recaptchaValue 
         }, 
         {
           headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
+            "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpsaHlnZ3ZmZGtsbm94enpoeGJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ4NzQ1NTksImV4cCI6MjA1MDQ1MDU1OX0.ZTG5sHfu204nHlW841BI74VZobHadGKWoEyOY9Rraa0`,
           },
         }
       );
