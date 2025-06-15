@@ -53,34 +53,28 @@ export default function HomePage() {
                 href="/products#celicneKonstrukcije" 
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
               >
-                <div className="flex gap-3 p-3 min-h-[400px]"> {/* Increased height */}
-                  <div className="w-1/2 relative min-h-[380px] rounded-md overflow-hidden"> {/* Custom height */}
+                <div className="flex gap-3 p-3 "> {/* Increased height */}
+                  <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Custom height */}
                     <Image
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1" 
-                      width={500}  // Fixed width
-                      height={500} // Fixed height                     
+                      width={800}  // Fixed width
+                      height={800} // Fixed height                     
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      style=
-                      {{ 
-                        objectPosition: '40% 32%',
-                        minHeight: '380px' // Ensures consistent height across images
-                      }}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"                      
                     />
                   </div>
-                  <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Matching height */}
+                  <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Matching height */}
                     <Image
                       src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                       alt="Čelične konstrukcije 2"
-                      width={500}  // Fixed width
-                      height={500} // Fixed height   
+                      width={800}  // Fixed width
+                      height={800} // Fixed height   
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                 </div>
-                <div className="p-4 flex-1 flex flex-col">
+                <div className="p-4 flex-1 flex flex-col mt-10">
                   <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
                     {t('steelStructures')}
                   </h3>
@@ -92,21 +86,20 @@ export default function HomePage() {
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex p-3 min-h-[150px]"> {/* Taller container */}
-                  <div className="w-full relative h-[430px] rounded-md overflow-hidden"> {/* Portrait height */}
+                <div className="flex p-3"> {/* Taller container */}
+                  <div className="w-full relative rounded-md overflow-hidden"> {/* Portrait height */}
                     <Image
                       src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
-                      width={500}  // Fixed width
-                      height={500} // Fixed height   
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      style={{ objectPosition: '40% 20%' }}
+                      width={800}  // Fixed width
+                      height={800} // Fixed height   
+                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"                      
+                      
                     />
                   </div>
                 </div>
                 <div className="p-4 flex-1 flex flex-col">
-                  <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 mt-10 group-hover:text-industrial-blue transition-colors text-center">
                     {t('aluminumJoinery')}
                   </h3>                
                 </div>
