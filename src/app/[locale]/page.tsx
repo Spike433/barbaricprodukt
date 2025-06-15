@@ -15,7 +15,8 @@ export default function HomePage() {
         <Image
           src="https://i.postimg.cc/4dXgCZ62/9.jpg"
           alt="Čelične konstrukcije"
-          fill
+          width={1800} // Fixed width
+          height={1200} // Fixed height
           className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
           placeholder="blur"
