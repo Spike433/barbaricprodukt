@@ -3037,10 +3037,11 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[1000px]">
+                    <div className="relative overflow-hidden rounded-lg ">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.polazniDio')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3056,10 +3057,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[1000px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacUsipnogElementa')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3075,10 +3077,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[600px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/T2Fq3Y4S/2.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaGradevinarstvo.tuneliZaSutu.nosacDizalice')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3094,7 +3097,7 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/t4H3FvyN/3.jpg"
                         fill
@@ -3197,10 +3200,11 @@ export default function ProductPageClient() {
               >
                 <div className="flex flex-wrap p-4">
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[800px]">
+                    <div className="relative overflow-hidden rounded-lg ">
                       <Image
                         src="https://i.postimg.cc/mDrNtcRx/6.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaGradevinarstvo.vodomjernoOkno.vodomjernoOkno')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3216,10 +3220,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="p-2 cursor-pointer w-full sm:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[500px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/J0DN59GP/7.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt=""
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3305,10 +3310,11 @@ export default function ProductPageClient() {
                   <div className="flex flex-wrap p-4 items-start">
                     {/* Left: KACE image */}
                     <figure className="p-2 w-full sm:w-1/2 md:w-1/3" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/R0ysTY7D/0.png"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('rotoLjev.kace.title')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -3375,10 +3381,11 @@ export default function ProductPageClient() {
                     <div className="flex flex-wrap">
                       {/* First image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[1000px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/0yZtFY2m/30.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={t('rotoLjev.wineContainers')}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3391,10 +3398,11 @@ export default function ProductPageClient() {
                       </figure>
                       {/* Second image */}
                       <figure className="p-2 w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[900px]">
+                        <div className="relative overflow-hidden rounded-lg ">
                           <Image
                             src="https://i.postimg.cc/hPTKry8W/1.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={t('rotoLjev.wineContainers')}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3460,10 +3468,11 @@ export default function ProductPageClient() {
                   <div id="rezervoari-roto" className="flex flex-wrap p-4 items-start">
                     {/* Left: image */}
                     <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[250px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/7ZqsKsDw/31.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('rotoLjev.reservoirs.1000L')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -3510,10 +3519,11 @@ export default function ProductPageClient() {
                   <div id="posude-roto-ljev" className="flex flex-wrap items-start p-4">
                     {/* Left: image */}
                     <figure className="p-2 w-full sm:w-1/3 md:w-1/4" itemScope itemType="https://schema.org/ImageObject">
-                      <div className="relative overflow-hidden rounded-lg h-[200px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/CKPQBj3Y/20.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('rotoLjev.rotoCastContainers')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -3582,10 +3592,11 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[730px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.waterMeterChambers')} – slika 1`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3598,10 +3609,11 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[730px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/vm3v2bhv/8.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.waterMeterChambers')} – slika 2`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3626,10 +3638,11 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[730px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.chambersSandGreaseTraps')} – slika 1`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3642,10 +3655,11 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[690px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/rmsNv3Y2/9.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.chambersSandGreaseTraps')} – slika 2`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3670,10 +3684,11 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[730px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/MGKLpsrd/18.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.sewageSepticChambers')} – slika 1`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3686,10 +3701,11 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[630px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/qMyjvyrx/10.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.sewageSepticChambers')} – slika 2`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3714,10 +3730,11 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[350px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/dVFXzQRM/15.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.sprayerTanks')} – slika 1`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3730,10 +3747,11 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[350px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/YqYZnLWf/14.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.sprayerTanks')} – slika 2`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3758,10 +3776,11 @@ export default function ProductPageClient() {
                   >
                     <div className="flex flex-wrap p-4">
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[900px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/PxCFmCHD/21.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.storageTank')} – slika 1`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3774,10 +3793,11 @@ export default function ProductPageClient() {
                       </figure>
 
                       <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                        <div className="relative overflow-hidden rounded-lg h-[900px]">
+                        <div className="relative overflow-hidden rounded-lg">
                           <Image
                             src="https://i.postimg.cc/3NpSczdJ/22.jpg"
-                            fill
+                            width={1200}
+                            height={1200}
                             alt={`${t('rotoLjev.storageTank')} – slika 2`}
                             className="object-cover hover:scale-105 transition-transform duration-500"
                             loading="lazy"
@@ -3822,10 +3842,11 @@ export default function ProductPageClient() {
                   </figure>
 
                   <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[800px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/fLg7XwTV/0.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('rotoLjev.pipeLiftingWinch')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -3841,10 +3862,11 @@ export default function ProductPageClient() {
                   </figure>
                   
                   <figure className="mt-4 p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-                    <div className="relative overflow-hidden rounded-lg h-[800px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/8c2hKtvD/1.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('rotoLjev.inletElement')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
