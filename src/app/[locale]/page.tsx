@@ -58,8 +58,8 @@ export default function HomePage() {
                     <Image
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1" 
-                      width={800}  // Fixed width
-                      height={800} // Fixed height                     
+                      width={1800}  // Fixed width
+                      height={1800} // Fixed height                     
                       className="group-hover:scale-105 transition-transform duration-500 ease-out"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"                      
                     />
@@ -68,8 +68,8 @@ export default function HomePage() {
                     <Image
                       src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                       alt="Čelične konstrukcije 2"
-                      width={800}  // Fixed width
-                      height={800} // Fixed height   
+                      width={1800}  // Fixed width
+                      height={1800} // Fixed height   
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                   </div>
@@ -91,8 +91,8 @@ export default function HomePage() {
                     <Image
                       src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
-                      width={800}  // Fixed width
-                      height={800} // Fixed height   
+                      width={1800}  // Fixed width
+                      height={1800} // Fixed height   
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"                      
                       
                     />
@@ -112,14 +112,14 @@ export default function HomePage() {
               href="/products#industrijskaOprema" 
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-              <div className="flex gap-3 p-3 min-h-[220px]"> {/* Increased container height */}
+              <div className="flex gap-3 p-3 "> {/* Increased container height */}
               {/* Image 1 */}
-              <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Fixed height */}
+              <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Fixed height */}
               <Image
               src="https://i.postimg.cc/1zhpcCQK/31.jpg"
               alt="Oprema za more 1"
-              width={500}  // Fixed width
-                      height={500} // Fixed height   
+              width={1800}  // Fixed width
+              height={11800} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -129,12 +129,12 @@ export default function HomePage() {
               </div>
 
               {/* Image 2 */}
-              <div className="w-1/2 relative h-[380px] rounded-md overflow-hidden"> {/* Matching height */}
+              <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Matching height */}
               <Image
               src="https://i.postimg.cc/RVhQMJdw/28.jpg"
               alt="Oprema za more 2"
-              width={500}  // Fixed width
-                      height={500} // Fixed height   
+              width={1800}  // Fixed width
+              height={1800} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -144,12 +144,12 @@ export default function HomePage() {
               </div>
 
               {/* Image 3 */}
-              <div className="w-1/2 relative h-[480px] rounded-md overflow-hidden"> {/* Consistent height */}
+              <div className="w-1/2 relative rounded-md h-[480px] overflow-hidden"> {/* Consistent height */}
               <Image
               src="https://i.postimg.cc/7LqSY7nN/25-5.jpg"
               alt="Oprema za more 3"
-              width={500}  // Fixed width
-                      height={500} // Fixed height   
+              width={1800}  // Fixed width
+              height={1800} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -174,14 +174,14 @@ export default function HomePage() {
               href="/products#ekoOpremaKomunalna" 
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
               >
-              <div className="flex gap-3 p-3 min-h-[450px]"> {/* Increased container height */}
+              <div className="flex gap-3 p-3"> {/* Increased container height */}
               {/* Image 1 */}
-              <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Fixed height */}
+              <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Fixed height */}
               <Image
               src="https://i.postimg.cc/Gt7NSBJd/13.jpg"
               alt="Komunalna eko oprema 1"
-              width={550}  // Fixed width
-                      height={500} // Fixed height   
+              width={1550}  // Fixed width
+              height={1500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -191,12 +191,12 @@ export default function HomePage() {
               </div>
 
               {/* Image 2 */}
-              <div className="w-1/2 relative h-[400px] rounded-md overflow-hidden"> {/* Matching height */}
+              <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Matching height */}
               <Image
               src="https://i.postimg.cc/vTsHHNpc/15.jpg"
               alt="Komunalna eko oprema 2"
-              width={550}  // Fixed width
-                      height={500} // Fixed height   
+              width={1550}  // Fixed width
+              height={1500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -217,13 +217,12 @@ export default function HomePage() {
               href="/products#gumiraniCelici"
               className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-              <div className="flex p-3 min-h-[450px]"> {/* Matching container height */}
-              <div className="w-full relative h-[400px] rounded-md overflow-hidden"> {/* Same image height */}
+              <div className="w-full relative rounded-md overflow-hidden"> {/* Same image height */}
               <Image
               src="https://i.postimg.cc/BbwLXH0D/industrijski-Proizvodi.png"
               alt="Gumirani čelični membranski ventili, nepovratni ventili, cijevni elementi i rezervoari"
-              width={500}  // Fixed width
-                      height={500} // Fixed height   
+              width={1500}  // Fixed width
+                      height={1500} // Fixed height   
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               placeholder="blur"
@@ -231,7 +230,7 @@ export default function HomePage() {
               loading="lazy"
               />
               </div>
-              </div>
+              
               <div className="p-4 flex-1 flex flex-col">
               <h3 className="font-bold text-lg md:text-xl mb-2 group-hover:text-industrial-blue transition-colors text-center">
               {t('rubberizedSteelValves')}
