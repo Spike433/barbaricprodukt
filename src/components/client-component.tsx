@@ -2454,10 +2454,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/5yL4djZ3/12.png"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.pontoni.moduliSuncanista')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2480,10 +2481,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/cCb3Lx4m/6.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.pontoni.plovci')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2516,10 +2518,11 @@ export default function ProductPageClient() {
                       itemScope
                       itemType="https://schema.org/ImageObject"
                     >
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/d02Gjc4s/3.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('opremaZaMora.pontoni.pontoniZaCamce')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2543,10 +2546,11 @@ export default function ProductPageClient() {
                       itemScope
                       itemType="https://schema.org/ImageObject"
                     >
-                      <div className="relative overflow-hidden rounded-lg h-[400px]">
+                      <div className="relative overflow-hidden rounded-lg">
                         <Image
                           src="https://i.postimg.cc/C1wkvrQj/2.jpg"
-                          fill
+                          width={1200}
+                          height={1200}
                           alt={t('opremaZaMora.pontoni.modularniPontoni')}
                           className="object-cover hover:scale-105 transition-transform duration-500"
                           loading="lazy"
@@ -2593,7 +2597,8 @@ export default function ProductPageClient() {
                     <div className="relative overflow-hidden rounded-lg aspect-square">
                       <Image                    
                         src="https://i.postimg.cc/0N1Nqkp0/1.png"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.kajaci.dvosjed')}
                         className=" hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2624,7 +2629,7 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg w-full" style={{ height: 'auto' }}>
+                    <div className="relative overflow-hidden rounded-lg w-full">
                       <Image
                         src="https://i.postimg.cc/WpWgnn6k/7.jpg"
                         width={1200}
@@ -2659,10 +2664,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/2SvWCfpQ/8.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.septickeJame.title')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2685,10 +2691,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[400px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/wT1Jbm0b/9.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt=""
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2713,10 +2720,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/s2rhX0yt/11.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.vodomjernaOkna.title')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2739,10 +2747,11 @@ export default function ProductPageClient() {
                     itemScope
                     itemType="https://schema.org/ImageObject"
                   >
-                    <div className="relative overflow-hidden rounded-lg h-[900px]">
+                    <div className="relative overflow-hidden rounded-lg">
                       <Image
                         src="https://i.postimg.cc/jdBNVS1q/10.jpg"
-                        fill
+                        width={1200}
+                        height={1200}
                         alt={t('opremaZaMora.sahte.title')}
                         className="object-cover hover:scale-105 transition-transform duration-500"
                         loading="lazy"
@@ -2812,10 +2821,11 @@ export default function ProductPageClient() {
       >
         <div className="flex flex-wrap p-4">
           <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-            <div className="relative overflow-hidden rounded-lg h-[900px]">
+            <div className="relative overflow-hidden rounded-lg">
               <Image
                 src="https://i.postimg.cc/GhVYFPsK/1.jpg"
-                fill
+                width={1200}
+                height={1200}
                 alt={t('urbanaOprema.klupeIKosevi.kosevi')}
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
@@ -2830,10 +2840,11 @@ export default function ProductPageClient() {
             </figcaption>
           </figure>
           <figure className="p-2 cursor-pointer w-full sm:w-1/2 md:w-1/2" itemScope itemType="https://schema.org/ImageObject">
-              <div className="relative overflow-hidden rounded-lg h-[900px]">
+              <div className="relative overflow-hidden rounded-lg">
                 <Image
                   src="https://i.postimg.cc/fTJmSqkk/2.jpg"
-                  fill
+                  width={1200}
+                  height={1200}
                   alt={t('urbanaOprema.klupeIKosevi.kosevi')}
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
