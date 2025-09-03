@@ -20,7 +20,7 @@ export default function HomePage() {
           placeholder="blur"
           blurDataURL={generateBlurPlaceholder(400, 400)}
           loading="lazy"
-          style={{ objectPosition: "40% 94%" }}
+          style={{ objectPosition: "40% 72%" }}
         />
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
