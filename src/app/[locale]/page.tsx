@@ -15,10 +15,8 @@ export default function HomePage() {
         <Image
           src="https://i.postimg.cc/4dXgCZ62/9.jpg"
           alt="Čelične konstrukcije"
-          width={1800} // Fixed width
-          height={1200} // Fixed height
+          fill
           className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 55vw"
           placeholder="blur"
           blurDataURL={generateBlurPlaceholder(400, 400)}
           loading="lazy"
@@ -47,6 +45,7 @@ export default function HomePage() {
             {t('productCategories')}
           </h2>
           <div>
+            {/* Rest of your service grid content remains the same */}
             {/* Čelične konstrukcije */}
             <section className="w-full mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Steel Structures - Double Column */}
@@ -55,22 +54,19 @@ export default function HomePage() {
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col md:col-span-2"
               >
                 <div className="flex gap-3 p-3 "> {/* Increased height */}
-                  <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Custom height */}
+                  <div className="w-1/2 relative rounded-md overflow-hidden h-64"> {/* Custom height */}
                     <Image
                       src="https://i.postimg.cc/DwbFLxf6/8.jpg"
                       alt="Čelične konstrukcije 1"
-                      width={1800}  // Fixed width
-                      height={1800} // Fixed height                     
-                      className="group-hover:scale-105 transition-transform duration-500 ease-out"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      fill
+                      className="group-hover:scale-105 transition-transform duration-500 ease-out object-cover"
                     />
                   </div>
-                  <div className="w-1/2 relative rounded-md overflow-hidden"> {/* Matching height */}
+                  <div className="w-1/2 relative rounded-md overflow-hidden h-64"> {/* Matching height */}
                     <Image
                       src="https://i.postimg.cc/4dXgCZ62/9.jpg"
                       alt="Čelične konstrukcije 2"
-                      width={1800}  // Fixed width
-                      height={1800} // Fixed height   
+                      fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                   </div>
@@ -87,15 +83,13 @@ export default function HomePage() {
                 href="/products#aluPvcStolarija"
                 className="group bg-white rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
               >
-                <div className="flex p-3"> {/* Taller container */}
+                <div className="flex p-3 h-64"> {/* Taller container */}
                   <div className="w-full relative rounded-md overflow-hidden"> {/* Portrait height */}
                     <Image
                       src="https://i.postimg.cc/JnwVW2gg/3.jpg"
                       alt="Alu i PVC stolarija"
-                      width={1800}  // Fixed width
-                      height={1800} // Fixed height   
+                      fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-
                     />
                   </div>
                 </div>
