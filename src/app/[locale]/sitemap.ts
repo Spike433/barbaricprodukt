@@ -1,28 +1,33 @@
 import type { MetadataRoute } from "next"
+import { routing } from "@/i18n/routing"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://barbaricprodukt.com"
+  const baseUrl = "https://www.barbaricprodukt.com"
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    // Add more URLs as you create more pages
-  ]
+  // Define all pages that should be in sitemap
+  const pages = ["", "/about", "/products", "/services"]
+
+  // Generate sitemap entries for each locale and page
+  const sitemapEntries: MetadataRoute.Sitemap = []
+
+  routing.locales.forEach((locale) => {
+    pages.forEach((page) => {
+      const url = locale === "hr" ? `${baseUrl}${page}` : `${baseUrl}/${locale}${page}`
+
+      sitemapEntries.push({
+        url,
+        lastModified: new Date(),
+        changeFrequency: page === "" ? "weekly" : "monthly",
+        priority: page === "" ? 1 : 0.8,
+        alternates: {
+          languages: {
+            hr: locale === "hr" ? url : `${baseUrl}${page}`,
+            en: locale === "en" ? url : `${baseUrl}/en${page}`,
+          },
+        },
+      })
+    })
+  })
+
+  return sitemapEntries
 }
-

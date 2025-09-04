@@ -1,0 +1,23 @@
+{
+  "name": "Barbarić Produkt - Industrijska oprema",
+  "short_name": "Barbarić Produkt",
+  "description": "Vodeća tvrtka za industrijsku opremu, čelične konstrukcije i gumirane ventile",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1f2937",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "hr",
+  "scope": "/"
+}

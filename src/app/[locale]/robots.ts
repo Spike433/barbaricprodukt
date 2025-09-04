@@ -5,9 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/private/",
+      disallow: ["/private/", "/admin/", "/_next/", "/api/"],
     },
-    sitemap: "https://www.barbaricprodukt.hr/sitemap.xml",
+    sitemap: "https://www.barbaricprodukt.com/sitemap.xml",
+    host: "https://www.barbaricprodukt.com",
   }
 }
-
